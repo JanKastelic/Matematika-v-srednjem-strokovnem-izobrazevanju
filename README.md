@@ -1,1 +1,1 @@
-# Matematika-v-srednjem-strokovnem-izobra-evanju
+# Matematika-v-srednjem-strokovnem-izobrazevanju
