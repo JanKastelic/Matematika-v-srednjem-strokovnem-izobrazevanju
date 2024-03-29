@@ -1,0 +1,43 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[slovene]{babel}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float} 
+\usepackage{url} 
+%\usepackage{hyperref} 
+\usepackage{graphicx} 
+\usepackage[margin=0.3in]{geometry}
+\usepackage{multirow}
+
+\newcommand{\code}{\texttt}
+
+\title{Statistika v Excel-u}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+V datoteki \code{Rezultati-izpita-neizpolnjeno.xlsx} so zbrani podatki o desežkih študentov pri enem izmed predmetov. 
+Na podalgi danega niza podatkov rešite spodnje naloge z uporabo vgrajenih funkcij. Na listu \textit{Podatki} so že predpripravljene razpredelnice za reševanje. 
+Vse grafikone, ki jih boste oblikovali, premaknite na nov list, in ga smiselno poimenujte.
+
+\begin{enumerate}
+    \item Izračunajte število vseh študentov, ki so bili vpisani k predmetu. Pri tem si pomagajte s funkcijo \code{COUNT}.
+    \item Poiščite ustrezne vrednosti o doseženih točkah iz stolpca \textit{Izpit + domače naloge}. Uporabite funkcije \code{AVERAGE, MODE, MEDIAN, MAX, MIN}.
+    \item Vnaprej so vam podani razredi podatkov in opisi le-teh. Izračunajte pripadajoče frekvence in velikosti središččnih kotov, ki bi posameznem razredu pripadle, ob risanju strukturnega kroga. V pomoč naj  vam bo funkcija \code{COUNTIF}.
+    \item Oblikujte grafikon (strukturni krog), ki bo prikazoval število posameznih končnih dosežkov študentov.
+    \item Oblikujte še grafični prikaz (vrstični) števila študentov glede na doseženo oceno, ki so pri predmetu opravljali izpit.
+    \item Določite povprečno oceno in oceno, ki je bila med študenti pridobljena največkrat (uporabite zgolj podatke o pozitivnih ocenah). V pomoč naj vam bosta funkciji \code{MODE, AVERAGE}.
+    \item Podatke 1. izpitnega roka grupirajte po razredih 'standardne' ocenjevalne lestvice, ki velja v srednji šoli (1--5). Določite širine in sredine razredov ter njihove frekvence. Pri tem uporabite funkcijo \code{FREQUENCY}.
+    \item Za podatke o končnem številu pridobljenih točk določite vrednosti kvartilov. Tu je uporabna funkcija \code{QUARTILE}.
+    \item Na istem grafikonnu oblikujte 'škatli z brki' za podatke o zbranih točkah 1. in 2. izpitnega roka.
+\end{enumerate}
+
+
+\end{document}
