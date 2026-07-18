@@ -1,0 +1,13 @@
+area 13 13 60 60
+ang_picture 12 12 57 64
+ang_origin 30 35
+ang_unit 5
+ang_scale 1 0 
+
+
+ang_drawsystem_p 2 1 1 1 2
+
+color 204 0 0
+double
+ang_draw_parametric_curve x {-4;x<5;x+0.01}{x;2*cos(x)}
+

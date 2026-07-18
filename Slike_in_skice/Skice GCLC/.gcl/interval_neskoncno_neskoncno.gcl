@@ -1,0 +1,14 @@
+area 10 10 90 20
+point x 0 15
+point y 100 15
+point a 20 15
+point b 80 15
+
+drawline a b
+
+double
+
+
+color 255 0 0
+drawsegment x y
+

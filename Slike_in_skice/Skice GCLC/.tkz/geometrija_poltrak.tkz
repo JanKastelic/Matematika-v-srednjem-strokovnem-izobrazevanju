@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing line O B
+\draw [line width=0.016cm] (1.000000,1.300000) -- (2.960199,1.496020);%
+\draw [line width=0.016cm] (3.039801,1.503980) -- (6.000000,1.800000);%
+
+% Marking point O by circle
+\draw [line width=0.016cm] (3.000000,1.500000) circle (0.040000);%
+\draw (3.000000,1.500000) node [anchor=south] { $O$ };%
+
+% Marking point poz
+\draw (4.000000,1.400000) node  { $poz$ };%
+}
+\end{tikzpicture}

@@ -1,0 +1,47 @@
+area 10 10 60 60
+
+point S 35 25
+point R 35 15
+circle k S R
+
+point A 23 15
+point B 50 15
+point C 42 34
+point D 26.8 36.4
+
+midpoint a A B
+midpoint b B C
+midpoint c C D
+midpoint d D A
+
+mark_b a
+mark_r b
+mark_t c
+mark_l d
+
+point \alpha 23 15
+point \beta 50 15
+point \gamma 42 34
+point \delta 26.8 36.4
+
+mark_rt \alpha
+mark_lt \beta
+mark_lb \gamma
+mark_rb \delta
+
+drawcircle k
+
+cmark_t S
+
+
+double
+
+drawsegment A B
+drawsegment B C
+drawsegment C D
+drawsegment D A
+
+cmark_b A
+cmark_b B
+cmark_t C
+cmark_t D

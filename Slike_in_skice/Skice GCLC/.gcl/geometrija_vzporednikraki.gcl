@@ -1,0 +1,72 @@
+area 13 12 72 35
+
+point A 25 15
+point B 90 25
+point C 15 25
+point D 25 30
+point E 70 14
+
+line p A B
+parallel q C p
+line r D E
+
+intersection U p r
+intersection V q r
+
+angle a E U B
+angle b B U D
+
+point F 38 30
+point G 63 25
+point H 55 27
+point I 42 30
+
+circle k U H
+circle l V F
+circle m U G
+circle n V I
+
+intersection2 J K l q
+intersection2 L M n r
+intersection2 N O m r
+intersection2 P R k p
+
+drawline p
+drawline q
+drawline r
+cmark U
+cmark V
+
+point \alpha 25 28
+point \beta 37 28
+point \gamma 50 20
+point \delta 60 20
+
+point \alpha' 30 35
+point \beta' 30 20
+point \gamma' 55 27
+point \delta' 55 12
+
+
+
+double
+color 139 0 0
+drawarc V L a
+drawarc V M a
+drawarc U N a
+drawarc U O a
+mark \alpha
+mark \beta
+mark \gamma
+mark \delta
+
+color 0 139 0
+drawarc V J b
+drawarc V K b
+drawarc U P b
+drawarc U R b
+mark \alpha'
+mark \beta'
+mark \gamma'
+mark \delta'
+

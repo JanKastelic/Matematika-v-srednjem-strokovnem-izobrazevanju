@@ -1,0 +1,1857 @@
+\chapter{Realna števila}
+
+    \section{Realna števila}
+
+        
+
+                Med poljubnima dvema racionalnima številoma $\frac{x}{y}, \frac{z}{w}\in\mathbb{Q}$ je vsaj še eno racionalno število
+                 -- aritmetična sredina teh dveh števil $\frac{1}{2}\left(\frac{x}{y}+\frac{z}{w}\right)$.
+
+            
+                % $$\frac{x}{y}<\frac{z}{w},\ y,w\neq 0 \quad \Rightarrow \quad \frac{x}{y}<\frac{1}{2}\left(\frac{x}{y}+\frac{z}{w}\right)<\frac{z}{w}$$
+            
+                
+            
+                Med poljubnima racionalnima številoma je neskončno mnogo racionalnih števil in pravimo, da je množica $\mathbb{Q}$ \textbf{povsod gosta}. 
+            
+                ~
+            
+                Množici $\mathbb{Q}$ in $\mathbb{Z}$ imata enako moč -- sta števno neskončni ($m(\mathbb{Q})=m(\mathbb{Z})=\aleph_0$).
+            
+        
+
+                ~
+        
+                \textbf{Iracionalna števila} $\mathbb{I}$ so vsi kvadratni koreni števil, ki niso popolni kvadrati, tretji koreni, ki niso popolni kubi, ..., 
+                število $\pi$, Eulerjevo število $e$ ... 
+            
+                ~
+            
+                Množici racionalnih in iracionalnih števil sta disjunktni: $\mathbb{Q}\cap\mathbb{I}=\emptyset$.
+            
+                
+                ~
+
+                \textbf{Realna števila} so množica števil, ki jo dobimo kot unijo racionalnih in iracionalnih števil: $\mathbb{R}=\mathbb{Q}\cup\mathbb{I}$.
+            
+
+            
+                Množica realnih števil je močnejša od množice racionalnih števil. Pravimo, da je (neštevno) neskončna.
+            
+
+             ~
+
+                Množico realnih števil lahko, glede na predznak števil, razdelimo na tri množice:
+                \begin{itemize}
+                    \item \textcolor{green}{množico negativnih realnih števil $\mathbf{\mathbb{R}^-}$},
+                    \item množico z elementom nič: $\mathbf{\{0\}}$ in
+                    \item \textcolor{red}{množico pozitivnih realnih števil: $\mathbf{\mathbb{R}^+}$}.
+                \end{itemize}
+                $$ \mathbb{R}=\textcolor{green}{\mathbb{R}^-}\cup\{0\}\cup\textcolor{red}{\mathbb{R}^+} $$
+            
+
+                \begin{figure}[H]
+                \centering
+                \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+                    
+                    % Drawing segment A B
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (4.460000,1.500000);%
+                    \draw [line width=0.016cm] (4.540000,1.500000) -- (8.000000,1.500000);%
+                    
+                    % Marking point 0 by circle
+                    \draw [line width=0.016cm] (4.500000,1.500000) circle (0.040000);%
+                    \draw (4.500000,1.500000) node [anchor=south] { $0$ };%
+                    
+                    
+                    % Changing color 255 0 0
+                    \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                    \color{r255g0b0}% 
+                    
+                    % Marking point \mathbb{Q}^+
+                    \draw (6.250000,1.500000) node [anchor=south] { $\mathbb{R}^+$ };%
+                    
+                    % Drawing segment B 0
+                    \draw [line width=0.016cm] (8.000000,1.500000) -- (4.540000,1.500000);%
+                    }
+
+                    
+                    % Changing color 0 255 0
+                    \definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+                    \color{r0g255b0}% 
+                    
+                    % Marking point \mathbb{Q}^-
+                    \draw (2.750000,1.500000) node [anchor=south] { $\mathbb{R}^-$ };%
+                    
+                    % Drawing segment A 0
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (4.460000,1.500000);%
+                    
+
+                    % Changing color 0 0 0
+                    \definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+                    \color{r0g0b0}% 
+                    
+                    % Marking point \mathbb{Q}
+                    \draw (1.500000,2.000000) node  { $\mathbb{R}$ };%
+                    \color{black}
+                    
+                    \end{tikzpicture}
+                    
+                \end{figure}
+            
+
+            
+            
+                Vsaki točki na številski premici ustreza natanko eno realno število in obratno, 
+                vsakemu realnemu številu ustreza natanko ena točka na številski premici.
+            
+
+            
+                Številsko premico, ki upodablja realna števila, imenujemo tudi \textbf{realna os}.
+            
+
+
+        
+                ~~        
+            
+                Z relacijo \textit{biti manjši ali enak} je množica $\mathbb{R}$ \textbf{linearno urejena}, 
+                to pomeni, da veljajo:
+
+                \begin{itemize}
+                    \item \textbf{refleksivnost}: $\forall x\in\mathbb{R}: x\leq x$;
+                    \item \textbf{antisimetričnost}: $\forall x,y\in\mathbb{R}: x\leq y \land y\leq x \Rightarrow x=y$;
+                    \item \textbf{tranzitivnost}: $\forall x,y,z\in\mathbb{R}: x\leq y \land y\leq z \Rightarrow x\leq z$;
+                    \item \textbf{stroga sovisnost}: $\forall x,y\in\mathbb{R}: x\leq y \lor y\leq x$.
+                \end{itemize}
+            
+
+                ~
+            
+                Za realcijo urejenosti na množici $\mathbb{R}$ veljajo še naslednje lastnosti:
+
+                \begin{itemize}
+                    \item \textbf{monotonost vsote}: $x<y \Rightarrow x+z<y+z$ oziroma $x\leq y \Rightarrow x+z\leq y+z$;
+                    \item $x<y \land z>0 \Rightarrow xz<yz$ in $x\leq y \land z>0 \Rightarrow x z\leq y z$;
+                    \item $x<y \land z<0 \Rightarrow xz>yz$ in $x\leq y \land z<0 \Rightarrow x z\geq y z$.
+                \end{itemize}
+
+            
+
+        
+\newpage
+
+        %%%% kvadratni koren 
+
+    \section{Kvadratni koren}
+
+            
+                \textbf{Kvadratni koren} $\sqrt{a}$ realnega števila $a\geq 0$ je tisto nenegativno realno število $x$,
+                katerega kvadrat je enak $a$.
+                $$\sqrt{a}=x \Leftrightarrow a=x^2; \quad a,x\in\mathbb{R}^+ $$
+
+                Število $a$ imenujemo \textbf{korenjenec}, simbol $\sqrt{~}$ pa \textbf{korenski znak}.
+            
+
+            \subsubsection*{Pravila za računanje s kvadratnimi koreni}
+                    
+                        \begin{itemize}
+                            \item $\left(\sqrt{a}\right)^2=a; ~a\geq 0$
+                            \item $\sqrt{a^2}=\begin{cases}
+                                a, & a\geq 0 \\
+                                -a, & a<0
+                            \end{cases}$
+                            \item $\sqrt{a\cdot b}=\sqrt{a}\cdot\sqrt{b}; ~a,b\geq 0$
+                            \item $\sqrt{\dfrac{a}{b}}=\dfrac{\sqrt{a}}{\sqrt{b}}; ~a\geq 0, b>0$
+                        \end{itemize}
+                    
+            
+
+                ~~
+
+                \textbf{Delno korenjenje} poteka tako, da korenjenec zapišemo kot produkt dveh ali več faktorjev,
+                od katerih je vsaj en popoln kvadrat (ga lahko korenimo).
+                
+                Nato koren zapišemo kot produkt korenov in korenimo kar lahko.
+                $$\sqrt{a^2b}=\sqrt{a^2}\sqrt{b}=a\sqrt{b}$$
+            
+                
+
+                \textbf{Racionalizacija imenovalca} pomeni, da ulomek zapišemo z enakovrednim ulomkom, ki v imenovalcu nima korena.
+                To naredimo z razširjanjem ulomka.
+            
+                    ~~
+            
+                Izraze s kvadratnimi koreni poenostavimo tako, da uporabimo že znane obrazce, delno korenimo in racionaliziramo imenovalce.
+            
+        ~~~
+
+        %%% naloge
+
+        \begin{multicols}{2}
+            
+
+            \begin{naloga}
+                Izračunajte.
+                \begin{itemize}
+                        \item $\sqrt{49\cdot 64}$ 
+                        \item $\sqrt{4\cdot 324}$ 
+                        \item $\sqrt{361\cdot 16}$ 
+                        \item $\sqrt{-16\cdot 25}$ 
+                        \item $\sqrt{3\cdot 12}$ 
+                        \item $\sqrt{\dfrac{225}{289}}$ 
+                        \item $\sqrt{\dfrac{169}{256}}$ 
+                        \item $\sqrt{\dfrac{49}{121}}$ 
+                        \item $\sqrt{\dfrac{18}{32}}$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+        
+            \begin{naloga}
+                Izračunajte.
+                \begin{itemize}
+                        \item $\sqrt{\sqrt{16}}$ 
+                        \item $\sqrt{\sqrt{81}}$ 
+                        \item $\sqrt{\sqrt{256}}$ 
+                        \item $\sqrt{\sqrt{1}}$ 
+                        \item $\sqrt{\sqrt{\sqrt{256}}}$ 
+                \end{itemize}
+            \end{naloga}
+        
+            ~~\\~
+        
+            \begin{naloga}
+                Izračunajte.
+                \begin{itemize}
+                        \item $\sqrt{x^4y^8}$ 
+                        \item $\sqrt{e^{10}f^{26}}$ 
+                        \item $\sqrt{a^{20}b^4}$ 
+                        \item $\sqrt{(-x)^{20}y^4}$ 
+                        \item $\sqrt{3a^6+a^6}$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Izračunajte.
+                \begin{itemize}
+                        \item $\sqrt{16+36+12}$ 
+                        \item $\sqrt{121}+\sqrt{81}$ 
+                        \item $\sqrt{10+21+69}$ 
+                        \item $\sqrt{10+11-21}$ 
+                        \item $\sqrt{9+4-4}$ 
+                        \item $\sqrt{3\cdot 4+2\cdot 2}$ 
+                        \item $\sqrt{5\cdot 7 +1}$ 
+                        \item $\sqrt{8\cdot 7-5\cdot 4}$ 
+                        \item $\sqrt{10\cdot 8-4\cdot 4}$ 
+                        \item $\sqrt{11\cdot 5+2\cdot 7+3\cdot 4}$ 
+                \end{itemize}
+            \end{naloga}
+        
+            ~~~~\\~\\~\\~\\
+        
+            \begin{naloga}
+                Izračunajte.
+                \begin{itemize}
+                        \item $\sqrt{20}$ 
+                        \item $\sqrt{98}$ 
+                        \item $\sqrt{300}$ 
+                        \item $\sqrt{125}$ 
+                        \item $\sqrt{x^3}$ 
+                        \item $\sqrt{x^4y^5z^6}$ 
+                        \item $\sqrt{128a^{13}b^9}$ 
+                        \item $\sqrt{100x^2y^5+62x^2y^5}; \quad x,y\geq 0$ 
+                        \item $\sqrt{8a^6b^5-12a^4b^6}; \quad a,b\geq 0$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Izračunajte.
+                \begin{itemize}
+                        \item $\sqrt{44}+\sqrt{99}$ 
+                        \item $\sqrt{192}+\sqrt{147}$ 
+                        \item $\sqrt{180}-\sqrt{245}+2\sqrt{500}$ 
+                        \item $\sqrt{243a^3b}+2a\sqrt{48ab}-\sqrt{363a^2}\cdot\sqrt{ab}; \quad a,b\geq 0$ 
+                        \item $\sqrt{3a^6+a^6}$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Racionalizirajte imenovalec.
+                \begin{itemize}
+                        \item $\dfrac{2}{\sqrt{3}}$ 
+                        \item $\dfrac{2+\sqrt{2}}{\sqrt{2}}$ 
+                        \item $\dfrac{2}{5\sqrt{3}}$ 
+                        \item $\dfrac{\sqrt{2}}{1-\sqrt{2}}$ 
+                        \item $\dfrac{1+\sqrt{5}}{2+\sqrt{5}}$ 
+                        \item $\dfrac{2-\sqrt{3}}{3+\sqrt{2}}$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Izračunajte.
+                \begin{itemize}
+                        \item $\dfrac{2}{\sqrt{3}}+\dfrac{3}{\sqrt{2}}$ 
+                        \item $\dfrac{1-\sqrt{2}}{\sqrt{3}}-\dfrac{\sqrt{2}}{\sqrt{5}}$ 
+                        \item $\left(1+\sqrt{5}\right)^2$ 
+                        \item $\left(3-\sqrt{2}\right)^2$ 
+                        \item $\left(2-\sqrt{3}\right)^3$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+        
+            \begin{naloga}
+                Izračunajte.
+                \begin{itemize}
+                        \item $\left(2-\sqrt{5}\right)^3-\left(1+2\sqrt{5}\right)^2$ 
+                        \item $\left(2-\sqrt{3}\right)^2+\left(2+\sqrt{3}\right)^3$ 
+                        \item $\left(1+\sqrt{5}\right)\sqrt{6-2\sqrt{5}}$ 
+                        \item $\left(3-\sqrt{5}\right)\sqrt{14+6\sqrt{5}}$ 
+                        \item $\left(\sqrt{3}+\sqrt{5}\right)\sqrt{8-2\sqrt{15}}$ 
+                \end{itemize}
+            \end{naloga}
+
+            ~~~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\
+            
+        \end{multicols}
+
+
+        % 
+        %     \begin{naloga}
+        %         Poenostavite.
+        %         \begin{itemize}
+        %             \item a 
+        %         \end{itemize}
+        %     \end{naloga}
+        % 
+
+
+        % 
+        %     \begin{naloga}
+        %         Poenostavite.
+        %         \begin{itemize}
+        %             \item a 
+        %         \end{itemize}
+        %     \end{naloga}
+        % 
+
+
+        % 
+        %     \begin{naloga}
+        %         Poenostavite.
+        %         \begin{itemize}
+        %             \item a 
+        %         \end{itemize}
+        %     \end{naloga}
+        % 
+
+
+        \newpage
+    \section{Kubični koren}
+
+        
+
+            
+                \textbf{Kubični koren} $\sqrt[3]{a}$ realnega števila $a$ je tisto realno število $x$,
+                katerega kub je enak $a$.
+                $$\sqrt[3]{a}=x \Leftrightarrow a=x^3; \quad a,x\in\mathbb{R}$$
+
+                Število $a$ imenujemo \textbf{korenjenec}, simbol $\sqrt{~}$ \textbf{korenski znak}, število $3$ pa \textbf{korenski eksponent}.
+            
+
+            \subsubsection*{Pravila za računanje s kubičnimi koreni}
+                
+                    \begin{itemize}
+                        \item $\left(\sqrt[3]{a}\right)^3=a$
+                        \item $\sqrt[3]{a^3}=a$
+                        \item $\sqrt[3]{a\cdot b}=\sqrt[3]{a}\cdot\sqrt[3]{b}$
+                        \item $\sqrt[3]{\dfrac{a}{b}}=\dfrac{\sqrt[3]{a}}{\sqrt[3]{b}}; ~b\neq 0$
+                    \end{itemize}
+                
+            
+
+                    ~~~
+
+
+        
+            \begin{naloga}
+                Izračunajte.
+                \begin{itemize}
+                    
+                        \item $\sqrt[3]{-1}$ 
+                        \item $\sqrt[3]{216}$ 
+                        \item $\sqrt[3]{8}$ 
+                        \item $\sqrt[3]{\dfrac{64}{125}}$ 
+                        \item $\sqrt[3]{-\dfrac{27}{343}}$ 
+                        \item $\sqrt[3]{1\dfrac{488}{512}}$ 
+                    
+
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Izračunajte.
+                \begin{itemize}
+                        \item $\sqrt{\sqrt{256}}-\dfrac{3-\sqrt{2}}{\sqrt{2}-1}+\sqrt[3]{-8}+\left(2-\sqrt{2}\right)^2$ 
+                        \item $\dfrac{\sqrt{3}+1}{\sqrt{3}}-\dfrac{\sqrt{3}-1}{\sqrt{3}+1}+\sqrt{0.16}+\sqrt{0.64}-\sqrt[3]{-27}+\sqrt{48}-\sqrt{27}$ 
+                        \item $\left(1-\sqrt{5}\right)^2-\left(1+\sqrt{5}\right)^2+\dfrac{\sqrt{5}-2}{\sqrt{5}+2}-\sqrt{125}+\sqrt{245}$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+        % 
+        %     \begin{exampleblock}{Naloga 563}
+        %         Izračunaj in rezultat delno koreni.
+        %         \begin{description}
+        %             \item[(b)] $\displaystyle 4\sqrt{8}-\left(2\sqrt{5}+3\sqrt{8}\right)\sqrt{10}$
+        %             \item[(č)] $\displaystyle\left(5\sqrt{3}+2\sqrt{27}\right)\left(\sqrt{75}-4\sqrt{12}+\sqrt{147}\right)$
+        %             \item[(g)] $\displaystyle 8\sqrt{3}\left(\sqrt{2}-1\right)-\left(\sqrt{5}+2\sqrt{6}\right)\left(4-2\sqrt{2}\right)$  
+        %             \item[(j)] $\displaystyle\left(2-4\sqrt{3}\right)\cdot 3\sqrt{2}-\left(2\sqrt{2}-3\sqrt{3}\right)^2$
+        %             \item[(l)] $\displaystyle\left(3-2\sqrt{2}\right)^3-\left(\sqrt{8}-5\sqrt{2}\right)\left(-3\sqrt{2}\right)$
+        %             \item[(o)] $\displaystyle\sqrt{300}-\sqrt{5-2\sqrt{6}}\cdot\sqrt{5+2\sqrt{6}}+\sqrt{5^4}$
+        %             \item[(r)] $\displaystyle\sqrt{5\sqrt{3}-5}\cdot\sqrt{2\sqrt{3}+2}-\left(\sqrt{5}\right)^3$  
+        %             \item[(u)] $\displaystyle\left(\sqrt{17}-3\right)\sqrt{26+6\sqrt{17}}-\sqrt{2}\left(\sqrt{2}+\sqrt{6}\right)$
+        %         \end{description}
+        %     \end{naloga}
+        % 
+
+
+
+        \newpage
+    \section{Interval}
+
+        
+
+            
+                \textbf{Interval} je množica vseh realnih števil, ki ležijo med dvema danima številoma $a$ in $b$, kjer je $a<b$. \\
+                Števili $a$ in $b$ imenujemo \textbf{krajišči intervala}.                
+            
+            
+
+            \subsubsection*{Vključenost krajišč}
+                \begin{itemize}
+                    \item Simbola $"["$ in $"]"$ označujeta krajišče, ki spada k intervalu.
+                    \item Simbola $"("$ in $")"$ označujeta krajišče, ki ne spada k intervalu.
+                \end{itemize}
+            
+            
+                ~
+            
+                Pri zapisu intervalov moramo biti pozorni na zapis vrstnega reda števil, ki določata krajišči.
+                $$[a,b]\neq[b,a]$$
+            
+            
+
+
+        
+
+        
+            \subsection{Vrste intervalov}
+
+            \subsubsection*{Zaprti interval}
+            Vsebuje vsa realna števila med $a$ in $b$, vključno s krajiščema $a$ in $b$.
+            $$ \mathbf{[a,b]=\left\{x\in\mathbb{R}; a\leq x\leq b\right\} }$$
+
+                \begin{figure}[H]
+                \centering
+                    \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+                    
+                    % Drawing line a b
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (1.960000,1.500000);%
+                    \draw [line width=0.016cm] (2.040000,1.500000) -- (7.960000,1.500000);%
+                    \draw [line width=0.016cm] (8.040000,1.500000) -- (9.000000,1.500000);%
+                    
+                    % Changing color 255 0 0
+                    \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                    \color{r255g0b0}% 
+                    
+                    % Drawing segment a b
+                    \draw [line width=0.032cm] (2.040000,1.500000) -- (7.960000,1.500000);%
+                    
+                    % Marking point a by circle
+                    \draw [line width=0.032cm] (2.000000,1.500000) circle (0.040000);%
+                    \draw (2.000000,1.500000) node [anchor=north] { $a$ };%
+                    
+                    % Marking point b by circle
+                    \draw [line width=0.032cm] (8.000000,1.500000) circle (0.040000);%
+                    \draw (8.000000,1.500000) node [anchor=north] { $b$ };%
+                    \color{black}
+                    }
+                    \end{tikzpicture}
+                \end{figure}
+                    
+                
+            
+
+
+            \subsubsection*{Odprti interval}
+            Vsebuje vsa realna števila med $a$ in $b$, vendar ne vsebuje krajišč $a$ in $b$.
+
+                $$ \mathbf{(a,b)=\left\{x\in\mathbb{R}; a<x<b\right\} }$$
+
+
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+                    
+                    % Drawing line a b
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (9.000000,1.500000);%
+                    
+                    % Changing color 255 0 0
+                    \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                    \color{r255g0b0}% 
+                    
+                    % Drawing segment a b
+                    \draw [line width=0.032cm] (2.000000,1.500000) -- (8.000000,1.500000);%
+                    
+                    % Drawing arrow a b 1.00
+                    \draw [line width=0.032cm] (7.702567,1.539158) -- (8.000000,1.500000);%
+                    \draw [line width=0.032cm] (7.702567,1.539158) -- (7.900856,1.500000);%
+                    \draw [line width=0.032cm] (7.702567,1.460842) -- (8.000000,1.500000);%
+                    \draw [line width=0.032cm] (7.702567,1.460842) -- (7.900856,1.500000);%
+                    
+                    % Drawing arrow b a 1.00
+                    \draw [line width=0.032cm] (2.297433,1.460842) -- (2.000000,1.500000);%
+                    \draw [line width=0.032cm] (2.297433,1.460842) -- (2.099144,1.500000);%
+                    \draw [line width=0.032cm] (2.297433,1.539158) -- (2.000000,1.500000);%
+                    \draw [line width=0.032cm] (2.297433,1.539158) -- (2.099144,1.500000);%
+                    \color{black}
+                        
+                    % Marking point a
+                    \draw (2.000000,1.500000) node [anchor=north] { $a$ };%
+                    
+                    % Marking point b
+                    \draw (8.000000,1.500000) node [anchor=north] { $b$ };%
+                    }
+                    \end{tikzpicture}
+                \end{figure}
+
+                
+            
+            
+
+        
+
+        
+            
+            \subsubsection*{Polodprti/polzaprti interval}
+                \begin{itemize}
+                    \item Vsebuje vsa realna števila med $a$ in $b$, vključno s krajiščem $a$, vendar ne vsebuje krajišča $b$.
+                    $$ \mathbf{[a,b)=\left\{x\in\mathbb{R}; a\leq x<b\right\} }$$
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+                        
+                        % Drawing line a b
+                        \draw [line width=0.016cm] (1.000000,1.500000) -- (1.960000,1.500000);%
+                        \draw [line width=0.016cm] (2.040000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Changing color 255 0 0
+                        \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                        \color{r255g0b0}% 
+                        
+                        % Drawing segment a b
+                        \draw [line width=0.032cm] (2.040000,1.500000) -- (8.000000,1.500000);%
+                        
+                        % Marking point a by circle
+                        \draw [line width=0.032cm] (2.000000,1.500000) circle (0.040000);%
+                        \draw (2.000000,1.500000) node [anchor=north] { $a$ };%
+                        
+                        % Drawing arrow a b 1.00
+                        \draw [line width=0.032cm] (7.702567,1.539158) -- (8.000000,1.500000);%
+                        \draw [line width=0.032cm] (7.702567,1.539158) -- (7.900856,1.500000);%
+                        \draw [line width=0.032cm] (7.702567,1.460842) -- (8.000000,1.500000);%
+                        \draw [line width=0.032cm] (7.702567,1.460842) -- (7.900856,1.500000);%
+                        \color{black}
+                        
+                        % Marking point b
+                        \draw (8.000000,1.500000) node [anchor=north] { $b$ };%
+                        }
+                        \end{tikzpicture}
+                    \end{figure}
+
+                        
+                    
+                    
+
+                    \item Vsebuje vsa realna števila med $a$ in $b$, vključno s krajiščem $b$, vendar ne vsebuje krajišča $a$.
+                    $$ \mathbf{(a,b]=\left\{x\in\mathbb{R}; a<x\leq b\right\} }$$
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+                        
+                        % Drawing line a b
+                        \draw [line width=0.016cm] (1.000000,1.500000) -- (7.960000,1.500000);%
+                        \draw [line width=0.016cm] (8.040000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Changing color 255 0 0
+                        \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                        \color{r255g0b0}% 
+                        
+                        % Drawing segment a b
+                        \draw [line width=0.032cm] (2.000000,1.500000) -- (7.960000,1.500000);%
+                        
+                        % Marking point b by circle
+                        \draw [line width=0.032cm] (8.000000,1.500000) circle (0.040000);%
+                        \draw (8.000000,1.500000) node [anchor=north] { $b$ };%
+                        
+                        % Drawing arrow b a 1.00
+                        \draw [line width=0.032cm] (2.297433,1.460842) -- (2.000000,1.500000);%
+                        \draw [line width=0.032cm] (2.297433,1.460842) -- (2.099144,1.500000);%
+                        \draw [line width=0.032cm] (2.297433,1.539158) -- (2.000000,1.500000);%
+                        \draw [line width=0.032cm] (2.297433,1.539158) -- (2.099144,1.500000);%
+                        \color{black}
+
+                        % Marking point a
+                        \draw (2.000000,1.500000) node [anchor=north] { $a$ };%
+                        }
+                        \end{tikzpicture}
+                    \end{figure}
+
+                        
+                    
+
+                \end{itemize}
+
+
+            
+            
+        
+
+        
+            \subsubsection*{Neomejeni/neskončni intervali}
+                
+                \begin{itemize}
+                    \item $ \mathbf{[a,\infty)=\left\{x\in\mathbb{R}; x\geq a\right\} }$ \\
+
+                    \begin{figure}[H]
+                    \centering
+                        \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+                        
+                        % Drawing line a b
+                        \draw [line width=0.016cm] (1.000000,1.500000) -- (1.960000,1.500000);%
+                        \draw [line width=0.016cm] (2.040000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Changing color 255 0 0
+                        \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                        \color{r255g0b0}% 
+                        
+                        % Drawing segment a y
+                        \draw [line width=0.032cm] (2.040000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Marking point a by circle
+                        \draw [line width=0.032cm] (2.000000,1.500000) circle (0.040000);%
+                        \draw (2.000000,1.500000) node [anchor=north] { $a$ };%
+                        \color{black}
+                        }
+                        \end{tikzpicture}
+                    \end{figure}
+                        
+                    \item $ \mathbf{(a,\infty)=\left\{x\in\mathbb{R}; x>a\right\} }$ \\
+                    
+                    \begin{figure}[H]
+                        \centering
+                        \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+                        
+                        % Drawing line a b
+                        \draw [line width=0.016cm] (1.000000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Marking point a
+                        \draw (2.000000,1.500000) node [anchor=north] { $a$ };%
+                        
+                        % Changing color 255 0 0
+                        \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                        \color{r255g0b0}% 
+                        
+                        % Drawing segment a y
+                        \draw [line width=0.032cm] (2.000000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Drawing arrow b a 1.00
+                        \draw [line width=0.032cm] (2.297433,1.460842) -- (2.000000,1.500000);%
+                        \draw [line width=0.032cm] (2.297433,1.460842) -- (2.099144,1.500000);%
+                        \draw [line width=0.032cm] (2.297433,1.539158) -- (2.000000,1.500000);%
+                        \draw [line width=0.032cm] (2.297433,1.539158) -- (2.099144,1.500000);%
+                        \color{black}
+                        }
+                        \end{tikzpicture}
+                    \end{figure}
+
+                        
+                    \item $\mathbf{(-\infty,b]=\left\{x\in\mathbb{R}; x\leq b\right\} }$ \\
+                    
+                    \begin{figure}[H]
+                        \centering
+                        \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+                        
+                        % Drawing line a b
+                        \draw [line width=0.016cm] (1.000000,1.500000) -- (7.960000,1.500000);%
+                        \draw [line width=0.016cm] (8.040000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Changing color 255 0 0
+                        \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                        \color{r255g0b0}% 
+                        
+                        % Marking point b by circle
+                        \draw [line width=0.032cm] (8.000000,1.500000) circle (0.040000);%
+                        \draw (8.000000,1.500000) node [anchor=north] { $b$ };%
+                        
+                        % Drawing segment x b
+                        \draw [line width=0.032cm] (1.000000,1.500000) -- (7.960000,1.500000);%
+                        \color{black}
+                        }
+                        \end{tikzpicture}
+                    \end{figure}
+
+                        
+                    \item $ \mathbf{(-\infty,b)=\left\{x\in\mathbb{R}; x<b\right\} }$ \\
+                    
+                    \begin{figure}[H]
+                        \centering
+                        \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+                        
+                        % Drawing line a b
+                        \draw [line width=0.016cm] (1.000000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Marking point b
+                        \draw (8.000000,1.500000) node [anchor=north] { $b$ };%
+                        
+                        % Changing color 255 0 0
+                        \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                        \color{r255g0b0}% 
+                        
+                        % Drawing segment x b
+                        \draw [line width=0.032cm] (1.000000,1.500000) -- (8.000000,1.500000);%
+                        
+                        % Drawing arrow a b 1.00
+                        \draw [line width=0.032cm] (7.702567,1.539158) -- (8.000000,1.500000);%
+                        \draw [line width=0.032cm] (7.702567,1.539158) -- (7.900856,1.500000);%
+                        \draw [line width=0.032cm] (7.702567,1.460842) -- (8.000000,1.500000);%
+                        \draw [line width=0.032cm] (7.702567,1.460842) -- (7.900856,1.500000);%
+                        \color{black}
+                        }
+                        \end{tikzpicture}
+                    \end{figure}
+
+                    \item $ \mathbf{(-\infty,\infty)=\left\{x;x\in\mathbb{R}\right\} =\mathbb{R}}$ \\
+                    
+                    \begin{figure}[H]
+                        \centering
+                        \begin{tikzpicture}
+                            % \clip (0,0) rectangle (14.000000,10.000000);
+                            {\footnotesize
+                            
+                            % Drawing line a b
+                            \draw [line width=0.016cm] (1.000000,1.500000) -- (9.000000,1.500000);%
+                            
+                            % Changing color 255 0 0
+                            \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                            \color{r255g0b0}% 
+                            
+                            % Drawing segment x y
+                            \draw [line width=0.032cm] (1.000000,1.500000) -- (9.000000,1.500000);%
+                            \color{black}
+                            }
+                        \end{tikzpicture}
+                    \end{figure}
+
+                \end{itemize}
+
+            
+            
+                ~~~\\~
+
+                \begin{multicols}{2}
+                    
+        
+            \begin{naloga}
+                Zapišite kot interval.
+                \begin{itemize}
+                        \item $\{x\in\mathbb{R}; -2<x<2\}$ 
+                        \item $\{x\in\mathbb{R}; 4\leq x\leq 2\}$ 
+                        \item $\{x\in\mathbb{R}; -14<x\leq -9\}$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            % \begin{naloga}
+            %     Zapišite interval, ki je narisan na sliki.
+            %     \begin{itemize}
+            %             \item $ $ 
+            %             \item $ $ 
+            %             \item $ $ 
+            %     \end{itemize}
+            % \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Zapišite presek intervalov.
+                \begin{itemize}
+                    
+                        \item $ [0,2)\cap(-1,1]$ 
+                        \item $ [-3,5]\cap(-3,5)$ 
+                        \item $ [2,5)\cap[5,7)$ 
+                        \item $ [-1,3)\cap(-4,-1]$ 
+                        \item $ [4,6]\cap[-1,4]$ 
+                        \item $ (-1,3)\cap[1,2)$ 
+                    
+
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Zapišite unijo intervalov.
+                \begin{itemize}
+                        \item $ [0,2)\cup(-1,1]$ 
+                        \item $ [-3,5]\cup(-3,5)$ 
+                        \item $ [2,5)\cup[5,7)$ 
+                        \item $ [-1,3)\cup(-4,1]$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+        
+            \begin{naloga}
+                Zapišite razliko intervalov.
+                \begin{itemize}
+                        \item $ [2,3]\setminus[3,4)$ 
+                        \item $ (1,3)\setminus(3,4)$ 
+                        \item $ [2,5)\setminus(-1,2]$ 
+                        \item $ (2,8)\setminus[5,6)$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Izračunajte.
+                \begin{itemize}
+                        \item $\left([1,3)\setminus(1,4]\right)\cup(1,2)$ 
+                        \item $[-2,4]\setminus\left((-1,2]\cap[0,3)\right)$ 
+                        \item $\left((-2,3]\setminus[-3,2)\right)\cap[3,5)$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+            ~\\~\\~\\~\\~\\~\\
+                \end{multicols}
+
+        % 
+        %     \begin{exampleblock}{Naloga 423 (Linea nova)}
+        %         Zapišite množico vseh neengativnih realnih števil, ki so manjša od $6$, ter iskano množico predstavite na številski premici.
+        %     \end{naloga}
+        %     \note{Rešitev N423: $\left\{x\in\mathbb{R};0\leq x<6 \right\} [0,6)$ \\}
+        %     }
+
+        %     \begin{exampleblock}{Naloga 585}
+        %         Dana sta intervala $I=[-2,5)$ in $J=(3,6)$.
+        %         \begin{itemize}
+        %             % \item Intervala $I$ in $J$ nariši na številski premici.
+        %             \item Zapiši $I\cap J$ in $I\cup J$.
+        %             \item Izračunaj vsoto največjega celega števila iz $I$ in najmanjšega celega števila iz $J$.
+        %         \end{itemize}
+        %     \end{naloga}
+        %     \note{Rešitev N585:\begin{itemize}
+        %         \item $I\cap J=(3,5)$; $I\cup J=[-2,6)$
+        %         \item $4+4=8$
+        %     \end{itemize} }
+        %     }
+
+        %     \begin{exampleblock}{Naloga 583}
+        %         Zapiši unijo in presek danih intervalov.
+        %         \begin{description}
+        %             \item[(c)] $[4,8]$ in $(3,5]$
+        %             \item[(f)] $[-2,4]$ in $(2,\infty)$
+        %             \item[(g)] $(-\infty,3]$ in $(-1,5]$   
+        %         \end{description}
+        %     \end{naloga}
+        %     \note{Rešitev N583: \begin{description}
+        %         \item[(c)] $(3,8]$ in $[4,5]$
+        %         \item[(f)] $[-2,\infty)$ in $(2,4]$
+        %         \item[(g)] $(-\infty,5]$ in $(-1,3]$   
+        %     \end{description}
+        %     }
+        %     }
+        % 
+
+
+    \newpage
+
+    \section{Reševanje enačb}
+
+        
+                \textbf{Enačba} je enakost dveh izrazov, pri čemer vsaj v enem nastopa \textbf{neznanka}, ki je ponavadi označena s črko $x$.
+
+                \textbf{Rešitev enačbe} je vsaka vrednost neznanke, za katero sta vrednosti leve in desne strani enačbe enaki.
+            
+~
+
+                Enačbo rešujemo tako, da jo preoblikujemo v ekvivalentno enačbo, iz katere preberemo rešitve.
+
+                Ekvivalentno enačbo dobimo, če:
+                \begin{itemize}
+                    \item na obeh straneh enačbe prištejemo isto število ali izraz;
+                    \item obe strani enačbe množimo z istim neničelnim številom ali izrazom.
+                \end{itemize}
+            
+        
+                ~~\\
+        
+                \textbf{Linearna enačba} je enačba oblike $ax+b=0;~a,b\in\mathbb{R}$.
+
+                Rešujemo jo tako, da jo preoblikujemo v ekvivalentno enačbo, ki ima na eni strani samo neznanko.
+            
+~~
+
+                \textbf{Razcepna enačba} je enačba, v kateri nastopajo potence neznanke (na primer $x^2$, $x^3$) in jo je mogoče zapisati kot produkt (linearnih) faktorjev.
+
+                Preoblikujemo jo v ekvivalentno enačbo, ki ima vse člene na eni strani neenačaja, na drugi pa $0$. 
+                Izraz (neničelna stran) razstavimo, kolikor je mogoče, in preberemo rešitve.
+            
+~~
+
+                \textbf{Racionalna enačba} je enačba, v kateri nastopajo neznake (tudi) v imenovalcu, pri tem smo pozorni na obstoj ulomkov. 
+                Nato enačbo preoblikujemo v ekvivalentno enačbo.
+            
+
+        ~~~\\~\\
+
+
+
+        %%% naloge
+
+        
+            \begin{naloga}
+                Rešite enačbe.
+                \begin{itemize}
+                        \item $3(2a-1)-5(a-2)=9$ 
+                        \item $2(y-2)+3(1-y)=7$ 
+                        \item $3(3-2(t-1))=3(5-t)$ 
+                        \item $-(2-x)+3(x+1)=x-5$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Rešite enačbe.
+                \begin{itemize}
+                        \item $\dfrac{1}{5}-\dfrac{x-1}{2}=\dfrac{7}{10}$ 
+                        \item $\dfrac{a-1}{3}+\dfrac{a+2}{6}=\dfrac{1}{2}$ 
+                        \item $2\dfrac{2}{3}-\dfrac{3t+1}{6}=0$ 
+                        \item $\left(\dfrac{2}{b+1}\right)^{-1}+\dfrac{b-1}{4}=b+3$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+
+        
+            \begin{naloga}
+                Rešite razcepne enačbe.
+                \begin{itemize}
+                        \item $x^2-3x=-2$ 
+                        \item $(x+2)^3-(x-1)^3=8x^2+x+2$ 
+                        \item $x^4=16x^2$ 
+                        \item $(x^2-4x+5)^2-(x^2+4x+1)^2-78=2x^2(x+30)-18(x+1)^3$ 
+                        \item $x^3-4x^2+4=x$ 
+                        \item $x^5=3x^4-2x^3$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+~~\\~~\\
+        
+            \begin{naloga}
+                Rešite enačbe.
+                \begin{itemize}
+                        \item $\dfrac{x-1}{x+2}=\dfrac{x+1}{x-3}$ 
+                        \item $\dfrac{1}{a-1}-\dfrac{3}{a}=\dfrac{2}{a-1}$ 
+                        \item $\dfrac{x-3}{x-2}+\dfrac{x+4}{x+1}=\dfrac{2x^2}{x^2-x-2}$ 
+                        \item $\dfrac{1}{3a-1}+\dfrac{1}{3a+1}=\dfrac{a-1}{9a^2-1}$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Neznano število smo delili s $4$ in dobljenemu količniku prišteli $1$. 
+                Dobili smo enako, kot če bi istemu številu prišteli $10$. Izračunajte neznano število.
+                
+            \end{naloga}
+
+            \begin{naloga}
+                Kvadrat neznanega števila je za $4$ manjši od njegovega štirikratnika. Izračunajte neznano število.
+                
+            \end{naloga}
+
+        
+
+
+        
+            \begin{naloga}
+                Avtomobil vozi s povprečno hitrostjo $50~\frac{km}{h}$, kolesar s povprečno hitrostjo $20~\frac{km}{h}$.
+                Avtomobil gre iz Lendave v Ormož (približno $50~km$), kolesar vozi v obratno smer. 
+                Koliko časa pred avtomobilom mora na pot kolesar, da se bosta srečala na polovici poti?
+                
+            \end{naloga}
+
+            \begin{naloga}
+                Vsota števk dvomestnega števila je $3$. Če zamenjamo njegovi števki, dobimo za $9$ manjše število. Katero število je to?
+                
+            \end{naloga}
+
+        
+
+
+        
+            \begin{naloga}
+                Andreja je bila ob rojstvu hčere Eve stara $38$ let. Čez koliko let bo Andreja stara trikrat toliko kot Eva?
+                
+            \end{naloga}
+
+            \begin{naloga}
+                Prvi delavec sam pozida steno v  $10$ urah, drugi v $12$ urah, tretji v $8$ urah. 
+                Delavci skupaj začnejo zidati steno. Po dveh urah tretji delavec odide, pridruži pa se četrti delavec. 
+                Skupaj s prvim in drugim delavcem nato končajo steno v eni uri. V kolikšnem času četrti delavec pozida steno?
+                
+            \end{naloga}
+
+        
+
+
+
+
+            \newpage
+    \section{Reševanje neenačb}
+
+        
+
+                \textbf{Neenačba} je neenakost dveh izrazov, pri čemer vsaj v enem nastopa neznanka.
+                Med levo in desno stranjo je postavljen eden od neenačajev: $<$, $>$, $\leq$ ali $\geq$.
+
+                ~
+
+                Neenačbo rešujemo tako, da jo preoblikujemo v ekvivalentno neenačbo. To dobimo, če:
+                \begin{itemize}
+                    \item prištejemo isto število ali izraz na obeh straneh neenačbe;
+                    \item množimo obe strani neenačbe z istim pozitivnim številom ali izrazom;
+                    \item množimo obe strani neenačbe z istim negativnim številom ali izrazom in se pri tem neenačaj obrne.
+                \end{itemize}
+            
+                ~
+            
+                \textbf{Linearna neenačba} je oblike $ax+b<0$, ali pa nastopa drug neenačaj: $>$, $\leq$, $\geq$.
+            
+        
+~~~
+
+
+
+                %%% naloge
+        
+                
+                    \begin{naloga}
+                        Poiščite vsa realna števila, ki ustrezajo pogoju.
+                        \begin{itemize}
+                                \item $3a+2<2a-1$ 
+                                \item $7t+8\geq 8(t-2)$ 
+                                \item $5x-2>2(x+1)-3$ 
+                                \item $x-1\leq 2(x-3)-x$ 
+                        \end{itemize}
+                    \end{naloga}
+                
+        
+        
+                
+                    \begin{naloga}
+                        Rešite neenačbe.
+                        \begin{itemize}
+                                \item $\dfrac{x}{2}+\dfrac{2}{3}<\dfrac{8}{3}$ 
+                                \item $\dfrac{4+5a}{34}-\dfrac{4}{51}\geq 2+\dfrac{2-a}{51}$ 
+                                \item $x+\dfrac{x-2}{3}<\dfrac{x-3}{4}+\dfrac{x-1}{2}$ 
+                                \item $\dfrac{2x-2}{15}+\dfrac{x}{3}<\dfrac{4x-2}{5}+\dfrac{3x+9}{10}$ 
+                        \end{itemize}
+                    \end{naloga}
+                
+        
+        
+        
+                
+                    \begin{naloga}
+                        Rešite sisteme neenačb.
+                        \begin{itemize}
+                                \item $-2<y-2<1$ 
+                                \item $-4\leq 5a-9\leq 1$ 
+                                \item $(x+1>3)\land (2x\leq 3(x-1))$ 
+                                \item $(3x-5<x+3)\lor (2x\geq x+6)$ 
+                        \end{itemize}
+                    \end{naloga}
+                
+        
+
+        % 
+        %     \begin{exampleblock}{Naloga 582}
+        %         Reši neenačbo in rešitev zapiši z intervalom.
+        %         \begin{description}
+        %             \item[(f)] $ 3-(2-2x)^2>4x(1-x) $ 
+        %             \item[(l)] $ \frac{x+3}{8}\geq \frac{2x-9}{4}  $ 
+        %             \item[(p)] $ \frac{x+3}{6}-\frac{2x-1}{12}\leq (3+4)^0+\frac{3x-2}{8} $ 
+        %         \end{description}
+        %     \end{naloga}
+        %     \note{Rešitev N582: \begin{description}
+        %         \item[(f)] $x\in(\frac{1}{4},\infty)$
+        %         \item[(l)] $x\in(-\infty,7]$
+        %         \item[(p)] $x\in[-\frac{4}{9},\infty)$  
+        %     \end{description}}
+        %     }
+
+        %     \begin{exampleblock}{Naloga 584}
+        %         Reši sistem neenačb in rešitev zapiši z intervalom.
+        %         \begin{description}
+        %             \item[(č)] $ x+4\leq 8; \quad 5-x<8 $ 
+        %             \item[(h)] $ 3-(2+4x)<x^2-(2-x)^2; \quad 2-(2-x)(x+2)\geq x^2 $
+        %             \item[(e)] $ 5x-3\geq 4; \quad 11-10x\geq -3 $  
+        %         \end{description}
+        %     \end{naloga}
+        %     \note{Rešitev N584: \begin{description}
+        %         \item[(č)] $x\in(-3,4]$
+        %         \item[(h)] ni rešitve
+        %         \item[(e)] $x\in\left\{\frac{7}{5}\right\}$
+        %     \end{description}}
+        %     }
+
+        % 
+
+        % 
+        %     \begin{exampleblock}{Naloga 587}
+        %         Reši neenačbo $4-(2x+3)^3\geq -101-4(x+1)(2x^2+7x)$ v množici:
+        %         \begin{enumerate}[a]
+        %             \item realnih števil in rešitev ponazori na številski premici,
+        %             \item naravnih števil in rešitev ponazori na številski premici,
+        %             \item celih števil in rešitev ponazori na številski premici.
+        %         \end{enumerate}
+        %     \end{naloga}
+        %     \note{Rešitev N587:\begin{enumerate}[a]
+        %         \item $x\in(-\infty,3]$
+        %         \item $x\in\left\{1,2,3\right\} $
+        %         \item $x\in\left\{3,2,1,0,-1,-2,\dots\right\} $
+        %     \end{enumerate}}
+        %     }
+
+        %     \begin{exampleblock}{Naloga 588}
+        %         Dana sta izraza $A=3-(2x-1)^2+4x(x+2)$ in $B=2-\frac{x+1}{3}$. Za katere $x$ je:
+        %         \begin{enumerate}[a]
+        %             \item vrednost izraza $A$ negativna,
+        %             \item vrednost izraza $B$ vsaj $-88$,
+        %             \item vrednost izraza $B$ za $20$ manjša od vrednosti izraza $A$?
+        %         \end{enumerate}
+        %     \end{naloga}
+        %     \note{Rešitev N588: \begin{enumerate}[a]
+        %         \item $x\in(-\infty,-\frac{1}{6})$
+        %         \item $x\in(-\infty,269]$
+        %         \item $x\in\left\{\frac{59}{37}\right\} $
+        %     \end{enumerate}}
+        %     }
+        % 
+
+    
+
+        \newpage
+    
+    \section{Reševanje sistemov enačb}
+
+        
+
+            \subsection{Sistem dveh linearnih enačb z dvema neznankama}
+
+                \textbf{Sistem dveh linearnih enačb z dvema neznankama} ali \textbf{sistem $\mathbf{2\times 2}$} je v splošnem oblike:
+                    $$\begin{aligned}
+                            a_1x+b_1y&=c_1 \\ a_2x+b_2y&=c_2
+                        \end{aligned}$$
+                $x$ in $y$ sta \textbf{neznanki}, $a_i,b_i,c_i\in\mathbb{R}$ so \textbf{koeficienti}.
+            
+~
+            
+                \textbf{Rešitev sistema} je \textbf{urejen par} števil $(x,y)$, ki zadoščajo obema enačbama.
+            
+
+            
+                    Sistem $2\times 2$ ima lahko eno rešitev, nima rešitve ali ima neskončno rešitev.
+            
+
+        
+
+        
+            
+                Sistem lahko rešujemo s primerjalnim načinom, zamenjalnim načinom ali z metodo nasprotnih koeficientov.
+            
+        
+            \subsubsection*{Primerjalni način}
+                Iz obeh enačb izrazimo isto neznanko, nato njuni vrednosti enačimo.
+            
+
+            \subsubsection*{Zamenjalni način}
+                Iz ene enačbe izrazimo eno izmed neznank (preverimo, če je kateri od koeficientov pri neznankah enak $1$ -- takšno neznanko hitro izrazimo) in izraženo vrednost vstavimo v drugo enačbo.
+            
+
+            \subsubsection*{Metoda nasprotnih koeficientov}
+                Eno ali obe enačbi pomnožimo s takimi števili, da bosta pri eni izmed neznank koeficienta nasprotni števili, nato enačbi seštejemo.
+                Ostane ena enačba z eno neznanko.
+            
+
+~~~
+        
+
+        %%% naloge
+
+        
+            \begin{naloga}
+                Rešite sisteme enačb.
+                \begin{itemize}
+                    
+                        \item $\begin{aligned}
+                            2x+y&=9 \\ x-3y&=8
+                        \end{aligned}$ 
+                        \item $\begin{aligned}
+                            x-y&=5 \\ y-x&=3
+                        \end{aligned}$ 
+                        \item $\begin{aligned}
+                            2x-3y&=5 \\ -4x+6y&=-10
+                        \end{aligned}$ 
+                        \item $\begin{aligned}
+                            3x-y&=5 \\ 6x-10&=2y
+                        \end{aligned}$ 
+                    
+
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Z zamenjalnim načinom rešite sisteme enačb.
+                \begin{itemize}
+                    
+                        \item $\begin{aligned}
+                            2x+5y&=-2 \\ x-3y&=-1
+                        \end{aligned}$ 
+                        \item $\begin{aligned}
+                            \frac{x}{2}-y&=3 \\ y+x&=-2
+                        \end{aligned}$ 
+                        \item $\begin{aligned}
+                            3x-2y&=1 \\ x+y&=\frac{7}{6}
+                        \end{aligned}$ 
+                        \item $\begin{aligned}
+                            0.5x+0.2y&=2 \\ \frac{3}{2}x-\frac{2}{5}y&=1
+                        \end{aligned}$ 
+                    
+
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Z metodo nasprotnih koeficientov rešite sisteme enačb.
+                \begin{itemize}
+                    
+                        \item $\begin{aligned}
+                            2x+3y&=3 \\ -4x+3y&=0
+                        \end{aligned}$ 
+                        \item $\begin{aligned}
+                            4x-3y&=-2 \\ -8x+y&=-1
+                        \end{aligned}$ 
+                        \item $\begin{aligned}
+                            3x-2y&=2 \\ 2x-3y&=-2
+                        \end{aligned}$ 
+                        \item $\begin{aligned}
+                            x-y&=-5 \\ 0.6x+0.4y&=7
+                        \end{aligned}$ 
+                    
+
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                V bloku je $26$ stanovanj. Vsako stanovanje ima $2$ ali $3$ sobe. Koliko je posameznih vrst stanovanj, če je v bloku $61$ sob?
+                
+            \end{naloga}
+
+            \begin{naloga}
+                Kmet ima v ogradi $20$  živali. Če so v ogradi le race in koze, koliko je posameznih živali, če smo našteli $50$ nog? 
+                
+            \end{naloga}
+
+        
+
+
+        
+            \begin{naloga}
+                Razredničarka na sladoled pelje svojih $30$ dijakov. Naročili so lahko $2$ ali $3$ kepice sladoleda. Koliko dijakov je naročilo dve in koliko tri kepice sladoleda,
+                če razredničarka ni jedla sladoleda, plačala pa je $79$ kepic sladoleda?
+                
+            \end{naloga}
+
+            \begin{naloga}
+                Babica ima dvakrat toliko vnukinj kot vnukov. Vnukinjam je podarila po tri bombone, vnukom pa po štiri bombone.
+                Koliko vnukinj in vnukov ima, če je podarila $70$ bombonov?
+                
+            \end{naloga}
+
+        
+
+
+~~~
+      
+            
+            \subsection{Sistem treh linearnih enačb s tremi neznankami}
+
+                \textbf{Sistem treh linearnih enačb z tremi neznankami} ali \textbf{sistem $\mathbf{3\times 3}$} je v splošnem oblike:
+                    $$\begin{aligned}
+                            a_1x+b_1y+c_1z&=d_1 \\ a_2x+b_2y+c_2z&=d_2 \\ a_3x+b_3y+c_3z&=d_3
+                        \end{aligned}$$
+                $x$, $y$ in $z$ so \textbf{neznanke}, $a_i,b_i,c_i\in\mathbb{R}$ so \textbf{koeficienti}.
+            
+~
+            
+                \textbf{Rešitev sistema} je \textbf{urejena trojka} števil $(x,y,z)$, ki zadoščajo vsem trem enačbam.
+            
+
+            
+                    Sistem $3\times 3$ rečujemo z istimi postopki kot sisteme $2\times 2$, le da postopek ponovimo večkrat.
+            
+
+        
+~~~
+
+
+        
+            \begin{naloga}
+                Z metodo nasprotnih koeficientov rešite sisteme enačb.
+                \begin{itemize}
+                    
+                        \item $\begin{aligned}
+                            2x+y-3z&=5 \\ x+2y+2z&=1 \\ -x+y+z&=-4
+                        \end{aligned}$ 
+                        \item $\begin{aligned}
+                            x-2y+6z&=5 \\ -x+3z&=-1 \\ 4y-3z&=-3
+                        \end{aligned}$ 
+                        \item $\begin{aligned}
+                            x+y-z&=0 \\ x-y-3z&=2 \\ 2x+y-3z&=1
+                        \end{aligned}$ 
+                        \item $\begin{aligned}
+                            2x-4y+z&=3 \\ 4x-y+2z&=4 \\ -8x+2y-4z&=7
+                        \end{aligned}$ 
+                    
+
+                \end{itemize}
+            \end{naloga}
+        
+
+
+
+
+
+            \newpage
+    \section{Obravnava enačb in neenačb}
+
+        
+
+            
+                Kadar v enačbi poleg neznake $x$ nastopajo tudi druge črke, na primer $a, b, c, k, l ...$, 
+                le-te označujejo števila, ki imajo poljubno realno vrednost. Imenujemo jih \textbf{parametri}.
+            
+~
+            
+                Vrednost parametrov vpliva na rešitev enačbe, zato moramo enačbo reševati glede na vrednosti parametrov.
+                Temu postopku rečemo \textbf{obravnava enačbe}.
+            
+        
+
+~~~
+        %%%% naloge
+
+        
+            \begin{naloga}
+                Obravnavajte enačbe.
+                \begin{itemize}
+                        \item $2(ax-3)+3=ax$ 
+                        \item $-4x-b(x-2)^2=3-bx^2-7b$ 
+                        \item $3(a-2)(x-2)=a^2(x-1)-4x+7$ 
+                        \item $(b-3)^2x-3=4x-3b$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+        
+            \begin{naloga}
+                Obravnavajte neenačbe.
+                \begin{itemize}
+                        \item $a(x-2)\leq 4$ 
+                        \item $mx+4>m^2-2x$ 
+                        \item $a(a-3x+1)\geq a(x-4)+a^2x$ 
+                        \item $(k-1)^2x\leq kx+2(k+1)+5x$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+
+\newpage
+
+               
+    \section{Sklepni račun}
+
+    
+
+        
+            Pri sklepnem računu obravnavamo situacije, v katerih nastopata dve količini,
+            ki sta premo sorazmerni ali obratno sorazmerni.
+        
+
+        \subsubsection*{Premo sorazmerje}
+        Količini $x$ in $y$ sta \textbf{premo sorazmerni}, če obstaja takšno neničelno število $k\in\mathbb{R}^*$, da je $x=k\cdot y$.
+        
+
+        \subsubsection*{Obratno sorazmerje}
+        Količini $x$ in $y$ sta \textbf{obratno sorazmerni}, če obstaja takšno neničelno število $k\in\mathbb{R}^*$, da je $x=\dfrac{k}{y}$.
+        
+
+    
+~~~~\\
+
+    %%% naloge
+
+    
+        \begin{naloga}
+            Delavec v štirih urah zasluži $10~€$. Koliko zasluži v dvanajstih urah?            
+        \end{naloga}
+
+        \begin{naloga}
+            Tiskalnik v sedmih minutah natisne $42$ strani. Koliko časa potrebuje za $108$ strani?            
+        \end{naloga}
+
+        \begin{naloga}
+            Tri čebele v treh dneh oprašijo devetsto cvetov. Koliko cvetov v šestih dneh opraši šest čebel?            
+        \end{naloga}
+ 
+        \begin{naloga}
+            Kolesar od Ljubljane do Geometrijskega središča Slovenije potuje dve uri s hitrostjo $20~km/h$. 
+            Kako hitro bi moral peljati, da bi pot prevozil v eni uri in petnajstih minutah?            
+        \end{naloga}
+        
+        \begin{naloga}
+            En računalnik za pripravo posebnih efektov filma potrebuje $14$ ur.
+            Koliko časa bi potrebovali trije taki računalniki, za pripravo posebnih efektov za šest filmov?            
+        \end{naloga}
+
+        \begin{naloga}
+            Sedem pleskarjev pleska hišo $15$ dni. Po petih dneh dva delavca premestijo na drugo delovišče.
+            Koliko časa bodo preostali delavci pleskali hišo?            
+        \end{naloga}
+
+    
+
+        \newpage
+
+
+\section{Odstotni račun}  
+        
+            Količine pri odstotnem računu so povezane s sklepnim računim, in sicer so v premem sorazmerju.
+        
+        ~\\
+            \textbf{Odstotek} (ali procent) $\text{\%}$ celote definiramo kot stotino celote,
+            \textbf{odtisoček} (ali promil) $\permil$ kot tisočino celote.
+
+            $$ 1~\text{\%}=\dfrac{1}{100} \quad \quad {1~\permil=\dfrac{1}{1000}}$$
+        
+
+        
+            \textbf{Relativni delež} je kvocient med deležem in osnovo: $r=\dfrac{d}{o}$.
+        
+
+    
+~~~\\
+    %%%%%%% naloge
+    
+        \begin{naloga}
+            Zapišite z okrajšanim ulomkom oziroma odstotkom.
+            \begin{itemize}
+                    \item $12~\%$ 
+                    \item $20~\%~a$ 
+                    \item $250~\%$ 
+                    \item $0.5~\%~b$ 
+                    \item $12~\permil$ 
+                    \item $\frac{3}{4}a$ 
+                    \item $\frac{7}{20}x$ 
+                    \item $\frac{31}{10}y$ 
+                    \item $0.8 z$ 
+                    \item $\frac{25}{8}m$
+            \end{itemize}
+        \end{naloga}
+    
+
+
+    
+        \begin{naloga}
+            Izračunajte.
+            \begin{itemize}
+                    \item Koliko je $20~\%$ od $10~kg$? 
+                    \item Koliko je $25~\%$ od $20~€$? 
+                    \item Koliko je $10~\%$ od $1~l$? 
+                    \item Koliko je $250~\%$ od $12~g$? 
+                    \item Koliko je $1~\permil$ od $2350~kg$? 
+                    \item Koliko je $17~\permil$ od $100~m$? 
+            \end{itemize}
+        \end{naloga}
+    
+    
+            
+            
+                \begin{naloga}
+                    Pri ekološki pridelavi kmet pridela $3$ tone pšenice na hektar. 
+                    Zaradi toče je bil letošnji pridelek le $2450~kg$ pšenice.
+                    Za koliko odstotkov se je zmanjšala količina pridelka zaradi toče? 
+                \end{naloga}
+    
+                \begin{naloga}
+                    V $5~kg$ raztopine je $120~g$ soli. Koliko odstotna je ta raztopina? 
+                \end{naloga}
+    
+                \begin{naloga}
+                    V tovarni čevljev so povečali proizvodnjo s $1250$ parov tedensko na $1700$ parov.
+                    Koliko odstotno je to povečanje? 
+                \end{naloga}
+            
+    
+            
+                \begin{naloga}
+                    Kokoši nesnice znesejo $270$ jajc letno. 
+                    Koliko odstotna je njihova nesnost? 
+                \end{naloga}
+    
+                \begin{naloga}
+                    V trgovini stane izdelek $120~€$. Koliko stane po:
+                    \begin{itemize}
+                        \item $5~\%$ podražitvi,
+                        \item $20~\%$ pocenitvi?
+                    \end{itemize}
+                \end{naloga}
+    
+                \begin{naloga}
+                    Jošt je natipkal besedilo na list A4 formata v pisava Arial, velikosti $12$, in ugotovil, da je bilo na strani $3150$ znakov s presledki.
+                    Če bi pisavo zmanjšal na velikost $10$, bi na stran prišlo $28~\%$ več znakov. Koliko? 
+                \end{naloga}
+            
+    
+            
+            
+                \begin{naloga}
+                    Dizelsko gorivo je stalo v Sloveniji $1.421~€$, v Italijo $1.748~€$, v Avstriji pa $1.751~€$.
+                    Za koliko odstotkov je bilo gorivo v Italiji dražje od goriva v naši državi in za koliko odstotkov je bilo
+                    naše gorivo cenejše od goriva v Avstriji? 
+                \end{naloga}
+    
+                \begin{naloga}
+                    Prenočitvene zmogljivosti na Bledu so $8880$ ležišč. Pred prvomajskimi prazniki so se turistični delavci pohvalili,
+                    da je zasedenost kapacitet $90~\%$. Koliko turistov še lahko sprejmejo na nočitev? 
+                \end{naloga}
+    
+                \begin{naloga}
+                    Maksov avto porabi $5.6~l$ goriva na prevoženih $100~km$. 
+                    Z varčno vožnjo lahko zniža porabo za $15~\%$.
+                    Koliko kilometrov bo tako prevozil s polnim rezervoarjem, ki drži $55~l$. 
+                \end{naloga}
+            
+    
+    
+            
+                \begin{naloga}
+                    Kavču, ki je stal $652~€$, so ceno znižali za $10~\%$, na sejmu pa so ponudili na to ceno še $12~\%$ sejemskega popusta.
+                    Koliko bomo odšteli za kavč na sejmu? Za koliko odstotkov je cena na sejmu nižja od prvotne cene kavča? 
+                \end{naloga}
+    
+                
+                \begin{naloga}
+                    Servis so najprej podražili za $10~\%$, potem pa se je ena skodelica okrušila in so ga pocenili za $30~\%$.
+                    Koliko je servis stal na začetku, če ga danes lahko kupimo za $115.5~€$? 
+                \end{naloga}
+    
+                \begin{naloga}
+                    Izdelek je imel napako, zato so ga pocenili za $20~\%$. Ko so napako skoraj v celoti odpravili, so ga podražili za $20~\%$.
+                    Kolikšna je bila začetna cena izdelka, če po popravilu stane $192~€$? 
+                \end{naloga}
+    
+            
+    
+    
+            
+                \begin{naloga}
+                    Koliko vode moramo priliti $3~kg$ $45~\%$ raztopine, da bomo koncentracijo znižali na $20~\%$? 
+                \end{naloga}
+    
+                \begin{naloga}
+                    Kolikšno koncentracijo raztopine dobimo, če zmešamo $2~kg$ $60~\%$ raztopine in $3~kg$ $40~\%$ raztopine? 
+                \end{naloga}
+    
+                \begin{naloga}
+                    Koliko $kg$ $12~\%$ raztopine moramo priliti k $30~kg$ $24~\%$ raztopine, da bomo dobili raztopino z $20~\%$ koncentracijo? 
+                \end{naloga}
+            
+
+
+
+\newpage
+
+\section{Absolutna vrednost}
+
+        
+            \textbf{Absolutna vrednost} $|x|$ števila $x$ geometrijsko predstavlja oddaljenost točke, 
+            ki predstavlja število $x$, od izhodišča na številski premici.
+        
+
+       
+            $$|x|=\begin{cases} x &x\geq 0; \\ -x & x<0. \end{cases}$$
+        
+
+        \subsubsection*{Lastnosti absolutne vrednosti}
+                    \begin{itemize}
+                        \item $|x|\geq 0$
+                        \item $|x|=0 \Leftrightarrow x=0$
+                        \item $|-x|=|x|$
+                        \item $|x\cdot y|=|x|\cdot|y|$
+                        \item $|x+y|\leq |x|+|y|$ -- \textbf{trikotniška neenakost}
+                    \end{itemize}
+
+        ~
+
+        
+            Z absolutno vrednostjo izračunamo tudi razdaljo med $x$ in $y$ kot $|x-y|$ ali $|y-x|$.
+        
+    ~~~\\
+
+
+    %%%% naloge
+
+\begin{multicols}{2}
+    
+
+        \begin{naloga}
+            Izračunajte.
+            \begin{itemize}
+                \item $|13|$ 
+                \item $|-5|$ 
+                \item $|-2|\cdot|4|$ 
+                \item $|-3|-|5|$ 
+                \item $|-1|\cdot|-6|$ 
+                \item $-|3|+|-9|$ 
+                    
+            \end{itemize}
+        \end{naloga}
+
+
+        \begin{naloga}
+            Izračunajte.
+            \begin{itemize}
+                \item $\left\lvert\frac{1}{5}-5\right\rvert$ 
+                \item $\left\lvert-\frac{3}{4}-\frac{2}{3}\right\rvert$ 
+                \item $\left\lvert\sqrt{5}-3\right\rvert$ 
+                \item $\left\lvert-1+\sqrt{2}\right\rvert$ 
+                \item $\left\lvert 1-\lvert\sqrt{6}-3\rvert\right\rvert$ 
+                \item $\left\lvert\lvert\sqrt{2}-2\rvert-\lvert 1-\sqrt{2}\rvert\right\rvert$ 
+                    
+            \end{itemize}
+        \end{naloga}
+
+
+
+        \begin{naloga}
+            Odpravite absolutno vrednost.
+            \begin{itemize}
+
+                \item $\left\lvert a-2\right\rvert$ 
+                \item $\left\lvert x+1\right\rvert$ 
+                \item $\left\lvert 4-b\right\rvert$ 
+                \item $\left\lvert 2+e\right\rvert$ 
+                \item $-\left\lvert 1-y\right\rvert$ 
+                \item $-\left\lvert 3+6y\right\rvert$ 
+                    
+            \end{itemize}
+        \end{naloga}
+
+
+        \begin{naloga}
+            Poenostavite izraze.
+            \begin{itemize}
+                    \item $x-2+\left\lvert x\right\rvert$ 
+                    \item $3\cdot\left\lvert x-2\right\rvert +x-1$ 
+                    \item $\left\lvert a-2\right\rvert+\left\lvert a\right\rvert$ 
+                    \item $3\cdot \left\lvert b-2\right\rvert+\left\lvert b-1 \right\rvert$ 
+                    \item $\left\lvert \lvert x-2\rvert +x \right\rvert$ 
+                    \item $3\cdot \left\lvert \lvert y-2\rvert +\lvert y-1\rvert \right\rvert$ 
+
+            \end{itemize}
+        \end{naloga}
+
+
+        \begin{naloga}
+            Rešite enačbe.
+            \begin{itemize}
+                    \item $\left\lvert x-2 \right\rvert =3$ 
+                    \item $\left\lvert 3-x\right\rvert =5$ 
+                    \item $1+ \left\lvert x-7 \right\rvert =-6$ 
+                    \item $\left\lvert a+3 \right\rvert = 7- \left\lvert a+2 \right\rvert$ 
+                    \item $\left\lvert b-1 \right\rvert = 2 + \left\lvert b+3 \right\rvert$ 
+                    \item $\left\lvert x-1 \right\rvert + \left\lvert x+2 \right\rvert =3$ 
+
+            \end{itemize}
+        \end{naloga}
+
+    
+        \begin{naloga}
+            Rešite neenačbe.
+            \begin{itemize}
+                    \item $\left\lvert x-2 \right\rvert \geq 3$ 
+                    \item $\left\lvert 3-x\right\rvert <5$ 
+                    \item $1+ \left\lvert x-7 \right\rvert \leq-6$ 
+                    \item $\left\lvert a+3 \right\rvert < 7- \left\lvert a+2 \right\rvert$ 
+                    \item $\left\lvert b-1 \right\rvert \geq 2 + \left\lvert b+3 \right\rvert$ 
+                    \item $\left\lvert \lvert x-3\rvert +2\right\rvert <1$ 
+                    \item $\left\lvert x- \lvert x-3\rvert \right\rvert \geq 1$ 
+                    \item $\left\lvert x- \lvert 2x-1\rvert \right\rvert \geq 2$ 
+
+            \end{itemize}
+        \end{naloga}
+
+        
+\end{multicols}
+
+    %%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%
+
+
+    \newpage
+\section{Zaokroževanje, približki, napake}
+
+    
+        \subsubsection*{Pravila zaokroževanja}
+            \begin{itemize}
+                \item Zadnjo števko pustimo enako, če je prva izbrisana števka manjša od $5$;
+                \item zadnjo števko povečamo za $1$, če je prva izbrisana števka $5$ ali več.
+            \end{itemize}
+        
+
+            ~~
+
+        
+            Zaokroževanje na \textbf{$n$ decimalnih mest} pomeni: 
+            opustiti vse decimalke od $n$-tega mesta dalje in zaokrožiti.
+            Primer: $\sqrt{2}\doteq 1.41$ (na $2$ decimalni mesti).
+        
+            ~~
+        
+            Zaokroževanje na \textbf{$n$ mest} pomeni, 
+            da ima število v svojem zapisu $n$ števk, 
+            pri pogoju, da ne štejemo ničel na začetku in na koncu.
+            Primer: $\sqrt{2}\doteq 1.41$ (na $3$ mesta).
+        
+            ~
+        
+            Pri zapisu uporabimo $\doteq$, kar označuje, da smo rezultat zapisali približno in ne natančno.
+        
+
+    
+
+    
+        \subsubsection*{Absolutna in relativna napaka}
+            Naj bo $x$ točna vrednost in $X$ njen \textbf{približek}.
+
+            \textbf{Absolutna napaka} približka je $\left\lvert X-x\right\rvert$; 
+            \textbf{relativna napaka} je $\dfrac{\left\lvert X-x\right\rvert}{x}$.
+        
+            ~~
+        
+            Absolutno napako zapišemo tudi $X=x\pm\epsilon$, kar pomeni, da se absolutna napaka približka $X$ razlikuje od točne vrednosti $x$ kvečjemu za $\epsilon$.
+        
+    
+~~\\
+
+    %%%%%% naloge
+
+    
+        \begin{naloga}
+            Na kartonski škatli je oznaka velikosti $50 \pm 3 ~cm$.
+            Koliko je največja in koliko najmanjša velikost škatle, ki ustreza tej oznaki? 
+            Ali je lahko relativna napaka velikosti $8~\%$?            
+        \end{naloga}
+        
+        \begin{naloga}
+            Pri $200~m$ vrvi smemo narediti $7~\%$ napako.
+            Ali je lahko takšna vrv dolga $230~m$?
+            Kako dolgi bosta najkrajša in najdaljša vrv, ki še ustrezata?            
+        \end{naloga}
+        
+        \begin{naloga}
+            V EU morajo biti banane za prodajo dolge najmanj $14~cm$. 
+            V trgovino dobijo novo pošiljko banan, ki jih izmerijo, da so dolžine $13.7~cm$. 
+            Njihov meter ima $5~\%$ odstopanje. 
+            Ali lahko prodajajo takšne banane?            
+        \end{naloga}
+
+    

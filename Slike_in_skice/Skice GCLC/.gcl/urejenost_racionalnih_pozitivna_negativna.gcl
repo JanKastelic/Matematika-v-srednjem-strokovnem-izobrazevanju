@@ -1,0 +1,22 @@
+area 10 10 60 20
+
+point A 10 15
+point B 60 15
+point O 35 15
+midpoint pozitivna_števila O B
+midpoint negativna_števila A O
+
+drawsegment A B
+
+color 255 0 0
+drawsegment B O
+mark_b pozitivna_števila
+
+color 0 255 0
+drawsegment O A
+mark_b negativna_števila
+
+color 0 0 0
+double 
+cmark_t O
+

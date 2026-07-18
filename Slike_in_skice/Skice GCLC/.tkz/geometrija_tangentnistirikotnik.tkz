@@ -1,0 +1,64 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Marking point a
+\draw (3.650000,1.500000) node [anchor=north] { $a$ };%
+
+% Marking point b
+\draw (4.600000,2.450000) node [anchor=west] { $b$ };%
+
+% Marking point c
+\draw (3.440000,3.520000) node [anchor=south] { $c$ };%
+
+% Marking point d
+\draw (2.490000,2.570000) node [anchor=east] { $d$ };%
+
+% Marking point \alpha
+\draw (2.300000,1.500000) node [anchor=south west] { $\alpha$ };%
+
+% Marking point \beta
+\draw (5.000000,1.500000) node [anchor=south east] { $\beta$ };%
+
+% Marking point \gamma
+\draw (4.200000,3.400000) node [anchor=north east] { $\gamma$ };%
+
+% Marking point \delta
+\draw (2.680000,3.640000) node [anchor=north west] { $\delta$ };%
+
+% Drawing circle k
+\draw [line width=0.016cm] (3.500000,2.500000) circle (1.000000);%
+
+% Marking point S by circle
+\draw [line width=0.016cm] (3.500000,2.500000) circle (0.040000);%
+\draw (3.500000,2.500000) node [anchor=south] { $S$ };%
+
+% Drawing segment A B
+\draw [line width=0.032cm] (2.340000,1.500000) -- (4.960000,1.500000);%
+
+% Drawing segment B C
+\draw [line width=0.032cm] (4.984478,1.536865) -- (4.215522,3.363135);%
+
+% Drawing segment C D
+\draw [line width=0.032cm] (4.160489,3.406239) -- (2.719511,3.633761);%
+
+% Drawing segment D A
+\draw [line width=0.032cm] (2.673007,3.600616) -- (2.306993,1.539384);%
+
+% Marking point A by circle
+\draw [line width=0.032cm] (2.300000,1.500000) circle (0.040000);%
+\draw (2.300000,1.500000) node [anchor=north] { $A$ };%
+
+% Marking point B by circle
+\draw [line width=0.032cm] (5.000000,1.500000) circle (0.040000);%
+\draw (5.000000,1.500000) node [anchor=north] { $B$ };%
+
+% Marking point C by circle
+\draw [line width=0.032cm] (4.200000,3.400000) circle (0.040000);%
+\draw (4.200000,3.400000) node [anchor=south] { $C$ };%
+
+% Marking point D by circle
+\draw [line width=0.032cm] (2.680000,3.640000) circle (0.040000);%
+\draw (2.680000,3.640000) node [anchor=south] { $D$ };%
+}
+\end{tikzpicture}

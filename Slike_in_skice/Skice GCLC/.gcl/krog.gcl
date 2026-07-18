@@ -1,0 +1,21 @@
+area 10 10 50 50
+
+point S 30 30
+point R 45 30
+circle s S R
+midpoint r R S
+
+
+
+
+color 255 255 0
+fillcircle s
+
+
+
+color 0 0 0
+drawcircle S R
+double
+drawsegment S R
+mark_t r
+cmark_t S

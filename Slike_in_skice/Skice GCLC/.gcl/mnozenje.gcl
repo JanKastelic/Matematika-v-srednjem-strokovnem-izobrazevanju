@@ -1,0 +1,49 @@
+area 0 0 90 30
+
+point a 50 5
+point b 50 25
+point c 70 5
+point d 70 25
+
+drawsegment a b
+drawsegment b d
+drawsegment c d
+drawsegment c a
+
+midpoint e c d
+point f 90 15
+
+drawsegment e f
+drawarrow e f 1
+
+point g 25 10
+point h 50 10
+point i 25 20
+point j 50 20
+
+drawsegment g h
+drawsegment i j
+drawarrow g h 1
+drawarrow i j 1
+
+midpoint {zmnožek} e f
+midpoint {produkt} e f
+mark_t {zmnožek}
+mark_b {produkt}
+
+midpoint {množenec} g h
+mark_t {množenec}
+midpoint {faktor} g h
+mark_b {faktor}
+
+midpoint {množenec} i j
+mark_t {množenec}
+midpoint {faktor} i j
+mark_b {faktor}
+
+
+point s 60 15
+point r 61 15
+circle k s r
+drawcircle k
+fillcircle k

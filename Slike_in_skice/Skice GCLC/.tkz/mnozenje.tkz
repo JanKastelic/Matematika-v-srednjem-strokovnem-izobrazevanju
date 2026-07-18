@@ -1,0 +1,68 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing segment a b
+\draw [line width=0.016cm] (5.000000,0.500000) -- (5.000000,2.500000);%
+
+% Drawing segment b d
+\draw [line width=0.016cm] (5.000000,2.500000) -- (7.000000,2.500000);%
+
+% Drawing segment c d
+\draw [line width=0.016cm] (7.000000,0.500000) -- (7.000000,2.500000);%
+
+% Drawing segment c a
+\draw [line width=0.016cm] (7.000000,0.500000) -- (5.000000,0.500000);%
+
+% Drawing segment e f
+\draw [line width=0.016cm] (7.000000,1.500000) -- (9.000000,1.500000);%
+
+% Drawing arrow e f 1.00
+\draw [line width=0.016cm] (8.702567,1.539158) -- (9.000000,1.500000);%
+\draw [line width=0.016cm] (8.702567,1.539158) -- (8.900856,1.500000);%
+\draw [line width=0.016cm] (8.702567,1.460842) -- (9.000000,1.500000);%
+\draw [line width=0.016cm] (8.702567,1.460842) -- (8.900856,1.500000);%
+
+% Drawing segment g h
+\draw [line width=0.016cm] (2.500000,1.000000) -- (5.000000,1.000000);%
+
+% Drawing segment i j
+\draw [line width=0.016cm] (2.500000,2.000000) -- (5.000000,2.000000);%
+
+% Drawing arrow g h 1.00
+\draw [line width=0.016cm] (4.702567,1.039158) -- (5.000000,1.000000);%
+\draw [line width=0.016cm] (4.702567,1.039158) -- (4.900856,1.000000);%
+\draw [line width=0.016cm] (4.702567,0.960842) -- (5.000000,1.000000);%
+\draw [line width=0.016cm] (4.702567,0.960842) -- (4.900856,1.000000);%
+
+% Drawing arrow i j 1.00
+\draw [line width=0.016cm] (4.702567,2.039158) -- (5.000000,2.000000);%
+\draw [line width=0.016cm] (4.702567,2.039158) -- (4.900856,2.000000);%
+\draw [line width=0.016cm] (4.702567,1.960842) -- (5.000000,2.000000);%
+\draw [line width=0.016cm] (4.702567,1.960842) -- (4.900856,2.000000);%
+
+% Marking point {zmnožek}
+\draw (8.000000,1.500000) node [anchor=south] { ${zmnožek}$ };%
+
+% Marking point {produkt}
+\draw (8.000000,1.500000) node [anchor=north] { ${produkt}$ };%
+
+% Marking point {množenec}
+\draw (3.750000,1.000000) node [anchor=south] { ${množenec}$ };%
+
+% Marking point {faktor}
+\draw (3.750000,1.000000) node [anchor=north] { ${faktor}$ };%
+
+% Marking point {množenec}
+\draw (3.750000,2.000000) node [anchor=south] { ${množenec}$ };%
+
+% Marking point {faktor}
+\draw (3.750000,2.000000) node [anchor=north] { ${faktor}$ };%
+
+% Drawing circle k
+\draw [line width=0.016cm] (6.000000,1.500000) circle (0.100000);%
+
+% Filling circle k
+\fill (6.000000,1.500000) circle (0.100000);%
+}
+\end{tikzpicture}

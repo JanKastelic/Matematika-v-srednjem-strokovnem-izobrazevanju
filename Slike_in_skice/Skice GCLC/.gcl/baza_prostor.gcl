@@ -1,0 +1,64 @@
+area 5 10 55 50
+
+point A 15 25
+point B 35 15
+point C 30 35
+point D 10 45
+point E 51 26
+point T 40 47
+midpoint \vec{v} A T
+
+point \vec{a} 13 20
+point \vec{b} 20 27
+point \vec{c} 10 30
+point \alpha\vec{a} 10 40
+point \beta\vec{b} 30 30
+point \gamma\vec{c} 30 12
+
+point c 12.5 35
+point a 23 21
+point b 24 31
+
+drawsegment A B
+drawarrow A B 1
+
+
+drawsegment A C
+drawarrow A C 1
+
+
+drawsegment A D
+drawarrow A D 1
+
+
+drawdashsegment A E
+drawdashsegment B E
+drawdashsegment C E
+
+drawdashsegment D T
+drawdashsegment E T
+
+double
+mark \vec{a}
+mark \vec{b}
+mark \vec{c}
+mark \alpha\vec{a}
+mark \beta\vec{b}
+mark \gamma\vec{c}
+drawarrow A D 0.5
+drawarrow A B 0.4
+drawarrow A C 0.6
+drawsegment A a
+drawsegment A b
+drawsegment A c
+
+double
+color 255 0 0
+drawsegment A T
+drawarrow A T 1
+mark_t \vec{v}
+
+
+
+
+

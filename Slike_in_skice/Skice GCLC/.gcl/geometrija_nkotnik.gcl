@@ -1,0 +1,39 @@
+area 10 10 55 60
+
+point A_1 15 35
+point A_2 20 45
+
+
+double
+cmark_l A_1
+cmark_lt A_2
+
+rotate A_3 A_2 145 A_1
+cmark_t A_3
+
+rotate A_4 A_3 145 A_2
+cmark_t A_4
+
+rotate A_5 A_4 145 A_3
+cmark_rt A_5
+
+rotate A_6 A_5 145 A_4
+cmark_r A_6
+
+rotate A_7 A_6 145 A_5
+midpoint B A_7 A_6
+
+rotate A_n A_1 -145 A_2
+cmark_l A_n
+
+rotate C A_n -145 A_1
+midpoint D C A_n
+
+drawsegment A_1 A_2
+drawsegment A_2 A_3
+drawsegment A_3 A_4
+drawsegment A_4 A_5
+drawsegment A_5 A_6
+drawsegment A_6 B
+drawsegment A_n A_1
+drawsegment A_n D

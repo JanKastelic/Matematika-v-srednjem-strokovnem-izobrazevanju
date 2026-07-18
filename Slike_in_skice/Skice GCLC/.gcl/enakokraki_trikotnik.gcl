@@ -1,0 +1,26 @@
+area 10 10 65 55
+
+point A 15 15
+point B 50 15
+point C 32.5 50
+
+
+cmark_b A
+cmark_b B
+cmark_t C
+
+midpoint c A B
+
+midpoint a B C
+
+color 255 0 0
+drawsegment B C
+mark_rt a
+
+midpoint a A C
+drawsegment A C
+mark_lt a
+
+color 0 0 255
+drawsegment A B
+mark_b c

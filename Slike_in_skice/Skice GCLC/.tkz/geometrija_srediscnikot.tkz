@@ -1,0 +1,48 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Marking point A by circle
+\draw [line width=0.016cm] (4.693058,2.846529) circle (0.040000);%
+\draw (4.663058,2.816529) node [anchor=south west] { $A$ };%
+
+% Marking point B by circle
+\draw [line width=0.016cm] (2.106942,1.553471) circle (0.040000);%
+\draw (2.106942,1.553471) node [anchor=east] { $B$ };%
+
+% Changing color 183 215 183
+\definecolor{r183g215b183}{rgb}{0.717647,0.843137,0.717647}%
+\color{r183g215b183}% 
+
+% Filling circle arc S E 116.51
+\fill (3.000000,3.000000) -- (2.553471,2.276736) -- (2.562217,2.271408) arc (239:354:0.850000 and 0.850000) -- (3.846529,2.923264) -- cycle;%
+
+% Changing color 0 0 0
+\definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+\color{r0g0b0}% 
+
+% Drawing circle K
+\draw [line width=0.016cm] (4.700000,2.999999) arc (360:360:1.700000 and 1.700000) --(4.700000,3.000000) arc (0:236:1.700000 and 1.700000) -- (2.073155,1.574883);%
+\draw [line width=0.016cm] (2.141222,1.532860) -- (2.150000,1.527757) arc (240:353:1.700000 and 1.700000) -- (4.688979,2.806737);%
+\draw [line width=0.016cm] (4.696201,2.886405) -- (4.697670,2.911028) arc (357:359:1.700000 and 1.700000) -- (4.700000,2.999999);%
+
+% Marking point S by circle
+\draw [line width=0.016cm] (3.000000,3.000000) circle (0.040000);%
+\draw (3.000000,3.000000) node [anchor=south] { $S$ };%
+
+% Changing color 0 0 0
+\definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+\color{r0g0b0}% 
+
+% Drawing line A S
+\draw [line width=0.032cm] (1.000000,3.181294) -- (2.960163,3.003611);%
+\draw [line width=0.032cm] (3.039837,2.996389) -- (4.653222,2.850140);%
+\draw [line width=0.032cm] (4.732895,2.842918) -- (5.500000,2.773382);%
+
+% Drawing line B S
+\draw [line width=0.032cm] (1.765240,1.000000) -- (2.085928,1.519435);%
+\draw [line width=0.032cm] (2.127955,1.587507) -- (2.978987,2.965964);%
+\draw [line width=0.032cm] (3.021013,3.034036) -- (4.419974,5.300000);%
+\color{black}
+}
+\end{tikzpicture}

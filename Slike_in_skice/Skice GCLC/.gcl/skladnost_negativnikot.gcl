@@ -1,0 +1,28 @@
+area 10 10 45 50
+
+point A 15 15
+point B 30 15
+point b 50 15
+point C 50 30
+point Bb 29.5 19
+point - 26 17
+
+circle k A B
+line l A C
+line n A B
+
+intersection2 U V k l
+perpendicular m U l
+intersection W m n
+
+
+drawsegment A b
+drawsegment A C
+
+angle a B A C
+
+double
+color 139 0 0
+drawarc A B a
+drawarrow Bb B 1
+mark -

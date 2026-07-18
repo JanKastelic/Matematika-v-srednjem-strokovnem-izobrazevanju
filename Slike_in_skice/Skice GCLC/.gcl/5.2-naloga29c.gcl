@@ -1,0 +1,13 @@
+area 13 13 60 60
+ang_picture 7 12 67 64
+ang_origin 28 50 
+ang_unit 5
+ang_scale 1 0 
+
+
+ang_drawsystem_p 2 1 1 1 2
+
+color 204 0 0
+double
+ang_draw_parametric_curve x {-5;x<10;x+0.01}{x;4*x/(pow(x,2)+1)}
+

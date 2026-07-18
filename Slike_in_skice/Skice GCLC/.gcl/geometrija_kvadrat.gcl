@@ -1,0 +1,50 @@
+area 10 10 70 50
+
+point A 15 15
+point D 15 40
+point B 40 15
+point C 40 40
+
+
+
+midpoint a A B
+mark_b a
+midpoint a C D
+mark_t a
+midpoint a B C
+mark_r a
+midpoint a D A
+mark_l a
+
+line ee A C
+line ff B D
+intersection S ee ff
+
+drawsegment A C
+drawsegment B D
+cmark S
+
+midpoint e A S
+mark_t e
+midpoint f B S
+mark_t f
+
+point \alpha 15 15
+mark_rt \alpha
+point \alpha 40 15
+mark_lt \alpha
+point \alpha 40 40
+mark_lb \alpha
+point \alpha 15 40
+mark_rb \alpha
+
+double
+drawsegment A B
+drawsegment B C
+drawsegment C D
+drawsegment D A
+
+cmark_b A
+cmark_b B
+cmark_t C
+cmark_t D

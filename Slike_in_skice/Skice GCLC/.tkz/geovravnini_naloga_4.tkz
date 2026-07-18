@@ -1,0 +1,42 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Marking point V by circle
+\draw [line width=0.016cm] (4.000000,4.000000) circle (0.040000);%
+\draw (3.970000,3.970000) node [anchor=south west] { $V$ };%
+
+% Marking point M by circle
+\draw [line width=0.016cm] (4.000000,2.500000) circle (0.040000);%
+\draw (3.970000,2.530000) node [anchor=north west] { $M$ };%
+
+% Drawing line V M
+\draw [line width=0.016cm] (4.000000,2.000000) -- (4.000000,2.460000);%
+\draw [line width=0.016cm] (4.000000,2.540000) -- (4.000000,3.960000);%
+\draw [line width=0.016cm] (4.000000,4.040000) -- (4.000000,4.200000);%
+
+% Marking point F by circle
+\draw [line width=0.016cm] (2.756444,3.161211) circle (0.040000);%
+\draw (2.756444,3.161211) node [anchor=south] { $F$ };%
+
+% Marking point E by circle
+\draw [line width=0.016cm] (5.243556,3.161211) circle (0.040000);%
+\draw (5.243556,3.161211) node [anchor=south] { $E$ };%
+
+% Drawing line V E
+\draw [line width=0.016cm] (3.703488,4.200000) -- (3.966838,4.022368);%
+\draw [line width=0.016cm] (4.033162,3.977632) -- (5.210395,3.183578);%
+\draw [line width=0.016cm] (5.276718,3.138843) -- (6.000000,2.650983);%
+
+% Drawing line V F
+\draw [line width=0.016cm] (4.296512,4.200000) -- (4.033162,4.022368);%
+\draw [line width=0.016cm] (3.966838,3.977632) -- (2.789605,3.183578);%
+\draw [line width=0.016cm] (2.723282,3.138843) -- (2.000000,2.650983);%
+
+% Marking point {8x-16^circ}
+\draw (3.378222,2.830605) node  { ${8x-16^circ}$ };%
+
+% Marking point {4x+20^circ}
+\draw (4.621778,2.830605) node  { ${4x+20^circ}$ };%
+}
+\end{tikzpicture}

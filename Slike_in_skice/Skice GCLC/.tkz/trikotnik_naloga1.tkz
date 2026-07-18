@@ -1,0 +1,43 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing line A B
+\draw [line width=0.016cm] (1.000000,1.500000) -- (1.960000,1.500000);%
+\draw [line width=0.016cm] (2.040000,1.500000) -- (4.960000,1.500000);%
+\draw [line width=0.016cm] (5.040000,1.500000) -- (6.000000,1.500000);%
+
+% Drawing segment A C
+\draw [line width=0.016cm] (2.020000,1.534641) -- (3.820022,4.652371);%
+
+% Drawing segment B C
+\draw [line width=0.016cm] (4.986319,1.537588) -- (3.853703,4.649424);%
+
+% Marking point A by circle
+\draw [line width=0.016cm] (2.000000,1.500000) circle (0.040000);%
+\draw (2.000000,1.500000) node [anchor=north] { $A$ };%
+
+% Marking point B by circle
+\draw [line width=0.016cm] (5.000000,1.500000) circle (0.040000);%
+\draw (5.000000,1.500000) node [anchor=north] { $B$ };%
+
+% Marking point C by circle
+\draw [line width=0.016cm] (3.840022,4.687012) circle (0.040000);%
+\draw (3.840022,4.687012) node [anchor=south] { $C$ };%
+
+% Marking point \alpha
+\draw (2.500000,1.500000) node [anchor=south] { $\alpha$ };%
+
+% Marking point \beta
+\draw (4.500000,1.500000) node [anchor=south] { $\beta$ };%
+
+% Marking point {10x}
+\draw (2.000000,1.500000) node [anchor=south east] { ${10x}$ };%
+
+% Marking point {9x+2^\circ}
+\draw (5.000000,1.500000) node [anchor=south west] { ${9x+2^\circ}$ };%
+
+% Marking point {50^\circ}
+\draw (3.800000,4.300000) node [anchor=north] { ${50^\circ}$ };%
+}
+\end{tikzpicture}

@@ -1,0 +1,16 @@
+area 10 10 50 30
+
+point V 30 16
+point h 35 15
+point k 34 13
+
+
+drawline V h
+cmark_b V
+double
+color 139 0 0
+drawarc V h 360
+point \varphi 30 20
+mark_t \varphi
+
+drawarrow k h 1

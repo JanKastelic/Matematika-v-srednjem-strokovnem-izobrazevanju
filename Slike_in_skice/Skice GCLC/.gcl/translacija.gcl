@@ -1,0 +1,50 @@
+area 10 10 125 55
+
+point M 15 25
+point N 45 35
+point T 20 15
+
+point A 60 20
+point B 90 20
+point C 70 40
+
+translate A' M N A
+translate B' M N B
+translate C' M N C
+
+
+drawsegment M N
+drawarrow M N 1
+
+translate T' M N T
+
+drawdashsegment T T'
+drawarrow T T' 1
+
+cmark_b T
+cmark_b A
+cmark_b B
+cmark_t C
+
+drawsegment A B
+drawsegment B C
+drawsegment A C
+
+drawsegment A' B'
+drawsegment B' C'
+drawsegment A' C'
+
+drawdashsegment A A'
+drawdashsegment B B'
+drawdashsegment C C'
+
+color 0 0 255
+cmark_b M
+cmark_t N
+
+
+color 255 0 0
+cmark_t T'
+cmark_t C'
+cmark_b A'
+cmark_b B'

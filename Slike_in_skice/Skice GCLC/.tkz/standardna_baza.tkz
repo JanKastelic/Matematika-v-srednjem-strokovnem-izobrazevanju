@@ -1,0 +1,88 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing 3D Cartesian system
+\draw (4.000000,4.000000) node [anchor=north east] { $0$ };%
+\draw [line width=0.016cm] (4.000000,3.925000) -- (4.000000,4.075000);%
+\draw (3.092808,3.388814) node [anchor=north] { $1$ };%
+\draw [line width=0.016cm] (3.092808,3.313814) -- (3.092808,3.463814);%
+\draw (4.907192,4.611186) node [anchor=north] { $-1$ };%
+\draw [line width=0.016cm] (4.907192,4.536186) -- (4.907192,4.686186);%
+\draw (5.814384,5.222372) node [anchor=north] { $-2$ };%
+\draw [line width=0.016cm] (5.814384,5.147372) -- (5.814384,5.297372);%
+\draw (6.721577,5.833558) node [anchor=north] { $-3$ };%
+\draw [line width=0.016cm] (6.721577,5.758558) -- (6.721577,5.908558);%
+\draw (5.782415,3.688926) node [anchor=north] { $1$ };%
+\draw [line width=0.016cm] (5.782415,3.613926) -- (5.782415,3.763926);%
+\draw (4.000000,5.878745) node [anchor=east] { $1$ };%
+\draw [line width=0.016cm] (3.925000,5.878745) -- (4.075000,5.878745);%
+\draw (2.300000,2.854690) node [anchor=north] { $x$ };%
+\draw (7.000000,3.476428) node [anchor=north] { $y$ };%
+\draw (4.000000,6.500000) node [anchor=east] { $z$ };%
+\draw [line width=0.016cm] (2.300000,2.854690) -- (7.000000,6.021135);%
+\draw [line width=0.016cm] (2.568554,2.988402) -- (2.300000,2.854690);%
+\draw [line width=0.016cm] (2.568554,2.988402) -- (2.382934,2.910564);%
+\draw [line width=0.016cm] (2.524796,3.053353) -- (2.300000,2.854690);%
+\draw [line width=0.016cm] (2.524796,3.053353) -- (2.382934,2.910564);%
+\draw [line width=0.016cm] (2.300000,4.296691) -- (7.000000,3.476428);%
+\draw [line width=0.016cm] (6.713728,3.566139) -- (7.000000,3.476428);%
+\draw [line width=0.016cm] (6.713728,3.566139) -- (6.901489,3.493620);%
+\draw [line width=0.016cm] (6.700263,3.488989) -- (7.000000,3.476428);%
+\draw [line width=0.016cm] (6.700263,3.488989) -- (6.901489,3.493620);%
+\draw [line width=0.016cm] (4.000000,2.700000) -- (4.000000,6.500000);%
+\draw [line width=0.016cm] (3.960842,6.202567) -- (4.000000,6.500000);%
+\draw [line width=0.016cm] (3.960842,6.202567) -- (4.000000,6.400000);%
+\draw [line width=0.016cm] (4.039158,6.202567) -- (4.000000,6.500000);%
+\draw [line width=0.016cm] (4.039158,6.202567) -- (4.000000,6.400000);%
+
+% Changing color 255 0 0
+\definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+\color{r255g0b0}% 
+
+% Drawing segment O X
+\draw [line width=0.032cm] (4.000000,4.000000) -- (3.092808,3.388814);%
+
+% Drawing arrow O X 1.00
+\draw [line width=0.032cm] (3.361361,3.522526) -- (3.092808,3.388814);%
+\draw [line width=0.032cm] (3.361361,3.522526) -- (3.175033,3.444210);%
+\draw [line width=0.032cm] (3.317603,3.587477) -- (3.092808,3.388814);%
+\draw [line width=0.032cm] (3.317603,3.587477) -- (3.175033,3.444210);%
+
+% Marking point \vec{i}
+\draw (3.092808,3.388814) node [anchor=south] { $\vec{i}$ };%
+
+% Changing color 0 255 0
+\definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+\color{r0g255b0}% 
+
+% Drawing segment O Y
+\draw [line width=0.032cm] (4.000000,4.000000) -- (5.782415,3.688926);%
+
+% Drawing arrow O Y 1.00
+\draw [line width=0.032cm] (5.496142,3.778637) -- (5.782415,3.688926);%
+\draw [line width=0.032cm] (5.496142,3.778637) -- (5.684746,3.705971);%
+\draw [line width=0.032cm] (5.482678,3.701487) -- (5.782415,3.688926);%
+\draw [line width=0.032cm] (5.482678,3.701487) -- (5.684746,3.705971);%
+
+% Marking point \vec{j}
+\draw (5.782415,3.688926) node [anchor=south] { $\vec{j}$ };%
+
+% Changing color 0 0 255
+\definecolor{r0g0b255}{rgb}{0.000000,0.000000,1.000000}%
+\color{r0g0b255}% 
+
+% Drawing segment O Z
+\draw [line width=0.032cm] (4.000000,4.000000) -- (4.000000,5.878745);%
+
+% Drawing arrow O Z 1.00
+\draw [line width=0.032cm] (3.960842,5.581312) -- (4.000000,5.878745);%
+\draw [line width=0.032cm] (3.960842,5.581312) -- (4.000000,5.779601);%
+\draw [line width=0.032cm] (4.039158,5.581312) -- (4.000000,5.878745);%
+\draw [line width=0.032cm] (4.039158,5.581312) -- (4.000000,5.779601);%
+
+% Marking point \vec{k}
+\draw (4.000000,5.878745) node [anchor=west] { $\vec{k}$ };%
+\color{black}
+}
+\end{tikzpicture}

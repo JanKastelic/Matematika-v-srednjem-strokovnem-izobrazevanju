@@ -1,0 +1,11 @@
+ang_picture 6 6 74 74
+ang_origin 40 40 
+ang_unit 9
+ang_scale 1 0 
+
+double
+ang_drawsystem_p 2 1 1 1 2
+
+ang_point o 0 0
+
+cmark o

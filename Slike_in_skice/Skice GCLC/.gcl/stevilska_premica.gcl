@@ -1,0 +1,59 @@
+area 5 0 95 10
+point a 5 5
+point b 90 5
+
+drawsegment a b
+drawarrow a b 1
+
+point c 10 3.5
+point d 10 6.5
+point e 20 3.5
+point f 20 6.5
+point g 30 3.5
+point h 30 6.5
+point i 40 3.5
+point j 40 6.5
+point k 50 3.5
+point l 50 6.5
+point m 60 3.5
+point n 60 6.5
+point o 70 3.5
+point p 70 6.5
+point r 80 3.5
+point s 80 6.5
+
+
+drawsegment c d
+drawsegment e f
+drawsegment g h
+drawsegment i j
+drawsegment k l
+drawsegment m n
+drawsegment o p
+drawsegment r s
+
+point O 10 6
+point E 20 6
+mark_t O
+mark_t E
+
+point 1 20 4
+point 2 30 4
+point 3 40 4
+point 4 50 4
+point 5 60 4
+point 6 70 4
+point 7 80 4
+
+mark_b 1
+mark_b 2
+mark_b 3
+mark_b 4
+mark_b 5
+mark_b 6
+mark_b 7
+
+
+
+midpoint {enota} O E
+mark_b {enota}

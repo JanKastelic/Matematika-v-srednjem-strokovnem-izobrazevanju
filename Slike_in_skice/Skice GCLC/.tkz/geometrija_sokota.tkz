@@ -1,0 +1,38 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing line V P
+\draw [line width=0.016cm] (1.200000,1.806667) -- (3.460351,1.505287);%
+\draw [line width=0.016cm] (3.539649,1.494713) -- (6.000000,1.166667);%
+
+% Drawing line V Q
+\draw [line width=0.016cm] (2.700000,1.100000) -- (3.464223,1.482111);%
+\draw [line width=0.016cm] (3.535777,1.517889) -- (6.000000,2.750000);%
+
+% Marking point V by circle
+\draw [line width=0.016cm] (3.500000,1.500000) circle (0.040000);%
+\draw (3.500000,1.500000) node [anchor=north] { $V$ };%
+
+% Changing color 139 0 0
+\definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+\color{r139g0b0}% 
+
+% Drawing arc V P 34.16
+\draw [line width=0.016cm] (5.000000,1.300000) -- (5.001995,1.315578) arc (353:360:1.513275 and 1.513275) --(5.013275,1.500000) arc (0:26:1.513275 and 1.513275) -- (4.853514,2.176757);%
+
+% Marking point \varphi
+\draw (5.200000,1.800000) node  { $\varphi$ };%
+
+% Changing color 0 139 0
+\definecolor{r0g139b0}{rgb}{0.000000,0.545098,0.000000}%
+\color{r0g139b0}% 
+
+% Drawing arc V Q 145.84
+\draw [line width=0.016cm] (4.500000,2.000000) -- (4.496176,2.007577) arc (27:172:1.118034 and 1.118034) -- (2.391774,1.647764);%
+
+% Marking point \psi
+\draw (3.000000,2.700000) node  { $\psi$ };%
+\color{black}
+}
+\end{tikzpicture}

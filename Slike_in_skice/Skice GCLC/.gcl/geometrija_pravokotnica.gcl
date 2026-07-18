@@ -1,0 +1,13 @@
+area 10 10 55 40
+
+point T 30 35
+point A 15 15
+point B 50 20
+
+line a A B
+perpendicular b T a
+
+
+drawline a
+drawline b
+cmark_r T

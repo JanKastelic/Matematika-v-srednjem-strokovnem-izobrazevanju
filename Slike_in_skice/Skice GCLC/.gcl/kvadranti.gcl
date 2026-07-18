@@ -1,0 +1,39 @@
+area 6 6 54 54
+ang_picture 6 6 54 54
+ang_origin 30 30 
+ang_unit 7
+ang_scale 1 0 
+
+ang_point O 0 0
+ang_point A 3.2 3.2
+ang_point B -3.2 3.2
+ang_point C -3.2 -3.2
+ang_point D 3.2 -3.2
+
+ang_point I 1.5 1.5
+ang_point II -1.5 1.5
+ang_point III -1.5 -1.5
+ang_point IV 1.5 -1.5
+
+color 215 183 183
+fillrectangle O A
+
+color 190 183 183
+fillrectangle O B
+
+color 215 183 183
+fillrectangle O C
+
+color 190 183 183
+fillrectangle O D
+
+color 0 0 0
+ang_drawsystem_p 2 1 1 1 2
+
+mark I
+mark II
+mark III
+mark IV
+
+
+

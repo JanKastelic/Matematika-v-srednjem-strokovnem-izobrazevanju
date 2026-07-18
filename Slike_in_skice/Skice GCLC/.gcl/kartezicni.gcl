@@ -1,0 +1,10 @@
+ang3d_picture 13 18 75 77
+ang3d_origin 40 40 1.1 0.35
+ang3d_unit 10
+ang3d_scale 1 0 0
+ang3d_axes_drawing_range -20 20 -20 20 -20 20
+double
+ang3d_drawsystem_p 2 1 1 1 1 2
+ang3d_point O 0 0 0
+color 0 0 255
+cmark_lt O

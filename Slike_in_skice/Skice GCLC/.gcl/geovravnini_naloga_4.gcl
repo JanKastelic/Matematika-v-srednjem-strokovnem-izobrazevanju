@@ -1,0 +1,25 @@
+area 20 20 60 42
+
+point V 40 40
+cmark_rt V
+
+point M 40 25
+cmark_rb M
+
+drawline V M
+
+rotate F V -56 M
+cmark_t F
+
+rotate E V 56 M
+cmark_t E
+
+drawline V E
+drawline V F
+
+midpoint {8x-16^\circ} F M
+midpoint {4x+20^\circ} M E
+
+mark {8x-16^\circ}
+mark {4x+20^\circ}
+

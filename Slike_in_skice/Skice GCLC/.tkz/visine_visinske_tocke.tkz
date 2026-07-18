@@ -1,0 +1,69 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Marking point A by circle
+\draw [line width=0.016cm] (2.000000,1.500000) circle (0.040000);%
+\draw (1.970000,1.530000) node [anchor=north west] { $A$ };%
+
+% Marking point B by circle
+\draw [line width=0.016cm] (6.000000,1.500000) circle (0.040000);%
+\draw (6.000000,1.500000) node [anchor=north] { $B$ };%
+
+% Marking point C by circle
+\draw [line width=0.016cm] (3.000000,4.000000) circle (0.040000);%
+\draw (3.000000,4.000000) node [anchor=south] { $C$ };%
+
+% Marking point c
+\draw (4.000000,1.500000) node [anchor=north] { $c$ };%
+
+% Marking point a
+\draw (4.500000,2.750000) node [anchor=south west] { $a$ };%
+
+% Marking point b
+\draw (2.500000,2.750000) node [anchor=south east] { $b$ };%
+
+% Marking point v_a
+\draw (3.319672,3.083607) node [anchor=west] { $v_a$ };%
+
+% Marking point v_c
+\draw (3.000000,2.100000) node [anchor=west] { $v_c$ };%
+
+% Marking point v_b
+\draw (4.500000,2.100000) node [anchor=south] { $v_b$ };%
+
+% Drawing segment A B
+\draw [line width=0.032cm] (2.040000,1.500000) -- (5.960000,1.500000);%
+
+% Drawing segment B C
+\draw [line width=0.032cm] (5.969271,1.525607) -- (3.030729,3.974393);%
+
+% Drawing segment A C
+\draw [line width=0.032cm] (2.014856,1.537139) -- (2.985144,3.962861);%
+
+% Changing color 255 0 0
+\definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+\color{r255g0b0}% 
+
+% Drawing segment A A'
+\draw [line width=0.032cm] (2.025607,1.530729) -- (2.974393,2.669271);%
+\draw [line width=0.032cm] (3.025607,2.730729) -- (3.639344,3.467213);%
+
+% Drawing segment B B'
+\draw [line width=0.032cm] (5.962861,1.514856) -- (3.037139,2.685144);%
+\draw [line width=0.032cm] (2.962861,2.714856) -- (2.551724,2.879310);%
+
+% Drawing segment C C'
+\draw [line width=0.032cm] (3.000000,3.960000) -- (3.000000,2.740000);%
+\draw [line width=0.032cm] (3.000000,2.660000) -- (3.000000,1.500000);%
+
+% Changing color 0 0 0
+\definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+\color{r0g0b0}% 
+
+% Marking point V by circle
+\draw [line width=0.032cm] (3.000000,2.700000) circle (0.040000);%
+\draw (2.970000,2.730000) node [anchor=north west] { $V$ };%
+\color{black}
+}
+\end{tikzpicture}

@@ -1,0 +1,41 @@
+area 10 10 55 53
+
+point S 30 30
+point R 47 30
+
+point X 10 20
+line a X S
+
+point Z 10 10
+point W 50 30
+line s Z W
+
+point Y 27 50
+line u Z Y
+
+circle K S R
+
+intersection2 A B s K
+intersection2 T F u K
+
+line v S T
+
+cmark_rt A
+cmark_l B
+
+angle o A T B
+
+
+cmark_t T
+drawcircle K
+cmark_b S
+midpoint E T B
+
+color 215 183 183
+fillarc T E o
+
+color 0 0 0
+double
+drawline A T
+drawline B T
+

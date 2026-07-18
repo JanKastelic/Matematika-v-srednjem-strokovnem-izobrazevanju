@@ -1,0 +1,43 @@
+area 10 10 50 55
+
+point A 25 15
+point B 40 15
+point C 20 45
+
+line a A B
+parallel b C a
+
+rotate D A 70 B
+rotate E B -60 A
+
+line c D A
+line d E B
+
+drawline a
+drawline b
+drawline c
+drawline d
+
+point p 13 45
+point q 13 15
+point r 19 53
+point s 39 53
+
+mark_t p
+mark_t q
+mark_r r
+mark_r s
+
+intersection \alpha d b
+intersection \beta c b
+intersection \gamma c d
+
+mark_r \gamma
+mark_rb \alpha
+mark_lt \beta
+
+point {70^\circ} 25 15
+point {60^\circ} 40 15
+
+mark_rt {70^\circ}
+mark_lt {60^\circ}

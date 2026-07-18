@@ -1,0 +1,17 @@
+area 10 10 50 35
+
+point V 30 15
+point A 38 15
+point B 30 22
+
+drawline V A
+drawline V B
+cmark V
+
+
+double
+color 139 0 0
+drawarc V A 90
+
+color 0 139 0
+drawarc V B 90

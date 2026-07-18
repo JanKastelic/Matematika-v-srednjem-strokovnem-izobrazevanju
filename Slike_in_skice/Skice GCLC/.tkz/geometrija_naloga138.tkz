@@ -1,0 +1,76 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Marking point A by circle
+\draw [line width=0.016cm] (1.500000,3.000000) circle (0.040000);%
+\draw (1.500000,3.000000) node [anchor=east] { $A$ };%
+
+% Marking point C by circle
+\draw [line width=0.016cm] (6.022000,3.221000) circle (0.040000);%
+\draw (6.022000,3.221000) node [anchor=west] { $C$ };%
+
+% Marking point S by circle
+\draw [line width=0.016cm] (3.750000,3.250000) circle (0.040000);%
+\draw (3.750000,3.250000) node [anchor=south] { $S$ };%
+
+% Drawing circle k
+\draw [line width=0.016cm] (6.013824,3.260155) -- (6.013501,3.289510) arc (1:44:2.263846 and 2.263846) -- (5.355654,4.845893);%
+\draw [line width=0.016cm] (5.298267,4.901626) -- (5.293940,4.905672) arc (47:185:2.263846 and 2.263846) -- (1.495934,3.039794);%
+\draw [line width=0.016cm] (1.504768,2.960286) -- (1.508185,2.934934) arc (188:298:2.263846 and 2.263846) -- (4.821290,1.255674);%
+\draw [line width=0.016cm] (4.891083,1.294769) -- (4.915967,1.309505) arc (301:358:2.263846 and 2.263846) -- (6.012827,3.182065);%
+
+% Drawing segment A C
+\draw [line width=0.016cm] (1.539952,3.001953) -- (5.982048,3.219047);%
+
+% Marking point D by circle
+\draw [line width=0.016cm] (5.327207,4.874013) circle (0.040000);%
+\draw (5.327207,4.874013) node [anchor=south] { $D$ };%
+
+% Drawing segment A D
+\draw [line width=0.016cm] (1.535925,3.017591) -- (5.291283,4.856422);%
+
+% Drawing segment D C
+\draw [line width=0.016cm] (5.342706,4.837138) -- (6.006501,3.257875);%
+
+% Marking point B by circle
+\draw [line width=0.016cm] (4.856360,1.274913) circle (0.040000);%
+\draw (4.856360,1.274913) node [anchor=north] { $B$ };%
+
+% Drawing segment A B
+\draw [line width=0.016cm] (1.535576,2.981715) -- (4.820784,1.293198);%
+
+% Drawing segment D B
+\draw [line width=0.016cm] (5.322018,4.834351) -- (4.861549,1.314575);%
+
+% Drawing segment B C
+\draw [line width=0.016cm] (4.876914,1.309229) -- (6.001446,3.186685);%
+
+% Marking point x
+\draw (4.900000,3.000000) node [anchor=north east] { $x$ };%
+
+% Marking point y
+\draw (5.200000,4.700000) node [anchor=north east] { $y$ };%
+
+% Marking point z
+\draw (2.300000,3.300000) node [anchor=west] { $z$ };%
+
+% Marking point U
+\draw (2.300000,3.100000) node [anchor=north] { $U$ };%
+
+% Marking point V
+\draw (5.700000,3.400000) node [anchor=east] { $V$ };%
+
+% Marking point Z
+\draw (4.900000,1.800000) node [anchor=south west] { $Z$ };%
+
+% Drawing arc A AAA 23.29
+\draw [line width=0.016cm] (2.630500,3.055250) -- (2.630298,3.059236) arc (3:26:1.131849 and 1.131849) -- (2.516528,3.497749);%
+
+% Drawing arc D DDDD 55.00
+\draw [line width=0.016cm] (4.370405,4.405510) -- (4.377976,4.390356) arc (207:261:1.065347 and 1.065347) -- (5.162183,3.821524);%
+
+% Drawing arc M BBBB -79.75
+\draw [line width=0.016cm] (4.147496,3.129389) -- (4.147667,3.126012) arc (183:262:0.958738 and 0.958738) -- (4.980725,2.225551);%
+}
+\end{tikzpicture}

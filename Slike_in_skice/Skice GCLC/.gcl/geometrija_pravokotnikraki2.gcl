@@ -1,0 +1,47 @@
+area 10 10 50 55
+
+point V 15 20
+point A 50 20
+point B 50 57
+point U 45 35
+
+line p V A
+line q V B
+
+perpendicular r U q
+perpendicular s U p
+
+point D 25 20
+point E 45 25
+
+circle k U E
+intersection2 F G k r
+
+angle a A V B
+angle_o b F U E
+
+
+color 215 183 183
+fillarc V D a
+
+color 183 215 183
+fillarc U F b
+
+color 0 0 0
+cmark V
+drawline V A
+drawline V B
+
+cmark U
+drawline r
+drawline s
+
+
+
+double
+color 139 0 0
+drawarc V D a
+
+color 0 139 0
+drawarc U F b
+

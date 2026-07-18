@@ -1,0 +1,58 @@
+area 10 10 110 65
+
+point A 15 15
+
+point L 63 15
+point N 100 15
+rotate M L 115 N
+rotate B M -56 L
+
+
+
+
+line Q B M
+line l L M
+parallel P A Q
+drawline P
+drawline Q
+drawsegment M N
+drawline l
+drawline A N
+
+intersection u l P
+point x 47 45
+
+midpoint vv u M
+midpoint v vv M
+drawarc u v -56
+
+midpoint ccc M L
+midpoint cc ccc M
+drawarc M cc -56
+
+point b 87 15
+drawarc N b -32.5
+point y 90 15
+
+point a 53 15
+drawarc L a -65
+point z 58 15
+
+point m 65 15
+point mm 72 15
+drawarc L mm 115
+
+point d 23 15
+point w 18 15
+drawarc A d 59
+
+
+cmark_b N
+cmark_b L
+cmark_r M
+mark_b u
+mark_b x
+mark_t y
+mark_t z
+mark_rt m
+mark_rt w

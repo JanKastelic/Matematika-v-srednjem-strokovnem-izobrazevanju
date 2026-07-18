@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing line a b
+\draw [line width=0.016cm] (1.000000,1.500000) -- (7.960000,1.500000);%
+\draw [line width=0.016cm] (8.040000,1.500000) -- (9.000000,1.500000);%
+
+% Changing color 255 0 0
+\definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+\color{r255g0b0}% 
+
+% Drawing segment a b
+\draw [line width=0.032cm] (2.000000,1.500000) -- (7.960000,1.500000);%
+
+% Marking point b by circle
+\draw [line width=0.032cm] (8.000000,1.500000) circle (0.040000);%
+\draw (8.000000,1.500000) node [anchor=north] { $b$ };%
+
+% Marking point a
+\draw (2.000000,1.500000) node [anchor=north] { $a$ };%
+
+% Drawing arrow b a 1.00
+\draw [line width=0.032cm] (2.297433,1.460842) -- (2.000000,1.500000);%
+\draw [line width=0.032cm] (2.297433,1.460842) -- (2.099144,1.500000);%
+\draw [line width=0.032cm] (2.297433,1.539158) -- (2.000000,1.500000);%
+\draw [line width=0.032cm] (2.297433,1.539158) -- (2.099144,1.500000);%
+\color{black}
+}
+\end{tikzpicture}

@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Changing color 255 0 0
+\definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+\color{r255g0b0}% 
+
+% Drawing segment S R
+\draw [line width=0.032cm] (3.040000,3.000000) -- (4.500000,3.000000);%
+
+% Marking point r
+\draw (3.750000,3.000000) node [anchor=south] { $r$ };%
+
+% Changing color 0 0 255
+\definecolor{r0g0b255}{rgb}{0.000000,0.000000,1.000000}%
+\color{r0g0b255}% 
+
+% Marking point S by circle
+\draw [line width=0.032cm] (3.000000,3.000000) circle (0.040000);%
+\draw (3.000000,3.000000) node [anchor=south] { $S$ };%
+
+% Changing color 0 0 0
+\definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+\color{r0g0b0}% 
+
+% Drawing circle S R
+\draw [line width=0.032cm] (3.000000,3.000000) circle (1.500000);%
+\color{black}
+}
+\end{tikzpicture}

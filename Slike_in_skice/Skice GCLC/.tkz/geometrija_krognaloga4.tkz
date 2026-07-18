@@ -1,0 +1,45 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing circle K
+\draw [line width=0.016cm] (4.431782,3.000000) arc (360:360:1.431782 and 1.431782) --(4.431782,3.000000) arc (0:53:1.431782 and 1.431782) -- (3.858183,4.146089);%
+\draw [line width=0.016cm] (3.792838,4.192228) -- (3.779804,4.200793) arc (57:293:1.431782 and 1.431782) -- (3.563451,1.683746);%
+\draw [line width=0.016cm] (3.636080,1.717268) -- (3.650015,1.724273) arc (297:360:1.431782 and 1.431782);%
+
+% Marking point A by circle
+\draw [line width=0.016cm] (3.600000,1.700000) circle (0.040000);%
+\draw (3.600000,1.700000) node [anchor=north] { $A$ };%
+
+% Marking point S by circle
+\draw [line width=0.016cm] (3.000000,3.000000) circle (0.040000);%
+\draw (3.000000,3.000000) node [anchor=east] { $S$ };%
+
+% Marking point B by circle
+\draw [line width=0.016cm] (3.825833,4.169615) circle (0.040000);%
+\draw (3.825833,4.169615) node [anchor=south] { $B$ };%
+
+% Drawing segment S B
+\draw [line width=0.016cm] (3.023071,3.032676) -- (3.802762,4.136939);%
+
+% Drawing segment S A
+\draw [line width=0.016cm] (3.016762,2.963682) -- (3.583238,1.736318);%
+
+% Drawing line ta
+\draw [line width=0.016cm] (2.516667,1.200000) -- (3.563682,1.683238);%
+\draw [line width=0.016cm] (3.636318,1.716762) -- (5.815347,2.722468);%
+\draw [line width=0.016cm] (5.887984,2.755993) -- (6.500000,3.038462);%
+
+% Drawing line tb
+\draw [line width=0.016cm] (2.649771,5.000000) -- (3.793157,4.192687);%
+\draw [line width=0.016cm] (3.858509,4.146544) -- (5.818990,2.762302);%
+\draw [line width=0.016cm] (5.884342,2.716159) -- (6.500000,2.281459);%
+
+% Marking point T by circle
+\draw [line width=0.016cm] (5.851666,2.739230) circle (0.040000);%
+\draw (5.851666,2.739230) node [anchor=south] { $T$ };%
+
+% Drawing segment A B
+\draw [line width=0.016cm] (3.603643,1.739834) -- (3.822191,4.129781);%
+}
+\end{tikzpicture}

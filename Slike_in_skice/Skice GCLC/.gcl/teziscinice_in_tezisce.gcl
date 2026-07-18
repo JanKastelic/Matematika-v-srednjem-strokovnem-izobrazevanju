@@ -1,0 +1,62 @@
+area 10 10 70 45
+
+point A 20 15
+point B 60 15
+point C 30 40
+
+cmark_rb A
+cmark_b B
+cmark_t C
+
+line c' A B
+line a' B C
+line b' A C
+
+midpoint a B C
+midpoint c A B
+midpoint b A C
+
+line t_a A a
+line t_b B b
+line t_c C c
+
+intersection T t_c t_a
+
+
+midpoint t_a T a
+midpoint t_b T b
+midpoint t_c T c
+
+mark_r t_a
+mark_r t_c
+mark_t t_b
+
+midpoint \frac{b}{2} A b
+mark_l \frac{b}{2}
+midpoint \frac{b}{2} b C
+mark_l \frac{b}{2}
+midpoint \frac{c}{2} A c
+mark_b \frac{c}{2}
+midpoint \frac{c}{2} c B
+mark_b \frac{c}{2}
+midpoint \frac{a}{2} B a
+mark_r \frac{a}{2}
+midpoint \frac{a}{2} a C
+mark_r \frac{a}{2}
+
+
+double
+drawsegment A B
+drawsegment B C
+drawsegment A C
+
+
+
+color 255 0 0
+drawsegment A a
+drawsegment B b
+drawsegment C c
+
+
+color 0 0 0 
+cmark_rt T

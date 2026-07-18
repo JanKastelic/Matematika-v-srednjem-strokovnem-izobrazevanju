@@ -1,0 +1,23 @@
+area 6 6 74 74
+ang_picture 6 6 74 74
+ang_origin 40 40 
+ang_unit 7
+ang_scale 1 0 
+
+ang_drawsystem_p 2 1 1 1 2
+
+
+point A 20 54
+point B 40 54
+point X 6 6
+point Y 74 54
+
+color 215 183 183
+fillrectangle X Y
+
+color 0 0 0
+ang_drawsystem_p 2 1 1 1 2
+
+double
+color 204 0 0 
+drawdashline A B

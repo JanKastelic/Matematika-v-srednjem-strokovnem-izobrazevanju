@@ -1,0 +1,498 @@
+\section{Potence in koreni}
+
+\begin{frame}
+    \sectionpage
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[currentsection, hideothersubsections]
+\end{frame}
+
+    \subsection{Koreni poljubnih stopenj}
+
+        \begin{frame}
+            \frametitle{Kvadratni koren}
+
+            \only<2->{\begin{alertblock}{Kvadratni koren}
+                \textbf{Kvadratni koren} $\sqrt{a}$ realnega števila $a\geq 0$ je tisto nenegativno realno število $x$,
+                katerega kvadrat je enak $a$.
+                \only<3->{$$\sqrt{a}=x \Leftrightarrow a=x^2; \quad a,x\in\mathbb{R}^+ $$}
+
+                \only<4->{Število $a$ imenujemo \textbf{korenjenec}, simbol $\sqrt{~}$ pa \textbf{korenski znak}.}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{Pravila za računanje s kvadratnimi koreni}
+                    \begin{columns}
+                    \column{0.45\textwidth}
+                        \only<6->{\begin{itemize}
+                            \item<6-> $\left(\sqrt{a}\right)^2=a; ~a\geq 0$
+                            \item<7-> $\sqrt{a^2}=\begin{cases}
+                                a, & a\geq 0 \\
+                                -a, & a<0
+                            \end{cases}=\lvert a\rvert$
+                        \end{itemize}}
+                    \column{0.45\textwidth}
+                        \only<8->{\begin{itemize}
+                            \item<8-> $\sqrt{a\cdot b}=\sqrt{a}\cdot\sqrt{b}; ~a,b\geq 0$
+                            \item<9-> $\sqrt{\dfrac{a}{b}}=\dfrac{\sqrt{a}}{\sqrt{b}}; ~a\geq 0, b>0$
+                        \end{itemize}}
+                    \end{columns}
+            \end{block}}
+
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Kubični koren}
+
+            \only<2->{\begin{alertblock}{Kubični koren}
+                \textbf{Kubični koren} $\sqrt[3]{a}$ realnega števila $a$ je tisto realno število $x$,
+                katerega kub je enak $a$.
+                \only<3->{$$\sqrt[3]{a}=x \Leftrightarrow a=x^3; \quad a,x\in\mathbb{R}$$}
+
+                \only<4->{Število $a$ imenujemo \textbf{korenjenec}, simbol $\sqrt{~}$ \textbf{korenski znak}, število $3$ pa \textbf{korenski eksponent}.}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{Pravila za računanje s kubičnimi koreni}
+                \begin{columns}
+                \column{0.44\textwidth}
+                    \only<5->{\begin{itemize}
+                        \item<6-> $\left(\sqrt[3]{a}\right)^3=a$
+                        \item<7-> $\sqrt[3]{a^3}=a$
+                    \end{itemize}}
+                \column{0.44\textwidth}
+                    \only<8->{\begin{itemize}
+                        \item<8-> $\sqrt[3]{a\cdot b}=\sqrt[3]{a}\cdot\sqrt[3]{b}$
+                        \item<9-> $\sqrt[3]{\dfrac{a}{b}}=\dfrac{\sqrt[3]{a}}{\sqrt[3]{b}}; ~b\neq 0$
+                    \end{itemize}}
+                \end{columns}
+            \end{block}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \frametitle{Koreni poljubnih stopenj}
+
+            \only<2->{\begin{alertblock}{$n$-ti koren}
+                Za sodo naravno število $n$ je \textbf{$n$-ti koren} $\sqrt[n]{a}$ realnega števila $a\geq 0$ tisto nenegativno realno število $x$,
+                za katerega velja $a=x^n$.
+                \only<3->{$$\displaystyle \sqrt[n]{a}=x \Leftrightarrow a=x^n; \quad a,x\in\mathbb{R}^+ $$}
+                ~
+                
+                \only<4->{Za liho naravno število $n$ je \textbf{$n$-ti koren} $\sqrt[n]{a}$ realnega števila $a$ tisto realno število $x$,
+                za katerega velja $a=x^n$.}
+                \only<5->{$$\displaystyle \sqrt[n]{a}=x \Leftrightarrow a=x^n; \quad a,x\in\mathbb{R} $$}
+                ~
+                
+                \only<6->{Število $a$ imenujemo \textbf{korenjenec}, simbol $\sqrt{~}$ \textbf{korenski znak}, število $n$ pa \textbf{korenski eksponent}.}
+            \end{alertblock}}
+
+        \end{frame}
+
+        \begin{frame} 
+                        
+            \only<2->{\begin{block}{Pravila za računanje s koreni poljubnih stopenj}
+                \begin{columns}
+                \column{0.42\textwidth}
+                    \begin{itemize}
+                        \item<3-> $\displaystyle \left(\sqrt[n]{a}\right)^n=a$ \\~
+                        \item<4-> $\displaystyle \sqrt[n]{a^n}=\begin{cases}
+                                \lvert a\rvert, & n=2k, k\in\mathbb{N} \\
+                                a, & n=2k-1, k\in\mathbb{N}
+                            \end{cases}$ ~\\~
+                        \item<5-> $\displaystyle \sqrt[n]{a^w}=\left(\sqrt[n]{a}\right)^w$ \\~
+                        \item<6-> $\displaystyle \sqrt[n]{a^w}=\sqrt[nz]{a^{wz}}$ \\~
+                        \item<7-> $\displaystyle \sqrt[n]{\sqrt[m]{a}}=\sqrt[nm]{a}$ \\~
+                    \end{itemize}
+                \column{0.42\textwidth}
+                    \begin{itemize}
+                        \item<8-> $\displaystyle \sqrt[n]{a\cdot b}=\sqrt[n]{a}\cdot\sqrt[n]{b}$ \\~
+                        \item<9-> $\displaystyle \sqrt[n]{\dfrac{a}{b}}=\dfrac{\sqrt[n]{a}}{\sqrt[n]{b}}; ~b\neq 0$ \\~
+                        \item<10-> $\displaystyle \sqrt[n]{a^w}\cdot\sqrt[n]{a^z}=\sqrt[n]{a^{w+z}}$ \\~
+                        \item<11-> $\displaystyle \dfrac{\sqrt[n]{a^w}}{\sqrt[n]{a^z}}=\sqrt[n]{a^{w-z}}; ~a\neq 0$
+                    \end{itemize}
+                \end{columns}
+                
+
+                Pri tem za sode korenske stopnje $n$ privzamemo $a,b\in[0,\infty)$; za lihe stopnje $n$ pa $a,b\in\mathbb{R}$.
+            \end{block}}
+
+        \end{frame}
+
+
+    %%% naloge
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Poenostavite izraz in ga delno korenite.
+                \only<3->{\begin{itemize}
+                    \begin{columns}
+                        \column{0.25\textwidth}
+                            \item $\displaystyle \sqrt[3]{xy^2\sqrt{x^5y}}$ \\~\\~
+                            \item $\displaystyle \sqrt{a\sqrt{a^2\sqrt{a^3}}}$ \\~\\~
+                            \item $\displaystyle \sqrt[4]{a^3b^2\sqrt{ab^5}}$ \\~\\~
+                        \column{0.25\textwidth}
+                            \item $\displaystyle \sqrt[4]{ab^2\sqrt[3]{ab}}$ \\~\\~
+                            \item $\displaystyle \sqrt[3]{a\sqrt[4]{a\sqrt[5]{a}}}$ \\~\\~
+                            \item $\displaystyle \sqrt[5]{x^4y\sqrt[4]{x^5y^3}}$ \\~\\~
+                        \column{0.25\textwidth}
+                            \item $\displaystyle \sqrt[6]{a^2b^3\sqrt{a^8\sqrt[3]{b}}}$ \\~\\~   
+                            \item $\displaystyle \sqrt[3]{x\sqrt{y^3\sqrt[4]{x^3\sqrt[5]{y^6y^{-1}}}}}$ \\~\\~                 
+                        \end{columns}
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Izračunajte.
+                \only<3->{\begin{itemize}
+                    \begin{columns}
+                        \column{0.4\textwidth}
+                            \item $\displaystyle \sqrt[5]{\dfrac{1}{32}}$ \\~\\~
+                            \item $\displaystyle \sqrt[4]{\dfrac{16}{81}}$ \\~\\~
+                            \item $\displaystyle \sqrt[3]{-8}$ \\~\\~
+                        \column{0.4\textwidth}
+                            \item $\displaystyle \sqrt[4]{-625}$ \\~\\~
+                            \item $\displaystyle \sqrt[3]{0.125}$ \\~\\~
+                            \item $\displaystyle \sqrt[4]{0.0016}$ \\~\\~
+                        \end{columns}
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Poenostavite.
+                \only<3->{\begin{itemize}
+                    \item $\displaystyle \sqrt[18]{x^{15}}$ \\~\\~
+                    \item $\displaystyle \sqrt[9]{a^6}$ \\~\\~
+                    \item $\displaystyle \sqrt[30]{y^{18}}$ \\~\\~
+                    \item $\displaystyle \sqrt[20]{b^{30}}$ \\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Racionalizirajte ulomke.
+                \only<3->{\begin{itemize}
+                    \begin{columns}
+                        \column{0.25\textwidth}
+                            \item $\displaystyle \dfrac{1}{3-\sqrt{x}}$ \\~\\~
+                            \item $\displaystyle \dfrac{1}{2-4\sqrt[3]{a}}$ \\~\\~
+                            \item $\displaystyle \dfrac{2}{a-\sqrt[3]{b}}$ \\~\\~
+                        \column{0.25\textwidth}
+                            \item $\displaystyle \dfrac{x-1}{\sqrt[3]{x}-1}$ \\~\\~
+                            \item $\displaystyle \dfrac{8x}{2\sqrt[3]{x}+1}$ \\~\\~
+                            \item $\displaystyle \dfrac{1}{2-\sqrt[4]{3}}$ \\~\\~
+                        \column{0.25\textwidth}
+                            \item $\displaystyle \dfrac{1}{\sqrt[4]{2}-1}$ \\~\\~
+                            \item $\displaystyle \dfrac{\sqrt[4]{y}}{2-\sqrt[4]{y}}$ \\~\\~
+                            \item $\displaystyle \dfrac{3}{1+\sqrt[5]{2}}$ \\~\\~
+                        \end{columns}
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Poenostavite in delno korenite izraz.
+                \only<3->{\begin{itemize}
+                    \begin{columns}
+                        \column{0.25\textwidth}
+                            \item $\displaystyle \dfrac{\sqrt[4]{2}}{\sqrt{2\sqrt{8}}}$ \\~\\~
+                            \item $\displaystyle \dfrac{\sqrt[3]{9}}{\sqrt[5]{3}\sqrt{27}}$ \\~\\~
+                            \item $\displaystyle \dfrac{\sqrt{\sqrt{\sqrt{1}}}}{\sqrt[17]{1}}$ \\~\\~
+                        \column{0.25\textwidth}
+                            \item $\displaystyle \dfrac{\sqrt{\sqrt{a}}}{\sqrt[3]{a^2}}$ \\~\\~
+                            \item $\displaystyle \dfrac{\sqrt{a\sqrt[3]{a^{-1}}\cdot\sqrt[3]{a^2\sqrt[5]{a}}}}{\sqrt[5]{a\sqrt{a^{-5}}}}$ \\~\\~
+                            \item $\displaystyle \dfrac{\sqrt{x^3\sqrt[4]{x^3\sqrt{x}}}}{\sqrt[4]{x^{-3}\sqrt[4]{x}}}$ \\~\\~
+                        \column{0.25\textwidth}
+                            \item $\displaystyle \dfrac{\sqrt[7]{b^{13}\sqrt{b^{-2}}}}{\sqrt{\sqrt{b^{-1}}}}$ \\~\\~
+                            \item $\displaystyle \dfrac{\sqrt[3]{x^2\sqrt[4]{x^{-1}}}\cdot\sqrt[4]{x^3\sqrt{x}}}{\sqrt[4]{x\sqrt{x\sqrt[3]{x^{-1}}}}}$ \\~\\~
+                            \item $\displaystyle \dfrac{\sqrt{8ab^{-1}}}{\sqrt{0.5}\sqrt[3]{8ab^2}}$ \\~\\~
+                        \end{columns}
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Izračunajte natančno vrednost korena.
+                \only<3->{\begin{itemize}
+                    \item $\displaystyle \sqrt{31-12\sqrt{3}}$ \\~\\~
+                    \item $\displaystyle \sqrt{18+8\sqrt{2}}$ \\~\\~
+                    \item $\displaystyle \sqrt{9-4\sqrt{5}}$ \\~\\~
+                    \item $\displaystyle \sqrt{17+2\sqrt{2}}$ \\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Poenostavite izraz in ga delno korenite.
+                \only<3->{\begin{itemize}
+                    \begin{columns}
+                        \column{0.4\textwidth}
+                            \item $\displaystyle \dfrac{\sqrt[5]{xy^3\sqrt[4]{x^2y^3}}}{\sqrt[10]{\sqrt{x}}}$ \\~\\~
+                            \item $\displaystyle \dfrac{\sqrt[4]{ab^3\sqrt[3]{a^2b^3}}}{\sqrt{\sqrt[6]{a}}}$ \\~\\~
+                            \item $\displaystyle \left(\dfrac{1-z}{1-\sqrt[3]{z}}-\sqrt[3]{z}\right)\left(1-\sqrt[6]{z^4}\right)$ \\~\\~
+                        \column{0.4\textwidth}
+                            \item $\displaystyle \sqrt[3]{\sqrt{\sqrt{4096}}}+\sqrt{\sqrt{\sqrt{16}}}-\sqrt[5]{32}$ \\~\\~
+                            \item $\displaystyle \dfrac{\sqrt[6]{ab^3\sqrt{a^3b}}}{\sqrt[4]{b^{-3}\sqrt[3]{a}}}$ \\~\\~
+                    \end{columns}
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+
+        % \begin{frame}
+        %     \begin{exampleblock}{Naloga 440}
+        %         Ponovi računanje s kvadratnim korenom. Izračunaj.
+        %         \begin{description}
+        %             \item<2->[(d)] $\displaystyle\sqrt{10+7\sqrt{2}}\cdot\sqrt{10-7\sqrt{2}}+\frac{2}{\sqrt{2}}$
+        %             \item<3->[(f)] $\displaystyle\left(2+3\sqrt{2}\right)\cdot\sqrt{22-12\sqrt{2}}-\left(4-2\sqrt{3}\right)^2$
+        %             \item<4->[(h)] $\displaystyle\left(\sqrt{2+\sqrt{3}}-\sqrt{2-\sqrt{3}}\right)^2+\frac{26}{\sqrt{3}-4} $  
+        %         \end{description}
+        %     \end{exampleblock}
+        % \end{frame}
+
+        % \begin{frame}
+        %     \begin{exampleblock}{Naloga 441}
+        %         Izračunaj.
+        %         \begin{description}
+        %             \item<2->[(c)] $\displaystyle \left(\sqrt[3]{2}-\sqrt[3]{3}\right)\left(\sqrt[3]{4}+\sqrt[3]{6}+\sqrt[3]{9}\right)$
+        %             \item<3->[(e)] $\displaystyle \sqrt[3]{9}-2\cdot\sqrt[12]{3^{10}}-\left(\sqrt[6]{9}-\sqrt[6]{27}\right)^2$
+        %             \item<4->[(h)] $\displaystyle \frac{\sqrt[4]{10}}{\sqrt[4]{2}}-\sqrt[4]{80}+4\cdot\sqrt{\sqrt{5}}-\sqrt[4]{2,5}\cdot\sqrt[4]{2}$   
+        %         \end{description}
+        %     \end{exampleblock}
+        % \end{frame}
+
+        % \begin{frame}
+        %     \begin{exampleblock}{Naloga 445}
+        %         Poenostavi ($x,y,z>0$).
+        %         \begin{description}
+        %             \item<2->[(g)] $\displaystyle \sqrt[40]{x^{25}y^{15}}-2\cdot\sqrt[8]{x^{10}y^2}\cdot\sqrt[8]{x^{-5}y}+\sqrt[4]{\sqrt{x^5y^3}}$
+        %             \item<3->[(m)] $\displaystyle \sqrt[3]{x^2\cdot\sqrt[3]{xy^2\cdot\sqrt{y}}}:\sqrt[6]{x^5y^{-3}}\cdot\sqrt[36]{x^{25}y^2}:\sqrt[6]{y^{-5}}$
+        %             \item<4->[(o)] $\displaystyle \frac{\sqrt[3]{x\sqrt{xy}}\cdot\sqrt[9]{x^5y^7}}{y\cdot\sqrt[6]{x^5y}}$  
+        %         \end{description}
+        %     \end{exampleblock}
+        % \end{frame}
+
+    \subsection{Potence z racionalnimi eksponenti}
+
+        \begin{frame}
+            \frametitle{Potence z racionalnimi eksponenti}
+
+            \only<2->{\begin{alertblock}{Potenca z racionalnim eksponentom}
+                Potenca z racionalnim eksponentom je definirana kot: 
+                \only<3->{$$\displaystyle x^\frac{m}{n}=\sqrt[n]{x^m},$$}
+                \only<4->{kjer je $m\in\mathbb{Z}$, $n\in\mathbb{N}$ in $a\in[0,\infty)$.}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{Pravila za računanje s potencami z racionalnimi eksponenti}
+                \begin{columns}
+                    \column{0.42\textwidth}
+                        \begin{itemize}
+                            \item<7-> $\displaystyle x^p\cdot x^q=x^{p+q}$
+                            \item<8-> $\displaystyle x^p\cdot y^p=(xy)^p$
+                            \item<9-> $\displaystyle \left(x^p\right)^q=x^{pq}$
+                        \end{itemize}
+                    \column{0.42\textwidth}
+                        \begin{itemize}
+                            \item<10-> $\displaystyle x^p:x^q=\dfrac{x^p}{x^q}=x^{p-q}; \quad x\neq 0$
+                            \item<11-> $\displaystyle x^p:y^p=\dfrac{x^p}{y^p}=\left(\dfrac{x}{y}\right)^p; \quad y\neq 0$
+                        \end{itemize}
+                \end{columns}
+                ~
+
+                \only<6->{V pravilih upoštevamo primerni realni osnovi $x,y\in\mathbb{R}$ in racionalne eksponente $p,q\in\mathbb{Q}$.}
+
+            \end{block}}
+        \end{frame}
+
+
+
+    %%% naloge
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Izračunajte.
+                \only<3->{\begin{itemize}
+                    \item $\displaystyle 8^\frac{1}{3}-16^\frac{2}{4}$ \\~\\~
+                    \item $\displaystyle 27^\frac{2}{3}-125^\frac{1}{3}$ \\~\\~
+                    \item $\displaystyle \left(-8\right)^{-\frac{1}{3}}$ \\~\\~
+                    \item $\displaystyle 1000^\frac{2}{3}-343^\frac{2}{3}$ \\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Izračunajte.
+                \only<3->{\begin{itemize}
+                    \begin{columns}
+                        \column{0.35\textwidth}
+                            \item $\displaystyle \sqrt{625^\frac{3}{4}-\left(\dfrac{1}{2}\right)^{-2}}+4^\frac{1}{3}\cdot 16^\frac{1}{3} $ \\~\\~
+                            \item $\displaystyle 4\cdot 0.16^{-\frac{1}{2}}-\sqrt[3]{5\cdot 8^\frac{1}{3}+2\cdot 81^\frac{3}{4}} $ \\~\\~
+                            \item $\displaystyle \left(2\cdot 9^\frac{3}{2}+5\cdot 16^\frac{1}{4}\right)^\frac{1}{3} $ \\~\\~
+                        \column{0.45\textwidth}
+                            \item $\displaystyle \left(\left(\dfrac{4}{9}\right)^{-\frac{1}{2}}\cdot 32^\frac{1}{5}+169^\frac{1}{2}\right)^\frac{1}{2} $ \\~\\~
+                            \item $\displaystyle 0.25^{-\frac{1}{2}}\cdot 0.001^{-\frac{1}{3}} -\sqrt[3]{10^2+0.2^{-2}} $ \\~\\~
+                            \item $\displaystyle \left(3\dfrac{3}{8}\right)^\frac{2}{3}\cdot\left(\dfrac{1}{4}\right)^{-\frac{1}{2}}\cdot\left(3-\sqrt{5}\right)\sqrt{7+3\sqrt{5}} $ \\~\\~
+                        \end{columns}
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Izračunajte.
+                \only<3->{\begin{itemize}
+                    \begin{columns}
+                        \column{0.4\textwidth}
+                            \item $\displaystyle 2.25^{-0.5}\cdot\sqrt{4^{1.5}+1} $ \\~\\~
+                            \item $\displaystyle 6.25^{-0.5}\cdot 2.25^{1.5}+\sqrt{16^{0.75}+1} $ \\~\\~
+                        \column{0.42\textwidth}
+                            \item $\displaystyle \left(3\dfrac{1}{16}\right)^{-0.5}\sqrt{0.125^{-\frac{2}{3}}+3}^4+0.002^{-\frac{2}{3}} $ \\~\\~
+                            \item $\displaystyle \sqrt{10}\left(5^{-0.5}-2\right)^{-1}-\sqrt{90} $ \\~\\~
+                        \end{columns}
+                    \item $\displaystyle \sqrt{27^\frac{2}{3}+0.25^{-2}}+\left(2-\sqrt{5}\right)\sqrt{9+4\sqrt{5}}-\dfrac{1+\sqrt{12}}{2+\sqrt{3}} $ \\~\\~
+
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Izraz zapišite s potencami in ga poenostavite.
+                \only<3->{\begin{itemize}
+                    \begin{columns}
+                        \column{0.48\textwidth}
+                            \item $\displaystyle \left(\dfrac{1-z}{1-\sqrt[3]{z}}-\sqrt[3]{z}\right)\left(1-\sqrt[6]{z^4}\right)$ \\~\\~
+                            \item $\displaystyle \dfrac{\sqrt[6]{ab^3\sqrt{a^3b}}}{\sqrt[4]{b^{-3}\sqrt[3]{a}}}$ \\~\\~
+                            \item $\displaystyle \left(y^\frac{2}{3}x^{-0.25}\right)^6 :\left(\sqrt{x^{-4}y^2}\cdot\sqrt{y\sqrt[3]{xy^{-3}}}\right)^3 $ \\~\\~
+                        \column{0.32\textwidth}
+                            \item $\displaystyle \dfrac{\sqrt[3]{x^{-4}\sqrt{x^2y^{-3}}}}{\sqrt[4]{x^{-3}y^2}}\cdot\left(x^{0.3}y^{0.2}\right)^5 $ \\~\\~
+                            \item $\displaystyle \dfrac{\sqrt[5]{x^{-2}\sqrt[3]{x^{-3}y^4}}}{y^{-\frac{1}{3}}x^\frac{1}{2}}\left(\sqrt[6]{\sqrt{y^{-3}}}\right)^4 $ \\~\\~
+                            \item $\displaystyle \dfrac{\sqrt[4]{x^{-2}y}}{\sqrt[6]{x^3\sqrt{y^{-7}}}}\sqrt[4]{x^2y^{-5}}^2 $ \\~\\~
+                        \end{columns}
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+
+
+
+
+
+    \subsection{Iracionalne enačbe}
+
+        \begin{frame}
+            \frametitle{Iracionalne enačbe}
+
+            \only<2->{\begin{alertblock}{Iracionalna enačba}
+                \textbf{Iracionalna enačba} je enačba, v kateri neznanka nastopa po korenom poljubne stopnje.
+            \end{alertblock}}
+
+            \only<3->{\begin{block}{Reševanje iracionalne enačbe}
+                Iracionalno enačbo rešujemo tako, da jo s pomočjo potenciranja prevedemo v enačbo, ki nima neznanke pod korenom.
+
+                Tako dobimo enačbo, ki ni nujno ekvivalentna prvotni enačba, saj lahko s potenciranjem pridobimo kakšno rešitev, ki ne ustreza prvotni enačbo.
+
+                Na koncu reševanja moramo vedno narediti \textbf{preizkus}, s katerim izločimo morebitne neustrezne rešitve.
+            \end{block}}
+        \end{frame}
+
+
+    %%% naloge
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Rešite enačbo.
+                \only<3->{\begin{itemize}
+                    \item $\displaystyle \sqrt{x-1}-5=0$ \\~\\~
+                    \item $\displaystyle \sqrt{x+5}=2$ \\~\\~
+                    \item $\displaystyle \sqrt{3-x}-5=0$ \\~\\~
+                    \item $\displaystyle 1+\sqrt{x-5}=0$ \\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Rešite enačbo.
+                \only<3->{\begin{itemize}
+                    \begin{columns}
+                        \column{0.4\textwidth}
+                            \item $\displaystyle \sqrt{2x-1}+2x=x$ \\~\\~
+                            \item $\displaystyle 2+\sqrt[3]{x-1}=0$ \\~\\~
+                            \item $\displaystyle \sqrt{x^2+2}-\sqrt{3x}=0$ \\~\\~
+                            \item $\displaystyle x-\sqrt{5x-11}=1$ \\~\\~
+                        \column{0.4\textwidth}
+                            \item $\displaystyle 2x+3=\sqrt{3x^2+5x-1}$ \\~\\~
+                            \item $\displaystyle \sqrt{-8x-4}=-2x$ \\~\\~
+                            \item $\displaystyle \sqrt{x^2-1}-2=0$ \\~\\~
+                            \item $\displaystyle \sqrt{x+3}=-9$ \\~\\~
+                        \end{columns}
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Rešite enačbo.
+                \only<3->{\begin{itemize}
+                    \begin{columns}
+                        \column{0.4\textwidth}
+                            \item $\displaystyle \sqrt{x}+\sqrt{x+1}=3$ \\~\\~
+                            \item $\displaystyle \sqrt{x-2}-2=\sqrt{x+2}$ \\~\\~
+                            \item $\displaystyle \sqrt{x+1}=\sqrt{2}-\sqrt{x-1}$ \\~\\~
+                            \item $\displaystyle \sqrt{x-6}+\sqrt{x+2}=2$ \\~\\~
+                        \column{0.4\textwidth}
+                            \item $\displaystyle \sqrt{x+5}-3=-\sqrt{x}$ \\~\\~
+                            \item $\displaystyle \sqrt{3x+1}-1=\sqrt{x+4}$ \\~\\~
+                            \item $\displaystyle \sqrt[3]{x+2-\sqrt{10+x}}=-2$ \\~\\~
+                            \item $\displaystyle \sqrt{5+x}-1=\sqrt{3x+4}$ \\~\\~
+                        \end{columns}
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Rešite enačbo.
+                \only<3->{\begin{itemize}
+                    \begin{columns}
+                        \column{0.4\textwidth}
+                            \item $\displaystyle \sqrt[3]{x^3+7x^2+x+26}-3=x-1$ \\~\\~
+                            \item $\displaystyle \sqrt{x-2}-\sqrt{2x-3}=2$ \\~\\~
+                            \item $\displaystyle \sqrt{x^2+3x}+x=2$ \\~\\~
+                            \item $\displaystyle \sqrt{x+7-\sqrt{2x-1}}=3$ \\~\\~
+                        \column{0.4\textwidth}
+                            \item $\displaystyle \sqrt[3]{5-x+\sqrt{2x+14}}-2=0$ \\~\\~
+                            \item $\displaystyle \sqrt{x-6}-\sqrt{x+2}-2=0$ \\~\\~
+                            \item $\displaystyle \sqrt{x+3+\sqrt{x+2}}=\sqrt{3}$ \\~\\~
+                            \item $\displaystyle \sqrt[5]{x^2+3x+34}=2$ \\~\\~
+                        \end{columns}
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}

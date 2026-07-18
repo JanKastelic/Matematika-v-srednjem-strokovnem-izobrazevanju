@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing segment A b
+\draw [line width=0.016cm] (1.500000,1.500000) -- (4.500000,1.500000);%
+
+% Drawing segment A C
+\draw [line width=0.016cm] (1.500000,1.500000) -- (4.500000,2.785714);%
+
+% Changing color 139 0 0
+\definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+\color{r139g0b0}% 
+
+% Drawing arc A B 23.20
+\draw [line width=0.032cm] (3.000000,1.500000) arc (360:360:1.500000 and 1.500000) --(3.000000,1.500000) arc (0:23:1.500000 and 1.500000) -- (2.878718,2.090879);%
+
+% Drawing arrow Bb B 1.00
+\draw [line width=0.032cm] (3.001963,1.799994) -- (3.000000,1.500000);%
+\draw [line width=0.032cm] (3.001963,1.799994) -- (2.987703,1.598379);%
+\draw [line width=0.032cm] (2.924252,1.790280) -- (3.000000,1.500000);%
+\draw [line width=0.032cm] (2.924252,1.790280) -- (2.987703,1.598379);%
+
+% Marking point -
+\draw (2.600000,1.700000) node  { $-$ };%
+\color{black}
+}
+\end{tikzpicture}

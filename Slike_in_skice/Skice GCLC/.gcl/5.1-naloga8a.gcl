@@ -1,0 +1,15 @@
+area 13 13 60 60
+ang_picture 12 12 57 64
+ang_origin 30 33 
+ang_unit 7
+ang_scale 1 0 
+
+ang_line l -3 -1 0
+
+ang_drawsystem_p 2 1 1 1 2
+
+color 204 0 0
+double
+ang_drawline l
+
+

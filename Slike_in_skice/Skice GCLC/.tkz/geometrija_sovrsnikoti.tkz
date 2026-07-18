@@ -1,0 +1,53 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing line p
+
+% Drawing line q
+\draw [line width=0.016cm] (1.300000,2.469231) -- (3.139995,2.752307);%
+\draw [line width=0.016cm] (3.219065,2.764472) -- (5.000000,3.038462);%
+
+% Drawing line r
+\draw [line width=0.016cm] (1.300000,3.426667) -- (3.141842,2.771790);%
+\draw [line width=0.016cm] (3.217219,2.744989) -- (5.000000,2.111111);%
+
+% Marking point U by circle
+
+% Marking point V by circle
+\draw [line width=0.016cm] (3.179530,2.758389) circle (0.040000);%
+
+% Changing color 139 0 0
+\definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+\color{r139g0b0}% 
+
+% Drawing arc V L 28.32
+\draw [line width=0.032cm] (2.191446,3.109708) -- (2.187982,3.099807) arc (161:188:1.048682 and 1.048682) -- (2.143042,2.598930);%
+
+% Drawing arc V M 28.32
+\draw [line width=0.032cm] (4.167614,2.407070) -- (4.171079,2.416971) arc (341:360:1.048682 and 1.048682) --(4.228212,2.758389) arc (0:8:1.048682 and 1.048682) -- (4.216018,2.917849);%
+
+% Marking point \alpha
+\draw (2.500000,2.800000) node  { $\alpha$ };%
+
+% Marking point \beta
+\draw (3.700000,2.800000) node  { $\beta$ };%
+
+% Changing color 0 139 0
+\definecolor{r0g139b0}{rgb}{0.000000,0.545098,0.000000}%
+\color{r0g139b0}% 
+
+% Drawing arc V J 151.68
+\draw [line width=0.032cm] (3.837639,2.859637) -- (3.837184,2.862551) arc (9:160:0.665852 and 0.665852) -- (2.552155,2.981456);%
+
+% Drawing arc V K 151.68
+\draw [line width=0.032cm] (2.521421,2.657142) -- (2.521876,2.654227) arc (189:340:0.665852 and 0.665852) -- (3.806905,2.535322);%
+
+% Marking point \alpha'
+\draw (3.000000,3.500000) node  { $\alpha'$ };%
+
+% Marking point \beta'
+\draw (3.000000,2.000000) node  { $\beta'$ };%
+\color{black}
+}
+\end{tikzpicture}

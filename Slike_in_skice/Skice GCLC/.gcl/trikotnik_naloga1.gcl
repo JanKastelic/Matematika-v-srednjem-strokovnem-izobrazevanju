@@ -1,0 +1,31 @@
+area 10 10 60 60
+
+point A 20 15
+point B 50 15
+
+rotate D A 60 B
+rotate E B -70 A
+
+line a B E
+line b A D
+intersection C a b
+
+drawline A B
+drawsegment A C
+drawsegment B C
+
+cmark_b A
+cmark_b B
+cmark_t C
+
+point \alpha 25 15
+point \beta 45 15
+point {10x} 20 15
+point {9x+2^\circ} 50 15
+point {50^\circ} 38 43
+
+mark_t \alpha
+mark_t \beta
+mark_lt {10x}
+mark_rt {9x+2^\circ}
+mark_b {50^\circ}

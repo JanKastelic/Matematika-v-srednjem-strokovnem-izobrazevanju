@@ -1,0 +1,28 @@
+area 10 10 60 50
+
+point C 15 15
+point D 20 15
+point E 35 20
+point F 40 30
+point G 20 30
+
+midpoint A D G
+point B 32 25
+
+color 215 183 183
+filltriangle C D E
+filltriangle C E F
+filltriangle C F G
+
+color 0 0 0
+
+drawsegment C D
+drawsegment D E
+drawsegment E F
+drawsegment F G
+drawsegment G C
+
+double
+cmark_t A
+cmark_t B
+drawsegment A B

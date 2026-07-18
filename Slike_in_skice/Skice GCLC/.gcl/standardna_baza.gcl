@@ -1,0 +1,62 @@
+ang3d_picture 23 27 70 65
+ang3d_origin 40 40 1.1 0.35
+ang3d_unit 15
+ang3d_scale 1 1 1
+ang3d_axes_drawing_range -20 20 -20 20 -20 20
+
+ang3d_drawsystem_p 3 1 1 1 1 2
+
+ang3d_point O 0 0 0
+ang3d_point A 1.8 1.5 1.8
+ang3d_point B -1 1.5 1.1
+ang3d_point xy 1.8 2.5 0
+ang3d_point z 0 0 2.5
+ang3d_point x 1.8 0 0
+ang3d_point y 0 2.5 0
+ang3d_point xz 1.8 0 2.5 
+ang3d_point yz 0 2.5 2.5
+ang3d_point x_0 1.8 0 0
+ang3d_point y_0 0 2.5 0
+ang3d_point z_0 0 0 2.5
+
+ang3d_point \vec{r_A} 1.8 1.5 1.8
+ang3d_point \vec{r_B} -1 1.5 1.1
+
+
+ang3d_point X 1 0 0
+ang3d_point Y 0 1 0
+ang3d_point Z 0 0 1
+ang3d_point \vec{i} 1 0 0
+ang3d_point \vec{j} 0 1 0
+ang3d_point \vec{k} 0 0 1
+
+
+
+double
+drawsegment O X
+drawarrow O X 1
+mark_t \vec{i}
+
+
+drawsegment O Y
+drawarrow O Y 1
+mark_t \vec{j}
+
+drawsegment O Z
+drawarrow O Z 1
+mark_l \vec{k}
+
+
+color 200 200 200
+drawsegment O A
+drawsegment O B
+drawarrow O A 1
+drawarrow O B 1
+mark_lb \vec{r_A}
+mark_b \vec{r_B}
+
+color 255 0 0
+cmark_t A
+cmark_t B
+drawsegment A B
+drawarrow A B 1

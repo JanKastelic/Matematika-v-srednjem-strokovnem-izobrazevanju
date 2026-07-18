@@ -1,0 +1,57 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Changing color 215 183 183
+\definecolor{r215g183b183}{rgb}{0.843137,0.717647,0.717647}%
+\color{r215g183b183}% 
+
+% Filling circle arc V B 56.31
+\fill (2.500000,2.500000) -- (5.200000,1.949999) -- (5.204824,1.974235) arc (349:360:2.755449 and 2.755449) --(5.255449,2.500000) arc (0:44:2.755449 and 2.755449) -- (4.455318,4.441451) -- cycle;%
+
+% Changing color 0 0 0
+\definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+\color{r0g0b0}% 
+
+% Drawing line V P
+\draw [line width=0.016cm] (1.000000,2.800000) -- (2.460777,2.507845);%
+\draw [line width=0.016cm] (2.539223,2.492155) -- (3.960777,2.207845);%
+\draw [line width=0.016cm] (4.039223,2.192155) -- (5.000000,2.000000);%
+
+% Drawing line V R
+\draw [line width=0.016cm] (1.000000,1.000000) -- (2.471716,2.471716);%
+\draw [line width=0.016cm] (2.528284,2.528284) -- (3.471716,3.471716);%
+\draw [line width=0.016cm] (3.528284,3.528284) -- (4.500000,4.500000);%
+
+% Marking point V by circle
+\draw [line width=0.016cm] (2.500000,2.500000) circle (0.040000);%
+\draw (2.500000,2.500000) node [anchor=south] { $V$ };%
+
+% Marking point P by circle
+\draw [line width=0.016cm] (4.000000,2.200000) circle (0.040000);%
+\draw (4.000000,2.200000) node [anchor=north] { $P$ };%
+
+% Marking point R by circle
+\draw [line width=0.016cm] (3.500000,3.500000) circle (0.040000);%
+\draw (3.500000,3.500000) node [anchor=south] { $R$ };%
+
+% Marking point h
+\draw (4.500000,2.000000) node [anchor=south] { $h$ };%
+
+% Marking point k
+\draw (4.000000,4.000000) node [anchor=south] { $k$ };%
+
+% Drawing arc V A 56.31
+\draw [line width=0.016cm] (3.250000,2.350000) -- (3.250800,2.354059) arc (349:360:0.764853 and 0.764853) --(3.264853,2.500000) arc (0:45:0.764853 and 0.764853);%
+
+% Marking point \varphi
+\draw (3.100000,2.800000) node [anchor=west] { $\varphi$ };%
+
+% Marking point zun
+\draw (2.000000,2.000000) node  { $zun$ };%
+
+% Marking point not
+\draw (4.000000,3.000000) node  { $not$ };%
+\color{black}
+}
+\end{tikzpicture}

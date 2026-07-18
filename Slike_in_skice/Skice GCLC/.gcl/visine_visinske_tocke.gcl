@@ -1,0 +1,60 @@
+area 10 10 70 45
+
+point A 20 15
+point B 60 15
+point C 30 40
+
+cmark_rb A
+cmark_b B
+cmark_t C
+
+line c' A B
+line a' B C
+line b' A C
+
+perpendicular v_a A a'
+intersection A' v_a a'
+
+perpendicular v_b B b'
+intersection B' v_b b'
+
+perpendicular v_c C c'
+intersection C' v_c c'
+
+intersection V v_c v_a
+
+
+
+
+midpoint a B C
+midpoint c A B
+midpoint b A C
+
+mark_b c
+mark_rt a
+mark_lt b
+
+midpoint v_a V A'
+midpoint v_b V B
+midpoint v_c V C'
+
+mark_r v_a
+mark_r v_c
+mark_t v_b
+
+
+double
+drawsegment A B
+drawsegment B C
+drawsegment A C
+
+
+
+color 255 0 0
+drawsegment A A'
+drawsegment B B'
+drawsegment C C'
+
+
+color 0 0 0 
+cmark_rb V

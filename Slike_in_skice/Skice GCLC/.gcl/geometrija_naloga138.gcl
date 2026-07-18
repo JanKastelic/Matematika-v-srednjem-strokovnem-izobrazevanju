@@ -1,0 +1,71 @@
+area 0 0 80 80
+
+point A 15 30
+point E 60 35
+midpoint S A E
+
+circle k S A
+point C 60.22 32.21
+
+cmark_l A
+cmark_r C
+cmark_t S
+
+drawcircle k
+drawsegment A C
+
+rotate DD C -70 A
+line u DD C
+intersection2 D E u k
+
+cmark_t D
+drawsegment A D
+drawsegment D C
+
+rotate BB A -30 C
+line v BB A
+intersection2 F B v k
+
+cmark_b B
+drawsegment A B
+drawsegment D B
+drawsegment B C
+
+point x 49 30
+mark_lb x
+
+point y 52 47
+mark_lb y
+
+point z 23 33
+mark_r z
+
+point U 23 31
+mark_b U
+
+point V 57 34
+mark_l V
+
+point Z 49 18
+mark_rt Z
+
+midpoint AA A C
+midpoint AAA AA A
+angle n C A D
+drawarc A AAA n
+
+midpoint DDD A D
+midpoint DDDD DDD D
+
+drawarc D DDDD 55
+
+
+
+line h A C
+line i B D
+intersection M h i
+
+midpoint BBB A B
+midpoint BBBB M B
+angle_o l B M A
+drawarc M BBBB l

@@ -1,0 +1,41 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing segment A B
+\draw [line width=0.016cm] (1.000000,1.500000) -- (4.460000,1.500000);%
+\draw [line width=0.016cm] (4.540000,1.500000) -- (8.000000,1.500000);%
+
+% Marking point 0 by circle
+\draw [line width=0.016cm] (4.500000,1.500000) circle (0.040000);%
+\draw (4.500000,1.500000) node [anchor=south] { $0$ };%
+
+% Changing color 255 0 0
+\definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+\color{r255g0b0}% 
+
+% Marking point \mathbb{Q}^+
+\draw (6.250000,1.500000) node [anchor=south] { $\mathbb{Q}^+$ };%
+
+% Drawing segment B 0
+\draw [line width=0.016cm] (8.000000,1.500000) -- (4.540000,1.500000);%
+
+% Changing color 0 255 0
+\definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+\color{r0g255b0}% 
+
+% Marking point \mathbb{Q}^-
+\draw (2.750000,1.500000) node [anchor=south] { $\mathbb{Q}^-$ };%
+
+% Drawing segment A 0
+\draw [line width=0.016cm] (1.000000,1.500000) -- (4.460000,1.500000);%
+
+% Changing color 0 0 0
+\definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+\color{r0g0b0}% 
+
+% Marking point \mathbb{Q}
+\draw (1.500000,2.000000) node  { $\mathbb{Q}$ };%
+\color{black}
+}
+\end{tikzpicture}

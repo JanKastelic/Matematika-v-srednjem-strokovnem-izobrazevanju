@@ -1,0 +1,25 @@
+area 12 11 60 30
+
+point V 35 15
+point P 50 15
+point Q 45 25
+point R 0 15
+
+drawline V P
+drawline V Q
+
+
+cmark V
+
+angle a P V Q
+angle b Q V R
+point \varphi 52 18
+point \psi 30 27
+
+color 139 0 0
+drawarc V P a
+mark \varphi
+
+color 0 139 0
+drawarc V Q b
+mark \psi

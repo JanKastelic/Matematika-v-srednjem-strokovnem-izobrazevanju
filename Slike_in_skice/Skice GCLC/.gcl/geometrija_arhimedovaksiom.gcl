@@ -1,0 +1,22 @@
+area 10 10 81 30
+
+point A 15 15
+point B 72 15
+point C 15 15
+point D 25 15
+point E 35 15
+point F 45 15
+point G 55 15
+point H 65 15
+point I 75 15
+
+drawline A B
+cmark_t A
+cmark_t B
+cmark_b C
+cmark_b D
+cmark E
+cmark F
+cmark G
+cmark H
+cmark I

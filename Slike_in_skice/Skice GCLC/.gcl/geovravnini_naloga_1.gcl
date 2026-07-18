@@ -1,0 +1,28 @@
+area 15 15 45 40
+
+point A 30 30
+cmark A
+
+point B 30 10
+drawsegment A B
+
+point C 54 10
+drawsegment A C
+
+point D 6 10
+drawsegment A D
+
+point E 40 90
+drawsegment A E
+
+point \alpha 25 20
+point \beta 35 20
+
+mark \beta
+mark \alpha
+
+point {125^\circ} 35 35
+point {135^\circ} 25 35
+
+mark {125^\circ}
+mark {135^\circ}

@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Marking point A by circle
+\draw [line width=0.016cm] (3.000000,3.000000) circle (0.040000);%
+
+% Drawing line A B
+\draw [line width=0.016cm] (3.000000,2.000000) -- (3.000000,2.960000);%
+\draw [line width=0.016cm] (3.000000,3.040000) -- (3.000000,3.700000);%
+
+% Drawing line A C
+\draw [line width=0.016cm] (4.200000,2.000000) -- (3.030729,2.974393);%
+\draw [line width=0.016cm] (2.969271,3.025607) -- (2.160000,3.700000);%
+
+% Drawing segment A E
+\draw [line width=0.016cm] (3.040000,3.000000) -- (4.500000,3.000000);%
+
+% Marking point x
+\draw (3.800000,2.700000) node  { $x$ };%
+
+% Marking point {90^\circ}
+\draw (3.500000,3.300000) node  { ${90^\circ}$ };%
+
+% Marking point {130^\circ}
+\draw (2.500000,2.800000) node  { ${130^\circ}$ };%
+}
+\end{tikzpicture}

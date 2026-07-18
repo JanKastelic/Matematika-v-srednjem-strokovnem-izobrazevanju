@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing line V A
+\draw [line width=0.016cm] (1.000000,1.500000) -- (2.960000,1.500000);%
+\draw [line width=0.016cm] (3.040000,1.500000) -- (5.000000,1.500000);%
+
+% Drawing line V B
+\draw [line width=0.016cm] (3.000000,1.000000) -- (3.000000,1.460000);%
+\draw [line width=0.016cm] (3.000000,1.540000) -- (3.000000,3.500000);%
+
+% Marking point V by circle
+\draw [line width=0.016cm] (3.000000,1.500000) circle (0.040000);%
+
+% Changing color 139 0 0
+\definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+\color{r139g0b0}% 
+
+% Drawing arc V A 90.00
+\draw [line width=0.032cm] (3.800000,1.500000) arc (360:360:0.800000 and 0.800000) --(3.800000,1.500000) arc (0:90:0.800000 and 0.800000);%
+
+% Changing color 0 139 0
+\definecolor{r0g139b0}{rgb}{0.000000,0.545098,0.000000}%
+\color{r0g139b0}% 
+
+% Drawing arc V B 90.00
+\draw [line width=0.032cm] (3.000000,2.200000) arc (90:180:0.700000 and 0.700000);%
+\color{black}
+}
+\end{tikzpicture}

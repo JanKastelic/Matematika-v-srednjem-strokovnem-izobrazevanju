@@ -1,0 +1,41 @@
+area 10 10 50 45
+
+point V 25 25
+point P 40 22
+point R 35 35
+
+angle a P V R
+midpoint A V P
+
+color 215 183 183
+
+point B 52 19.5
+fillarc V B a
+
+color 0 0 0
+
+drawline V P
+drawline V R
+
+cmark_t V
+cmark_b P
+cmark_t R
+
+point h 45 20
+mark_t h
+
+point k 40 40
+mark_t k
+
+
+
+drawarc V A a
+point \varphi 31 28
+mark_r \varphi
+
+point zun 20 20
+mark zun
+
+point not 40 30
+mark not
+

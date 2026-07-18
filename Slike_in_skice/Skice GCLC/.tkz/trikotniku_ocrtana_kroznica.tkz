@@ -1,0 +1,84 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Marking point A by circle
+\draw [line width=0.016cm] (2.000000,2.500000) circle (0.040000);%
+\draw (2.000000,2.500000) node [anchor=east] { $A$ };%
+
+% Marking point B by circle
+\draw [line width=0.016cm] (6.000000,2.500000) circle (0.040000);%
+\draw (6.000000,2.500000) node [anchor=west] { $B$ };%
+
+% Marking point C by circle
+\draw [line width=0.016cm] (3.000000,5.000000) circle (0.040000);%
+\draw (3.000000,5.000000) node [anchor=south] { $C$ };%
+
+% Marking point \frac{b}{2}
+\draw (2.250000,3.125000) node [anchor=east] { $\frac{b}{2}$ };%
+
+% Marking point \frac{b}{2}
+\draw (2.750000,4.375000) node [anchor=east] { $\frac{b}{2}$ };%
+
+% Marking point \frac{c}{2}
+\draw (3.000000,2.500000) node [anchor=north] { $\frac{c}{2}$ };%
+
+% Marking point \frac{c}{2}
+\draw (5.000000,2.500000) node [anchor=north] { $\frac{c}{2}$ };%
+
+% Marking point \frac{a}{2}
+\draw (5.250000,3.125000) node [anchor=west] { $\frac{a}{2}$ };%
+
+% Marking point \frac{a}{2}
+\draw (3.750000,4.375000) node [anchor=west] { $\frac{a}{2}$ };%
+
+% Changing color 255 0 0
+\definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+\color{r255g0b0}% 
+
+% Drawing line s_c
+\draw [line width=0.016cm] (4.000000,1.000000) -- (4.000000,3.110000);%
+\draw [line width=0.016cm] (4.000000,3.190000) -- (4.000000,5.500000);%
+
+% Drawing line s_a
+\draw [line width=0.016cm] (2.208333,1.000000) -- (3.974393,3.119271);%
+\draw [line width=0.016cm] (4.025607,3.180729) -- (5.958333,5.500000);%
+
+% Drawing line s_b
+\draw [line width=0.016cm] (1.000000,4.350000) -- (3.962861,3.164856);%
+\draw [line width=0.016cm] (4.037139,3.135144) -- (7.000000,1.950000);%
+
+% Changing color 0 0 255
+\definecolor{r0g0b255}{rgb}{0.000000,0.000000,1.000000}%
+\color{r0g0b255}% 
+
+% Drawing circle S_O A
+\draw [line width=0.016cm] (2.012724,2.462079) -- (2.023851,2.430741) arc (200:340:2.102974 and 2.102974) -- (5.987275,2.462077);%
+\draw [line width=0.016cm] (6.012001,2.538157) -- (6.021508,2.570341) arc (344:360:2.102974 and 2.102974) --(6.102974,3.150000) arc (0:117:2.102974 and 2.102974) -- (3.035368,5.018685);%
+\draw [line width=0.016cm] (2.964994,4.980646) -- (2.948513,4.971229) arc (120:196:2.102974 and 2.102974) -- (1.987999,2.538158);%
+
+% Drawing segment A S_O
+\draw [line width=0.016cm] (2.038041,2.512363) -- (3.961959,3.137637);%
+
+% Marking point R
+\draw (3.000000,2.825000) node [anchor=south] { $R$ };%
+
+% Changing color 0 0 0
+\definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+\color{r0g0b0}% 
+
+% Drawing segment A B
+\draw [line width=0.032cm] (2.040000,2.500000) -- (5.960000,2.500000);%
+
+% Drawing segment B C
+\draw [line width=0.032cm] (5.969271,2.525607) -- (3.030729,4.974393);%
+
+% Drawing segment A C
+\draw [line width=0.032cm] (2.014856,2.537139) -- (2.985144,4.962861);%
+
+% Marking point S_O by circle
+\draw [line width=0.032cm] (4.000000,3.150000) circle (0.040000);%
+\draw (3.970000,3.180000) node [anchor=north west] { $S_O$ };%
+\color{black}
+}
+\end{tikzpicture}

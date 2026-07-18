@@ -1,0 +1,42 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Marking point V by circle
+\draw [line width=0.016cm] (3.500000,1.500000) circle (0.040000);%
+\draw (3.500000,1.500000) node [anchor=north] { $V$ };%
+
+% Marking point P by circle
+\draw [line width=0.016cm] (5.000000,2.000000) circle (0.040000);%
+\draw (5.000000,2.000000) node [anchor=north] { $P$ };%
+
+% Drawing line V P
+\draw [line width=0.016cm] (2.600000,1.200000) -- (3.462053,1.487351);%
+\draw [line width=0.016cm] (3.537947,1.512649) -- (4.962053,1.987351);%
+\draw [line width=0.016cm] (5.037947,2.012649) -- (5.500000,2.166667);%
+
+% Marking point Q by circle
+\draw [line width=0.016cm] (4.648153,2.587081) circle (0.040000);%
+\draw (4.648153,2.587081) node [anchor=south] { $Q$ };%
+
+% Marking point R by circle
+\draw [line width=0.016cm] (2.896583,2.961468) circle (0.040000);%
+\draw (2.866583,2.931468) node [anchor=south west] { $R$ };%
+
+% Drawing line V R
+\draw [line width=0.016cm] (3.623865,1.200000) -- (3.515265,1.463027);%
+\draw [line width=0.016cm] (3.484735,1.536973) -- (2.911849,2.924495);%
+\draw [line width=0.016cm] (2.881318,2.998440) -- (2.756809,3.300000);%
+
+% Drawing line V Q
+\draw [line width=0.016cm] (3.183146,1.200000) -- (3.470954,1.472499);%
+\draw [line width=0.016cm] (3.529046,1.527501) -- (4.619106,2.559580);%
+\draw [line width=0.016cm] (4.677199,2.614582) -- (5.401122,3.300000);%
+
+% Marking point {x+7^\circ}
+\draw (4.824076,2.293541) node  { ${x+7^\circ}$ };%
+
+% Marking point {3x+15^\circ}
+\draw (3.772368,2.774275) node  { ${3x+15^\circ}$ };%
+}
+\end{tikzpicture}

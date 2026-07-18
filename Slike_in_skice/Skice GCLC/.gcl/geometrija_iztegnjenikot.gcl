@@ -1,0 +1,20 @@
+area 10 10 50 30
+
+point V 30 16
+point h 35 15
+
+line u V h
+
+circle l V h
+intersection2 A B u l
+point C 38 48
+
+drawline V h
+cmark_b V
+
+double
+color 139 0 0
+drawarc V h 180
+point \varphi 30 20
+mark_t \varphi
+drawarrow C A 1

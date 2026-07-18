@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing line A B
+\draw [line width=0.016cm] (1.000000,1.250000) -- (1.961194,1.490299);%
+\draw [line width=0.016cm] (2.038806,1.509701) -- (3.461194,1.865299);%
+\draw [line width=0.016cm] (3.538806,1.884701) -- (3.961194,1.990299);%
+\draw [line width=0.016cm] (4.038806,2.009701) -- (5.000000,2.250000);%
+
+% Marking point A by circle
+\draw [line width=0.016cm] (2.000000,1.500000) circle (0.040000);%
+\draw (2.000000,1.500000) node [anchor=south] { $A$ };%
+
+% Marking point C by circle
+\draw [line width=0.016cm] (3.500000,1.875000) circle (0.040000);%
+\draw (3.500000,1.875000) node [anchor=south] { $C$ };%
+
+% Marking point B by circle
+\draw [line width=0.016cm] (4.000000,2.000000) circle (0.040000);%
+\draw (4.000000,2.000000) node [anchor=south] { $B$ };%
+}
+\end{tikzpicture}

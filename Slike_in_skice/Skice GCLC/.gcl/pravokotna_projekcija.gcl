@@ -1,0 +1,32 @@
+area 10 10 45 45
+
+point T 15 40
+point p 41.55 25.78
+
+point X 10 10
+point Y 50 30
+line P X Y
+
+perpendicular Q T P
+drawdashline Q
+
+intersection T' Q P
+
+point q 18.47 33.06
+mark_l q
+
+
+cmark_t T
+
+point \frac{\pi}{2} 24 20
+mark \frac{\pi}{2}
+
+
+
+
+color 0 0 255
+drawline P
+mark_b p
+
+color 255 0 0
+cmark_rt T'

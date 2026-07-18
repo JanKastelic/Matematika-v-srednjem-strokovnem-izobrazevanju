@@ -1,0 +1,44 @@
+area 0 0 100 40
+
+point a 5 10
+point b 100 10
+
+point x_{min} 15 10
+point Q_1 35 10
+point Me=Q_2 50 10
+point Q_3 70 10
+point x_{max} 90 10
+
+point c 15 20
+point d 35 20
+point e 35 15
+point f 35 25
+point g 50 15
+point h 50 25
+point i 70 15
+point j 70 25
+point k 70 20
+point l 90 20
+
+
+cmark_b x_{min}
+cmark_b Q_1
+cmark_b Me=Q_2
+cmark_b Q_3
+cmark_b x_{max}
+
+drawsegment a b
+
+color 215 183 183
+fillrectangle f i
+
+color 0 0 0
+double
+drawsegment c d
+drawsegment e f
+drawsegment g h
+drawsegment i j
+drawsegment k l
+drawsegment e i
+drawsegment f j
+

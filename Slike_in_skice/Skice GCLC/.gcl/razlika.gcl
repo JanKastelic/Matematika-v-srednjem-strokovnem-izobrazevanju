@@ -1,0 +1,53 @@
+area 0 0 90 30
+
+point a 50 5
+point b 50 25
+point c 70 5
+point d 70 25
+
+drawsegment a b
+drawsegment b d
+drawsegment c d
+drawsegment c a
+
+midpoint e c d
+point f 90 15
+
+drawsegment e f
+drawarrow e f 1
+
+point g 25 10
+point h 50 10
+point i 25 20
+point j 50 20
+
+drawsegment g h
+drawsegment i j
+drawarrow g h 1
+drawarrow i j 1
+
+midpoint {razlika} e f
+midpoint {diferenca} e f
+mark_t {razlika}
+mark_b {diferenca}
+
+midpoint {odštevanec} g h
+mark_t {odštevanec}
+midpoint {subtrahend} g h
+mark_b {subtrahend}
+
+midpoint {zmanjševanec} i j
+mark_t {zmanjševanec}
+midpoint {minuend} i j
+mark_b {minuend}
+
+double double
+
+point x 60 10
+point y 60 20
+point z 55 15
+point w 65 15
+
+drawsegment z w
+
+

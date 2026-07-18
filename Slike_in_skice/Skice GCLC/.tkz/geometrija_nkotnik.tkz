@@ -1,0 +1,57 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Marking point A_1 by circle
+\draw [line width=0.032cm] (1.500000,3.500000) circle (0.040000);%
+\draw (1.500000,3.500000) node [anchor=east] { $A_1$ };%
+
+% Marking point A_2 by circle
+\draw [line width=0.032cm] (2.000000,4.500000) circle (0.040000);%
+\draw (2.030000,4.470000) node [anchor=south east] { $A_2$ };%
+
+% Marking point A_3 by circle
+\draw [line width=0.032cm] (2.983153,5.032364) circle (0.040000);%
+\draw (2.983153,5.032364) node [anchor=south] { $A_3$ };%
+
+% Marking point A_4 by circle
+\draw [line width=0.032cm] (4.093855,4.904537) circle (0.040000);%
+\draw (4.093855,4.904537) node [anchor=south] { $A_4$ };%
+
+% Marking point A_5 by circle
+\draw [line width=0.032cm] (4.930371,4.162755) circle (0.040000);%
+\draw (4.900371,4.132755) node [anchor=south west] { $A_5$ };%
+
+% Marking point A_6 by circle
+\draw [line width=0.032cm] (5.190136,3.075317) circle (0.040000);%
+\draw (5.190136,3.075317) node [anchor=west] { $A_6$ };%
+
+% Marking point A_n by circle
+\draw [line width=0.032cm] (1.664001,2.394060) circle (0.040000);%
+\draw (1.664001,2.394060) node [anchor=east] { $A_n$ };%
+
+% Drawing segment A_1 A_2
+\draw [line width=0.032cm] (1.517889,3.535777) -- (1.982111,4.464223);%
+
+% Drawing segment A_2 A_3
+\draw [line width=0.032cm] (2.035174,4.519046) -- (2.947978,5.013317);%
+
+% Drawing segment A_3 A_4
+\draw [line width=0.032cm] (3.022890,5.027790) -- (4.054117,4.909111);%
+
+% Drawing segment A_4 A_5
+\draw [line width=0.032cm] (4.123783,4.877998) -- (4.900443,4.189294);%
+
+% Drawing segment A_5 A_6
+\draw [line width=0.032cm] (4.939665,4.123850) -- (5.180842,3.114222);%
+
+% Drawing segment A_6 B
+\draw [line width=0.032cm] (5.175434,3.038117) -- (4.984665,2.555430);%
+
+% Drawing segment A_n A_1
+\draw [line width=0.032cm] (1.658133,2.433627) -- (1.505867,3.460433);%
+
+% Drawing segment A_n D
+\draw [line width=0.032cm] (1.691502,2.365014) -- (2.048342,1.988127);%
+}
+\end{tikzpicture}

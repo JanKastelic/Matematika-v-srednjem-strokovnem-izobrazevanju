@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing line V h
+\draw [line width=0.016cm] (1.000000,2.000000) -- (2.960777,1.607845);%
+\draw [line width=0.016cm] (3.039223,1.592155) -- (5.000000,1.200000);%
+
+% Marking point V by circle
+\draw [line width=0.016cm] (3.000000,1.600000) circle (0.040000);%
+\draw (3.000000,1.600000) node [anchor=north] { $V$ };%
+
+% Changing color 139 0 0
+\definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+\color{r139g0b0}% 
+
+% Drawing arc V h 360.00
+\draw [line width=0.032cm] (3.000000,1.600000) circle (0.509902);%
+
+% Marking point \varphi
+\draw (3.000000,2.000000) node [anchor=south] { $\varphi$ };%
+
+% Drawing arrow k h 1.00
+\draw [line width=0.032cm] (3.331960,1.251479) -- (3.500000,1.500000);%
+\draw [line width=0.032cm] (3.331960,1.251479) -- (3.455661,1.411322);%
+\draw [line width=0.032cm] (3.402008,1.216456) -- (3.500000,1.500000);%
+\draw [line width=0.032cm] (3.402008,1.216456) -- (3.455661,1.411322);%
+\color{black}
+}
+\end{tikzpicture}

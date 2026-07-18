@@ -1,0 +1,70 @@
+area 10 10 120 80
+
+point O 15 15
+point T' 20 40
+point \alpha 19 23
+
+rotate T O 330 T'
+
+drawdashsegment O T
+drawdashsegment O T'
+
+point X 45 35
+
+point A 60 20
+point B 85 15
+point C 70 30
+
+rotate A' X 50 A
+rotate B' X 50 B
+rotate C' X 50 C
+
+cmark_t C
+cmark_b A
+cmark_b B
+
+drawsegment A B
+drawsegment B C
+drawsegment A C
+
+drawdashsegment X A
+drawdashsegment X B
+drawdashsegment X C
+
+drawsegment A' B'
+drawsegment B' C'
+drawsegment A' C'
+
+drawdashsegment X A'
+drawdashsegment X B'
+drawdashsegment X C'
+
+angle alpha A X A'
+angle beta B X B'
+angle gamma C X C'
+
+cmark_t T
+
+
+color 0 0 255
+cmark_b O
+mark \alpha
+
+cmark X
+
+point a 48.39 31.61
+point b 54.20 30.40
+point c 61.14 31.77
+
+
+drawarc X a alpha
+drawarc X b beta
+drawarc X c gamma
+
+color 255 0 0
+cmark_t T'
+cmark_b A'
+cmark_b B'
+cmark_t C'
+
+

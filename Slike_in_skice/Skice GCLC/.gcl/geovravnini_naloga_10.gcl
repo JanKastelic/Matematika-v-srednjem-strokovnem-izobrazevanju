@@ -1,0 +1,34 @@
+area 15 10 45 30
+
+point A 35 15
+point B 90 15
+point C 90 25
+
+line Q A B
+parallel P C Q
+
+drawline Q
+drawline P
+
+rotate D A 121 B
+
+line R A D
+drawline R
+
+intersection E P R
+
+point p 16 15
+point q 16 25
+point r 27 30
+point \alpha 25 25
+point \beta 40 15
+point {4x+77^\circ} 38 15
+point {x^2} 27 25
+
+mark_t p
+mark_t q
+mark_r r
+mark_t \alpha
+mark_b \beta
+mark_t {4x+77^\circ}
+mark_b {x^2}

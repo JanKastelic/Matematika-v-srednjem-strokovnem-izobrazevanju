@@ -1,0 +1,29 @@
+area 10 10 55 35
+
+point C 15 15
+point A 51 15
+point B 51 33
+point D 27 15
+
+drawsegment A C
+drawsegment A B
+drawsegment B C
+
+line c A B
+parallel d D c
+line a B C
+intersection E a d
+
+drawsegment D E
+
+cmark_b C
+cmark_b D
+cmark_b A
+cmark_r B
+cmark_t E
+
+midpoint e E D
+mark_r e
+
+midpoint f A B
+mark_r f

@@ -1,0 +1,746 @@
+\section{Deljivost}
+
+\begin{frame}
+    \sectionpage
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[currentsection, hideothersubsections]
+\end{frame}
+
+    \subsection{Relacija deljivosti}
+
+        \begin{frame}
+            \frametitle{Relacija deljivosti}
+
+            \only<2->{\begin{alertblock}{}
+                Naravno število $m$ je \textbf{delitelj} naravnega števila $n$ (\textbf{deljenec}), če obstaja naravno število $k$ (\textbf{kvocient}), da velja: $$\mathbf{n=k\cdot m}.$$
+            \end{alertblock}}
+
+            \only<3->{\begin{alertblock}{}
+                Naravno število $m$ deli naravno število $n$, ko je število $n$ večkratnik števila $m$. $$m\mid n \Leftrightarrow n=k\cdot m;\quad m,n,k\in\mathbb{N}$$
+            \end{alertblock}}
+
+            \only<4->{\begin{block}{}
+                    Število $m$ je delitelj samega sebe in vseh svojih večkratnikov.
+            \end{block}}
+
+            \only<5->{\begin{block}{}
+                $1$ je delitelj vsakega naravnega števila.
+            \end{block}}
+
+            \only<6->{\begin{block}{}
+                Če $d$ deli naravni števili $m$ in $n$, $n>m$, potem $d$ deli tudi vsoto in razliko števil $m$ in $n$.
+            \end{block}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{block}{}
+                Pri deljenju poljubnega naravnega števila $n$ z naravnim številom $m$ imamo dve možnosti: $n$ je deljivo z $m$ ali $n$ ni deljivo z $m$.
+            \end{block}}
+
+            \only<3->{\begin{block}{}
+                Relacija deljivosti je:
+                \only<4->{\begin{enumerate}
+                    \item<4-> \textbf{refleksivna}: \only<5->{$$n\mid n;$$}
+                    \item<6-> \textbf{antisimetrična}: \only<7->{$$m\mid n \wedge n\mid m \Rightarrow m=n;$$}
+                    \item<8-> \textbf{tranzitivna}:  \only<9->{$$m\mid n \wedge n\mid o \Rightarrow m\mid o.$$}
+                \end{enumerate}}
+            \end{block}}
+
+            \only<10->{\begin{block}{}
+                Relacija s temi lastnostmi je relacija \textbf{delne urejenosti}, zato relacija deljivosti delno ureja množico $\mathbb{N}$.
+            \end{block}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Zapišite vse delitelje števil.
+                \only<3->{\begin{itemize}
+                    \item $6$ \\~
+                    \item $16$ \\~
+                    \item $37$ \\~
+                    \item $48$ \\~
+                    \item $120$ \\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Pokažite, da trditev velja.
+                \only<3->{\begin{itemize}
+                    \item Izraz $x-3$ deli izraz $x^2-2x-3$. \\~\\~\\~
+                    \item Izraz $x+2$ deli izraz $x^3+x^2-4x-4$. \\~\\~\\~
+                    \item Izraz $x-2$ deli izraz $x^3-8$. \\~\\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Pokažite, da trditev velja.
+                \only<3->{\begin{itemize}
+                    \item $19\mid \left(3^{21}-3^{20}+3^{18}\right)$ \\~
+                    \item $7\mid \left(3\cdot 4^{11}+4^{12}+7\cdot 4^{10}\right)$ \\~
+                    \item $14\mid \left(5\cdot 3^6+2\cdot 3^8-3\cdot 3^7\right)$ \\~
+                    \item $25\mid \left(7\cdot 2^{23}-3\cdot 2^{24}+3\cdot 2^{25}-2^{22}\right)$ \\~
+                    \item $11\mid \left(2\cdot 10^6+3\cdot 10^7+10^8\right)$ \\~
+                    \item $35\mid \left(6^{32}-36^{15}\right)$ \\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Pokažite, da trditev velja.
+                \only<3->{\begin{itemize}
+                    \item $3\mid \left(2^{2n+1}-5\cdot 2^{2n}+9\cdot 2^{2n-1}\right)$ \\~
+                    \item $29\mid \left(5^{n+3}-2\cdot 5^{n+1}+7\cdot 5^{n+2}\right)$ \\~
+                    \item $10\mid \left(3\cdot 7^{4n-1}-4\cdot 7^{4n-2}+7^{4n+1}\right)$ \\~
+                    \item $10\mid \left(9^{3n-1}+9\cdot 9^{3n+1}+9^{3n}-9^{3n+2}\right)$ \\~
+                    \item $5\mid \left(7\cdot 2^{4n-2}+3\cdot 4^{2n}-16^n\right)$ \\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Pokažite, da je za poljubno naravno število $u$ vrednost izraza $$(u+7)(7-u)-3(3-u)(u+5)$$ večkratnik števila $4$.
+            \end{exampleblock}}
+        \end{frame}
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+
+
+    \subsection{Kriteriji deljivost}
+
+        \begin{frame}
+            \frametitle{Kriteriji deljivosti}
+
+            \only<2->{\begin{alertblock}{Deljivost z $2$}
+                \only<3->{Število je deljivo z $2$ natanko takrat, ko so enice števila deljive z $2$.}
+            \end{alertblock}}
+
+            \only<4->{\begin{alertblock}{Deljivost s $3$}
+                \only<5->{Število je deljivo s $3$ natanko takrat, ko je vsota števk števila deljiva s $3$.}
+            \end{alertblock}}
+
+            \only<6->{\begin{alertblock}{Deljivost s $4$ oziroma $25$}
+                \only<7->{Število je deljivo s $4$ oziroma $25$ natanko takrat, ko je dvomestni konec števila deljiv s $4$ oziroma $25$.}
+            \end{alertblock}}
+
+            \only<8->{\begin{alertblock}{Deljivost s $5$}
+                \only<9->{Število je deljivo s $5$ natanko takrat, ko so enice števila enake $0$ ali $5$.}
+            \end{alertblock}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{alertblock}{Deljivost s $6$}
+                \only<3->{Število je deljivo s $6$ natanko takrat, ko je deljivo z $2$ in s $3$ hkrati.}
+            \end{alertblock}}
+
+            \only<4->{\begin{alertblock}{Deljivost z $8$ oziroma s $125$}
+                \only<5->{Število je deljivo z $8$ oziroma s $125$ natanko takrat, ko je trimestni konec števila deljiv z~$8$ oziroma s $125$.}
+            \end{alertblock}}
+
+            \only<6->{\begin{alertblock}{Deljivost z $9$}
+                \only<7->{Število je deljivo z $9$ natanko takrat, ko je vsota števk števila deljiva z $9$.}
+            \end{alertblock}}
+
+            \only<8->{\begin{alertblock}{Deljivost z $10$ oziroma $10^n$}
+                \only<9->{Število je deljivo z $10$ natanko takrat, ko so enice števila enake $0$.}
+                \only<10->{Število je deljivo z $10^n$ natanko takrat, ko ima število na zadnjih $n$ mestih števko $0$.}
+            \end{alertblock}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{alertblock}{Deljivost z $11$}
+                \only<3->{Število je deljivo z $11$ natanko takrat, ko je alternirajoča vsota števk tega števila deljiva z $11$.}
+            \end{alertblock}}
+
+            \only<4->{\begin{alertblock}{Deljivost s $7$}
+                \begin{enumerate}
+                    \item<5-> Vzamemo enice danega števila in jih pomnožimo s $5$,
+                    \item<6-> prvotnemu številu brez enic prištejemo dobljeni produkt,
+                    \item<7-> vzamemo enice dobljene vsote in jih pomnožimo s $5$ ...
+                    % \item<9-> produkt prištejemo prej dobljenemu številu ...     
+                \end{enumerate}
+                \only<8->{Postopek ponavljamo, dokler ne dobimo dvomestnega števila -- 
+                če je to deljivo s $7$, je prvotno število deljivo s $7$. 
+                }
+            \end{alertblock}}
+
+            \only<9->{\begin{block}{Deljivost s sestavljenim številom}
+                    \only<10->{Število zapišemo kot produkt dveh (ali več) tujih števil in
+                    preverimo deljivost z vsakim faktorjem posebej.}
+            \end{block}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                S katerimi od števil $2$, $3$, $4$, $5$, $6$, $7$, $8$, $9$, $10$, $11$ so deljiva naslednja števila?
+                \only<3->{\begin{itemize}
+                    \item $84742$ \\~\\~
+                    \item $393948$ \\~\\~
+                    \item $12390$ \\~\\~
+                    \item $19401$ \\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Določite vse možnosti za števko $a$, da je število $\overline{65833a}$:
+                \only<3->{\begin{itemize}
+                    \item deljivo s $3$, \\~
+                    \item deljivo s $4$, \\~
+                    \item deljivo s $5$, \\~
+                    \item deljivo s $6$. \\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Določite vse možnosti za števko $b$, da je število $\overline{65b90b}$:
+                \only<3->{\begin{itemize}
+                    \item deljivo z $2$, \\~
+                    \item deljivo s $3$, \\~
+                    \item deljivo s $6$, \\~
+                    \item deljivo z $9$, \\~
+                    \item deljivo z $10$. \\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Določite vse možnosti za števki $c$ in $d$, da je število $\overline{115c1d}$ deljivo s $6$.
+                \\~\\~\\~\\~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Določite vse možnosti za števki $e$ in $f$, da je število $\overline{115e1f}$ deljivo z $8$.
+                \\~\\~\\~\\~\\~
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Pokažite, da za vsako naravno število $n$ $12$ deli $n^4-n^2$.
+                \\~\\~\\~\\~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Preverite, ali je število $8641 969$ deljivo s $7$.
+                \\~\\~\\~\\~
+            \end{exampleblock}}
+
+        \end{frame}
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+
+
+
+
+
+    \subsection{Osnovni izrek o deljenju}
+
+        \begin{frame}
+            \frametitle{Osnovni izrek o deljenju naravnih števil}
+
+            \only<2->{\begin{alertblock}{Osnovni izrek o deljenju}
+                \only<3->{Za poljubni naravni števili $\mathbf{m}$ (\textbf{deljenec}) in $\mathbf{n}$ (\textbf{delitelj}), $m\geq n$, 
+                obstajata natanko določeni nenegativni števili $\mathbf{k}$ (\textbf{količnik}/\textbf{kvocient}) in $\mathbf{r}$ (\textbf{ostanek}), 
+                da velja:}
+                \only<4->{$$m=k\cdot n+r; \quad  0\leq r<n; \quad m,n\in\mathbb{N}; k,r\in\mathbb{N}_0.$$}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{}
+                Če je ostanek pri deljenju enak $0$, je število $m$ \textbf{večkratnik} števila $n$. 
+                \\ Tedaj je število $m$ deljivo s številom $n$. Pravimo, da $n$ deli število $m$: $n\mid m$.
+            \end{block}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Določite, katera števila so lahko ostanki pri deljenju naravnega števila $n$ s:
+                \only<3->{\begin{itemize}
+                    \item številom $3$; 
+                    \item številom $7$; 
+                    \item številom $365$. \\~
+                \end{itemize}}
+            \end{exampleblock}}
+
+            \only<4->{\begin{exampleblock}{Naloga}
+                Zapišite prvih nekaj naravnih števil, ki dajo:
+                \only<5->{\begin{itemize}
+                    \item pri deljenju s $4$ ostanek $3$; 
+                    \item pri deljenju s $7$ ostanek $4$; 
+                    \item pri deljenju z $9$ ostanek $4$. \\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Zapišite naravno število, ki da:
+                \only<3->{\begin{itemize}
+                    \item pri deljenju s $7$ količnik $5$ in ostanek $3$; 
+                    \item pri deljenju z $10$ količnik $9$ in ostanek $1$; 
+                    \item pri deljenju s $23$ količnik $2$ in ostanek $22$. \\~
+                \end{itemize}}
+            \end{exampleblock}}
+
+            \only<4->{\begin{exampleblock}{Naloga}
+                Zapišite množico vseh naravnih števil $n$, ki dajo:
+                \only<5->{\begin{itemize}
+                    \item pri deljenju z $2$ ostanek $1$; 
+                    \item pri deljenju z $2$ ostanek $0$; 
+                    \item pri deljenju s $5$ ostanek $2$. \\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Katero število smo delili s $7$, če smo dobili kvocient $3$ in ostanek $5$? \\~\\~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                S katerim številom smo delili število $73$, če smo dobili kvocient $12$ in ostanek $1$? \\~\\~
+            \end{exampleblock}}
+
+            \only<4->{\begin{exampleblock}{Naloga}
+                Marjeta ima čebulice tulipana, ki jih želi posaditi v več vrst. 
+                V vsaki od $3$ vrst je izkopala po $8$ jamic, potem pa ugotovila, da ji bosta $2$ čebulici ostali.
+                Koliko čebulic ima Marjeta?  \\~\\~
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Če neko število delimo z $8$, dobimo ostanek $7$. Kolikšen je ostanek, če to isto število delimo s $4$? \\~\\~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Če neko število delimo s $24$ dobimo ostanek $21$. Kolikšen je ostanek, če to isto število delimo s $3$? \\~\\~
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+
+    \subsection{Praštevila in sestavljena števila}
+
+        \begin{frame}
+            \frametitle{Praštevila in sestavljena števila}
+
+            \only<2->{\begin{block}{}
+                Glede na število deliteljev, lahko naravna števila razdelimo na tri skupine:
+                \begin{itemize}
+                    \item<3-> \textbf{število $1$} -- število, ki ima samo enega delitelja (samega sebe);
+                    \item<4-> \textbf{praštevila} -- števila, ki imajo natanko dva delitelja ($1$ in samega sebe);
+                    \item<5-> \textbf{sestavljena števila} -- števila, ki imajo več kot dva delitelja.
+                \end{itemize}
+                \only<6->{$$ \mathbb{N}=\{1\}\cup \mathbb{P}\cup \{sestavljena~števila\} $$}
+            \end{block}}
+
+            \only<7->{\begin{block}{}
+                Praštevil je neskončno mnogo.
+            \end{block}}
+
+            \only<8->{\begin{block}{}
+                Število $n$ je praštevilo, če ni deljivo z nobenim praštevilom, manjšim ali enakim $\sqrt{n}$.
+            \end{block}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{block}{Eratostenovo sito}
+                \only<3->{\begin{longtable}{|c|c|c|c|c|c|c|c|c|c|}
+                    \hline
+                    1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+                    \hline
+                    11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
+                    \hline
+                    21 & 22 & 23 & 24 & 25 & 26 & 27 & 28 & 29 & 30 \\
+                    \hline
+                    31 & 32 & 33 & 34 & 35 & 36 & 37 & 38 & 39 & 40 \\
+                    \hline
+                    41 & 42 & 43 & 44 & 45 & 46 & 47 & 48 & 49 & 50 \\
+                    \hline
+                    51 & 52 & 53 & 54 & 55 & 56 & 57 & 58 & 59 & 60 \\
+                    \hline
+                    61 & 62 & 63 & 64 & 65 & 66 & 67 & 68 & 69 & 70 \\
+                    \hline
+                    71 & 72 & 73 & 74 & 75 & 76 & 77 & 78 & 79 & 80 \\
+                    \hline
+                    81 & 82 & 83 & 84 & 85 & 86 & 87 & 88 & 89 & 90 \\
+                    \hline
+                    91 & 92 & 93 & 94 & 95 & 96 & 97 & 98 & 99 & 100 \\
+                    \hline
+                    \end{longtable}
+                    ~\\~\\}
+            \end{block}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Preverite, ali so dana števila praštevila.
+                \only<3->{\begin{itemize}
+                    \item $103$ \\~
+                    \item $163$ \\~
+                    \item $137$ \\~
+                    \item $197$ \\~
+                    \item $147$ \\~
+                    \item $559$ \\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+
+    \subsection{Osnovni izrek aritmetike}
+
+        \begin{frame}
+            \frametitle{Osnovni izrek aritmetike}
+
+            \only<2->{\begin{alertblock}{Osnovni izrek aritmetike}
+                \only<3->{Vsako naravno število lahko enolično/na en sam način (do vrstnega reda faktorjev natančno) zapišemo kot produkt potenc s praštevilskimi osnovami:}
+                \only<4->{$$ n=p_1^{k_1}\cdot p_2^{k_2}\cdot\ldots\cdot p_l^{k_l}; \quad p_i\in\mathbb{P}\land n, k_i\in\mathbb{N}.$$}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{}
+                Zapis naravnega števila kot produkt potenc s praštevilskimi osnovami imenujemo tudi \textbf{praštevilski razcep}.
+            \end{block}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Zapišite število $8755$ kot produkt samih praštevil in njihovih potenc. \\~\\~\\~\\~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Razcepite število $3520$ na prafaktorje. \\~\\~\\~\\~
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Zapišite praštevilski razcep števila $38250$. \\~\\~\\~\\~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Zapišite praštevilski razcep števila $3150$. \\~\\~\\~\\~
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Razcepite število $66$ na prafaktorje in zapišite vse njegove delitelje. \\~\\~\\~\\~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Razcepite število $204$ na prafaktorje in zapišite vse njegove delitelje. \\~\\~\\~\\~
+            \end{exampleblock}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Zapišite vse izraze, ki delijo dani izraz.
+                \only<3->{\begin{itemize}
+                    \item $x^2+x-1$ \\~\\~\\~
+                    \item $x^3-x^2-4x+4$ \\~\\~\\~
+                    \item $x^3-27$ \\~\\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+    \subsection{Največji skupni delitelj in najmanjši skupni večkratnik}
+
+        \begin{frame}
+            \frametitle{Največji skupni delitelj in najmanjši skupni večkratnik}
+
+            \only<2->{\begin{alertblock}{Največji skupni delitelj}
+                \only<3->{\textbf{Največji skupni delitelj} števil $m$ in $n$ je največje število od tistih, ki delijo števili $m$ in $n$. \\
+                Oznaka: $D(m,n)$.}                
+            \end{alertblock}}
+
+            \only<4->{\begin{alertblock}{Najmanjši skupni večkratnik}
+                \only<5->{\textbf{Najmanjši skupni večkratnik} števil $m$ in $n$ je najmanjše število od tistih, ki so deljiva s številoma $m$ in $n$. \\
+                Oznaka: $v(m,n)$.}
+            \end{alertblock}}
+
+            \only<6->{\begin{block}{}
+                Števili $m$ in $n$, katerih največji skupni delitelj je $1$, sta \textbf{tuji števili}.
+            \end{block}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{block}{Računanje $D$ in $v$ s prafaktorizacijo števil}
+                \begin{itemize}
+                    \item<3-> Števili $m$ in $n$ prafaktoriziramo.
+                    \item<4-> Za $D(m,n)$ vzamemo potence, ki so skupne obema številom v prafaktorizaciji.
+                    \item<5-> Za $v(m,n)$ vzamemo vse potence, ki se pojavijo v prafaktorizaciji števil, z največjim eksponentom.
+                \end{itemize}                
+            \end{block}}
+
+            \only<6->{\begin{block}{}
+                Za poljubni naravni števili $m$ in $n$ velja zveza $\mathbf{D(m,n)\cdot v(m,n)=m\cdot n}$.
+            \end{block}}
+
+            \only<7->{\begin{block}{Evklidov algoritem}
+                \only<8->{V tem algoritmu zapored uporabljamo osnovni izrek o deljenju. Najprej ga uporabimo na danih dveh številih.}
+                \only<9->{V naslednjem koraku deljenec postane prejšnji delitelj, delitelj pa prejšnji ostanek. }
+                \only<10->{V vsakem koraku imamo manjša števila, zato se algoritem konča v končno mnogo korakih.}
+                \only<11->{ Največji skupni delitelj danih števil $m$ in $n$ je zadnji od $0$ različen ostanek pri deljenju v Evklidovem algoritmu.}
+            \end{block}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Izračunajte največji skupni delitelj in najmanjši skupni večkratnik danih parov števil.
+                \only<3->{\begin{itemize}
+                    \item $6$ in $8$ \\~\\~
+                    \item $36$ in $48$ \\~\\~
+                    \item $550$ in $286$ \\~\\~
+                    \item $6120$ in $4158$ \\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Preverite, ali sta števili $522$ in $4025$ tuji števili. \\~\\~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Izračunajte največji skupni delitelj in najmanjši skupni večkratnik treh števil.
+                \only<4->{\begin{itemize}
+                    \item $1320$, $6732$ in $297$ \\~\\~
+                    \item $372$, $190$ in $11264$ \\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Z Evklidovim algoritmom izračunajte največji skupni delitelj parov števil.
+                \only<3->{\begin{itemize}
+                    \item $754$ in $3146$ \\~\\~\\~
+                    \item $4446$ in $6325$ \\~\\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+
+            \only<4->{\begin{exampleblock}{Naloga}
+                Izračuanjte število $b$, če velja: $D(78 166, b)=418$ in $v(78 166, b)=1 485 154$. \\~
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+
+            \only<2->{\begin{exampleblock}{Naloga}
+                Določite največji skupni delitelj izrazov.
+                \only<3->{\begin{itemize}
+                    \item $x^3-5x^2-24x$ in $x^2-64$ \\~\\~\\~
+                    \item $x^2+3x+10$, $x^3-4x$ in $x^3-8$ \\~\\~\\~
+                    \item $x^2-25$ in $x^3-27$ \\~\\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+        \begin{frame}
+
+            \only<2->{\begin{exampleblock}{Naloga}
+                Določite najmanjši skupni večkratnik izrazov.
+                \only<3->{\begin{itemize}
+                    \item $x^2-64$ in $x+8$ \\~\\~\\~
+                    \item $x$, $8-x$ in $x^2-64$ \\~\\~\\~
+                    \item $x^2+3x-10$, $2x$ in $x^2+5x$ \\~\\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+
+        \end{frame}
+
+        
+
+        \begin{frame}
+
+            \only<2->{\begin{exampleblock}{Naloga}
+                Velika Janezova terasa je dolga $1035~cm$ in široka $330~cm$. Janez bi jo rad sam tlakoval s kvadratnimi vinilnimi ploščami.
+                Ker ni najbolj vešč tega dela, bo kupil tako velike plošče, da mu jih ne bo treba rezati.
+                Koliko so največ lahko velik kvadratne plošče? Koliko plošč bo potreboval za tlakovanje? \\~\\~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Neca gre v knjižnico vsake $14$ dni, Nace pa vsakih $10$ dni. V knjižnici se srečata v ponedeljek 1. marca.
+                Čez koliko dni se bosta naslednjič srečala? Na kateri dan in datum?   \\~\\~                  
+            \end{exampleblock}}
+
+        \end{frame}
+
+        % \begin{frame}
+        %     \only<2->{\begin{exampleblock}{Naloga}
+        %         Poenostavite.
+        %         \only<3->{\begin{itemize}
+        %             \item a \\~
+        %         \end{itemize}}
+        %     \end{exampleblock}}
+        % \end{frame}
+
+        % \begin{frame}
+        %     \only<2->{\begin{exampleblock}{Naloga}
+        %         Poenostavite.
+        %         \only<3->{\begin{itemize}
+        %             \item a \\~
+        %         \end{itemize}}
+        %     \end{exampleblock}}
+        % \end{frame}
+
+        % \begin{frame}
+        %     \only<2->{\begin{exampleblock}{Naloga}
+        %         Poenostavite.
+        %         \only<3->{\begin{itemize}
+        %             \item a \\~
+        %         \end{itemize}}
+        %     \end{exampleblock}}
+        % \end{frame}
+
+
+
+
+    % \subsection{Številski sestavi}
+
+    %     \begin{frame}
+    %         \frametitle{Številski sestavi}
+    %     \end{frame}
+

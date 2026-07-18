@@ -1,0 +1,14 @@
+area 10 10 90 20
+
+point a 20 15
+point b 80 15
+
+drawline a b
+
+double
+color 255 0 0
+
+drawsegment a b
+cmark_b b
+mark_b a
+drawarrow b a 1

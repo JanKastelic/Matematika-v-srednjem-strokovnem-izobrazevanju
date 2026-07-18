@@ -1,0 +1,31 @@
+area 15 12 65 50
+
+point S 30 30
+point A 36 17
+
+circle K S A
+
+drawcircle K
+cmark_b A
+cmark_l S
+
+rotate B S 120 A
+
+cmark_t B
+
+drawsegment S B
+drawsegment S A
+
+line a S A
+line b S B
+
+perpendicular ta A a
+perpendicular tb B b
+
+drawline ta
+drawline tb
+
+intersection T ta tb
+cmark_t T
+
+drawsegment A B

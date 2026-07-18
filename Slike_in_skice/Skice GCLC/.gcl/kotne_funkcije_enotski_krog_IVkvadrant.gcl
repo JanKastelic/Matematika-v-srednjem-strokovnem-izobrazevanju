@@ -1,0 +1,118 @@
+area 5 12 80 72
+ang_picture 5 12 80 72
+ang_origin 40 40
+ang_unit 25
+ang_scale 1 1
+ang_drawsystem_p 1 2 2 1 2
+
+ang_point S 0 0
+ang_point R 1 0
+
+ang_conic k 1 0 1 0 0 -1
+ang_drawconic k
+
+ang_line l 0.8 -1 0
+ang_intersec2 T U k l
+
+
+
+
+ang_point X 1.5 1.2
+
+ang_point \psi 0.14 0
+
+
+ang_point L 1.5 0
+drawsegment S X
+mark_rt \psi
+
+ang_getx tx T
+ang_gety ty T
+
+ang_line u 0 1 0
+ang_line z 0 1 0
+
+perpendicular v T u
+
+intersection U v u
+
+ang_getx ux U
+ang_gety uy U
+
+ang_line z 1 0 -1
+intersection M z l
+
+ang_line y 0 1 -1
+intersection N y l
+
+ang_point RR 0 1
+
+
+ang_point P -0.75 1
+ang_point E 1.5 1
+
+
+
+ang_point F 1 0.9
+ang_point H 1 -0.5
+
+
+midpoint \sin\varphi T U
+midpoint \cos\varphi S U
+midpoint \tan\varphi R M
+midpoint \cot\varphi RR N
+
+ang_point O 0 0
+cmark_lb O
+
+ang_point M_1 ux uy
+cmark_lt M_1
+
+
+
+ang_point T_1 tx ty
+cmark_t T_1
+
+ang_point T_4 0.78 -0.62
+cmark_b T_4
+
+ang_point E_1 1 0
+cmark_rb E_1
+
+ang_point E_2 0 1
+cmark_rt E_2
+
+ang_line l2 -0.8 -1 0
+drawline l2
+
+drawline y
+
+intersection G_2 y l2
+cmark_t G_2
+
+intersection G_1 y l
+cmark_t G_1
+
+intersection F_1 z l
+cmark_rb F_1
+
+intersection F_2 z l2
+cmark_rt F_2
+
+drawline z
+
+drawsegment T_4 M_1
+drawsegment T_1 M_1
+
+midpoint I M_1 O
+midpoint J I O
+angle phi I O T_1
+drawarc_p O J phi
+
+color 255 0 0
+
+angle psi I O T_4
+drawarc_p O I 321.51
+
+ang_point \varphi -0.32 -0.32
+mark \varphi

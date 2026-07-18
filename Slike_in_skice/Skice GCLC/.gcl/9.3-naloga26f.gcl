@@ -1,0 +1,57 @@
+area 6 6 74 74
+ang_picture 7 6 75 74
+ang_origin 41 40 
+ang_unit 7.5
+ang_scale 1 0 
+
+
+ang_conic k 1 0 1 0 0 -4
+ang_conic k2 1 0 1 0 0 -9
+ang_line l 0 1 -2
+
+ang_point Im 0 4
+ang_point Re 4 0
+
+ang_point S 0 0
+ang_point A 3 0
+ang_point B 2 0
+
+ang_intersec2 X1 X2 l k2
+
+ang_point E -5 2
+ang_point F 5 5
+ang_point G 5 -5
+
+
+color 183 183 183
+fillcircle S A
+
+color 215 183 183
+fillarc S X1 96
+
+color 255 255 255
+fillcircle S B
+fillrectangle E G
+
+
+
+color 0 0 0
+ang_drawsystem_p 2 1 1 2 2
+
+mark_rt Im
+mark_rt Re
+
+ang_drawdashconic k
+ang_drawdashconic k2
+
+drawdashline l
+
+double
+color 204 0 0 
+
+drawdashsegment X1 X2
+drawdasharc S X1 96
+
+
+
+

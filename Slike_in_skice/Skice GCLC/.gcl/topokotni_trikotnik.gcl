@@ -1,0 +1,30 @@
+area 10 10 65 55
+
+point A 15 15
+point B 40 15
+point C 50 40
+
+
+cmark_b A
+cmark_b B
+cmark_t C
+
+midpoint c A B
+midpoint b A C
+midpoint a B C
+drawsegment A B
+drawsegment A C
+drawsegment B C
+
+
+point \alpha 18 15
+point \beta 40 15
+point \gamma 45 37
+
+color 0 0 255
+mark_b \gamma
+mark_rt \alpha
+
+color 0 255 0
+mark_lt \beta
+

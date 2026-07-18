@@ -1,0 +1,66 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Marking point x_{min} by circle
+\draw [line width=0.016cm] (1.500000,1.000000) circle (0.040000);%
+\draw (1.500000,1.000000) node [anchor=north] { $x_{min}$ };%
+
+% Marking point Q_1 by circle
+\draw [line width=0.016cm] (3.500000,1.000000) circle (0.040000);%
+\draw (3.500000,1.000000) node [anchor=north] { $Q_1$ };%
+
+% Marking point Me=Q_2 by circle
+\draw [line width=0.016cm] (5.000000,1.000000) circle (0.040000);%
+\draw (5.000000,1.000000) node [anchor=north] { $Me=Q_2$ };%
+
+% Marking point Q_3 by circle
+\draw [line width=0.016cm] (7.000000,1.000000) circle (0.040000);%
+\draw (7.000000,1.000000) node [anchor=north] { $Q_3$ };%
+
+% Marking point x_{max} by circle
+\draw [line width=0.016cm] (9.000000,1.000000) circle (0.040000);%
+\draw (9.000000,1.000000) node [anchor=north] { $x_{max}$ };%
+
+% Drawing segment a b
+\draw [line width=0.016cm] (0.500000,1.000000) -- (1.460000,1.000000);%
+\draw [line width=0.016cm] (1.540000,1.000000) -- (3.460000,1.000000);%
+\draw [line width=0.016cm] (3.540000,1.000000) -- (4.960000,1.000000);%
+\draw [line width=0.016cm] (5.040000,1.000000) -- (6.960000,1.000000);%
+\draw [line width=0.016cm] (7.040000,1.000000) -- (8.960000,1.000000);%
+\draw [line width=0.016cm] (9.040000,1.000000) -- (10.000000,1.000000);%
+
+% Changing color 215 183 183
+\definecolor{r215g183b183}{rgb}{0.843137,0.717647,0.717647}%
+\color{r215g183b183}% 
+
+% Filling rectangle left-bottom: f right-top: i
+\fill (3.500000,2.500000) -- (7.000000,2.500000) -- (7.000000,1.500000) -- (3.500000,1.500000);%
+
+% Changing color 0 0 0
+\definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+\color{r0g0b0}% 
+
+% Drawing segment c d
+\draw [line width=0.032cm] (1.500000,2.000000) -- (3.500000,2.000000);%
+
+% Drawing segment e f
+\draw [line width=0.032cm] (3.500000,1.500000) -- (3.500000,2.500000);%
+
+% Drawing segment g h
+\draw [line width=0.032cm] (5.000000,1.500000) -- (5.000000,2.500000);%
+
+% Drawing segment i j
+\draw [line width=0.032cm] (7.000000,1.500000) -- (7.000000,2.500000);%
+
+% Drawing segment k l
+\draw [line width=0.032cm] (7.000000,2.000000) -- (9.000000,2.000000);%
+
+% Drawing segment e i
+\draw [line width=0.032cm] (3.500000,1.500000) -- (7.000000,1.500000);%
+
+% Drawing segment f j
+\draw [line width=0.032cm] (3.500000,2.500000) -- (7.000000,2.500000);%
+\color{black}
+}
+\end{tikzpicture}

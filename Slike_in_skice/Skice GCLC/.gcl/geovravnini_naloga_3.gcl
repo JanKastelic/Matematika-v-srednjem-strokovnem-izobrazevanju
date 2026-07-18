@@ -1,0 +1,25 @@
+area 12 12 35 35
+
+point V 15 15
+cmark_rb V
+
+point A 30 20
+cmark_b A
+
+drawline V A
+
+rotate M V 24 A
+cmark_t M
+
+rotate B V 48 A
+cmark_lt B
+
+drawline V B
+drawline V M
+
+midpoint {3x+6^\circ} A M
+midpoint {4x} M B
+
+mark {3x+6^\circ}
+mark {4x}
+

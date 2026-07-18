@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing line a
+\draw [line width=0.016cm] (1.000000,1.428571) -- (5.500000,2.071429);%
+
+% Drawing line b
+\draw [line width=0.016cm] (3.357143,1.000000) -- (3.005657,3.460402);%
+\draw [line width=0.016cm] (2.994343,3.539598) -- (2.928571,4.000000);%
+
+% Marking point T by circle
+\draw [line width=0.016cm] (3.000000,3.500000) circle (0.040000);%
+\draw (3.000000,3.500000) node [anchor=west] { $T$ };%
+}
+\end{tikzpicture}

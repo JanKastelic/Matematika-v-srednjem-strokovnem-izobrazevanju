@@ -1,0 +1,29 @@
+area 10 10 80 20
+
+point A 10 15
+point B 80 15
+
+drawsegment A B
+point 0 45 15
+cmark_t 0
+
+point \mathbb{Q} 15 20
+
+
+midpoint \mathbb{Q}^+ B 0
+midpoint \mathbb{Q}^- A 0
+
+color 255 0 0
+mark_t \mathbb{Q}^+
+drawsegment B 0
+
+color 0 255 0
+mark_t \mathbb{Q}^-
+drawsegment A 0
+
+
+color 0 0 0
+double 
+mark \mathbb{Q}
+
+

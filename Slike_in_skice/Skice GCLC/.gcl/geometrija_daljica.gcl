@@ -1,0 +1,12 @@
+area 10 10 50 30
+
+point A 20 15
+point B 40 17
+
+
+drawline A B
+
+double
+drawsegment A B
+cmark_t A
+cmark_t B

@@ -1,0 +1,13 @@
+area 13 13 60 60
+ang_picture 5 15 75 75
+ang_origin 36 42
+ang_unit 5
+ang_scale 1 0 
+
+ang_conic l 1 0 0 -1 -0.5 -4
+ang_drawsystem_p 2 1 1 1 2
+
+color 204 0 0
+double
+ang_drawconic l
+

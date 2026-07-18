@@ -1,0 +1,19 @@
+area 10 10 60 20
+
+point A 10 15
+point B 60 15
+point O 20 15
+
+point \frac{a}{b} 40 15
+point \frac{c}{d} 25 15
+
+drawsegment A B
+cmark_t O
+
+color 255 0 0
+cmark_b \frac{a}{b}
+
+color 0 255 0
+cmark_b \frac{c}{d}
+
+

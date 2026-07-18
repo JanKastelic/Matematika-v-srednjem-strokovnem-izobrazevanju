@@ -1,0 +1,12 @@
+area 10 10 60 50
+
+point T 30 20
+point A 15 15
+point B 70 20
+
+line p A B
+parallel q T p
+
+drawline p
+drawline q
+cmark_t T

@@ -1,0 +1,22 @@
+area 10 10 43 40
+
+point A 15 25
+point B 35 35
+point T 20 15
+
+
+
+drawsegment A B
+drawarrow A B 1
+
+translate T' A B T
+
+
+drawsegment T T'
+drawarrow T T' 1
+
+color 0 0 255
+cmark_b A
+cmark_t B
+cmark_b T
+cmark_t T'

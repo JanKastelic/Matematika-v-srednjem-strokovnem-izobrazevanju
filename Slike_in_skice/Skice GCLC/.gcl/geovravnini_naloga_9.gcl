@@ -1,0 +1,42 @@
+area 15 10 60 30
+
+point A 25 15
+point B 40 15
+point C 90 25
+
+line Q A B
+parallel P C Q
+
+drawline Q
+drawline P
+
+rotate D A 48 B
+
+line R A D
+drawline R
+
+parallel S B R
+drawline S
+
+intersection E P R
+intersection F P S
+
+point p 16 15
+point q 16 25
+point r 35 30
+point s 50 30
+point \alpha 45 25
+point \beta 25 15
+point \gamma 34 25
+point {3x} 45 15
+point {2x+16^\circ} 25 25
+
+mark_t p
+mark_t q
+mark_r r
+mark_r s
+mark_b \alpha
+mark_b \beta
+mark_t \gamma
+mark_t {3x}
+mark_b {2x+16^\circ}

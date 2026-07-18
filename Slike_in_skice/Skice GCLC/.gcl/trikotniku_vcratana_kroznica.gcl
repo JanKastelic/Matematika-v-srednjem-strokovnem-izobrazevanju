@@ -1,0 +1,85 @@
+area 15 20 65 55
+
+point A 20 25
+point B 60 25
+point C 30 50
+
+cmark_l A
+cmark_r B
+cmark_t C
+
+line c' A B
+line a' B C
+line b' A C
+
+midpoint a B C
+midpoint c A B
+midpoint b A C
+
+mark_lt b
+mark_b c
+mark_rt a
+
+line t_a A a
+line t_b B b
+line t_c C c
+
+intersection T t_c t_a
+
+
+midpoint t_a T a
+midpoint t_b T b
+midpoint t_c T c
+
+
+perpendicular s_b b b'
+perpendicular s_a a a'
+perpendicular s_c c c'
+
+bisector s_a B A C
+bisector s_b C B A
+bisector s_c A C B
+
+intersection S_V s_a s_b
+
+perpendicular k S_V c'
+intersection X k c'
+
+midpoint r X S_V
+
+
+
+point \frac{\alpha}{2} 25 25
+mark \frac{\alpha}{2}
+point \frac{\gamma}{2} 28 45
+mark \frac{\gamma}{2}
+point \frac{\alpha}{2} 25 30
+mark \frac{\alpha}{2}
+point \frac{\beta}{2} 55 25
+mark \frac{\beta}{2}
+point \frac{\beta}{2} 55 30
+mark \frac{\beta}{2}
+point \frac{\gamma}{2} 32 45
+mark \frac{\gamma}{2}
+
+
+
+color 255 0 0
+drawline s_c
+drawline s_a
+drawline s_b
+
+color 0 0 255
+drawcircle S_V X
+drawsegment X S_V
+mark_l r
+
+color 0 0 0 
+double
+drawsegment A B
+drawsegment B C
+drawsegment A C
+
+
+cmark_rt S_V
+

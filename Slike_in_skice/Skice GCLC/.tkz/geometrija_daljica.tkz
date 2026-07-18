@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing line A B
+\draw [line width=0.016cm] (1.000000,1.400000) -- (1.960199,1.496020);%
+\draw [line width=0.016cm] (2.039801,1.503980) -- (3.960199,1.696020);%
+\draw [line width=0.016cm] (4.039801,1.703980) -- (5.000000,1.800000);%
+
+% Drawing segment A B
+\draw [line width=0.032cm] (2.039801,1.503980) -- (3.960199,1.696020);%
+
+% Marking point A by circle
+\draw [line width=0.032cm] (2.000000,1.500000) circle (0.040000);%
+\draw (2.000000,1.500000) node [anchor=south] { $A$ };%
+
+% Marking point B by circle
+\draw [line width=0.032cm] (4.000000,1.700000) circle (0.040000);%
+\draw (4.000000,1.700000) node [anchor=south] { $B$ };%
+}
+\end{tikzpicture}

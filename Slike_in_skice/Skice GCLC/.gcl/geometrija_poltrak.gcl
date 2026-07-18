@@ -1,0 +1,12 @@
+area 10 10 60 30
+
+point O 30 15
+point B 40 16
+
+
+drawline O B
+
+cmark_t O
+
+point poz 40 14
+mark poz

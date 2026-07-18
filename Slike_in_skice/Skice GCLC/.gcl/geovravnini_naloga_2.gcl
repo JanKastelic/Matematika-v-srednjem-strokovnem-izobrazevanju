@@ -1,0 +1,24 @@
+area 15 20 45 37
+
+point A 30 30
+cmark A
+
+point B 30 10
+drawline A B
+
+point C 54 10
+drawline A C
+
+point E 90 30
+drawsegment A E
+
+point \alpha 25 20
+point x 38 27
+
+mark x
+
+point {90^\circ} 35 33
+point {130^\circ} 25 28
+
+mark {90^\circ}
+mark {130^\circ}

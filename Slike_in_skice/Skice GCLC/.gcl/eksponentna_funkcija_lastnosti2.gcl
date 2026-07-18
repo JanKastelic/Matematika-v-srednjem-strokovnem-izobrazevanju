@@ -1,0 +1,30 @@
+
+ang_picture 8 6 49 49
+ang_origin 30 15
+ang_unit 5
+ang_scale 1 1
+ang_drawsystem_p 2 1 1 1 2
+
+ang_point N 0 1
+point A 8 15
+point B 46 15
+
+ang_point y={\frac{1}{3}}^x -1 6
+ang_point y={\frac{1}{2}}^x -2 3
+
+
+
+color 255 0 0 
+ang_draw_parametric_curve x {-10; x<10;x+0.1}{x;pow(1/2,x)}
+mark y={\frac{1}{2}}^x
+
+color 0 0 255
+ang_draw_parametric_curve x {-10; x<10;x+0.1}{x;pow(1/3,x)}
+mark  y={\frac{1}{3}}^x
+
+color 0 255 0
+cmark_rt N
+double
+drawdashsegment A B
+
+

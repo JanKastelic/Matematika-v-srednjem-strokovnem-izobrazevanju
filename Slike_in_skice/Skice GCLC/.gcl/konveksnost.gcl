@@ -1,0 +1,22 @@
+area 13 13 60 60
+ang_picture 12 12 57 49
+ang_origin 15 15 
+ang_unit 5
+ang_scale 1 0 
+
+ang_conic l 1 0 0 -3.5 -0.5 13
+
+ang_point (x_1,f(x_1)) 1.5 4.75
+ang_point (x_2,f(x_2)) 5.75 5.8125
+
+ang_drawsystem_p 2 1 1 1 2
+
+color 204 0 0
+double
+ang_drawconic l
+
+color 0 0 204
+cmark_rb (x_1,f(x_1))
+cmark_lt (x_2,f(x_2))
+drawsegment (x_1,f(x_1)) (x_2,f(x_2))
+

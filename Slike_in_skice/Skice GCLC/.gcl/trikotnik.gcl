@@ -1,0 +1,42 @@
+area 10 10 70 45
+
+point A 20 15
+point B 60 15
+point C 30 40
+
+cmark_rb A
+cmark_b B
+cmark_t C
+
+drawline A B
+drawline B C
+drawline A C
+
+midpoint a B C
+midpoint c A B
+midpoint b A C
+
+mark_b c
+mark_rt a
+mark_lt b
+
+
+point \gamma 33 35
+point \gamma' 25 40
+point \beta 55 15
+point \beta' 65 15
+point \alpha 25 15
+point \alpha' 15 15
+
+mark_b \gamma 
+mark_b \gamma'
+mark_t \beta 
+mark_t \beta'
+mark_t \alpha
+mark_t \alpha'
+
+
+double
+drawsegment A B
+drawsegment B C
+drawsegment A C

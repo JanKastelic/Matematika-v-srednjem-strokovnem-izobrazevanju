@@ -1,0 +1,57 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Marking point C by circle
+\draw [line width=0.016cm] (2.700000,3.500000) circle (0.040000);%
+\draw (2.700000,3.500000) node [anchor=south] { $C$ };%
+
+% Marking point A by circle
+\draw [line width=0.016cm] (1.500000,1.500000) circle (0.040000);%
+\draw (1.500000,1.500000) node [anchor=north] { $A$ };%
+
+% Marking point B by circle
+\draw [line width=0.016cm] (6.000000,1.500000) circle (0.040000);%
+\draw (6.000000,1.500000) node [anchor=north] { $B$ };%
+
+% Marking point \alpha
+\draw (1.800000,1.500000) node [anchor=south] { $\alpha$ };%
+
+% Marking point \frac{\pi}{2}
+\draw (2.800000,3.500000) node [anchor=north] { $\frac{\pi}{2}$ };%
+
+% Marking point \beta
+\draw (5.500000,1.500000) node [anchor=south] { $\beta$ };%
+
+% Changing color 255 0 0
+\definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+\color{r255g0b0}% 
+
+% Drawing segment A B
+\draw [line width=0.032cm] (1.540000,1.500000) -- (5.960000,1.500000);%
+
+% Marking point c
+\draw (3.750000,1.500000) node [anchor=north] { $c$ };%
+
+% Changing color 0 255 0
+\definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+\color{r0g255b0}% 
+
+% Drawing segment A C
+\draw [line width=0.032cm] (1.520580,1.534300) -- (2.679420,3.465700);%
+
+% Marking point b
+\draw (2.100000,2.500000) node [anchor=south east] { $b$ };%
+
+% Changing color 0 0 255
+\definecolor{r0g0b255}{rgb}{0.000000,0.000000,1.000000}%
+\color{r0g0b255}% 
+
+% Drawing segment B C
+\draw [line width=0.032cm] (5.965792,1.520732) -- (2.734208,3.479268);%
+
+% Marking point a
+\draw (4.350000,2.500000) node [anchor=south west] { $a$ };%
+\color{black}
+}
+\end{tikzpicture}

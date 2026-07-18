@@ -1,0 +1,35 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing line Q
+\draw [line width=0.016cm] (1.500000,1.500000) -- (4.500000,1.500000);%
+
+% Drawing line P
+\draw [line width=0.016cm] (1.500000,2.500000) -- (4.500000,2.500000);%
+
+% Drawing line R
+\draw [line width=0.016cm] (3.800430,1.000000) -- (2.598709,3.000000);%
+
+% Marking point p
+\draw (1.600000,1.500000) node [anchor=south] { $p$ };%
+
+% Marking point q
+\draw (1.600000,2.500000) node [anchor=south] { $q$ };%
+
+% Marking point r
+\draw (2.700000,3.000000) node [anchor=west] { $r$ };%
+
+% Marking point \alpha
+\draw (2.500000,2.500000) node [anchor=south] { $\alpha$ };%
+
+% Marking point \beta
+\draw (4.000000,1.500000) node [anchor=north] { $\beta$ };%
+
+% Marking point {4x+77^\circ}
+\draw (3.800000,1.500000) node [anchor=south] { ${4x+77^\circ}$ };%
+
+% Marking point {x^2}
+\draw (2.700000,2.500000) node [anchor=north] { ${x^2}$ };%
+}
+\end{tikzpicture}

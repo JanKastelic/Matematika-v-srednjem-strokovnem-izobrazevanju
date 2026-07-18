@@ -1,0 +1,57 @@
+area 15 10 115 44
+
+point X 10 10
+point Y 40 35
+line p X Y
+point O 30 25
+
+point T 35 15
+
+symmetrical T' O T
+
+cmark_b T
+
+drawdashsegment T T'
+
+
+point r 75 30
+
+point A 45 25
+point B 75 20
+point C 65 35
+
+
+
+symmetrical A' r A
+symmetrical B' r B
+symmetrical C' r C
+
+drawdashsegment C C'
+drawdashsegment B B'
+drawdashsegment A A'
+
+
+
+
+cmark_t C
+cmark_b A
+cmark_b B
+
+drawsegment A B
+drawsegment B C
+drawsegment C A
+drawsegment C' A'
+drawsegment B' C'
+drawsegment A' B'
+
+color 0 0 255
+cmark_rt O
+cmark r
+
+
+
+color 255 0 0
+cmark_t T'
+cmark_b C'
+cmark_t B'
+cmark_r A'

@@ -1,0 +1,31 @@
+area 13 13 46 46
+ang_picture 12 12 50 50
+ang_origin 30 30 
+ang_unit 7
+ang_scale 1 0 
+
+ang_point O 0 0
+ang_point A 3.2 3.2
+ang_point B -3.2 3.2
+ang_point C -3.2 -3.2
+ang_point D 3.2 -3.2
+
+ang_line l 1 -1 0
+ang_line s 1 1 0
+
+point {y=x} 40 40
+point {y=-x} 20 40
+
+ang_drawsystem_p 2 1 1 1 2
+
+color 204 0 0
+double
+drawline l
+mark_r {y=x}
+
+color 0 255 0
+double
+drawline s
+mark_l {y=-x}
+
+

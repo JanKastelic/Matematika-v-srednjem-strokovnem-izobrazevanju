@@ -1,0 +1,99 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing 2D Cartesian system
+\draw (4.000000,4.000000) node [anchor=north east] { $0$ };%
+\draw [line width=0.016cm] (4.000000,3.925000) -- (4.000000,4.075000);%
+\draw (5.000000,4.000000) node [anchor=north] { $1$ };%
+\draw [line width=0.016cm] (5.000000,3.925000) -- (5.000000,4.075000);%
+\draw (6.000000,4.000000) node [anchor=north] { $2$ };%
+\draw [line width=0.016cm] (6.000000,3.925000) -- (6.000000,4.075000);%
+\draw (7.000000,4.000000) node [anchor=north] { $3$ };%
+\draw [line width=0.016cm] (7.000000,3.925000) -- (7.000000,4.075000);%
+\draw (3.000000,4.000000) node [anchor=north] { $-1$ };%
+\draw [line width=0.016cm] (3.000000,3.925000) -- (3.000000,4.075000);%
+\draw (2.000000,4.000000) node [anchor=north] { $-2$ };%
+\draw [line width=0.016cm] (2.000000,3.925000) -- (2.000000,4.075000);%
+\draw (4.000000,5.000000) node [anchor=east] { $1$ };%
+\draw [line width=0.016cm] (3.925000,5.000000) -- (4.075000,5.000000);%
+\draw (4.000000,6.000000) node [anchor=east] { $2$ };%
+\draw [line width=0.016cm] (3.925000,6.000000) -- (4.075000,6.000000);%
+\draw (4.000000,7.000000) node [anchor=east] { $3$ };%
+\draw [line width=0.016cm] (3.925000,7.000000) -- (4.075000,7.000000);%
+\draw (4.000000,3.000000) node [anchor=east] { $-1$ };%
+\draw [line width=0.016cm] (3.925000,3.000000) -- (4.075000,3.000000);%
+\draw (4.000000,2.000000) node [anchor=east] { $-2$ };%
+\draw [line width=0.016cm] (3.925000,2.000000) -- (4.075000,2.000000);%
+\draw (7.500000,4.000000) node [anchor=north] { $x$ };%
+\draw (4.000000,7.700000) node [anchor=east] { $y$ };%
+\draw [line width=0.016cm] (1.300000,4.000000) -- (5.760000,4.000000);%
+\draw [line width=0.016cm] (5.840000,4.000000) -- (7.500000,4.000000);%
+\draw [line width=0.016cm] (7.202567,4.039158) -- (7.500000,4.000000);%
+\draw [line width=0.016cm] (7.202567,4.039158) -- (7.400000,4.000000);%
+\draw [line width=0.016cm] (7.202567,3.960842) -- (7.500000,4.000000);%
+\draw [line width=0.016cm] (7.202567,3.960842) -- (7.400000,4.000000);%
+\draw [line width=0.016cm] (4.000000,1.800000) -- (4.000000,6.460000);%
+\draw [line width=0.016cm] (4.000000,6.540000) -- (4.000000,7.700000);%
+\draw [line width=0.016cm] (3.960842,7.402567) -- (4.000000,7.700000);%
+\draw [line width=0.016cm] (3.960842,7.402567) -- (4.000000,7.600000);%
+\draw [line width=0.016cm] (4.039158,7.402567) -- (4.000000,7.700000);%
+\draw [line width=0.016cm] (4.039158,7.402567) -- (4.000000,7.600000);%
+
+% Changing color 220 220 220
+\definecolor{r220g220b220}{rgb}{0.862745,0.862745,0.862745}%
+\color{r220g220b220}% 
+
+% Drawing segment xy x
+\draw [line width=0.016cm] (5.800000,6.460000) -- (5.800000,6.350000);%
+\draw [line width=0.016cm] (5.800000,6.275000) -- (5.800000,6.125000);%
+\draw [line width=0.016cm] (5.800000,6.050000) -- (5.800000,5.900000);%
+\draw [line width=0.016cm] (5.800000,5.825000) -- (5.800000,5.675000);%
+\draw [line width=0.016cm] (5.800000,5.600000) -- (5.800000,5.450000);%
+\draw [line width=0.016cm] (5.800000,5.375000) -- (5.800000,5.225000);%
+\draw [line width=0.016cm] (5.800000,5.150000) -- (5.800000,5.000000);%
+\draw [line width=0.016cm] (5.800000,4.925000) -- (5.800000,4.775000);%
+\draw [line width=0.016cm] (5.800000,4.700000) -- (5.800000,4.550000);%
+\draw [line width=0.016cm] (5.800000,4.475000) -- (5.800000,4.325000);%
+\draw [line width=0.016cm] (5.800000,4.250000) -- (5.800000,4.100000);%
+
+% Drawing segment xy y
+\draw [line width=0.016cm] (5.760000,6.500000) -- (5.650000,6.500000);%
+\draw [line width=0.016cm] (5.575000,6.500000) -- (5.425000,6.500000);%
+\draw [line width=0.016cm] (5.350000,6.500000) -- (5.200000,6.500000);%
+\draw [line width=0.016cm] (5.125000,6.500000) -- (4.975000,6.500000);%
+\draw [line width=0.016cm] (4.900000,6.500000) -- (4.750000,6.500000);%
+\draw [line width=0.016cm] (4.675000,6.500000) -- (4.525000,6.500000);%
+\draw [line width=0.016cm] (4.450000,6.500000) -- (4.300000,6.500000);%
+\draw [line width=0.016cm] (4.225000,6.500000) -- (4.075000,6.500000);%
+
+% Changing color 0 255 0
+\definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+\color{r0g255b0}% 
+
+% Marking point x by circle
+\draw [line width=0.016cm] (5.800000,4.000000) circle (0.040000);%
+
+% Marking point x_0
+\draw (5.800000,4.000000) node [anchor=south west] { $x_0$ };%
+
+% Changing color 204 0 0
+\definecolor{r204g0b0}{rgb}{0.800000,0.000000,0.000000}%
+\color{r204g0b0}% 
+
+% Marking point y by circle
+\draw [line width=0.016cm] (4.000000,6.500000) circle (0.040000);%
+
+% Marking point y_0
+\draw (4.000000,6.500000) node [anchor=south west] { $y_0$ };%
+
+% Changing color 0 0 255
+\definecolor{r0g0b255}{rgb}{0.000000,0.000000,1.000000}%
+\color{r0g0b255}% 
+
+% Marking point T by circle
+\draw [line width=0.032cm] (5.800000,6.500000) circle (0.040000);%
+\draw (5.830000,6.470000) node [anchor=south east] { $T$ };%
+\color{black}
+}
+\end{tikzpicture}

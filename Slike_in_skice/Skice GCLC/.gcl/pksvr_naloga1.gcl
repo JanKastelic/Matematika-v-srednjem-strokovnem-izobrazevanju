@@ -1,0 +1,55 @@
+ang_picture 6 6 74 74
+ang_origin 40 40 
+ang_unit 5
+ang_scale 1 0 
+
+ang_drawsystem_p 2 1 1 1 2
+
+ang_point A -6 2
+ang_point B 4 1
+ang_point C 0 -5
+ang_point D 1 5
+ang_point E -4 -2
+ang_point F -6 -3
+ang_point G -4 -5
+ang_point H 3 0
+ang_point I 0 3
+ang_point J 2 -2
+ang_point K 4 -4
+ang_point L -2 3
+ang_point M -1 1
+ang_point N 3 3
+ang_point O 2 2
+ang_point P -5 4
+ang_point R 2 -4
+ang_point S -2 -5
+ang_point T -1 -1
+ang_point U -4 1
+ang_point V -3 5
+ang_point Z 4 5
+
+double
+cmark_rt A
+cmark_rt B
+cmark_rt C
+cmark_rt D
+cmark_rt E
+cmark_rt F
+cmark_rt G
+cmark_rt H
+cmark_rt I
+cmark_rt J
+cmark_rt K
+cmark_rt L
+cmark_rt M
+cmark_rt N
+cmark_rt O
+cmark_rt P
+cmark_rt R
+cmark_rt S
+cmark_rt T
+cmark_rt U
+cmark_rt V
+cmark_rt Z
+
+

@@ -1,0 +1,30 @@
+area 20 12 60 30
+
+point V 40 15
+cmark_b V
+
+point A 55 15
+cmark_b A
+
+point E 25 15
+cmark_b E
+
+drawline A E
+
+rotate B V 30 A
+rotate C V 120 A
+rotate D V 150 A
+
+cmark_t B
+cmark_r C
+cmark_t D
+
+drawline V D
+drawline V C
+drawline V B
+
+point {30^\circ} 50 15
+mark_t {30^\circ}
+
+point {90^\circ} 41 18
+mark_t {90^\circ}

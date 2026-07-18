@@ -1,0 +1,20 @@
+area 13 13 60 60
+ang_picture 18 12 57 66
+ang_origin 38 35 
+ang_unit 7
+ang_scale 1 0 
+
+ang_point f(x) 1.7 3
+ang_point f(-x) 1.2 -1.5
+
+ang_drawsystem_p 2 1 1 1 2
+
+color 204 0 0
+double
+ang_draw_parametric_curve x {-2.5;x<3.5;x+0.01}{x;0.5*((-1)*pow(1.5*x,4)+3*pow(1.5*x,3)-pow(1.5*x,2)+2)}
+mark_t f(x)
+
+color 0 0 204
+double
+ang_draw_parametric_curve x {-2.5;x<3.5;x+0.01}{x;0.5*((-1)*pow(-1.5*x,4)+3*pow(-1.5*x,3)-pow(-1.5*x,2)+2)}
+mark_t f(-x)

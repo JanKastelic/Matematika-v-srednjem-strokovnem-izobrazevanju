@@ -1,0 +1,111 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Drawing 3D Cartesian system
+\draw (2.300000,2.854690) node [anchor=north] { $x$ };%
+\draw (7.000000,3.476428) node [anchor=north] { $y$ };%
+\draw (4.000000,6.500000) node [anchor=east] { $z$ };%
+\draw [line width=0.016cm] (2.300000,2.854690) -- (7.000000,6.021135);%
+\draw [line width=0.016cm] (2.568554,2.988402) -- (2.300000,2.854690);%
+\draw [line width=0.016cm] (2.568554,2.988402) -- (2.382934,2.910564);%
+\draw [line width=0.016cm] (2.524796,3.053353) -- (2.300000,2.854690);%
+\draw [line width=0.016cm] (2.524796,3.053353) -- (2.382934,2.910564);%
+\draw [line width=0.016cm] (2.300000,4.296691) -- (7.000000,3.476428);%
+\draw [line width=0.016cm] (6.713728,3.566139) -- (7.000000,3.476428);%
+\draw [line width=0.016cm] (6.713728,3.566139) -- (6.901489,3.493620);%
+\draw [line width=0.016cm] (6.700263,3.488989) -- (7.000000,3.476428);%
+\draw [line width=0.016cm] (6.700263,3.488989) -- (6.901489,3.493620);%
+\draw [line width=0.016cm] (4.000000,2.700000) -- (4.000000,6.500000);%
+\draw [line width=0.016cm] (3.960842,6.202567) -- (4.000000,6.500000);%
+\draw [line width=0.016cm] (3.960842,6.202567) -- (4.000000,6.400000);%
+\draw [line width=0.016cm] (4.039158,6.202567) -- (4.000000,6.500000);%
+\draw [line width=0.016cm] (4.039158,6.202567) -- (4.000000,6.400000);%
+
+% Drawing segment O X
+\draw [line width=0.032cm] (4.000000,4.000000) -- (3.319606,3.541610);%
+
+% Drawing arrow O X 1.00
+\draw [line width=0.032cm] (3.588159,3.675323) -- (3.319606,3.541610);%
+\draw [line width=0.032cm] (3.588159,3.675323) -- (3.401831,3.597006);%
+\draw [line width=0.032cm] (3.544401,3.740273) -- (3.319606,3.541610);%
+\draw [line width=0.032cm] (3.544401,3.740273) -- (3.401831,3.597006);%
+
+% Marking point \vec{i}
+\draw (3.319606,3.541610) node [anchor=south] { $\vec{i}$ };%
+
+% Drawing segment O Y
+\draw [line width=0.032cm] (4.000000,4.000000) -- (5.336811,3.766694);%
+
+% Drawing arrow O Y 1.00
+\draw [line width=0.032cm] (5.050539,3.856405) -- (5.336811,3.766694);%
+\draw [line width=0.032cm] (5.050539,3.856405) -- (5.239143,3.783740);%
+\draw [line width=0.032cm] (5.037074,3.779256) -- (5.336811,3.766694);%
+\draw [line width=0.032cm] (5.037074,3.779256) -- (5.239143,3.783740);%
+
+% Marking point \vec{j}
+\draw (5.336811,3.766694) node [anchor=south] { $\vec{j}$ };%
+
+% Drawing segment O Z
+\draw [line width=0.032cm] (4.000000,4.000000) -- (4.000000,5.409059);%
+
+% Drawing arrow O Z 1.00
+\draw [line width=0.032cm] (3.960842,5.111626) -- (4.000000,5.409059);%
+\draw [line width=0.032cm] (3.960842,5.111626) -- (4.000000,5.309915);%
+\draw [line width=0.032cm] (4.039158,5.111626) -- (4.000000,5.409059);%
+\draw [line width=0.032cm] (4.039158,5.111626) -- (4.000000,5.309915);%
+
+% Marking point \vec{k}
+\draw (4.000000,5.409059) node [anchor=east] { $\vec{k}$ };%
+
+% Changing color 200 200 200
+\definecolor{r200g200b200}{rgb}{0.784314,0.784314,0.784314}%
+\color{r200g200b200}% 
+
+% Drawing segment O A
+\draw [line width=0.032cm] (4.000000,4.000000) -- (4.760611,5.326546);%
+
+% Drawing segment O B
+\draw [line width=0.032cm] (4.000000,4.000000) -- (6.651577,5.637380);%
+
+% Drawing arrow O A 1.00
+\draw [line width=0.032cm] (4.598590,5.122696) -- (4.756251,5.329440);%
+\draw [line width=0.032cm] (4.598590,5.122696) -- (4.731191,5.275237);%
+\draw [line width=0.032cm] (4.666530,5.083741) -- (4.765310,5.324246);%
+\draw [line width=0.032cm] (4.666530,5.083741) -- (4.731191,5.275237);%
+
+% Drawing arrow O B 1.00
+\draw [line width=0.032cm] (6.411966,5.535439) -- (6.649125,5.642002);%
+\draw [line width=0.032cm] (6.411966,5.535439) -- (6.601254,5.606305);%
+\draw [line width=0.032cm] (6.453114,5.468804) -- (6.654611,5.633117);%
+\draw [line width=0.032cm] (6.453114,5.468804) -- (6.601254,5.606305);%
+
+% Marking point \vec{r_A}
+\draw (4.780507,5.361247) node [anchor=north east] { $\vec{r_A}$ };%
+
+% Marking point \vec{r_B}
+\draw (6.685611,5.658396) node [anchor=north] { $\vec{r_B}$ };%
+
+% Changing color 255 0 0
+\definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+\color{r255g0b0}% 
+
+% Marking point A by circle
+\draw [line width=0.032cm] (4.780507,5.361247) circle (0.040000);%
+\draw (4.780507,5.361247) node [anchor=south] { $A$ };%
+
+% Marking point B by circle
+\draw [line width=0.032cm] (6.685611,5.658396) circle (0.040000);%
+\draw (6.685611,5.658396) node [anchor=south] { $B$ };%
+
+% Drawing segment A B
+\draw [line width=0.032cm] (4.820029,5.367411) -- (6.646089,5.652232);%
+
+% Drawing arrow A B 1.00
+\draw [line width=0.032cm] (6.385696,5.651248) -- (6.645622,5.657443);%
+\draw [line width=0.032cm] (6.385696,5.651248) -- (6.587651,5.643117);%
+\draw [line width=0.032cm] (6.397765,5.573868) -- (6.647231,5.647126);%
+\draw [line width=0.032cm] (6.397765,5.573868) -- (6.587651,5.643117);%
+\color{black}
+}
+\end{tikzpicture}
