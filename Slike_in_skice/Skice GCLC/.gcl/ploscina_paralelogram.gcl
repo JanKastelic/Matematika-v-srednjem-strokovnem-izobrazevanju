@@ -1,0 +1,47 @@
+area 10 10 80 50
+
+point A 15 15
+point B 60 15
+point C 70 45
+point D 25 45
+
+point A' 25 15
+point C' 60 45
+point B' 70 15
+
+color 215 183 183
+fillrectangle A' C'
+filltriangle B C C'
+
+color 183 215 183
+filltriangle A A' D
+filltriangle B B' C
+
+color 0 0 0 
+
+drawsegment D A'
+drawsegment B B'
+drawsegment B' C
+
+cmark_b A'
+cmark_rb B'
+
+double
+drawsegment A B
+drawsegment B C
+drawsegment C D
+drawsegment A D
+
+cmark_lb A
+cmark_b B
+cmark_rt C
+cmark_lt D
+
+midpoint a A B
+mark_b a
+midpoint b B C
+mark_l b
+midpoint v_a D A'
+mark_r v_a
+point \alpha 16 15
+mark_rt \alpha

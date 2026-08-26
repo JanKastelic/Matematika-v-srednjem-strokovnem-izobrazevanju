@@ -1,4 +1,4 @@
-\documentclass[1pt, aspectratio=169]{beamer}
+\documentclass[12pt, aspectratio=169, t]{beamer}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -15,6 +15,33 @@
 \usepackage{tkz-euclide}
 \usepackage{xfp}
 % \usepackage{pgf}
+\usepackage{colortbl}
+\usepackage{hhline}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{wasysym}
+\usepackage[gen]{eurosym}
+\usepackage{newunicodechar}
+\usepackage{arcs}
+\newunicodechar{€}{\euro}
+
+\makeatletter
+\DeclareFontFamily{U}{tipa}{}
+\DeclareFontShape{U}{tipa}{m}{n}{<->tipa10}{}
+\newcommand{\arc@char}{{\usefont{U}{tipa}{m}{n}\symbol{62}}}%
+
+\newcommand{\arc}[1]{\mathpalette\arc@arc{#1}}
+
+\newcommand{\arc@arc}[2]{%
+  \sbox0{$\m@th#1#2$}%
+  \vbox{
+    \hbox{\resizebox{\wd0}{\height}{\arc@char}}
+    \nointerlineskip
+    \box0
+  }%
+}
+\makeatother
+
 
 \pgfplotsset{compat=1.18} 
 
@@ -31,6 +58,12 @@
 \usetheme{CambridgeUS}
 \usecolortheme{beaver}
 
+\definecolor{darkred}{rgb}{0.8,0,0}
+\definecolor{darkblue}{rgb}{0,0,0.8}
+\definecolor{darkgreen}{rgb}{0,0.8,0}
+\definecolor{darkyellow}{rgb}{0.8,0.8,0}
+\definecolor{darkteal}{rgb}{0,0.8,0.8}
+
 
 
 \setbeamerfont{subtitle}{size=\small}
@@ -40,7 +73,7 @@
 \subtitle{2. letnik -- srednje strokovno izobraževanje}
 \date{\today}
 \author{Jan Kastelic}
-\institute[FMF]{Fakulteta za matematiko in fiziko, \\ Univerza v Ljubljani}
+\institute[SŠSKV]{Srednja šola za strojništvo, kemijo in varovanje, \\ Šolski center Ljubljana}
 
 \newtheorem{izrek}{Izrek}
 \newcommand{\Vir}[1]{\color{gray}{\tiny{Vir: #1}}}
@@ -59,15 +92,21 @@
 	\tableofcontents[hideallsubsections]
 \end{frame}
 
-% \include{Geometrija_v_ravnini}
-	
-% \include{Metricna_geometrija_v_ravnini}
+\include{Geometrija_v_ravnini}
 
-% \include{Potence_in_koreni}
-
-% \include{Funkcija}
+% \include{Kotne_funkcije}
 
 % \include{Vektorji}
+
+\include{Potence_in_koreni}
+	
+\include{Funkcije}
+
+\include{Potencna_funkcija}
+
+% \include{Korenska_funkcija}
+
+\include{Kvadratna_funkcija}
 
 % \include{Kompleksna_stevila}
 

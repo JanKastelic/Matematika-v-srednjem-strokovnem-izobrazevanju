@@ -1,0 +1,69 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Changing color 215 183 183
+\definecolor{r215g183b183}{rgb}{0.843137,0.717647,0.717647}%
+\color{r215g183b183}% 
+
+% Filling triangle A B C
+\fill (1.500000,1.500000) -- (6.000000,1.500000) -- (2.500000,4.500000);%
+
+% Changing color 0 0 0
+\definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+\color{r0g0b0}% 
+
+% Drawing segment B A'
+\draw [line width=0.016cm] (6.012649,1.537947) -- (6.987351,4.462053);%
+
+% Drawing segment A' C
+\draw [line width=0.016cm] (6.960000,4.500000) -- (2.540000,4.500000);%
+
+% Drawing segment C N_c
+\draw [line width=0.016cm] (2.500000,4.460000) -- (2.500000,1.500000);%
+
+% Drawing segment A A'
+\draw [line width=0.016cm] (1.535116,1.519154) -- (6.964884,4.480846);%
+
+% Marking point A' by circle
+\draw [line width=0.016cm] (7.000000,4.500000) circle (0.040000);%
+\draw (6.970000,4.470000) node [anchor=south west] { $A'$ };%
+
+% Drawing segment A B
+\draw [line width=0.032cm] (1.540000,1.500000) -- (5.960000,1.500000);%
+
+% Drawing segment B C
+\draw [line width=0.032cm] (5.969630,1.526032) -- (2.530370,4.473968);%
+
+% Drawing segment C A
+\draw [line width=0.032cm] (2.487351,4.462053) -- (1.512649,1.537947);%
+
+% Marking point A by circle
+\draw [line width=0.032cm] (1.500000,1.500000) circle (0.040000);%
+\draw (1.530000,1.530000) node [anchor=north east] { $A$ };%
+
+% Marking point B by circle
+\draw [line width=0.032cm] (6.000000,1.500000) circle (0.040000);%
+\draw (5.970000,1.530000) node [anchor=north west] { $B$ };%
+
+% Marking point C by circle
+\draw [line width=0.032cm] (2.500000,4.500000) circle (0.040000);%
+\draw (2.500000,4.500000) node [anchor=south] { $C$ };%
+
+% Marking point a
+\draw (4.250000,3.000000) node [anchor=south west] { $a$ };%
+
+% Marking point b
+\draw (2.000000,3.000000) node [anchor=south east] { $b$ };%
+
+% Marking point c
+\draw (3.750000,1.500000) node [anchor=north] { $c$ };%
+
+% Marking point v_c
+\draw (2.500000,3.000000) node [anchor=west] { $v_c$ };%
+
+% Marking point \alpha
+\draw (1.600000,1.500000) node [anchor=south west] { $\alpha$ };%
+\color{black}
+}
+\end{tikzpicture}

@@ -1,0 +1,30 @@
+area 13 13 60 60
+ang_picture 20 13 64 40
+ang_origin 17 30 
+ang_unit 12 
+ang_scale 1 0 
+
+ang_line l 0.25 -1 -1.5
+
+ang_point T_0 0 0
+ang_point x_1 1 0
+ang_point x_2 3 0
+
+
+ang_point x^2 0.9 1.5
+
+
+
+double
+
+color 204 0 0
+ang_draw_parametric_curve x {-5;x<5;x+0.005}{x;pow(x-2,2)-0.7}
+
+color 0 0 204
+ang_drawline l
+
+
+
+
+
+
