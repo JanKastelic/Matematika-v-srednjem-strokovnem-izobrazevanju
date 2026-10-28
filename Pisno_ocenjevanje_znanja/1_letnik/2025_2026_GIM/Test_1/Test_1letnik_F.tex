@@ -1,0 +1,231 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{eurosym}
+
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+% \printanswers
+
+% \linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Popravljanje in pridobivanje ocen -- prvo pisno ocenjevanje znanja \\ 1. letnik -- test F \\ 17. junij 2026 \\ (Osnove logike in teorije množic, Naravna in cela števila)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \hqword{Naloga}
+    \hpword{Možne točke}
+    \chbpword{Dodatne točke}
+    \hsword{Dosežene točke}
+    \htword{Skupaj}  
+    % \combinedpointtable[h][questions]
+    \gradetable[h][questions]
+
+\end{center}
+
+\vspace{0.1in}
+
+
+\begin{questions}
+
+    % 1. vprašanje
+    
+    \question[4]
+    Določite pravilnost izjave $(\lnot A \lor  \lnot B)\Rightarrow (A\Leftrightarrow  B) \land B$ glede na izbor izjav $A$ in $B$.
+
+    \begin{solution}[11cm]
+        \begin{table}[H]
+            \begin{tabular}{ccccccc}
+             $A$ & $B$ & $\lnot A$ & $\lnot B$ & $(\lnot A\Rightarrow B)$ & $(A\Leftrightarrow \lnot B)$ & $(\lnot A\Rightarrow B)\land(A\Leftrightarrow \lnot B)$\\ \hline
+             P & P & N & N & P & N & N \\ 
+             P & N & N & P & P & P & P \\
+             N & P & P & N & P & P & P \\
+             N & N & P & P & N & N & N
+            \end{tabular}
+        \end{table}
+        Za vsako pravilno izpolnjeno vrstico, ki določa pravilnost, po $1$ točka.
+    \end{solution}
+
+
+
+
+    % 2. vprašanje
+    \question[3]
+    Določite resničnostno vrednost izjav:
+    \begin{parts}
+        \part 
+        Če je sodih števil nekončno mnogo, potem je množica naravnih števil števno neskončna. \\
+        \part 
+        Število $1$ je praštevilo ali število $5$ je večkratnik števila $2$.\\
+        \part
+        Ni res, da je $0$ najmanjše celo število ali $0$ ni najmanjše naravno število.\\
+    \end{parts}
+
+    \begin{solution}
+        (a): N (obe izjavi sta nepraavilni) \\
+        (b): P (obe izjavi sta pravilni) \\
+        (c): P (negirana prva izjava je pravilna, druga izjava je pravilna) \\ \\
+        Za vsako pravilno določeno logično vrednost po $1$ točka.
+    \end{solution}
+
+
+
+    \newpage
+
+    % 3. vprašanje
+    \question
+    Dani sta množici $\mathcal{A}=\left\{a,e,i,o\right\}$ in $\mathcal{B}=\left\{a,e,o,u\right\}$.
+    \begin{parts}
+        \part[2]
+        Ali velja $\mathcal{A}\nsubseteq\mathcal{B}$? Utemeljite.
+        \part[3]
+        Zapišite $\mathcal{PB}$. Izračunajte, koliko elementov vsebuje.
+        \part[3]
+        Zapišite in grafično predstavite kartezični produkt $\mathcal{B}\times\mathcal{A}$.
+    \end{parts}
+
+
+    \begin{solution}[9cm]
+        (a): Drži, da $\mathcal{A}\nsubseteq\mathcal{B}$, ker $a\in\mathcal{A}\land a\notin\mathcal{B}$.; $\mathcal{C}=\left\{b,c,h\right\}$ \\
+        (b): $\mathcal{PB}=\left\{\emptyset, \{b\}, \{c\}, \{h\}, \{i\}, \{b,c\}, \{b,h\}, \{b,i\}, \{c,h\}, \{c,i\}, \{h,i\}, \{b,c,h\}, \{b,c,i\}, \{b,h,i\}, \{c,h,i\}, \mathcal{B}\right\}$; $m(\mathcal{PB})=2^{m(\mathcal{B})}=2^4=16$. \\
+        (c): $\mathcal{B}\times\mathcal{A}=\left\{(a,b), (a,c), (a,h), (a,i), (b,b), (b,c), (b,h), (b,i), (c,b), (c,c), (c,h), (c,i), (h,b), (h,c), (h,h), (h,i)\right\}$ + grafična upodobitev \\ \\
+        Pri (a) za vsak odgovor po $1$ točka. Pri (b) za zapis celotne $\mathcal{PB}$ $2$ točki, za zapis zgolj podmnožic $1$ točka; za izračun po formuli za moč potenčne množice $1$ točka. Pri (c) za zapis $\mathcal{B}\times\mathcal{A}$ $1$ točka, za grafično upodobitev $1$ točka.
+    \end{solution}
+
+
+    \newpage
+    % 4. vprašanje  
+    \question
+    Množici $\mathcal{A}$ in $\mathcal{B}$ sta pravi podmnožici množice $\mathcal{C}$, hkrati pa sta med seboj disjunktni. Izračunajte:
+    \begin{parts}
+        \part[4]
+        Izračunajte: $\mathcal{A}\cup\mathcal{C}$, $\mathcal{A}\cap\mathcal{B}\cap\mathcal{C}$, $(\mathcal{A}\cap\mathcal{B})\cup\mathcal{C}$ in $(\mathcal{A}\cap\mathcal{B})^\complement$.
+        \part[1]
+        Grafično predstavite $(\mathcal{A}\setminus\mathcal{C})^\complement$.
+    \end{parts}
+
+    \begin{solution}[8cm]
+        (a): grafična upodobitev \\
+        (b): $\mathcal{B}\setminus\mathcal{C}=\emptyset$; $\mathcal{A}\cap\mathcal{C}=\mathcal{A}$; $\mathcal{A}\cup\mathcal{B}=\mathcal{B}$ \\ \\
+        Pri (a) za narisan Euler-Vennov diagram $1$ točka. Pri (b) za izračun vsake izmed množic po $1$ točka.
+    \end{solution}
+
+
+
+
+
+
+    
+    % 6. vprašanje
+    \question
+    Pri uri glasbe so se dijaki in učitelj pogovarjali o glasbenih obdobjih.  Učitelj je dijake vprašal, iz katerega obdobja so njihova največkrat poslušana glasbena dela.
+    $19$ dijakov je odgovorilo \textit{barok}, $8$ dijakov je reklo \textit{klasicizem} in $18$ \textit{romantika}. Kar $11$ jih je odgovorilo \textit{barok} in \textit{romantika}, $4$ so rekli \textit{barok} in \textit{klasicizem},
+    $3$ pa \textit{klasicizem} in \textit{romantika}. En sam dijaki je odgovoril z vsemi tremi obdobji, trije pa niso odgovorili. 
+    \begin{parts}
+        \part[1]
+        Narišite diagram.
+        \part[2]
+        Koliko dijakov je bilo pri uri slovenščine?
+        \part[2]
+        Koliko dijakov ima največkrat prebrana dela iz natanko dveh obdobji?
+    \end{parts}
+
+    \begin{solution}[8cm]
+        (a): Euler-Vennov diagram z vpisanimi številkami \\
+        (b): $5+1+5+3+2+10+1+3=30$ dijakov \\
+        (c): $10+3+2=15$ dijakov \\ \\
+        Pri (a) za pravilno narisan in izpolnjen diagram $1$ točka. Pri (b) in (c) za pravilen izračun $1$ točka, za zapis odgovora $1$ točka.
+    \end{solution}
+
+
+
+
+    \newpage
+
+    % 5. vprašanje
+    \question
+    Naj bo $\mathcal{U}=\mathbb{N}_{11}$. Dane so množice $\mathcal{A}=\left\{x;\ x\mid 10 \land x\in\mathbb{N}\right\}$, $\mathcal{B}=\left\{x;\ x=2k+1 \land 2\leq k< 5\right\}$ in $\mathcal{C}=\left\{x;\ 2x<64 \land x\in\mathbb{N}\right\}$. 
+    \begin{parts}
+        \part[4]
+        Zapišite dane množice z naštevanjem elementov ter jim določite moč
+        \part[4]
+        Določite naslednje množice: $\left(\mathcal{C}\setminus\mathcal{A}\right)\cap\mathcal{B}^\complement$ in $\mathcal{P}\left(\mathcal{B}^\complement\setminus\left(\mathcal{C}\cup\mathcal{A}\right)\right)$
+        \part[1]
+        Koliko elementov ima množica $\mathcal{A}\times\mathcal{C}$?
+    \end{parts}
+
+    \begin{solution}[13cm]
+        $\mathcal{A}=\left\{6,8,10,12,14,16,18\right\}$, $\mathcal{B}=\left\{8,11,14,17,20\right\}$, $\mathcal{C}=\left\{10,15,20\right\}$ \\
+        (a): $\mathcal{A}\cap\mathcal{C}=\left\{10\right\}$; $\mathcal{C}\setminus\mathcal{A}=\left\{15,20\right\}$; $(\mathcal{A}\cup\mathcal{C})\setminus\mathcal{B}=\left\{6,10,12,15,16,18\right\}$; $(\mathcal{A}\cup\mathcal{B})^\complement=\left\{1,2,3,4,5,7,9,13,15,19,21,22,23\right\}$ \\
+        (b): $m(\mathcal{A}\times\mathcal{C})=m(\mathcal{A})\cdot m(\mathcal{C})=7\cdot 3 = 21$ \\ \\
+        Pri (a) za zapis/uporabo pravilnih množic $\mathcal{A}, \mathcal{B}, \mathcal{C}$ $1$ točka; za vsako pravilno določeno množico po $1$ točka. Pri (b) za uporabo formule in izračun moči kartezičnega produkta $1$ točka.
+    \end{solution}
+
+
+    % \newpage
+        
+
+    % 7. vprašanje
+    \question[4]
+    Med dvodnevno planinsko turo se je planinec od Doma v Kamniški Bistrici, ki leži na $600~m$ 
+    nadmorske višine, povzpel na $2558~m$ visoki Grintovec. Z vrha se je spustil na 
+    drugo stran do Češke koče z nadmorsko višino $540~m$, kjer je tudi prespal. Drugi dan se 
+    je povzpel na $2532~m$ visoko Skuto iz z nje sestopil do izhodišča. Izračunaj skupno vsoto 
+    vseh vzponov in spustov na tej turi.
+
+    \begin{solution}[4cm]
+        $5\cdot 26+7\cdot 27+4\cdot 28-320=111$ \\ \\
+        Za nastavek enega računa $1$ točka, za pravilen izračun $1$ točka, za zapis odgovora $1$ točka.
+    \end{solution}
+
+
+% \newpage
+%         % dodatno vprašanje
+
+%     \makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+%     \vspace{0.1in}
+
+%     \bonusquestion[3]
+%     \textit{Dodatna naloga:} Ovrednotite pravilnost izjav: $A: (-2,3)\in\mathbb{N}\times\mathbb{Z}$; $B:\mathbb{N}\subsetneq\mathbb{N}$; $C: \left\{1\right\}\in\left\{\mathbb{Z}\right\}$. Odgovore utemeljite.
+%     \begin{solution}
+%         $\exists x\in\mathbb{Z}\ni:(3\mid x)\land(2\mid x)$; negacija: $\forall x\in\mathbb{Z}: (3\nmid x)\lor(2\nmid x)$ \\ \\
+%         Za pravilen zapis izjave s simboli $1$ točka, za pravilno negacijo kvantifikatorja $1$ točka, za pravilno negacijo logične operacije $1$ točka.
+%     \end{solution}
+
+\end{questions}
+
+
+
+\end{document}

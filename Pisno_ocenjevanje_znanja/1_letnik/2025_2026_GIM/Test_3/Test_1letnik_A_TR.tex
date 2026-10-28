@@ -1,0 +1,258 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage[gen]{eurosym}
+\usepackage{newunicodechar}
+\newunicodechar{€}{\euro}
+\usepackage{arev}
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+% \printanswers
+
+\linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Tretje pisno ocenjevanje znanja \\ 1. letnik -- test A \\ 9. februar 2026 \\ (Racionalna števila)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \chqword{Naloga}
+    \chpword{Možne točke}
+    \chbpword{Dodatne točke}
+    \chsword{Dosežene točke}
+    \chtword{Skupaj}  
+    % \combinedpointtable[h][questions]
+    \combinedgradetable[h][questions]
+
+\end{center}
+
+\vspace{0.4in}
+
+
+\begin{questions}
+
+
+        \question[3]
+        Servis so najprej podražili za $10~\%$, potem pa se je ena skodelica okrušila in so
+        ga pocenili za $30~\%$. Koliko je servis stal na začetku, če ga danes lahko kupimo za $115.5~\euro$?
+
+        \begin{solution}[6cm]
+            \begin{align*}
+                \dfrac{x^{n+1}+2x^n-3x^{n-1}}{x^n-9x^{n-2}} &= \dfrac{x^{n-1}(x^{2}+2x-3)}{x^{n-2}(x^2-9)}= \\
+                                                            &= \dfrac{x^{n-1}(x+3)(x-1)}{x^{n-2}(x-3)(x+3)}= \\
+                                                            &= \dfrac{x(x-1)}{x+3}
+            \end{align*}
+            Za pravilno izpostavljanje skupnega faktorja v števcu in imenovalcu po $1$ točka, razstavljanje po Vietu in razlike kvadratov po $1$ točka, zapis pravilno okrajšanega ulomka $1$ točka.
+        \end{solution}
+
+    % 1. vprašanje
+\newpage
+    \question
+    Izračunajte natančno vrednost izraza.
+    \begin{parts}
+        \part[4]
+        $\dfrac{\frac{2}{3}+1\frac{5}{6}\cdot 3}{\frac{2}{7}:\frac{4}{3}-1\frac{1}{14}+2}$
+
+        \begin{solution}[11cm]
+            \begin{align*} 
+                \frac{18}{5}\cdot 2\frac{1}{12}-\dfrac{\frac{27}{8}+1\frac{5}{6}}{\frac{19}{8}}&=\frac{18}{5}\cdot \frac{25}{12}-\dfrac{\frac{27}{8}+\frac{11}{6}}{\frac{19}{8}}= \\
+                                                                                            &= \frac{3}{1}\cdot \frac{5}{2}-\dfrac{\frac{81}{24}+\frac{44}{24}}{\frac{19}{8}}= \\
+                                                                                            &=\frac{15}{2}-\dfrac{\frac{125}{24}}{\frac{19}{8}}= \\
+                                                                                            &=\frac{15}{2}-\frac{125\cdot 8}{24\cdot 19}= \\
+                                                                                            &=\frac{15}{2}-\frac{125}{57}= \\
+                                                                                            &=\frac{855}{114}-\frac{250}{114}= \\
+                                                                                            &=\frac{605}{114}
+            \end{align*}
+            Za pravilno množenje ulomkov $1$ točka, pravilno seštevanje ulomkov $1$ točka, pravilno razreševanje dvojnih ulomkov $1$ točka, pravilno odštevanje ulomkov $1$ točka, pravilen okrajšan rezultat $1$ točka.
+        \end{solution}
+
+
+        \part[5]
+        $0.1\overline{3333}:\left(1.2-0.6\cdot\left(0.04+0.06\right)\right)^{-1}$
+
+        \begin{solution}[4cm]
+            \begin{align*}
+                2.\overline{6}:(0.5-0.\overline{3})-0.3\overline{72}\cdot 55 &= 2\frac{2}{3}:(\frac{1}{2}-\frac{1}{3})-\frac{41}{110}\cdot 55= \\
+                                                                            &= \frac{8}{3}:\frac{1}{6}-\frac{41}{2}= \\
+                                                                            &= \frac{8}{3}\cdot \frac{6}{1}-\frac{41}{2}= \\
+                                                                            &= 16-\frac{41}{2}= \\
+                                                                            &= -\frac{9}{2}
+            \end{align*}
+            Za pravilno zapisano število $0.3\overline{72}$ z ulomkom $1$ točka, pravilno zapisani števili $2.\overline{6}$ in $0.\overline{3}$ z ulomkoma $1$ točka, pravilno množenje in deljenje ulomkov $1$ točka, pravilno odštevanje ulomkov $1$ točka, končen rezultat $1$ točka.
+        \end{solution}
+
+    \end{parts}
+
+
+
+
+
+
+    \newpage
+
+        % 3. vprašanje
+
+        \question
+        Poenostavite izraze.
+        \begin{parts}
+            
+
+            \part[7]
+            $\left(\dfrac{6-x}{x^2+6x}-\dfrac{x}{36-x^2}\right)\left(\dfrac{2x-6}{x^2+6x}\right)^{-1}+\dfrac{x}{6-x}$
+    
+            \begin{solution}[12cm]
+                \begin{align*}
+                    \dfrac{x+4}{x+5}-\dfrac{2x-10}{x^2-x-12}:\dfrac{x^2-25}{x-4} &= \dfrac{x+4}{x+5}-\dfrac{2(x-5)}{(x-4)(x+3)}\cdot\dfrac{x-4}{(x-5)(x+5)}= \\
+                                                                                &= \dfrac{x+4}{x+5}-\dfrac{2}{(x+3)(x-5)}= \\
+                                                                                &= \dfrac{(x+4)(x+3)-2}{(x+5)(x+3)}= \\
+                                                                                &= \dfrac{x^2+7x+10}{(x+5)(x+3)}= \\
+                                                                                &= \dfrac{(x+5)(x+2)}{(x+5)(x+3)}= \\
+                                                                                &=\dfrac{x+2}{x+3}
+                \end{align*}
+                Za pravilno faktorizacijo izrazov $1$ točka, pravilno deljenje ulomkov $1$ točka, pravilno odštevanje ulomkov $1$ točka, pravilno zapisan okrajšan rezultat $1$ točka.
+            \end{solution}
+    
+            \newpage
+
+            \part[5]
+            $\left(\dfrac{x^{-3}-x^{-1}}{1-x^{-2}}\right)^{-1}+\left(\dfrac{1}{x}\right)^{-1}$
+    
+            \begin{solution}[12cm]
+                \begin{align*}
+                    \dfrac{(a-1)^{-1}-(a+1)^{-1}}{a+\frac{a}{a^2-1}} &= \dfrac{\frac{1}{a-1}-\frac{1}{a+1}}{\frac{a(a^2-1)+a}{a^2-1}}= \\
+                                                                    &= \dfrac{\frac{a+1-(a-1)}{a^2-1}}{\frac{a^3-a+a}{a^2-1}}= \\
+                                                                    &= \dfrac{\frac{2}{a^2-1}}{\frac{a^3}{a^2-1}}= \\
+                                                                    &= \dfrac{2(a^2-1)}{a^3(a^2-1)}= \\
+                                                                    &= \dfrac{2}{a^3}
+                \end{align*}
+                Za pravilen zapis obratnih vrednosti ulomkov $1$ točka, pravilno seštevanje in odštevanje ulomkov $1$ točka, pravilno razrešen dvojni ulomek $1$ točka, pravilno krajšanje ulomkov $1$ točka, končen rezultat $1$ točka.
+            \end{solution}
+    
+    
+            \part[5]
+            $\left(\dfrac{-3^4x^{-2}y^3}{x^3z^2}\right)^{-4} : \left(\dfrac{y^{-3}}{3^5x^2z^{-2}}\right)^3$    
+            \begin{solution}[2cm]
+                \begin{align*}
+                    \dfrac{2x^{-2}}{1-2x^{-1}+x^{-2}}+\dfrac{x^{-1}}{1-x^{-1}} &= \dfrac{\frac{2}{x^2}}{1-\frac{2}{x}+\frac{1}{x^2}}+\dfrac{\frac{1}{x}}{1-\frac{1}{x}}= \\
+                                                                            &= \dfrac{\frac{2}{x^2}}{\frac{x^2-2x+1}{x^2}}+\dfrac{\frac{1}{x}}{\frac{x-1}{x}}= \\
+                                                                            &= \dfrac{2x^2}{(x^2-2x+1)x^2}+\dfrac{x}{(x-1)x}= \\
+                                                                            &= \dfrac{2}{(x-1)^2}+\dfrac{1}{x-1}= \\
+                                                                            &= \dfrac{2+(x-1)}{(x-1)^2}= \\
+                                                                            &= \dfrac{x+1}{(x-1)^2}
+                \end{align*}
+                Za pravilen zapis obratnih vrednosti $1$ točka, pravilno seštevanje in odštevanje ulomkov $1$ točka, pravilno razreševanje dvojnih ulomkov $1$ točka, pravilno krajšanje ulomkov $1$ točka, končen rezultat $1$ točka.
+            \end{solution}
+    
+    
+        \end{parts}
+   
+   
+   
+   
+        \newpage
+    % 2. vprašanje
+
+    \question
+    Okrajšajte ulomke.
+    \begin{parts}
+        
+
+        \part[3]
+        $\dfrac{2^{n-1}+3\cdot 2^n}{4^n+5\cdot 2^{2n-1}}$
+
+        \begin{solution}[9cm]
+            \begin{align*}
+                5(81x^2-1)(45x-5)^{-1}&= \dfrac{5(81x^2-1)}{45x-5}= \\
+                                    &= \dfrac{5(9x-1)(9x+1)}{5(9x-1)}= \\
+                                    &= 9x+1
+            \end{align*}
+            Pravilen zapis z ulomkom $1$ točka, razstavljanje razlike kvadratov in izpostavljanje skupnega faktorja $1$ točka, krajšanje ulomka $1$ točka, končen rezultat $1$ točka.
+        \end{solution}
+
+
+        \part[4]
+        $\left(\dfrac{\dfrac{2}{x^{-2}}}{\left(x^{-2}\right)^{-1}}\right)^{-1}$
+
+        \begin{solution}[6cm]
+            \begin{align*}
+                \dfrac{x^{n+1}+2x^n-3x^{n-1}}{x^n-9x^{n-2}} &= \dfrac{x^{n-1}(x^{2}+2x-3)}{x^{n-2}(x^2-9)}= \\
+                                                            &= \dfrac{x^{n-1}(x+3)(x-1)}{x^{n-2}(x-3)(x+3)}= \\
+                                                            &= \dfrac{x(x-1)}{x+3}
+            \end{align*}
+            Za pravilno izpostavljanje skupnega faktorja v števcu in imenovalcu po $1$ točka, razstavljanje po Vietu in razlike kvadratov po $1$ točka, zapis pravilno okrajšanega ulomka $1$ točka.
+        \end{solution}
+
+
+
+    \end{parts}
+
+        \newpage
+
+        \question[4]
+        Kolikšno koncentracijo raztopine dobimo, če zmešamo $2~kg$ $60~\%$ raztopine in $3~kg$ $40~\%$ raztopine?
+
+        \begin{solution}[10cm]
+            \begin{align*}
+                \dfrac{x^{n+1}+2x^n-3x^{n-1}}{x^n-9x^{n-2}} &= \dfrac{x^{n-1}(x^{2}+2x-3)}{x^{n-2}(x^2-9)}= \\
+                                                            &= \dfrac{x^{n-1}(x+3)(x-1)}{x^{n-2}(x-3)(x+3)}= \\
+                                                            &= \dfrac{x(x-1)}{x+3}
+            \end{align*}
+            Za pravilno izpostavljanje skupnega faktorja v števcu in imenovalcu po $1$ točka, razstavljanje po Vietu in razlike kvadratov po $1$ točka, zapis pravilno okrajšanega ulomka $1$ točka.
+        \end{solution}
+
+
+
+
+
+     % dodatno vprašanje
+    \bonusquestion[4]
+    \textit{Dodatna naloga:} Poenostavite izraz. $$\left(1+\dfrac{2}{x+\dfrac{2}{2+\frac{3}{x+1}}}\right):\dfrac{1}{\dfrac{2x^2+7x+2}{x^3+64}}$$
+
+    \begin{solution}[7cm]
+        \begin{align*}
+            \dfrac{b^{2x+y}+b^{x+2y}+b^{x+y+2}}{b^{2x-y}+b^x+b^{x-y+2}} &= \dfrac{b^{x+y}(b^x+b^y+b^2)}{b^{x-y}(b^x+b^y+b^2)}= \\
+                                                                        &= \dfrac{b^{x+y}}{b^{x-y}}= \\
+                                                                        &= b^{2y}
+        \end{align*}
+        Za pravilno izpostavljanje skupnega faktorja $1$ točka; za pravilno krajšanje $1$ točka; končen rezultat $1$ točka.
+    \end{solution}
+
+
+
+
+\end{questions}
+
+
+
+\end{document}

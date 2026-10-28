@@ -1,0 +1,204 @@
+% \documentclass[addpoints]{exam}
+\documentclass[addpoints,12pt]{exam}
+
+\usepackage{arev}
+
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{eurosym}
+
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+% \printanswers
+
+% \linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Prvo pisno ocenjevanja znanja -- manjkajoči \\ 1. letnik -- test G \\ 6. november 2024 \\ (Osnove logike in teorije množic, Naravna števila)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \chqword{Naloga}
+    \chpword{Možne točke}
+    \chbpword{Dodatne točke}
+    \chsword{Dosežene točke}
+    \chtword{Skupaj}  
+    \combinedpointtable[h][questions]
+    % \combinedgradetable[h][questions]
+\end{center}
+
+\vspace{0.1in}
+
+
+\begin{questions}
+
+    % 1. vprašanje
+    
+    \question[4]
+    Določite pravilnost izjave $\lnot( A\Rightarrow  B)\Leftrightarrow A\land \lnot B$ glede na izbor izjav $A$ in $B$. Upoštevajte vrstni red operacij.
+
+    \begin{solution}[9cm]
+        \begin{table}[H]
+            \begin{tabular}{ccccccc}
+             $A$ & $B$ & $\lnot B$ & $(A\Rightarrow B)$ & $\lnot(A\Rightarrow B)$ & $(A\land \lnot B)$ & $\lnot( A\Rightarrow  B)\Leftrightarrow A\land \lnot B$\\ \hline
+             P & P & N & P & N & N & P \\ 
+             P & N & P & N & P & P & P \\
+             N & P & N & P & N & N & P \\
+             N & N & P & P & N & N & P
+            \end{tabular}
+        \end{table}
+        Za vsako pravilno izpolnjeno vrstico, ki določa pravilnost, po $1$ točka.
+
+    \end{solution}
+
+
+
+
+    % 2. vprašanje
+    \question[3]
+    Določite resničnostno vrednost izjav:
+    \begin{parts}
+        \part 
+        Število $5$ je prvo liho praštevilo in število $9$ ni praštevilo.\\
+        \part 
+        Če je število $3$ sestavljeno število, potem je naravnih števil neskončno.\\
+        \part
+        Ni res, da je ostanek pri deljenju s $3$ lahko samo $1$, $2$ ali $0$, in število $8$ ni večje ali enako številu $8$.\\
+    \end{parts}
+
+    \begin{solution}
+        (a): N (prva izjava je nepravilna, druga je pravilna) \\
+        (b): P (prva izjava je nepravilna, druga je pravilna) \\
+        (c): N (negirana prva izjava je nepravilna /prva izjava je pravilna/, druga izjava je nepravilna) \\ \\
+        Za vsako pravilno določeno logično vrednost po $1$ točka.
+    \end{solution}
+
+
+
+    \newpage
+
+    % 3. vprašanje
+    \question
+    Naj bo $\mathcal{U}=\mathbb{N}_{10}$ ter $\mathcal{A}=\left\{x;\ x~ je~ delitelj~ 6\right\}$ in $\mathcal{B}=\left\{x;\ x=2n\land n\in\mathbb{N}\right\}$.
+    \begin{parts}
+        \part[3]
+        Zapišite dane množice z elementi, določite njihovo moč ter narišite Euler-Vennov diagram. 
+        \part[7]
+        Določite naslednje množice: $\mathcal{C}=\mathcal{A}\cap\mathcal{B}$, $\mathcal{A}\cup\mathcal{B}$, $\mathcal{D}=\mathcal{A}\setminus\mathcal{B}$, $\mathcal{B}\times\mathcal{D}$, $\mathcal{PC}$ in $(\mathcal{A}\cup\mathcal{B})^\complement$. Kartezični produkt predstavite grafično.
+        \part[1]
+        Zapišite najmanjšo možno množico $\mathcal{E}$, da bosta množici $\mathcal{A}$ in $\mathcal{B}$ njeni podmnožici.
+        \part[1]
+        Zapišite množico $\mathcal{F}$, ki je disjunktna z množico $\mathcal{B}$ in velja $\mathcal{F}\subseteq\mathcal{A}$ in $m(\mathcal{F})=2$.
+    \end{parts}
+
+
+    \begin{solution}[9cm]
+        (a): $\mathcal{A}=\{1,2,3,6\}$, $\mathcal{B}=\{2,4,6,8,10\}$ in $\mathcal{U}=\{1,2,3,4,5,6,7,8,9,10\}$; $m(\mathcal{A})=4$, $m(\mathcal{B})=5$, $m(\mathcal{U})=10$ + E-V diagram \\
+        (b): $\mathcal{C}=\mathcal{A}\cap\mathcal{B}=\{2,6\}$, $\mathcal{A}\cup\mathcal{B}=\{1,2,3,4,6,8,10\}$, $\mathcal{D}=\mathcal{A}\setminus\mathcal{B}=\{1,3\}$, $\mathcal{PC}=\{\emptyset,\{2\},\{6\},\{2,6\},\mathcal{C}\}$, $\mathcal{B}\times\mathcal{D}=\{(2,1),(2,3),(4,1),(4,3),(6,1),(6,3),(8,1),(8,3),(10,1),(10,3)\}$ in $(\mathcal{A}\cup\mathcal{B})^\complement=\{5,7,9\}$ + grafična upodobitev\\
+        (c): $\mathcal{E}=\{1,2,3,4,6,8,10\}$ \\
+        (d): $\mathcal{F}=\{1,3\}$ \\ \\
+        Pri (a) za zapis množic $1$ točka; za zapis moči množic $1$ točka, za diagram $1$ točka. Pri (b) za zapis vsake množice po $1$ točka, za grafično upodobitev $1$ točka. Pri (c) in (d) za zapis množice po $1$ točka.
+    \end{solution}
+
+    \newpage
+
+    % 4. vprašanje
+    \question
+    Množica $\mathcal{C}$ je prava podmnožica množice $\mathcal{A}$, prav tako je $\mathcal{B}$ prava podmnožica množice $\mathcal{A}$. Podmnožici $\mathcal{B}$ in $\mathcal{C}$ nimata praznega preseka.
+    \begin{parts}
+        \part[1]
+        Grafično predstavite množico $(\mathcal{C}\cap\mathcal{B})\cup\mathcal{A}^\complement$.
+        \part[2]
+        Grafično predstavite množico $((\mathcal{C}\setminus\mathcal{B})\cup(\mathcal{B}\setminus\mathcal{C}))^\complement$.
+    \end{parts}
+
+    \begin{solution}[1cm]
+        (a) in (b): grafična upodobitev \\
+        Pri (a) in (b) za narisan Euler-Vennov diagram po $1$ točka.
+    \end{solution}
+
+
+
+
+\newpage
+    % 5. vprašanje
+    \question
+    V $190$ gospodinjstvih so ugotavljali, v kateri trgovini nakupujejo živila. V \textit{Sparu} nakupuje $110$ gospodinjstev, v \textit{Mercatroju} $138$ in v \textit{Tušu} $118$.
+    V vseh treh trgovinah nakupuje $49$ gospodinjstev, $46$ le v \textit{Meractorju} in \textit{Tušu}, $5$ le v \textit{Tušu} in \textit{Sparu}, $27$ pa le v \textit{Mercatorju} in \textit{Sparu}. 
+    V petih gospodinjstvih živil ne nakupujejo v nobeni od teh trgovin.
+    \begin{parts}
+        \part[1]
+        Narišite diagram.
+        \part[2]
+        Koliko je takih gospodinjstev, ki kupujejo živila izključno v \textit{Sparu}?
+        \part[2]
+        Koliko gospodinjstev nakupuje v dveh različnih trgovinah?
+    \end{parts}
+
+    \begin{solution}[8cm]
+        (a): Euler-Vennov diagram z vpisanimi številkami \\
+        (b): $110-5-49-27=29$ gospodinjstev\\
+        (c): $5+46+27+49=127$ gospodinjstev \\ \\
+        Pri (a) za pravilno narisan in izpolnjen diagram $1$ točka. Pri (b) in (c) za pravilen izračun $1$ točka, za zapis odgovora $1$ točka.
+    \end{solution}
+
+
+
+
+    \newpage
+        
+
+    % 6. vprašanje
+    \question[3]
+    Na šoli se izvaja pet različnih krožkov. Pri naravoslovne so tri skupine po $22$ učencev, pri astronmskem je šest skupin z $14$ učenci. Pri odbojki je oblikovanih $8$ skupin s po $7$ učenci. Šah obiskuje $32$ učencev v $5$ skupinah. Popotniški krožek pa ima dve skupini s po $146$ učenci.
+    Med vsemi učenci je 320 fantov. Koliko deklet je na šoli vključenih v krožke? (Zapišite samo en račun.)
+
+    \begin{solution}[9cm]
+        $3\cdot 22+6\cdot 14+8\cdot 7+32+2\cdot 146-320=210$ deklet \\ \\
+        Za nastavek enega računa $1$ točka, za pravilen izračun $1$ točka, za zapis odgovora $1$ točka.
+    \end{solution}
+
+    
+    %dodatno vprašanje
+    \bonusquestion[3]
+    \textit{Dodatna naloga:} Rešite enačbo $$(X\setminus\{b\})\times(X \cap \{a,b\})=\left\{(a,a),(c,a),(d,a),(e,a)\right\}.$$
+
+    \begin{solution}
+        $X=\left\{a,c,d,e\right\}$ \\
+        Za v celoti pravilen zapis rešitve $3$ točke.
+    \end{solution}
+
+\end{questions}
+
+
+
+\end{document}

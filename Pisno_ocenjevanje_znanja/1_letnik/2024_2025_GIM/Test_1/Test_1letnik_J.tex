@@ -1,0 +1,208 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{eurosym}
+
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+% \printanswers
+
+% \linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Popravljanje in pridobivanje ocen -- prvo pisno ocenjevanje znanja \\ 1. letnik -- test J \\ 17. junij 2025 \\ (Osnove logike in teorije množic, Naravna in cela števila)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \hqword{Naloga}
+    \hpword{Možne točke}
+    \chbpword{Dodatne točke}
+    \hsword{Dosežene točke}
+    \htword{Skupaj}  
+    % \combinedpointtable[h][questions]
+    \gradetable[h][questions]
+\end{center}
+
+\vspace{0.1in}
+
+
+\begin{questions}
+
+    % 1. vprašanje
+    
+    \question[4]
+    Določite pravilnost izjave $ A\Leftrightarrow B\Rightarrow \lnot(\lnot A\land B)$ glede na izbor izjav $A$ in $B$. Upoštevajte vrstni red operacij.
+
+    \begin{solution}[12cm]
+        \begin{table}[H]
+            \begin{tabular}{ccccccc}
+             $A$ & $B$ & $\lnot B$ & $A\Rightarrow B$ & $A\land \lnot B$ & $\lnot(A\land \lnot B)$ & $(A\Rightarrow  B)\Leftrightarrow \lnot(A\land \lnot B)$\\ \hline
+             P & P & N & P & N & P & P \\ 
+             P & N & P & N & P & N & P \\
+             N & P & N & P & N & P & P \\
+             N & N & P & P & N & P & P
+            \end{tabular}
+        \end{table}
+        Za vsako pravilno izpolnjeno vrstico, ki določa pravilnost, po $1$ točka.
+
+    \end{solution}
+
+
+
+
+
+    % 2. vprašanje
+    \question[3]
+    Določite resničnostno vrednost izjav:
+    \begin{parts}
+        \part 
+        Število $5$ je prvo liho praštevilo natanko tedaj, ko je število $9$ sestavljeno število.\\
+        \part 
+        Če je število $3$ naravno število, potem je naravnih števil končno mnogo.\\
+        \part
+        Ni res, da je ostanek pri deljenju z $2$ lahko samo $1$, $2$ ali $0$, in število $8$ ni enako številu $8$.\\
+    \end{parts}
+
+    \begin{solution}
+        (a): N (prva izjava je nepravilna, druga je pravilna) \\
+        (b): N (prva izjava je pravilna, druga je nepravilna) \\
+        (c): N (negirana prva izjava je nepravilna /prva izjava je pravilna/, druga izjava je nepravilna) \\ \\
+        Za vsako pravilno določeno logično vrednost po $1$ točka.
+    \end{solution}
+
+
+
+
+
+    \newpage
+
+    % 3. vprašanje
+    \question
+    Naj bo $\mathcal{U}=\mathbb{N}_{12}$ ter $\mathcal{A}=\left\{x;\ x~ je~ delitelj~ 9\right\}$ in $\mathcal{B}=\left\{x;\ x=2n+1\land n\in\mathbb{N}\right\}$.
+    \begin{parts}
+        \part[4]
+        Zapišite dane množice z elementi, določite njihovo moč ter narišite Euler-Vennov diagram. 
+        \part[7]
+        Določite naslednje množice: $\mathcal{C}=\mathcal{A}\cap\mathcal{B}$, $\mathcal{A}\cup\mathcal{B}$, $\mathcal{D}=\mathcal{A}\setminus\mathcal{B}$, $\mathcal{B}\times\mathcal{D}$, $\mathcal{PC}$ in $(\mathcal{A}\cup\mathcal{B})^\complement$. Kartezični produkt predstavite grafično.
+        \part[1]
+        Zapišite največjo možno množico $\mathcal{E}$, da bosta množici $\mathcal{A}$ in $\mathcal{B}$ njeni nadmnožici.
+        \part[1]
+        Zapišite množico $\mathcal{F}$, ki je disjunktna z množico $\mathcal{A}$ in velja $\mathcal{F}\subseteq\mathcal{B}$ ter $m(\mathcal{F})=2$.
+    \end{parts}
+
+
+    \begin{solution}[12cm]
+        (a): $\mathcal{A}=\{1,2,3,6\}$, $\mathcal{B}=\{2,4,6,8,10\}$ in $\mathcal{U}=\{1,2,3,4,5,6,7,8,9,10,11\}$; $m(\mathcal{A})=4$, $m(\mathcal{B})=5$, $m(\mathcal{U})=11$ + E-V diagram \\
+        (b): $\mathcal{C}=\mathcal{A}\cap\mathcal{B}=\{2,6\}$, $\mathcal{A}\cup\mathcal{B}=\{1,2,3,4,6,8,10\}$, $\mathcal{D}=\mathcal{A}\setminus\mathcal{B}=\{1,3\}$, $\mathcal{PC}=\{\emptyset,\{2\},\{6\},\mathcal{C}\}$, $\mathcal{B}\times\mathcal{D}=\{(2,1),(2,3),(4,1),(4,3),(6,1),(6,3),(8,1),(8,3),(10,1),(10,3)\}$ in $(\mathcal{A}\cup\mathcal{B})^\complement=\{5,7,9,11\}$ + grafična upodobitev\\
+        (c): $\mathcal{E}=\{1,2,3,4,6,8,10\}$ \\
+        (d): $\mathcal{F}=\{1,3\}$ \\ \\
+        Pri (a) za zapis množic $1$ točka; za zapis moči množic $1$ točka, za diagram $1$ točka. Pri (b) za zapis vsake množice po $1$ točka, za grafično upodobitev $1$ točka. Pri (c) in (d) za zapis množice po $1$ točka.
+    \end{solution}
+
+
+    \newpage
+
+    % 4. vprašanje
+    \question
+    Množica $\mathcal{C}$ je prava podmnožica množice $\mathcal{A}$, prav tako je $\mathcal{B}$ prava podmnožica množice $\mathcal{A}$. Podmnožici $\mathcal{B}$ in $\mathcal{C}$ nimata praznega preseka.
+    \begin{parts}
+        \part[2]
+        Grafično predstavite množico $(\mathcal{C}\cap\mathcal{B})\cup\mathcal{A}^\complement$.
+        \part[3]
+        Grafično predstavite množico $((\mathcal{C}\setminus\mathcal{B})\cup(\mathcal{B}\setminus\mathcal{C}))^\complement$.
+    \end{parts}
+
+    \begin{solution}[7cm]
+        (a) in (b): grafična upodobitev \\
+        Pri (a) in (b) za narisan Euler-Vennov diagram po $1$ točka.
+    \end{solution}
+
+
+
+
+%  \newpage
+    % 5. vprašanje
+    \question
+    Dijaki in dijakinje 3. F razreda so ugotavljali, katero znamko računalnika imajo.
+    Računalnik znamke \textit{IBM} ima doma $13$ dijakov, znamke \textit{Dell} $11$ dijakov, znamke \textit{Apple} pa tudi $11$ dijakov.
+    Vse tri znamke računalnika imata doma $2$ dijaka. Računalnik znamke \textit{Apple} in \textit{Dell} $4$ dijaki, \textit{Apple} in \textit{IBM} $3$ dijaki, \textit{IBM} in \textit{Dell} pa $5$ dijakov.
+    Trije dijaki imajo doma računalnik neke druge znamke.
+    \begin{parts}
+        \part[1]
+        Narišite diagram.
+        \part[2]
+        Koliko je vseh dijakov v razredu?
+        \part[2]
+        Koliko je takih dijakov, ki imajo doma natanko en računalnik?
+    \end{parts}
+
+    \begin{solution}[8.5cm]
+        (a): Euler-Vennov diagram z vpisanimi številkami \\
+        (b): $110-5-49-27=29$ gospodinjstev\\
+        (c): $5+46+27+49=127$ oziroma $5+46+27=78$ gospodinjstev \\ \\
+        Pri (a) za pravilno narisan in izpolnjen diagram $1$ točka. Pri (b) in (c) za pravilen izračun $1$ točka, za zapis odgovora $1$ točka.
+    \end{solution}
+
+
+
+
+     \newpage
+        
+
+    % 6. vprašanje
+    \question[3]
+    Na šoli se izvaja pouk štirih različnih tujih jezikov. Pouk italijanščine poteka v dveh skipinah po $23$ učencev. 
+    Nemščina se izvaja v treh skupinah, v dveh po $21$ učencev in eni z $30$ učenci. Pouk francoščine poteka v dveh skupinah z $22$ in $18$ učenci.
+    Španščino obiskujeta $102$ učenca, v dveh skupinah po $23$ učencev in dveh skupinah z $28$ učenci.
+    Med vsemi učenci je $100$ fantov. Koliko deklet je na šoli? (Zapišite samo en račun.)
+
+    \begin{solution}[8cm]
+        $3\cdot 22+6\cdot 14+8\cdot 7+5\cdot 32+2\cdot 146-320=338$ deklet \\ \\
+        Za nastavek enega računa $1$ točka, za pravilen izračun $1$ točka, za zapis odgovora $1$ točka.
+    \end{solution}
+
+    
+    % %dodatno vprašanje
+    % \bonusquestion[3]
+    % \textit{Dodatna naloga:} Rešite enačbo $(X\setminus\{b\})\times(X \cap \{a,b\})=\left\{(a,a),(c,a),(d,a),(e,a)\right\}$.
+
+    % \begin{solution}
+    %     $X=\left\{a,c,d,e\right\}$ \\
+    %     Za v celoti pravilen zapis rešitve $3$ točke.
+    % \end{solution}
+
+\end{questions}
+
+
+
+\end{document}

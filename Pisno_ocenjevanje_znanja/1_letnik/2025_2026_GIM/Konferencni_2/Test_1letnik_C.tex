@@ -1,0 +1,221 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage[gen]{eurosym}
+\usepackage{newunicodechar}
+\newunicodechar{€}{\euro}
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+% \printanswers
+
+% \linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Popravljanje in pridobivanje ocen -- konferenca \\ 1. letnik -- test C \\ 15. junij 2026 \\ (Realna števila; Koordinatni sistem v ravnini; Funkcija; Premica)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \hqword{Naloga}
+    \hpword{Možne točke}
+    \chbpword{Dodatne točke}
+    \hsword{Dosežene točke}
+    \htword{Skupaj}  
+    % \combinedpointtable[h][questions]
+    \gradetable[h][questions]
+
+\end{center}
+
+\vspace{0.02in}
+
+
+\begin{questions}
+
+%%%% realna števila
+
+
+    \question[5]
+    Izračunajte natančno vrednost izraza.
+    $$ \sqrt{6\cdot 8\cdot 12}-\left(\sqrt{3}-1\right)^2+\dfrac{\sqrt{3}}{2+\sqrt{3}}-\left(3+\sqrt{3}\right)\left(1-2\sqrt{3}\right) $$
+
+    \begin{solution}[8cm]
+        \begin{align*} 
+            \dfrac{\sqrt{5}}{\sqrt{5}+1}-\dfrac{5-3\sqrt{5}}{4\sqrt{5}}+\left(3+\sqrt{5}\right)^2-\sqrt{125}&=\dfrac{\sqrt{5}(\sqrt{5}-1)}{(\sqrt{5}+1)(\sqrt{5}-1)}-\dfrac{(5-3\sqrt{5})\sqrt{5}}{4\sqrt{5}\sqrt{5}}+9+6\sqrt{5}+5-5\sqrt{5}= \\
+                                                                                                            &=\dfrac{5-\sqrt{5}}{5-1}-\dfrac{5\sqrt{5}-3\cdot 5}{4\cdot 5}+14+\sqrt{5}= \\
+                                                                                                            &=\frac{5-\sqrt{5}}{4}-\dfrac{\sqrt{5}-3}{4}+14+\sqrt{5}= \\
+                                                                                                            &=\frac{8-2\sqrt{5}}{4}+14+\sqrt{5}= \\
+                                                                                                            &=16+\frac{1}{2}\sqrt{5}
+        \end{align*}
+        Za racionalizacijo $2$ točki, za izračun kvadrata dvočlenika $1$ točka, delno korenjenje $1$ točka, izračun $1$ točka, končne rezultat $1$ točka.
+    \end{solution}
+    
+    
+
+    % 7. vprašanje
+    \question[5]
+    Rešite enačbo in opišite njen geometrijski pomen ter rešitev grafično prikažite.
+    $$  \left\lvert x+2\right\rvert=8 $$
+    
+    
+    \begin{solution}[5cm]
+        Opis geometrijskega pomena (oddaljenost števila $x$ od števila $-3$ je $2$) $1$ točka, grafična predstavitev $1$ točka, reševanje enačbe z upoštevanjem pogojev do $2$ točke, zapis rešitve $x\in\{-5,-1\}$ $1$ točka..
+    \end{solution}
+        
+
+
+
+    
+
+
+
+    \newpage 
+
+    
+    % 3. vprašanje
+    \question[5]
+    Rešite sistem neenačb, rešitev grafično upodobite in zapišite z intervalom.
+    $$ \left(3x-5>\frac{2}{3}x+2\right)\land\left(\frac{2}{5}x\geq x-3\right) $$
+    
+    
+    \begin{solution}[10cm]
+        Rešitev prve enačbe $x>2$ ali $x\in(2,\infty)$ $1$ točka, rešitev druge enačbe $x\geq 3$ ali $x\in[3,\infty)$ $1$ točka, rešitev sistema $x\geq 3$ ali $x\in[3,\infty)$ $1$ točka, zapis končne rešitve z intervalom $1$ točka, grafična upodobitev $1$ točka.
+    \end{solution}
+
+
+
+
+
+    % 9. vprašanje
+    \question[5]
+    Prvi delavec sam pozida steno v $10$ urah, drugi v $5$ urah, tretji v $12$ urah. Delavci
+    skupaj začnejo zidati steno. Po eni uri drugi delavec odide, pridruži pa se četrti delavec.
+    Skupaj s prvim in tretjim delavcem nato končajo steno v dveh urah. V kolikšnem času četrti delavec
+    pozida steno?
+    
+    
+    \begin{solution}[9cm]
+        
+        Zapis enačbe po besedilu $1$ točka, pravilno reševanje enačbe $1$ točka, zapis pravilne rešitve $1$ točka, zapis pravilnega odgovora $1$ točka.
+    \end{solution}
+
+
+
+
+        
+\newpage
+%%%% PKS, funkcija, premica
+
+    % 1. vprašanje
+
+    \question[4]
+    Narišite dano množico točk v ravnini.
+        $$[-1,2)\times \{-1,1,2\}$$
+
+            \begin{solution}[9cm]
+                ????
+            \end{solution}
+
+    
+    
+    % \newpage
+
+    % 2. vprašanje
+    \question[4]
+    Izračunajte ploščino in orientacijo trikotnika $\triangle ABC$ z oglišči v točkah $A(4,-3)$, $B(5,4)$ in $C(-4,1)$.
+    
+    
+    \begin{solution}[6cm]
+        ???
+    \end{solution}
+
+        
+
+
+\newpage
+
+    % 5. vprašanje
+    \question
+    Dana je funkcija $$f(x)=\begin{cases}
+    -2x-2, & x\leq 0 \\ -1, & 0<x<1 \\ 0.5x+1, & x\geq 2
+    \end{cases}.$$ 
+    
+    \begin{parts}
+        \part[6]
+        Narišite dano funkcijo.
+
+            \begin{solution}[11cm]
+                ???
+            \end{solution}
+
+        \part[1]
+        Določite definicijsko območje funkcije $f$.
+        
+            \begin{solution}[1cm]
+                ???
+            \end{solution}
+
+        \part[3]
+        Izračunajte ničle in začetno vrednost funkcije $f$.
+
+            \begin{solution}[6cm]
+                ???
+            \end{solution}
+
+        % \part[2]
+        % Določite in utemeljite, ali je funkcija surjektivna. 
+        
+        %     \begin{solution}[3cm]
+        %         ???
+        %     \end{solution}
+
+        \part[1]
+        Določite interval, kjer je funkcija $f$ konstantna.
+        
+            \begin{solution}[0cm]
+                ???
+            \end{solution}
+
+    \end{parts}
+    
+    
+
+
+
+
+
+
+\end{questions}
+
+
+
+\end{document}

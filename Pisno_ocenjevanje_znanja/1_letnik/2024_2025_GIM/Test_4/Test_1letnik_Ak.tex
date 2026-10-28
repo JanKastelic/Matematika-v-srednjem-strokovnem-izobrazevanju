@@ -1,0 +1,292 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage[gen]{eurosym}
+\usepackage{newunicodechar}
+\newunicodechar{€}{\euro}
+
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+\printanswers
+
+% \linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Četrto pisno ocenjevanje znanja \\ 1. letnik -- test A \\ 16. april 2025 \\ (Realna števila)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \chqword{Naloga}
+    \chpword{Možne točke}
+    \chbpword{Dodatne točke}
+    \chsword{Dosežene točke}
+    \chtword{Skupaj}  
+    \combinedpointtable[h][questions]
+    % \combinedgradetable[h][questions]
+
+\end{center}
+
+\vspace{0.1in}
+
+
+\begin{questions}
+
+    % 1. vprašanje
+
+    \question[6]
+    Natančno izračunajte vrednost izraza.
+    $$ \dfrac{\sqrt{5}}{\sqrt{5}+1}-\dfrac{5-3\sqrt{5}}{4\sqrt{5}}+\left(3+\sqrt{5}\right)^2-\sqrt{125} $$
+
+    \begin{solution}[7cm]
+        \begin{align*} 
+            \dfrac{\sqrt{5}}{\sqrt{5}+1}-\dfrac{5-3\sqrt{5}}{4\sqrt{5}}+\left(3+\sqrt{5}\right)^2-\sqrt{125}&=\dfrac{\sqrt{5}(\sqrt{5}-1)}{(\sqrt{5}+1)(\sqrt{5}-1)}-\dfrac{(5-3\sqrt{5})\sqrt{5}}{4\sqrt{5}\sqrt{5}}+9+6\sqrt{5}+5-5\sqrt{5}= \\
+                                                                                                            &=\dfrac{5-\sqrt{5}}{5-1}-\dfrac{5\sqrt{5}-3\cdot 5}{4\cdot 5}+14+\sqrt{5}= \\
+                                                                                                            &=\frac{5-\sqrt{5}}{4}-\dfrac{\sqrt{5}-3}{4}+14+\sqrt{5}= \\
+                                                                                                            &=\frac{8-2\sqrt{5}}{4}+14+\sqrt{5}= \\
+                                                                                                            &=16+\frac{1}{2}\sqrt{5}
+        \end{align*}
+        Za racionalizacijo $2$ točki, za izračun kvadrata dvočlenika $1$ točka, delno korenjenje $1$ točka, izračun $1$ točka, končne rezultat $1$ točka.
+    \end{solution}
+    
+    
+    % \newpage
+
+    % 2. vprašanje
+    \question[4]
+    Rešite enačbo.
+    $$ \dfrac{2}{x-3}-\dfrac{x}{x-1}=\dfrac{2x}{x^2-4x+3} $$
+    
+    
+    \begin{solution}[4cm]
+        \begin{align*} 
+            \dfrac{2}{x-3}-\dfrac{x}{x-1} &=\dfrac{2x}{x^2-4x+3} \\
+            2(x-1)-x(x-3) &= 2x \\
+            2x-2-x^2+3x-2x &=0 \\
+            x^2-3x+2 &=0 \\
+            (x-1)(x-2) &=0
+        \end{align*}
+        Pravilno odpravljanje ulomkov oziroma skupni imenovalec $1$ točka, zapis in upoštevanje pogojev za rešitev ($x\notin\{1,3\}$) $1$ točka, pravilno reševanje razcepne enačbe $1$ točka, zapis rešitve $x=2$ $1$ točka.
+    \end{solution}
+
+        
+
+    \newpage
+    % 3. vprašanje
+    \question[5]
+    Rešite sistem neenačb, rešitev grafično upodobite in zapišite z intervalom.
+    $$ \left(x+1>3\right)\land\left(2x\leq 3(x-1)\right) $$
+    
+    
+    \begin{solution}[11cm]
+        Rešitev prve enačbe $x>2$ ali $x\in(2,\infty)$ $1$ točka, rešitev druge enačbe $x\geq 3$ ali $x\in[3,\infty)$ $1$ točka, rešitev sistema $x\geq 3$ ali $x\in[3,\infty)$ $1$ točka, zapis končne rešitve z intervalom $1$ točka, grafična upodobitev $1$ točka.
+    \end{solution}
+
+
+    
+
+
+    % 4. vprašanje
+    \question[4]
+    Rešite sistem enačb.
+    $$ \begin{aligned}
+        y-x&=3 \\ x-y&=5
+    \end{aligned} $$
+    
+    
+    \begin{solution}[8cm]
+        Pravilno reševanje sistema enačb do $2$ točki, pravilno sklepanje o neobstoju rešitve in zapis tega do $2$ točki.
+    \end{solution}
+
+
+
+    % 5. vprašanje
+    % \question[4]
+    % Prva cev sama napolni bazen v $6$ urah, druga sama pa v $9$ urah. Drugo cev odpremo eno uro kasneje kot prvo.
+    % V kolikšnem času bo bazen poln?
+    
+    
+    % \begin{solution}[8cm]
+    %     ???
+    % \end{solution}
+
+
+
+
+    \newpage 
+
+    
+    % 6. vprašanje
+    \question[4]
+    Natančno izračunajte.
+    $$ \left\lvert \lvert\sqrt{2}+4\rvert-\sqrt{2}\right\rvert + \left\lvert \lvert\sqrt{2}-4\rvert-\sqrt{2}\right\rvert $$
+    
+    
+    
+    \begin{solution}[10cm]
+        \begin{align*}
+            \left\lvert \lvert\sqrt{2}+4\rvert-\sqrt{2}\right\rvert + \left\lvert \lvert\sqrt{2}-4\rvert-\sqrt{2}\right\rvert &=
+            \left\lvert \sqrt{2}+4-\sqrt{2}\right\rvert + \left\lvert -\sqrt{2}+4-\sqrt{2}\right\rvert= \\
+            &= \left\lvert 4\right\rvert + \left\lvert 4-2\sqrt{2}\right\rvert= \\
+            &= 4+4-2\sqrt{2}= \\
+            &= 8-2\sqrt{2}
+        \end{align*}
+        Pravilno razreševanje absolutnih vrednosti do $3$ točke, končen rezultat $1$ točka.
+    \end{solution}
+
+
+
+
+    % 7. vprašanje
+    \question[5]
+    Rešite enačbo in opišite njen geometrijski pomen ter rešitev grafično prikažite.
+    $$  \left\lvert x+3\right\rvert=2 $$
+    
+    
+    \begin{solution}[8cm]
+        Opis geometrijskega pomena (oddaljenost števila $x$ od števila $-3$ je $2$) $1$ točka, grafična predstavitev $1$ točka, reševanje enačbe z upoštevanjem pogojev do $2$ točke, zapis rešitve $x\in\{-5,-1\}$ $1$ točka..
+    \end{solution}
+
+
+    \newpage
+
+    % \makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+    % ~\\
+
+
+
+    % 8. vprašanje
+    % \question[5]
+    % Izračunajte vrednosti izraza glede na vrednosti spremenljivke $x$.
+    % $$\left\lvert x+8 \right\rvert + \left\lvert x-2 \right\rvert $$
+    
+    
+    % \begin{solution}[10cm]
+    %     ???
+    % \end{solution}
+
+
+
+    % 9. vprašanje
+    \question[4]
+    V posodi imamo $220~g$ $95~\%$ raztopine kisline. Koliko gramov $60~\%$ raztopine kisline moramo dodati, da bomo dobili $80~\%$ raztopino kisline?
+    
+    
+    \begin{solution}[10cm]
+        Zapis enačbe po besedilu $1$ točka, pravilno reševanje enačbe $1$ točka, zapis pravilne rešitve $1$ točka, zapis pravilnega odgovora $1$ točka.
+    \end{solution}
+
+
+
+
+
+    % 10. vprašanje
+    \question[4]
+    Izlet v Grčijo se je najprej podražil za $5~\%$, nato pa še za $10~\%$. 
+    Koliko je stal na začetku, če zdaj stane $2310~€$?
+    
+    
+    \begin{solution}[3cm]
+        Pravilen postopek reševanja naloge do $2$ točki, zapis pravilne rešitve $1$ točka, zapis pravilnega odgovora $1$ točka.
+    \end{solution}
+
+     \newpage
+
+
+
+    % 3. vprašanje
+    % \question[4]
+    % Produkt dveh števil je $192$, njun največji skupni delitelj pa $4$. Poiščite števili.
+    
+    % \begin{solution}[7cm]
+    %     \begin{align*}
+    %         1-(1+x^8)(1+x^4)(1+x^2)(1+x)(1-x)&=1-(1+x^8)(1+x^4)(1+x^2)(1-x^2)= \\
+    %             &=1-(1+x^8)(1+x^4)(1-x^4)= \\
+    %             &=1-(1+x^8)(1-x^8)= \\
+    %             &=1-(1-x^{16})= \\
+    %             &=1-1+x^{16}= \\
+    %             &=x^{16}
+    %     \end{align*}
+    %     Za pravilno uporabo pravila razlike kvadratov $1$ točka, za pravilno upoštevan negativen predznak $1$ točka, končen rezultat $1$ točka.
+    % \end{solution}
+
+
+    % \begin{description}
+    %     \item[a] $(x-a)^2+(y-b)^2-c^2=0$ 
+    %     \item[b] $d^2(x-a)^2+f^2(y-b)^2-(df)^2=0$
+    %     \item[c] $S(a,b)$
+    %     \item[d] $e^2=d^2-f^2;\ d>f$
+    % \end{description}
+    % Krožnica: \fillin[a c][2cm]
+    % \\ Elipsa:  \fillin[b c d][2cm]
+
+
+
+
+     \newpage
+
+     \noindent Ime in priimek: \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+     ~\\
+
+    %dodatno vprašanje
+    \bonusquestion[2]
+    \textit{Dodatna naloga:} Obravnavajte enačbo. $$a(x-a)=2(x-1)-2$$
+
+    \begin{solution}[10cm]
+        Pravilna obravnava enačbe do $2$ točki.
+    \end{solution}
+
+
+
+
+    % \newpage
+        
+
+    % dodatno vprašanje
+    \bonusquestion[2]
+    \textit{Dodatna naloga:} Natančno izračunajte. $$ \left(\sqrt{3}+\sqrt{5}\right)\sqrt{8-2\sqrt{15}} $$
+
+    \begin{solution}[7cm]
+        Pravilen izračun do $2$ točki.
+    \end{solution}
+
+
+
+
+\end{questions}
+
+
+
+\end{document}

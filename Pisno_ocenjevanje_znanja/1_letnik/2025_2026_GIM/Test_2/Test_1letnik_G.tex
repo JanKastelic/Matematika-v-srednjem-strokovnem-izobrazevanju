@@ -1,0 +1,227 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{eurosym}
+
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+% \printanswers
+
+% \linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Popravljanje in pridobivanje ocen -- drugo pisno ocenjevanje znanja \\ 1. letnik -- test G \\ 21. januar 2026 \\ (Potence in izrazi; Deljivost)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \hqword{Naloga}
+    \hpword{Možne točke}
+    % \chbpword{Dodatne točke}
+    \hsword{Dosežene točke}
+    \htword{Skupaj}  
+    % \combinedpointtable[h][questions]
+    \gradetable[h][questions]
+
+\end{center}
+
+\vspace{0.1in}
+
+
+\begin{questions}
+
+    % 1. vprašanje
+    
+    \question
+    Izračunajte.
+\begin{parts}
+    \part[4]
+    $(-1)^{2025}+\left((-2)^5+5^2-\left(7-3^2\right)^3\right)^2$
+
+    \begin{solution}[5cm]
+    $$\begin{aligned}
+    \left(\left(-2\right)^3+\left(-5\right)^2\right)\cdot\left(-1\right)^{2025}-\left(\left(-3\right)^2\cdot\left(-2\right)-\left(-4\right)^2\right)-1^{2026}&=(-8+25)(-1)-(9(-2)-16)-1= \\ &=-17+34-1= \\ &=-18
+    \end{aligned}$$
+        Za pravilno uporabo pravila potenciranja z negativnim predznakom $1$ točka, pravilno potenciranje $1$ točka, pravilno množenje $1$ točka, končen rezultat $1$ točka.
+    \end{solution}
+
+
+
+    \part[3]
+    $a^2(a^3-b^2)-a^5+(-a)^2b^2$
+
+    \begin{solution}[4cm]
+    $$5\cdot 2^{2n+1}-2\cdot 4^{n+1}-2\cdot 2^{2n+2}=5\cdot 2^{2n+1}-2^{2n+3}-2^{2n+3}=2^{2n+1}(5-2^2-2^2)=-3\cdot 2^{2n+1}$$
+        Za pravilen zapis potenc števila $2$ $1$ točka, pravilno izpostavljanje skupnega faktorja $1$ točka, končen rezultat $1$ točka.
+    \end{solution}
+
+        
+    \end{parts}
+
+
+    % 2. vprašanje
+    \question[5]
+    Skrčite izraz in rezultat razstavite: $(3x-y)(3x+y)+2(2x-y)^2-5x(3x-2y)-y(4x+y)$.
+
+    \begin{solution}[5cm]
+        \begin{align*}
+            (7a-2b)^2-(5a+2b)(5a-2b)-6(4a^2-b^2)&=49a^2-28ab+4b^2-25a^2+4b^2-24a^2+6b^2=\\
+                &=14b^2-28ab= \\
+                &=14b(b-2a)
+        \end{align*}
+        Za pravilno kvadriranje binoma $1$ točka, za pravilno uporabo pravila razlike kvadratov $1$ točka, pravilno množenje $1$ točka, pravilno izpostavljanje $1$ točka, pravilno uporabljena Vietova formula $1$ točka.
+    \end{solution}
+    
+
+    % \newpage
+    % 3. vprašanje
+    \question
+    Faktorizirajte izraze, kolikor je mogoče.
+    \begin{parts}
+        \part[2]
+        $x^2-19x+90$
+
+        \begin{solution}[4cm]
+            $$2x^2-30x+108=2(x-6)(x-9)$$
+            Za uporabo Vietovega pravila $1$ točka, pravilen rezultat $1$ točka.
+        \end{solution}
+
+
+        \part[2]
+        $lk^2-64l$
+
+        \begin{solution}[4cm]
+            $$f^4-9g^2=(f^2-3g)(f^2+3g)$$
+            Za pravilno izpostavljanje $1$ točka, pravilno uporabljena formula razlike kvadratov $1$ točka.
+        \end{solution}
+
+
+        \part[3]
+        $j^3-3j^2+25j-75$
+
+        \begin{solution}[4cm]
+            $$c^3-4c^2-c+4=(c-1)(c+1)(c-4)$$
+            Za uporabo pravila faktorizacije štiričlenika 2+2 $1$ točka, pravilna faktorizacija štiričlenika $1$ točka, pravilno razstavljena razlika kvadratov $1$ točka.
+        \end{solution}
+
+
+        \part[3]
+        $64m-n^3m^4$
+
+        \begin{solution}[4cm]
+            $$m^5+27g^6m^2=m^2(m+3g^2)(m^2-6g^2+9g^4)$$
+            Za pravilno izpostavljanje skupnega faktorja $1$ točka, uporaba formule razlike kubov $1$ točka, pravilen končen rezultat $1$ točka.
+        \end{solution}
+
+
+        \part[3]
+        $x^2-6xy+9y^2-16$
+
+        \begin{solution}[3cm]
+            $$81-9b^2+12bc-4c^2=(9-3b+2c)(9+3b-2c)$$
+            Za uporabo pravila faktorizacije štiričlenika 3+1 $1$ točka, pravilna uporaba formule $1$ točka, pravilno razstavljanje razlike kvadratov $1$ točka.
+        \end{solution}
+
+
+    \end{parts}
+
+
+    \newpage
+
+    % 4. vprašanje
+    \question
+    Določite neznano števko, da bo število $\overline{676767s676s}$ deljivo
+    \begin{parts}
+        \part[2]
+        s številom $3$.
+
+        \begin{solution}[4cm]
+            Za navedbo kriterija za deljivost z $2$ $1$ točka, uporaba kriterija in izračun $a\in\{0,2,4,6,8\}$ $1$ točka.
+        \end{solution}
+
+
+        \part[2]
+        s številom $6$.
+
+        \begin{solution}[5cm]
+            Pravilno uporabljen kriterij za deljivost s $3$ $1$ točka, pravilno uporabljen kriterij za deljivost s $4$ $1$ točka, 
+            pravilen zaključek in zapis kombinacij $(a,b)\in\left\{(2,0),(2,3),(2,6),(2,9),(6,2),(6,5),(6,8)\right\}$ $1$ točka.
+        \end{solution}
+
+
+    \end{parts}
+
+
+
+% 5. vprašanje
+
+    \question[4]
+    Določite največji skupni delitelj $D$ in najmanjši skupni večkratnik $v$ števil $a=777$ in $b=1200$.
+    Vrednost slednjega pustite zapisano v obliki produkta potenc prafaktorjev.
+
+    \begin{solution}[8cm]
+        Za zapisa $b=2\cdot 3^3\cdot 5^2\cdot 7$ in $c=2^2\cdot 3^2\cdot 5^4$ po $1$ točka. 
+        Izračun $D(a,b,c)=3^2\cdot 5^2=225$ $1$ točka, in $v(a,b,c)=2^3\cdot 3^4\cdot 5^4\cdot 7\cdot 13$ $1$ točka.
+    \end{solution}
+    
+    
+\newpage
+
+    % 6. vprašanje
+    \question[3]
+    Število $x$ da ostnek $5$ pri deljenju z $8$, število $y$ pa ima pri deljenju s $4$ ostanek $3$. 
+    Pokažite, da je število $x+y$ deljivo s številom $4$.
+
+    
+    \begin{solution}[7cm]
+
+    \end{solution}
+
+    % 7. vprašanje
+    \question[4]
+        Dokažite: Če kub poljubnega lihega naravnega števila zmanjšamo za $67$, bo dobljeno število deljivo z $2$.
+        
+
+    \begin{solution}[3cm]
+
+    \end{solution}
+
+
+
+
+
+\end{questions}
+
+
+
+\end{document}

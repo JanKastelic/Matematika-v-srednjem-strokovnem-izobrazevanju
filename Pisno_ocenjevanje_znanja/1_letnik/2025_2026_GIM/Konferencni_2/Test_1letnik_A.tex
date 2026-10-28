@@ -1,0 +1,267 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage[gen]{eurosym}
+\usepackage{newunicodechar}
+\newunicodechar{€}{\euro}
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+% \printanswers
+
+% \linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Popravljanje in pridobivanje ocen -- konferenca \\ 1. letnik -- test A \\ 15. junij 2026 \\ (Racionalna števila; Realna števila)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \hqword{Naloga}
+    \hpword{Možne točke}
+    \chbpword{Dodatne točke}
+    \hsword{Dosežene točke}
+    \htword{Skupaj}  
+    % \combinedpointtable[h][questions]
+    \gradetable[h][questions]
+
+\end{center}
+
+\vspace{0.02in}
+
+
+\begin{questions}
+
+    %%%%% racionalna števila
+    
+    % 1. vprašanje
+
+    \question[4]
+    Izračunajte natančno vrednost izraza.
+    % \begin{parts}
+    %     \part[4]
+        $$\dfrac{35\cdot \frac{1}{7}+\frac{7}{8}}{2\frac{1}{3}+\frac{7}{4}}-4\frac{8}{9}:\frac{11}{3}$$
+
+        \begin{solution}[9cm]
+            \begin{align*} 
+                \dfrac{\frac{2}{3}+1\frac{5}{6}\cdot 3}{\frac{2}{7}:\frac{4}{3}-1\frac{1}{14}+2}&=\dfrac{\frac{2}{3}+\frac{11}{6}\cdot 3}{\frac{2}{7}\cdot\frac{3}{4}-\frac{15}{14}+\frac{28}{14}}= \\
+                                                                                                &=\dfrac{\frac{2}{3}+\frac{11}{2}}{\frac{1}{7}\cdot\frac{3}{2}+\frac{13}{14}}= \\
+                                                                                                &=\dfrac{\frac{4}{6}+\frac{33}{6}}{\frac{3}{14}+\frac{13}{14}}= \\
+                                                                                                &=\dfrac{\frac{37}{6}}{\frac{16}{14}}= \\
+                                                                                                &=\dfrac{37\cdot 14}{6\cdot 16}= \\
+                                                                                                &=\dfrac{259}{48} 
+            \end{align*}
+            Za pravilno seštevanje/odštevanje ulomkov $1$ točka; pravilno množenje ulomkov $1$ točka; pravilno razrešen dvojni ulomek $1$ točka, okrajšan rezultat $1$ točka.
+        \end{solution}
+
+
+
+
+        \question[4]
+        Kolikšno koncentracijo raztopine dobimo, če $2~kg$ $60~\%$ raztopine razredčimo z $2~kg$ $35~\%$ raztopine?
+
+        \begin{solution}[5cm]
+            \begin{align*}
+                0.60 \cdot 2~kg + 0.40\cdot 3~kg &= x \cdot 5~kg \\
+                                 1.2~kg+1.2~kg &= x\cdot 5~kg \\
+                                            x &= \dfrac{2.4~kg}{5~kg} \\
+                                            x &= 0.48
+            \end{align*}
+            Pravilna nastavitev enačbe $1$ točka, pravilno reševanje $1$ točka, pravilen rezultat $1$ točka, zapis pravilnega odgovora $1$ točka.
+        \end{solution}
+
+
+
+
+
+    \newpage
+
+        % 3. vprašanje
+
+        \question
+        Poenostavite izraze.
+        \begin{parts}
+            
+
+            \part[5]
+            $\dfrac{1}{x+2}-\dfrac{3}{x-2}-4\left(4-x^2\right)^{-1}$
+    
+            \begin{solution}[8cm]
+                \begin{align*}
+                    \left(\dfrac{6-x}{x^2+6x}-\dfrac{x}{36-x^2}\right)\left(\dfrac{2x-6}{x^2+6x}\right)^{-1}+\dfrac{x}{6-x} &= \left(\dfrac{6-x}{x(x+6)}-\dfrac{x}{(6-x)(6+x)}\right)\dfrac{x(x+6)}{2(x-3)}+\dfrac{x}{6-x}= \\
+                                                                                                                            &= \left(\dfrac{(6-x)^2}{x(x+6)(6-x)}-\dfrac{x^2}{x(6-x)(6+x)}\right)\dfrac{x(x+6)}{2(x-3)}+\dfrac{x}{6-x}= \\
+                                                                                                                            &= \dfrac{36-12x+x^2-x^2}{x(x+6)(6-x)}\dfrac{x(x+6)}{2(x-3)}+\dfrac{x}{6-x}= \\
+                                                                                                                            &= \dfrac{12(3-x)}{x(x+6)(6-x)}\dfrac{x(x+6)}{2(x-3)}+\dfrac{x}{6-x}= \\
+                                                                                                                            &= \dfrac{-6}{6-x}+\dfrac{x}{6-x}= \\
+                                                                                                                            &= \dfrac{-6+x}{6-x}= \\
+                                                                                                                            &= -1
+                \end{align*}
+                Za pravilno faktorizacijo izrazov $1$ točka, pravilno razčlenjevanje izrazov $1$ točka, pravilno seštevanje ulomkov $1$ točka, pravilna obratna vrednost ulomka $1$ točka, pravilno množenje ulomkov $1$ točka, pravilno krajšanje ulomkov $1$ točka, okrajšan rezultat $1$ točka.
+            \end{solution}
+    
+    
+    
+    
+            \part[5]
+            $\dfrac{\left(9x^3z^2\right)^{-4}}{-3^4x^{-2}y^3} : \left(\dfrac{3^3x^2z^{-2}}{-y^{-3}}\right)^{-6}$    
+            
+            \begin{solution}[7cm]
+                \begin{align*}
+                    \left(\dfrac{-3^4x^{-2}y^3}{x^3z^2}\right)^{-4} : \left(\dfrac{y^{-3}}{3^5x^2z^{-2}}\right)^3 &= \dfrac{3^{-16}x^{8}y^{-12}}{x^{-12}z^{-8}} : \dfrac{y^{-9}}{3^{15}x^6z^{-6}}= \\
+                                                                                                                    &= \dfrac{3^{-16}x^{8}y^{-12}}{x^{-12}z^{-8}} \cdot \dfrac{3^{15}x^6z^{-6}}{y^{-9}}= \\
+                                                                                                                    &= 3^{-16+15}x^{8-(-12)+6}y^{-12-(-9)}z^{-(-8)+(-6)}= \\
+                                                                                                                    &=\frac{x^{26}z^2}{3y^3}
+                \end{align*}
+                Za pravilno potenciranje z negativnim eksponentom $1$ točka, pravilno potenciranje s pozitivnim eksponentom $1$ točka, pravilno deljenje $1$ točka, pravilno krajšanje $1$ točka, končen okrajšan rezultat $1$ točka.
+            \end{solution}
+    
+    
+        \end{parts}
+   
+   
+   
+   
+
+
+
+        \question
+        Ceno puloverja so zvišali za $20~\%$, a ker ni šel v prodajo, so ga nato pocenili za $30~\%$.
+        Po drugi pocenitvi ga je kupil Matej in zanj plačal $30.24~\euro$.
+
+        \begin{parts}
+            \part[1]
+            Koliko odstotkov prvotne cene puloverja je plačal Matej?
+            \begin{solution}[0.5cm]
+                
+            \end{solution}
+
+            % \part[2]
+            % Izračunajte začetno ceno puloverja?
+            % \begin{solution}[5cm]
+                
+            % \end{solution}
+
+            \part[2]
+            Določite ceno puloverja neposredno pred drugim znižanjem?
+
+        \end{parts}
+
+        \begin{solution}[2cm]
+            \begin{align*}
+                0.70\cdot \left(1.10\cdot x\right) &=115.5~\euro \\
+                                     0.77 \cdot x &= 115.5~\euro \\
+                                                x &= \dfrac{115.5}{0.77}~\euro \\
+                                                x &= 150~\euro
+            \end{align*}
+            Pravilen zapis in reševanje enačbe $1$ točka, pravilen rezultat $1$ točka, zapis pravilnega odgovora $1$ točka.
+        \end{solution}
+
+        
+
+%%%% realna števila
+
+
+    \question[4]
+    Izračunajte natančno vrednost izraza.
+    $$ \sqrt{6\cdot 8\cdot 12}-\left(\sqrt{3}-1\right)^2+\dfrac{\sqrt{3}}{2+\sqrt{3}} $$
+
+    \begin{solution}[9cm]
+        \begin{align*} 
+            \dfrac{\sqrt{5}}{\sqrt{5}+1}-\dfrac{5-3\sqrt{5}}{4\sqrt{5}}+\left(3+\sqrt{5}\right)^2-\sqrt{125}&=\dfrac{\sqrt{5}(\sqrt{5}-1)}{(\sqrt{5}+1)(\sqrt{5}-1)}-\dfrac{(5-3\sqrt{5})\sqrt{5}}{4\sqrt{5}\sqrt{5}}+9+6\sqrt{5}+5-5\sqrt{5}= \\
+                                                                                                            &=\dfrac{5-\sqrt{5}}{5-1}-\dfrac{5\sqrt{5}-3\cdot 5}{4\cdot 5}+14+\sqrt{5}= \\
+                                                                                                            &=\frac{5-\sqrt{5}}{4}-\dfrac{\sqrt{5}-3}{4}+14+\sqrt{5}= \\
+                                                                                                            &=\frac{8-2\sqrt{5}}{4}+14+\sqrt{5}= \\
+                                                                                                            &=16+\frac{1}{2}\sqrt{5}
+        \end{align*}
+        Za racionalizacijo $2$ točki, za izračun kvadrata dvočlenika $1$ točka, delno korenjenje $1$ točka, izračun $1$ točka, končne rezultat $1$ točka.
+    \end{solution}
+    
+    
+
+    
+        
+
+    % \newpage
+    % 3. vprašanje
+    \question[5]
+    Rešite sistem neenačb, rešitev grafično upodobite in zapišite z intervalom.
+    $$ \left(3x-5>\frac{2}{3}x+2\right)\land\left(\frac{2}{5}x\geq x-3\right) $$
+    
+    
+    \begin{solution}[9cm]
+        Rešitev prve enačbe $x>2$ ali $x\in(2,\infty)$ $1$ točka, rešitev druge enačbe $x\geq 3$ ali $x\in[3,\infty)$ $1$ točka, rešitev sistema $x\geq 3$ ali $x\in[3,\infty)$ $1$ točka, zapis končne rešitve z intervalom $1$ točka, grafična upodobitev $1$ točka.
+    \end{solution}
+
+
+    
+
+
+
+    \newpage 
+
+    
+
+    % 7. vprašanje
+    \question[5]
+    Rešite enačbo in opišite njen geometrijski pomen ter rešitev grafično prikažite.
+    $$  \left\lvert x+2\right\rvert=8 $$
+    
+    
+    \begin{solution}[9cm]
+        Opis geometrijskega pomena (oddaljenost števila $x$ od števila $-3$ je $2$) $1$ točka, grafična predstavitev $1$ točka, reševanje enačbe z upoštevanjem pogojev do $2$ točke, zapis rešitve $x\in\{-5,-1\}$ $1$ točka..
+    \end{solution}
+
+
+
+
+
+    % 9. vprašanje
+    \question[5]
+    Prvi delavec sam pozida steno v $10$ urah, drugi v $5$ urah, tretji v $12$ urah. Delavci
+    skupaj začnejo zidati steno. Po eni uri drugi delavec odide, pridruži pa se četrti delavec.
+    Skupaj s prvim in tretjim delavcem nato končajo steno v dveh urah. V kolikšnem času četrti delavec
+    pozida steno?
+    
+    
+    \begin{solution}[9cm]
+        
+        Zapis enačbe po besedilu $1$ točka, pravilno reševanje enačbe $1$ točka, zapis pravilne rešitve $1$ točka, zapis pravilnega odgovora $1$ točka.
+    \end{solution}
+
+
+
+
+\end{questions}
+
+
+
+\end{document}

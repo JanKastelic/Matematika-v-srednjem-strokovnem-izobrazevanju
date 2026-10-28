@@ -1,0 +1,247 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{eurosym}
+
+\usepackage{pgfpages}
+% \usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage{pgfkeys}
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage{tkz-euclide}
+\usepackage{xfp}
+
+
+
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+% \printanswers
+
+% \linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Popravljanje in pridobivanje ocen -- prvo pisno ocenjevanje znanja \\ 2. letnik -- test G \\ 23. januar 2026 \\ (Geometrija v ravnini)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \hqword{Naloga}
+    \hpword{Možne točke}
+    % \chbpword{Dodatne točke}
+    \hsword{Dosežene točke}
+    \htword{Skupaj}  
+    % \combinedpointtable[h][questions]
+    \gradetable[h][questions]
+
+\end{center}
+
+\vspace{0.1in}
+
+
+\begin{questions}
+
+    % 1. vprašanje
+
+    \question[5]
+        Izračunajte velikosti vseh notranjih in zunanjih kotov trikotnika $\triangle ABC$, 
+        če je vsota velikosti dveh zunanjih kotov $\alpha'+\beta'=234^\circ$, razlika velikosti dveh notranjih kotov pa $\alpha-\beta=28^\circ$.
+
+    \begin{solution}[10cm]
+        $ \dfrac{n(n-3)}{2}=44 \Rightarrow n^2-3n-88=0 \Rightarrow (n-11)(n+8)=0 \Rightarrow n=11 $ \\
+        $ \varphi=\dfrac{n-2}{n}180^\circ=\dfrac{1620}{11}^\circ=147.\overline{27}^\circ $ \\ \\
+        Za zapis in pravilno uporabo formule za število diagonal $1$ točka, za pravilen izračuna $1$ točka. 
+        Za pravilen zapis in uporabo formule za izračun notranjega kota pravilnega $n$-kotnika $1$ točka, za pravilen izračun $1$ točka.
+    \end{solution}
+
+
+    % 2. vprašanje
+
+    \question[3]
+    Središčni kot je za $64^\circ$ večji od obodnega kota nad istim lokom. 
+    Izračunajte velikosti obeh kotov.
+
+    \begin{solution}[2cm]
+        $\varphi+\psi=180^\circ$ \\
+        $\varphi-\psi=25^\circ 29' 48''$ \\
+        $\varphi=102^\circ 44' 54''$ in $\psi=77^\circ 15' 6 ''$ \\ \\
+        Za pravilno postavitev enačb sistema po $1$ točka, reševanje sistema $1$ točka, za pravilen izračun rešitev po $1$ točka.
+    \end{solution}
+
+    
+
+    \newpage
+    % 3. vprašanje
+
+    \question[6]
+    Konstruirajte trapez s podatki $a=5~cm$, $e=f=4.5~cm$ in $\alpha=60^\circ$.
+
+    \begin{solution}[15cm]
+        Za zapis konstrukcije s pravilnim izrisom konstrukcije do $6$ točk. Zgolj za izris konstrukcije $1$ točka.
+    \end{solution}
+
+
+
+
+    \newpage
+    % 4. vprašanje
+
+    \question[5]
+        S skice preberite ustrezne podatke ter izračunajte velikosti kotov $\alpha$, $\beta$, $\gamma$ in $\delta$.
+        Pri tem velja, da so premice $p$, $q$ in $r$ vzporedne.
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+                % \clip (0,0) rectangle (14.000000,10.000000);
+                {\footnotesize
+
+                % Drawing line Q
+                \draw [line width=0.016cm] (1.000000,3.000000) -- (5.800000,3.000000);%
+
+                % Drawing line P
+                \draw [line width=0.016cm] (1.000000,4.000000) -- (5.800000,4.000000);%
+
+                % Drawing line R
+                \draw [line width=0.016cm] (1.000000,1.500000) -- (5.800000,1.500000);%
+
+                % Drawing line S
+                \draw [line width=0.016cm] (2.426509,1.000000) -- (3.516142,4.800000);%
+
+                % Drawing line T
+                \draw [line width=0.016cm] (4.865030,1.000000) -- (1.321473,4.800000);%
+
+                % Marking point p
+                \draw (5.500000,4.000000) node [anchor=south] { $p$ };%
+
+                % Marking point q
+                \draw (5.500000,3.000000) node [anchor=south] { $q$ };%
+
+                % Marking point r
+                \draw (5.500000,1.500000) node [anchor=south] { $r$ };%
+
+                % Marking point s
+                \draw (3.500000,4.700000) node [anchor=west] { $s$ };%
+
+                % Marking point t
+                \draw (1.500000,4.700000) node [anchor=west] { $t$ };%
+
+                % Marking point \alpha
+                \draw (1.800000,4.000000) node [anchor=south east] { $\alpha$ };%
+
+                % Marking point \beta
+                \draw (3.300000,3.000000) node [anchor=north west] { $\beta$ };%
+
+                % Marking point \gamma
+                \draw (3.000000,3.000000) node [anchor=north east] { $\gamma$ };%
+
+                % Marking point \delta
+                \draw (4.450000,1.500000) node [anchor=south] { $\delta$ };%
+
+                % Marking point {x-15^\circ}
+                \draw (2.000000,3.000000) node [anchor=south] { ${x-15^\circ}$ };%
+
+                % Marking point {2x-18^\circ}
+                \draw (4.000000,4.000000) node [anchor=north] { ${2x-18^\circ}$ };%
+
+                % Marking point {x+12^\circ}
+                \draw (3.250000,1.500000) node [anchor=south] { ${x+12^\circ}$ };%
+                }
+            \end{tikzpicture}
+
+        \end{figure}
+
+    \begin{solution}[4cm]
+        $x=65^\circ$ -- obodni kot nad lokom $AD$ \\
+        $z=180^\circ-90^\circ-65^\circ=25^circ$ -- kot v pravokotnem trikotniku $\triangle ACD$ \\
+        $y=180^\circ-65^\circ-25^\circ-35^\circ=55^\circ$ -- kot v trikotniku $\triangle ABD$ \\ \\
+        Za izračun kota $x$ in utemeljitev $1$ točka, za izračun kota $y$ in utemeljitev $1$ točka, upoštevanje Talesovega izreka v polkrogu $1$ točka, izračuna kota $z$ $1$ točka.
+    \end{solution}
+
+
+
+    % 5. vprašanje
+
+    \question[4]
+        Izračunajte dolžine stranic pravokotnega trikotnika $\triangle ABC$, kjer sta $a$ in $b$ kateti, $c$ pa hipotenuza:
+        $a=3x-1$, $b=5x$, $c=6x-1$. Določite dolžino pravokotne projekcije katete $a$ na hipotenuzo.
+
+
+        \begin{solution}[9cm]
+            Z upoštevanjem lastnosti pravokotnega trikotnika je $t_c=\frac{c}{2}=6~cm$. \\
+            Za pravilen izračun dolžine $1$ točka.
+        \end{solution}
+
+
+
+
+    \newpage
+    % 6. vprašanje
+
+    \question[2]
+        Marija stoji ponoči $5~m$ od vznožja $9~m$ visokega svetilnika. Njena senca je dolga $1~m$.
+        Določite Marijino višino.
+
+
+    \begin{solution}[11cm]
+        Uporabimo lahko Pitagorov izrek za dolžini kraka in njegove pravokotne projekcije na osnovnico: $v^2=b^2-\left(\frac{a-c}{2}\right)^2=17^2-8^2=225 \Rightarrow v=15~cm$ \\ \\
+        Za pravilen razmislek in izračun posameznih dolžin $2$ točki, pravilna uporaba Pitagorovega izreka $1$ točka, pravilen izračun $1$ točka.
+    \end{solution}
+
+
+
+    \question[3]
+        Vsota števila stranic in diagonal $n$-kotnika je $105$. Izračunajte, kateri $n$-kotnik je to.
+
+    % \newpage
+    % dodatno vprašanje
+    % \vspace{0.1in}
+    % \makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+    % ~
+
+    % \bonusquestion[3]
+    % \textit{Dodatna naloga:} Dokažite: Če iz točke, ki leži izven kroga, narišemo dve tangenti na krog, 
+    % sta tangentna odseka (zveznici dane točke z dotikališčema) enako dolga.
+
+    % \begin{solution}[1cm]
+    %     Ob upoštevanju preloma droga dobimo pravokotni trikotnik s stranicami $7~m$, $20-x~m$ in $x~m$.
+    %     Uporabimo pitagorov izrek $(20-x)^2=x^2+7^2 \Rightarrow 40x=351 \Rightarrow x=\frac{351}{40}~m$. \\ \\
+    %     Pravilen razmislek in uporaba Pitagorovega izreka $1$ točka, reševanje enačbe $1$ točka, pravilen končni izračun $1$ točka.
+    % \end{solution}
+
+
+\end{questions}
+
+
+
+\end{document}

@@ -1,0 +1,230 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{eurosym}
+
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+\printanswers
+
+% \linespread{2}
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Prvo pisno ocenjevanja znanja \\ 1. letnik -- test D \\ 23. oktober 2024 \\ (Osnove logike in teorije množic, Naravna in cela števila, Potence)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \chqword{Naloga}
+    \chpword{Možne točke}
+    \chbpword{Dodatne točke}
+    \chsword{Dosežene točke}
+    \chtword{Skupaj}  
+    \combinedpointtable[h][questions]
+    % \combinedgradetable[h][questions]
+\end{center}
+
+\vspace{0.1in}
+
+
+\begin{questions}
+
+    % 1. vprašanje
+    
+    \question[4]
+    Določite pravilnost izjave $(A\Rightarrow  B)\lor (\lnot A\land \lnot B)$ glede na izbor izjav $A$ in $B$.
+
+    \begin{solution}[8cm]
+        \begin{table}[H]
+        \begin{tabular}{ccccccc}
+            $A$ & $B$ & $\lnot A$ & $\lnot B$ & $(A\Rightarrow B)$ & $(\lnot A\land \lnot B)$ & $(A\Rightarrow B)\lor(\lnot A\lor \lnot B)$\\ \hline
+            P & P & N & N & P & N & P \\ 
+            P & N & N & P & N & N & N \\
+            N & P & P & N & P & N & P \\
+            N & N & P & P & P & P & P
+           \end{tabular}
+       \end{table}
+       Za vsako pravilno izpolnjeno vrstico, ki določa pravilnost, po $1$ točka.
+
+    \end{solution}
+
+
+
+
+    % 2. vprašanje
+    \question[3]
+    Določite resničnostno vrednost izjav:
+    \begin{parts}
+        \part 
+        Število $21$ ni praštevilo in število $15$ deli število $20$.\\
+        \part 
+        Če je število $5$ praštevilo, potem je praštevil števno končno.\\
+        \part
+        Ni res, da je število $8$ večje od števila $2$, ali ostanek pri deljenju s $4$ je lahko samo $1$, $2$ ali $3$.\\
+    \end{parts}
+
+    \begin{solution}
+        (a): N (prva izjava je pravilna, druga je nepravilna) \\
+        (b): N (prva izjava je pravilna, druga je nepravilna) \\
+        (c): N (negirana prva izjava je nepravilna, druga izjava je nepravilna/) \\ \\
+        Za vsako pravilno določeno logično vrednost po $1$ točka.
+    \end{solution}
+
+
+
+    \newpage
+
+    % 3. vprašanje
+    \question
+    Dani sta množici $\mathcal{A}=\left\{0, 2, 3, 6\right\}$ in $\mathcal{B}=\left\{0, 3, 5, 8\right\}$.
+    \begin{parts}
+        \part[2]
+        Ali velja $\mathcal{A}\nsubseteq\mathcal{B}$? Poiščite največjo možno množico $\mathcal{C}$, da bosta množici $\mathcal{A}$ in $\mathcal{B}$ njeni nadmnožici.
+        \part[3]
+        Zapišite $\mathcal{PB}$. Izračunajte koliko elementov vsebuje.
+        \part[2]
+        Zapišite in grafično predstavite kartezični produkt $\mathcal{B}\times\mathcal{A}$.
+    \end{parts}
+
+    % \begin{description}
+    %     \item[a] $(x-a)^2+(y-b)^2-c^2=0$ 
+    %     \item[b] $d^2(x-a)^2+f^2(y-b)^2-(df)^2=0$
+    %     \item[c] $S(a,b)$
+    %     \item[d] $e^2=d^2-f^2;\ d>f$
+    % \end{description}
+    % Krožnica: \fillin[a c][2cm]
+    % \\ Elipsa:  \fillin[b c d][2cm]
+
+    \begin{solution}[9cm]
+        (a): Drži, da $\mathcal{A}\nsubseteq\mathcal{B}$, ker $2\in\mathcal{A}\land 2\notin\mathcal{B}$.; $\mathcal{C}=\left\{0,3\right\}$ \\
+        (b): $\mathcal{PB}=\left\{\emptyset, \{0\}, \{3\}, \{5\}, \{8\}, \{0,3\}, \{0,5\}, \{0,8\}, \{3,5\}, \{3,8\}, \{5,8\}, \{0,3,5\}, \{0,3,8\}, \{0,5,8\}, \{3,5,8\}, \mathcal{B}\right\}$; $m(\mathcal{PB})=2^{m(\mathcal{B})}=2^4=16$. \\
+        (c): $\mathcal{B}\times\mathcal{A}=\left\{(0,0), (0,2), (0,3), (0,6), (3,0), (3,2), (3,3), (3,6), (5,0), (5,2), (5,3), (5,6), (8,0), (8,2), (8,3), (8,6)\right\}$ + grafična upodobitev \\ \\
+        Pri (a) za vsak odgovor po $1$ točka. Pri (b) za zapis celotne $\mathcal{PB}$ $2$ točki, za zapis zgolj podmnožic $1$ točka; za izračun po formuli za moč potenčne množice $1$ točka. Pri (c) za zapis $\mathcal{B}\times\mathcal{A}$ $1$ točka, za grafično upodobitev $1$ točka.
+    \end{solution}
+
+
+    % 4. vprašanje
+    \question
+    Množica $\mathcal{A}$ je prava podmnožica množice $\mathcal{B}$, prav tako je $\mathcal{B}$ prava podmnožica množice $\mathcal{C}$.
+    \begin{parts}
+        \part[1]
+        Grafično predstavite množico $(\mathcal{B}\setminus\mathcal{A})\cup\mathcal{C}^\complement$.
+        \part[3]
+        Izračunajte $\mathcal{B}\setminus\mathcal{C}$, $\mathcal{A}\cap\mathcal{C}$ in $\mathcal{A}\cup\mathcal{B}$.
+    \end{parts}
+
+    \begin{solution}[1cm]
+        (a): grafična upodobitev \\
+        (b): $\mathcal{B}\setminus\mathcal{C}=\emptyset$; $\mathcal{A}\cap\mathcal{C}=\mathcal{A}$; $\mathcal{A}\cup\mathcal{B}=\mathcal{B}$ \\ \\
+        Pri (a) za narisan Euler-Vennov diagram $1$ točka. Pri (b) za izračun vsake izmed množic po $1$ točka.
+    \end{solution}
+
+
+
+
+    % \newpage
+
+    % 5. vprašanje
+    \question
+    Naj bo $\mathcal{U}=\mathbb{N}_{24}$. Dane so množice $\mathcal{A}=\left\{x;\ x=2n \land 3\leq n<10\right\}$, $\mathcal{B}=\left\{x;\ x=3k-2 \land 3\leq k\leq 7\right\}$ in $\mathcal{C}=\left\{x;\ x=5m \land 1<m\leq 4\right\}$. 
+    \begin{parts}
+        \part[5]
+        Določite naslednje množice: $\mathcal{A}\cap\mathcal{C}$, $\mathcal{C}\setminus\mathcal{A}$, $(\mathcal{A}\cup\mathcal{C})\setminus\mathcal{B}$ in $(\mathcal{A}\cup\mathcal{B})^\complement$.
+        \part[1]
+        Koliko elementov ima množica $\mathcal{A}\times\mathcal{B}$?
+    \end{parts}
+
+    \begin{solution}[9cm]
+        $\mathcal{A}=\left\{6,8,10,12,14,16,18\right\}$, $\mathcal{B}=\left\{7,10,13,16,19\right\}$, $\mathcal{C}=\left\{10,15,20\right\}$ \\
+        (a): $\mathcal{A}\cap\mathcal{C}=\left\{10\right\}$; $\mathcal{C}\setminus\mathcal{A}=\left\{15,20\right\}$; $(\mathcal{A}\cup\mathcal{C})\setminus\mathcal{B}=\left\{6,8,12,14,15,18,20\right\}$; $(\mathcal{A}\cup\mathcal{B})^\complement=\left\{1,2,3,4,5,9,11,15,17,20,21,22,23,24\right\}$ \\
+        (b): $m(\mathcal{A}\times\mathcal{B})=m(\mathcal{A})\cdot m(\mathcal{B})=7\cdot 5 = 35$ \\ \\
+        Pri (a) za zapis/uporabo pravilnih množic $\mathcal{A}, \mathcal{B}, \mathcal{C}$ $1$ točka; za vsako pravilno določeno množico po $1$ točka. Pri (b) za uporabo formule in izračun moči kartezičnega produkta $1$ točka.
+    \end{solution}
+
+
+  \newpage  
+    % 6. vprašanje
+    \question
+    Pri uri slovenščine so se dijaki in učitelj pogovarjali o literarnih obdobjih.  Učitelj je dijake vprašal, iz katerega obdobja so njihova največkrat prebirana literarna dela.
+    $19$ dijakov je odgovorilo \textit{moderna}, $7$ dijakov je reklo \textit{romantika} in $18$ \textit{realizem}. Kar $11$ jih je odgovorilo \textit{moderna} in \textit{realizem}, $4$ so rekli \textit{moderna} in \textit{romantika},
+    $3$ pa \textit{romantika} in \textit{realizem}. En sam dijaki je odgovoril z vsemi tremi obdobji, trije pa niso odgovorili. 
+    \begin{parts}
+        \part[1]
+        Narišite diagram.
+        \part[2]
+        Koliko dijakov je bilo pri uri slovenščine?
+        \part[2]
+        Koliko dijakov ima največkrat prebrana dela iz natanko dveh obdobji?
+    \end{parts}
+
+    \begin{solution}[8cm]
+        (a): Euler-Vennov diagram z vpisanimi številkami \\
+        (b): $5+1+5+3+2+10+1+3=30$ dijakov \\
+        (c): $10+3+2=15$ dijakov \\ \\
+        Pri (a) za pravilno narisan in izpolnjen diagram $1$ točka. Pri (b) in (c) za pravilen izračun $1$ točka, za zapis odgovora $1$ točka.
+    \end{solution}
+
+
+
+
+    % \newpage
+        
+
+    % 7. vprašanje
+    \question[4]
+    Izračunajte. $$ \left(2^3-3^2\right)^6\left(4^2-(-5)^2\right)^2+\left((-1)^9(-2)^2+(-3)^2-2^2\right)^{2024}$$
+    \begin{solution}[5cm]
+        $\begin{aligned}
+            &(2^3-3^2)^6(4^2-(-5)^2)^2+((-1)^9(-2)^2+(-3)^2-2^2)^{2024}= \\
+                =& (8-9)^6(16-25)^2+(-1\cdot 4+9-4)^{2024}=\\
+                =& (-1)^6\cdot(-9)^2+1^{2024}= \\
+                =& 1\cdot 81+1= \\
+                =& 82
+        \end{aligned} $ \\ \\
+        Za upoštevanje sodih/lihih eksponentov glede na predznak $1$ točka, upoštevanje vrstnega reda operacij $1$ točka, izračun potenc $1$ in $-1$ $1$ točka, končen izračun $1$ točka.
+\end{solution}
+
+    
+    %dodatno vprašanje
+    \bonusquestion[3]
+    \textit{Dodatna naloga:} Izjavo \textit{Obstaja takšno naravno število $x$, da deli število $5$ ali število $7$.} zapišite s simboli in jo zanikajte v simbolnem zapisu.
+    
+    \begin{solution}
+        $\exists x\in\mathbb{N}\ni:(x\mid 5)\lor(x\mid 7)$; negacija: $\forall x\in\mathbb{N}: (x\nmid 5)\land(x\nmid 7)$ \\ \\
+        Za pravilen zapis izjave s simboli $1$ točka, za pravilno negacijo kvantifikatorja $1$ točka, za pravilno negacijo logične operacije $1$ točka.
+    \end{solution}
+
+\end{questions}
+
+
+
+\end{document}

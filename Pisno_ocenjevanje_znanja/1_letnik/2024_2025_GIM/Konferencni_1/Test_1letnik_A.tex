@@ -1,0 +1,392 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{eurosym}
+
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+\printanswers
+
+% \linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Popravljanje in pridobivanje ocen -- konferenca \\ 1. letnik -- test A \\ 23. januar 2025 \\ (Osnove logike in teorije množic; Naravna in cela števila; Potence in izrazi; Deljivost)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \chqword{Naloga}
+    \chpword{Možne točke}
+    \chbpword{Dodatne točke}
+    \chsword{Dosežene točke}
+    \chtword{Skupaj}  
+    \combinedpointtable[h][questions]
+    % \combinedgradetable[h][questions]
+
+\end{center}
+
+\vspace{0.1in}
+
+
+\begin{questions}
+
+    % 1. vprašanje
+    
+    \question[4]
+    Določite pravilnost izjave $ A\Rightarrow  B\Leftrightarrow \lnot(A\land \lnot B)$ glede na izbor izjav $A$ in $B$. Upoštevajte vrstni red operacij.
+
+    \begin{solution}[10cm]
+        \begin{table}[H]
+            \begin{tabular}{ccccccc}
+             $A$ & $B$ & $\lnot B$ & $A\Rightarrow B$ & $A\land \lnot B$ & $\lnot(A\land \lnot B)$ & $(A\Rightarrow  B)\Leftrightarrow \lnot(A\land \lnot B)$\\ \hline
+             P & P & N & P & N & P & P \\ 
+             P & N & P & N & P & N & P \\
+             N & P & N & P & N & P & P \\
+             N & N & P & P & N & P & P
+            \end{tabular}
+        \end{table}
+        Za vsako pravilno izpolnjeno vrstico, ki določa pravilnost, po $1$ točka.
+
+    \end{solution}
+
+
+
+
+    % 2. vprašanje
+    \question[2]
+    Določite resničnostno vrednost izjav:
+    \begin{parts}
+        % \part 
+        % Število $5$ je prvo liho praštevilo natanko tedaj, ko število $9$ ni praštevilo.\\
+        \part 
+        Če je število $3$ naravno število, potem je naravnih števil števno končno.\\
+        \part
+        Ni res, da je ostanek pri deljenju s $3$ lahko samo $1$, $2$ ali $0$, in število $8$ ni večje ali enako številu $8$.\\
+    \end{parts}
+
+    \begin{solution}
+        (a): N (prva izjava je pravilna, druga je nepravilna) \\
+        (b): N (negirana prva izjava je nepravilna /prva izjava je pravilna/, druga izjava je nepravilna) \\ \\
+        Za vsako pravilno določeno logično vrednost po $1$ točka.
+    \end{solution}
+
+
+
+    \newpage
+
+    % 3. vprašanje
+    \question
+    Naj bo $\mathcal{U}=\mathbb{N}_{11}$ ter $\mathcal{A}=\left\{x;\ x~ je~ delitelj~ 6\right\}$ in $\mathcal{B}=\left\{x;\ x=2n\land n\in\mathbb{N}\right\}$.
+    \begin{parts}
+        \part[2]
+        Zapišite dane množice z elementi, določite njihovo moč 
+        \part[7]
+        Določite naslednje množice: $\mathcal{C}=\mathcal{A}\cap\mathcal{B}$, $\mathcal{A}\cup\mathcal{B}$, $\mathcal{D}=\mathcal{A}\setminus\mathcal{B}$, $\mathcal{B}\times\mathcal{D}$, $\mathcal{PC}$ in $(\mathcal{A}\cup\mathcal{B})^\complement$. Kartezični produkt predstavite grafično.
+        \part[1]
+        Zapišite najmanjšo možno množico $\mathcal{E}$, da bosta množici $\mathcal{A}$ in $\mathcal{B}$ njeni podmnožici.
+        % \part[1]
+        % Zapišite množico $\mathcal{F}$, ki je disjunktna z množico $\mathcal{B}$ in velja $\mathcal{F}\subseteq\mathcal{A}$ in $m(\mathcal{F})=2$.
+    \end{parts}
+
+
+    \begin{solution}[12cm]
+        (a): $\mathcal{A}=\{1,2,3,6\}$, $\mathcal{B}=\{2,4,6,8,10\}$ in $\mathcal{U}=\{1,2,3,4,5,6,7,8,9,10,11\}$; $m(\mathcal{A})=4$, $m(\mathcal{B})=5$, $m(\mathcal{U})=11$  \\
+        (b): $\mathcal{C}=\mathcal{A}\cap\mathcal{B}=\{2,6\}$, $\mathcal{A}\cup\mathcal{B}=\{1,2,3,4,6,8,10\}$, $\mathcal{D}=\mathcal{A}\setminus\mathcal{B}=\{1,3\}$, $\mathcal{PC}=\{\emptyset,\{2\},\{6\},\mathcal{C}\}$, $\mathcal{B}\times\mathcal{D}=\{(2,1),(2,3),(4,1),(4,3),(6,1),(6,3),(8,1),(8,3),(10,1),(10,3)\}$ in $(\mathcal{A}\cup\mathcal{B})^\complement=\{5,7,9,11\}$ + grafična upodobitev\\
+        (c): $\mathcal{E}=\{1,2,3,4,6,8,10\}$ \\
+        Pri (a) za zapis množic $1$ točka; za zapis moči množic $1$ točka. Pri (b) za zapis vsake množice po $1$ točka, za grafično upodobitev $1$ točka. Pri (c) za zapis množice $1$ točka.
+    \end{solution}
+
+
+
+
+
+
+      \newpage
+    % 5. vprašanje
+    \question
+    V $195$ gospodinjstvih so ugotavljali, v kateri trgovini nakupujejo živila. V \textit{Sparu} nakupuje $110$ gospodinjstev, v \textit{Mercatroju} $138$ in v \textit{Tušu} $118$.
+    V vseh treh trgovinah nakupuje $49$ gospodinjstev, $46$ le v \textit{Meractorju} in \textit{Tušu}, $5$ le v \textit{Tušu} in \textit{Sparu}, $27$ pa v \textit{Mercatorju} in \textit{Sparu}. 
+    V petih gospodinjstvih živil ne nakupujejo v nobeni od teh trgovin.
+    \begin{parts}
+        \part[1]
+        Narišite diagram.
+        \part[2]
+        Koliko je takih gospodinjstev, ki kupujejo živila izključno v \textit{Sparu}?
+        \part[2]
+        Koliko gospodinjstev nakupuje v dveh različnih trgovinah?
+    \end{parts}
+
+    \begin{solution}[8.5cm]
+        (a): Euler-Vennov diagram z vpisanimi številkami \\
+        (b): $110-5-49-27=29$ gospodinjstev\\
+        (c): $5+46+27+49=127$ oziroma $5+46+27=78$ gospodinjstev \\ \\
+        Pri (a) za pravilno narisan in izpolnjen diagram $1$ točka. Pri (b) in (c) za pravilen izračun $1$ točka, za zapis odgovora $1$ točka.
+    \end{solution}
+
+
+
+
+    %  \newpage
+        
+
+    % 6. vprašanje
+    % \question[3]
+    % Na šoli se izvaja pet različnih krožkov. Pri naravoslovne so tri skupine po $22$ učencev, pri astronmskem je šest skupin z $14$ učenci. Pri odbojki je oblikovanih $8$ skupin s po $7$ učenci. Šah obiskuje $32$ učencev v $5$ skupinah. Popotniški krožek pa ima dve skupini s po $146$ učenci.
+    % Med vsemi učenci je 320 fantov. Koliko deklet je na šoli vključenih v krožke? (Zapišite samo en račun.)
+
+    % \begin{solution}[8cm]
+    %     $3\cdot 22+6\cdot 14+8\cdot 7+32+2\cdot 146-320=210$ deklet \\ \\
+    %     Za nastavek enega računa $1$ točka, za pravilen izračun $1$ točka, za zapis odgovora $1$ točka.
+    % \end{solution}
+
+    
+    % %dodatno vprašanje
+    % \bonusquestion[3]
+    % \textit{Dodatna naloga:} Rešite enačbo $(X\setminus\{b\})\times(X \cap \{a,b\})=\left\{(a,a),(c,a),(d,a),(e,a)\right\}$.
+
+    % \begin{solution}
+    %     $X=\left\{a,c,d,e\right\}$ \\
+    %     Za v celoti pravilen zapis rešitve $3$ točke.
+    % \end{solution}
+
+
+
+
+
+
+
+
+
+
+    % 1. vprašanje
+    
+    \question
+    Izračunajte.
+\begin{parts}
+    % \part[3]
+    %     $b^2 \left(a^2+b^2\right) -b^2-\left(-b\right)^2a^2$
+
+    %     \begin{solution}[5cm]
+    %         $$b^2 \left(a^2+b^2\right) -b^2-\left(-b\right)^2a^2=b^2a^2+b^4-b^2-b^2a^2=b^4-b^2=b^2(b^2-1)$$
+    %         Za pravilno potenciranje negativnega predznaka $1$ točka, pravilno množenje $1$ točka, končen rezultat $1$ točka.
+    %     \end{solution}
+        
+        
+    \part[4]
+    $\left(-1\right)^{2025}-\left(-\left(-3\right)^4+5^3+\left(6-3^2\right)^3\right)^2$
+
+    \begin{solution}[5cm]
+        \begin{align*}
+            \left(-1\right)^{2025}-\left(-\left(-3\right)^4+5^3+\left(6-3^2\right)^3\right)^2&=-1-(-81+125+(6-9)^3)^2= \\
+                                                                                            &=-1-(44+(-3)^3)^2= \\
+                                                                                            &=-1-(44+(-27))^2= \\
+                                                                                            &=-1-289= \\
+                                                                                            &=-290
+        \end{align*}
+        Za pravilno uporabo pravila potenciranja $-1$ $1$ točka, pravilno potenciranje z negativnim predznakom $1$ točka, pravilno množenje $1$ točka, končen rezultat $1$ točka.
+    \end{solution}
+
+
+    
+    \part[3]
+    $4\cdot x^{n+3}-5x^n x^3+2x\cdot x^{n+2}$
+
+    \begin{solution}[3cm]
+        $$4\cdot x^{n+3}-5x^n x^3+2x\cdot x^{n+2}=4x^{n+3}-5x^{n+3}+2x^{n+3}=x^{n+3}(4-5+2)=x^{n+3}$$
+        Za pravilen zapis potenc števila $x$ $1$ točka, pravilno izpostavljanje skupnega faktorja $1$ točka, končen rezultat $1$ točka.
+    \end{solution}
+
+
+
+
+
+        
+    \end{parts}
+
+
+
+
+     \newpage
+
+    % 2. vprašanje
+    % \question[3]
+    % Izračunajte na čim krajši način: $444444443^2-444444442^2$.   
+
+    % \begin{solution}[5cm]
+    %     $$444444443^2-444444442^2=(444444443-444444442)(444444443+444444442)=1\cdot 444444445=444444445$$
+    %     Za pravilno uporabo pravila razlike kvadratov $1$ točka, za pravilno množenje $1$ točka, končen rezultat $1$ točka.
+    % \end{solution}
+
+
+
+
+    % 3. vprašanje
+        \question[4]
+        Skrčite izraz in rezultat razstavite: $(a-2b)(a+2b)-(a-b)^2+(a+b)^2+8b^2$.
+    
+        \begin{solution}[8.5cm]
+            \begin{align*}
+                &(a-2b)(a+2b)-(a-b)^2+(a+b)^2+8b^2= \\
+                =&a^2-4b^2-a^2+2ab-b^2+a^2+2ab+b^2+8b^2= \\
+                =&a^2+4ab+4b^2= \\
+                =&(a+2b)^2
+            \end{align*}
+            Za pravilno kvadriranje binoma $1$ točka, pravilno množenje in seštevanje izrazov $1$ točka, pravilno izpostavljanje $1$ točka, končen rezultat $1$ točka.
+        \end{solution}
+    
+
+    % \newpage
+    % 4. vprašanje
+    \question
+    Faktorizirajte izraze, kolikor je mogoče.
+    \begin{parts}
+
+        \part[3]
+        $9x^2-x^3+9x-81$
+
+        \begin{solution}[4cm]
+            $$9x^2-x^3+9x-81=x^2(9-x)-9(-x+9)=(x^2-9)(9-x)=(x-3)(x+3)(9-x)$$
+            Za uporabo pravila faktorizacije štiričlenika 2+2 $1$ točka, pravilna faktorizacija štiričlenika $1$ točka, končen rezultat $1$ točka.
+        \end{solution}
+
+        % \part[2]
+        % $a^2c-169c$
+
+        % \begin{solution}[4cm]
+        %     $$a^2c-169c=c(a^2-169)=c(a-13)(a+13)$$
+        %     Za pravilno izpostavljanje $1$ točka, pravilno uporabljena formula razlike kvadratov $1$ točka.
+        % \end{solution}
+
+        \part[2]
+        $g^2-13gh+40h^2$
+
+        \begin{solution}[4cm]
+            $$g^2-13gh+40h^2=(g-5h)(g-8h)$$
+            Za uporabo Vietovega pravila $1$ točka, pravilen rezultat $1$ točka.
+        \end{solution}
+
+
+        % \part[3]
+        % $x^2+4xy+4y^2-81$
+
+        % \begin{solution}[4cm]
+        %     $$x^2+4xy+4y^2-81=(x+2y)^2-9^2=(x+2y-9)(x+2y+9)$$
+        %     Za uporabo pravila faktorizacije štiričlenika 3+1 $1$ točka, pravilna uporaba formule $1$ točka, pravilno razstavljanje razlike kvadratov $1$ točka.
+        % \end{solution}
+
+        \part[3]
+        $m^7+27g^3m^4$
+
+        \begin{solution}[3cm]
+            $$m^7+27g^3m^4=m^4(m^3+27g^3)=m^4(m+3g)(m^2-3mg+9g^2)$$
+            Za pravilno izpostavljanje skupnega faktorja $1$ točka, uporaba formule vsote kubov $1$ točka, pravilen končen rezultat $1$ točka.
+        \end{solution}
+
+
+
+
+
+    \end{parts}
+
+
+
+
+
+      \newpage
+
+
+
+        % 6. vprašanje
+    \question
+    Določite neznani števki, da bo:
+    \begin{parts}
+        \part[2]
+        število $\overline{798a312a465}$ deljivo z $9$;
+
+        \begin{solution}[4cm]
+            Za navedbo kriterija za deljivost z $9$ $1$ točka, uporaba kriterija in izračun $a\in\{0,9\}$ $1$ točka.
+        \end{solution}
+
+
+        \part[3]
+        število $\overline{4x321xy}$ deljivo z $20$.
+
+        \begin{solution}[5.5cm]
+            Za navedbo kriterija deljivosti s $20$ $1$ točka, pravilno uporabljen kriterij za deljivost s $5$ $1$ točka, pravilno uporabljen kriterij za deljivost s $4$ $1$ točka, pravilen zaključek in zapis kombinacij $(x,y)\in\left\{(0,0),(2,0),(4,0),(6,0),(8,0)\right\}$ $1$ točka.
+        \end{solution}
+
+
+    \end{parts}
+
+    \question[3]
+    Dokažite: Vsota kvadrata poljubnega lihega števila in kuba njemu naslednjega lihega števila je sodo število.
+
+    \begin{solution}[7cm]
+        Zapis $2\mid((2n-1)^2+(2n+1)^3)$ oziroma podobno $1$ točka; izračun kvadrata in kuba binomov in seštevanje $1$ točka; izpostavljanje $2$ $1$ točka, pravilen zaključek $1$ točka.
+        
+    \end{solution}
+
+
+
+    % % \newpage
+    % %dodatno vprašanje
+    % \bonusquestion[1]
+    % \textit{Dodatna naloga:} Dopolnite izraz do popolnega kvadrata in ga razcepite: $a^4-20a^2$.
+
+    % \begin{solution}[5cm]
+    %     $$a^4-20a^2+100=(a^2-10)^2$$
+    %     Za pravilno dopolnitev $1$ točka, za pravilno zapisan razcep $1$ točka.
+    % \end{solution}
+
+
+
+
+    % % \newpage
+        
+
+    % % dodatno vprašanje
+    % \bonusquestion[3]
+    % \textit{Dodatna naloga:} Pokažite, da velja $77\mid 36 960$.
+
+    % \begin{solution}[7cm]
+    %     Za pravilno upoštevan kriterij za deljivost s $77$ $1$ točka, za pravilno uporabljen kriterij za deljivost s $7$ $1$ točka, za pravilno uporabljen kriterij za deljivost z $11$ $1$ točka.
+    % \end{solution}
+
+
+
+
+\end{questions}
+
+
+
+\end{document}

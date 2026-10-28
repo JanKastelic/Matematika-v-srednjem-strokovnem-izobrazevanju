@@ -1,0 +1,372 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{eurosym}
+
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+% \printanswers
+
+% \linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Popravljanje in pridobivanje ocen -- konferenca \\ 1. letnik -- test A \\ 21. januar 2026 \\ (Osnove logike in teorije množic; Naravna in cela števila; Potence in izrazi; Deljivost)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \hqword{Naloga}
+    \hpword{Možne točke}
+    % \chbpword{Dodatne točke}
+    \hsword{Dosežene točke}
+    \htword{Skupaj}  
+    % \combinedpointtable[h][questions]
+    \gradetable[h][questions]
+
+\end{center}
+
+\vspace{0.1in}
+
+
+\begin{questions}
+
+       % 1. vprašanje
+    
+    \question[4]
+    Določite pravilnost izjave $( A \land  B)\Leftrightarrow \left(A\Rightarrow  B\right)$ glede na izbor izjav $A$ in $B$.
+
+    % \begin{solution}[9cm]
+    %     \begin{table}[H]
+    %         \begin{tabular}{ccccccc}
+    %          $A$ & $B$ & $\lnot A$ & $\lnot B$ & $(\lnot A\Rightarrow B)$ & $(A\Leftrightarrow \lnot B)$ & $(\lnot A\Rightarrow B)\land(A\Leftrightarrow \lnot B)$\\ \hline
+    %          P & P & N & N & P & N & N \\ 
+    %          P & N & N & P & P & P & P \\
+    %          N & P & P & N & P & P & P \\
+    %          N & N & P & P & N & N & N
+    %         \end{tabular}
+    %     \end{table}
+    %     Za vsako pravilno izpolnjeno vrstico, ki določa pravilnost, po $1$ točka.
+    % \end{solution}
+
+
+
+
+    % 2. vprašanje
+    % \question[2]
+    % Določite resničnostno vrednost izjav:
+    % \begin{parts}
+    %     % \part 
+    %     % Vsakemu celemu številu lahko pripišemo nasprotno število in obratno celo število. \\
+    %     \part 
+    %     Če je število $18$ deljivo s številom $9$, potem je deljivo s številom $3$.\\
+    %     \part
+    %     Ni res, da je $0$ najmanjše naravno število, in $0$ ni najmanjše naravno število.\\
+    % \end{parts}
+
+    % \begin{solution}
+    %     (a): N (obe izjavi sta nepraavilni) \\
+    %     (b): P (obe izjavi sta pravilni) \\
+    %     (c): P (negirana prva izjava je pravilna, druga izjava je pravilna) \\ \\
+    %     Za vsako pravilno določeno logično vrednost po $1$ točka.
+    % \end{solution}
+
+
+
+
+    % % 3. vprašanje
+    % \question
+    % Dani sta množici $\mathcal{A}=\left\{s, r, e, c, n, o\right\}$ in $\mathcal{B}=\left\{l, e, t, o\right\}$.
+    % \begin{parts}
+    %     \part[2]
+    %     Ali velja $\mathcal{B}\subseteq\mathcal{A}$? Utemeljite.
+    %     \part[3]
+    %     Zapišite $\mathcal{PB}$. Izračunajte, koliko elementov vsebuje.
+    %     \part[3]
+    %     Zapišite in grafično predstavite kartezični produkt $\mathcal{B}\times\mathcal{A}$.
+    % \end{parts}
+
+
+    % \begin{solution}[9cm]
+    %     (a): Drži, da $\mathcal{A}\nsubseteq\mathcal{B}$, ker $a\in\mathcal{A}\land a\notin\mathcal{B}$.; $\mathcal{C}=\left\{b,c,h\right\}$ \\
+    %     (b): $\mathcal{PB}=\left\{\emptyset, \{b\}, \{c\}, \{h\}, \{i\}, \{b,c\}, \{b,h\}, \{b,i\}, \{c,h\}, \{c,i\}, \{h,i\}, \{b,c,h\}, \{b,c,i\}, \{b,h,i\}, \{c,h,i\}, \mathcal{B}\right\}$; $m(\mathcal{PB})=2^{m(\mathcal{B})}=2^4=16$. \\
+    %     (c): $\mathcal{B}\times\mathcal{A}=\left\{(a,b), (a,c), (a,h), (a,i), (b,b), (b,c), (b,h), (b,i), (c,b), (c,c), (c,h), (c,i), (h,b), (h,c), (h,h), (h,i)\right\}$ + grafična upodobitev \\ \\
+    %     Pri (a) za vsak odgovor po $1$ točka. Pri (b) za zapis celotne $\mathcal{PB}$ $2$ točki, za zapis zgolj podmnožic $1$ točka; za izračun po formuli za moč potenčne množice $1$ točka. Pri (c) za zapis $\mathcal{B}\times\mathcal{A}$ $1$ točka, za grafično upodobitev $1$ točka.
+    % \end{solution}
+
+
+    % % 4. vprašanje  
+    % \question
+    % Množici $\mathcal{A}$ in $\mathcal{B}$ sta pravi podmnožici množice $\mathcal{C}$, ki nista disjunktni. Izračunajte:
+    % \begin{parts}
+    %     \part[3]
+    %     Izračunajte: $\mathcal{A}\cup\mathcal{C}$, $\mathcal{A}\cap\mathcal{B}\cap\mathcal{C}$ in $(\mathcal{A}\cap\mathcal{B})\cup\mathcal{C}$.
+    %     \part[2]
+    %     Grafično predstavite $((\mathcal{A}\cup\mathcal{B})\setminus\mathcal{C})^\complement$.
+    % \end{parts}
+
+    % \begin{solution}[7cm]
+    %     (a): grafična upodobitev \\
+    %     (b): $\mathcal{B}\setminus\mathcal{C}=\emptyset$; $\mathcal{A}\cap\mathcal{C}=\mathcal{A}$; $\mathcal{A}\cup\mathcal{B}=\mathcal{B}$ \\ \\
+    %     Pri (a) za narisan Euler-Vennov diagram $1$ točka. Pri (b) za izračun vsake izmed množic po $1$ točka.
+    % \end{solution}
+
+
+
+
+
+
+    
+    % 6. vprašanje
+    \question
+    Pri uri kemije so se profesorica in dijaki pogovarjali o vrstah kemijskih vezi.  Profesorica je dijake vprašala, katero vrsto vezi so si zapomnili.
+    $20$ dijakov je odgovorilo \textit{ionska}, $6$ dijakov je reklo \textit{kovalentna} in $18$ \textit{kovinska}. Kar $11$ jih je odgovorilo samo \textit{ionska} in \textit{kovinska}, $4$ so rekli \textit{ionska} in \textit{kovalentna},
+    $3$ pa \textit{kovinska} in \textit{kovalentna}. En sam dijaki je odgovoril z vsemi tremi vrstami vezi, trije pa sploh niso odgovorili. 
+    \begin{parts}
+        \part[1]
+        Narišite diagram.
+        \part[2]
+        Koliko dijakov je bilo pri uri kemije?
+        % \part[2]
+        % Koliko dijakov si je zapomnilo vsaj dve vrsti kemijskih vezi?
+    \end{parts}
+
+    % \begin{solution}[4cm]
+    %     (a): Euler-Vennov diagram z vpisanimi številkami \\
+    %     (b): $5+1+5+3+2+10+1+3=30$ dijakov \\
+    %     (c): $10+3+2=15$ dijakov \\ \\
+    %     Pri (a) za pravilno narisan in izpolnjen diagram $1$ točka. Pri (b) in (c) za pravilen izračun $1$ točka, za zapis odgovora $1$ točka.
+    % \end{solution}
+
+
+
+
+    % \newpage
+
+    % 5. vprašanje
+    \question
+    Naj bo $\mathcal{U}=\mathbb{N}_{13}$. Dane so množice $\mathcal{A}=\left\{x;\ x\mid 12 \land x\in\mathbb{N}\right\}$, $\mathcal{B}=\left\{x;\ x=2k+1 \land 1< k\leq 4\right\}$ in $\mathcal{C}=\left\{x;\ 2x<16 \land x\in\mathbb{N}\right\}$. 
+    \begin{parts}
+        \part[3]
+        Zapišite dane množice z naštevanjem elementov.
+        \part[3]
+        Zapišite množico $\mathcal{PB}$ z naštevanjem elementov. Izračunajte, koliko elementov vsebuje.
+        \part[2]
+        Določite naslednje množice: $\left(\mathcal{C}\setminus\mathcal{A}\right)\cap\mathcal{B}^\complement$. % in $\mathcal{P}\left(\mathcal{B}^\complement\setminus\left(\mathcal{C}\cup\mathcal{A}\right)\right)$
+        \part[2]
+        Izračunajte, koliko elementov ima množica $\mathcal{A}\times\mathcal{C}$.
+    \end{parts}
+
+    % \begin{solution}[14cm]
+    %     $\mathcal{A}=\left\{6,8,10,12,14,16,18\right\}$, $\mathcal{B}=\left\{8,11,14,17,20\right\}$, $\mathcal{C}=\left\{10,15,20\right\}$ \\
+    %     (a): $\mathcal{A}\cap\mathcal{C}=\left\{10\right\}$; $\mathcal{C}\setminus\mathcal{A}=\left\{15,20\right\}$; $(\mathcal{A}\cup\mathcal{C})\setminus\mathcal{B}=\left\{6,10,12,15,16,18\right\}$; $(\mathcal{A}\cup\mathcal{B})^\complement=\left\{1,2,3,4,5,7,9,13,15,19,21,22,23\right\}$ \\
+    %     (b): $m(\mathcal{A}\times\mathcal{C})=m(\mathcal{A})\cdot m(\mathcal{C})=7\cdot 3 = 21$ \\ \\
+    %     Pri (a) za zapis/uporabo pravilnih množic $\mathcal{A}, \mathcal{B}, \mathcal{C}$ $1$ točka; za vsako pravilno določeno množico po $1$ točka. Pri (b) za uporabo formule in izračun moči kartezičnega produkta $1$ točka.
+    % \end{solution}
+
+
+    % \newpage
+        
+
+    % % 7. vprašanje
+    % \question[3]
+    % Na Gimnaziji Antona Aškerca je dvanajst oddelkov. Trije štejejo po $31$ dijakov, v treh je vključenih po $24$ dijakov, štirje štejejo $28$ dijakov,
+    % v preostala dva pa je vpisanih po $20$ dijakov.
+    % Koliko dijakov obiskuje Gimnazijo Antona Aškerca?
+
+    % \begin{solution}[4cm]
+    %     $5\cdot 26+7\cdot 27+4\cdot 28-320=111$ \\ \\
+    %     Za nastavek enega računa $1$ točka, za pravilen izračun $1$ točka, za zapis odgovora $1$ točka.
+    % \end{solution}
+
+% \newpage
+ % 1. vprašanje
+    
+    \question[4]
+    Izračunajte.
+% \begin{parts}
+    % \part[4]
+    $$(-1)^{2025}+\left((-2)^5+5^2-\left(7-3^2\right)^3\right)^2$$
+
+    % \begin{solution}[6cm]
+    % $$\begin{aligned}
+    % \left(\left(-2\right)^3+\left(-5\right)^2\right)\cdot\left(-1\right)^{2025}-\left(\left(-3\right)^2\cdot\left(-2\right)-\left(-4\right)^2\right)-1^{2026}&=(-8+25)(-1)-(9(-2)-16)-1= \\ &=-17+34-1= \\ &=-18
+    % \end{aligned}$$
+    %     Za pravilno uporabo pravila potenciranja z negativnim predznakom $1$ točka, pravilno potenciranje $1$ točka, pravilno množenje $1$ točka, končen rezultat $1$ točka.
+    % \end{solution}
+
+
+
+    % \part[3]
+    % $a^2(a^3-b^2)-a^5+(-a)^2b^2$
+
+    % \begin{solution}[4cm]
+    % $$5\cdot 2^{2n+1}-2\cdot 4^{n+1}-2\cdot 2^{2n+2}=5\cdot 2^{2n+1}-2^{2n+3}-2^{2n+3}=2^{2n+1}(5-2^2-2^2)=-3\cdot 2^{2n+1}$$
+    %     Za pravilen zapis potenc števila $2$ $1$ točka, pravilno izpostavljanje skupnega faktorja $1$ točka, končen rezultat $1$ točka.
+    % \end{solution}
+
+        
+    % \end{parts}
+
+
+    % 2. vprašanje
+    \question[5]
+    Skrčite izraz in rezultat razstavite: $(3x-y)(3x+y)+2(2x-y)^2-5x(3x-2y)-y(4x+y)$.
+
+    % \begin{solution}[8cm]
+    %     \begin{align*}
+    %         (7a-2b)^2-(5a+2b)(5a-2b)-6(4a^2-b^2)&=49a^2-28ab+4b^2-25a^2+4b^2-24a^2+6b^2=\\
+    %             &=14b^2-28ab= \\
+    %             &=14b(b-2a)
+    %     \end{align*}
+    %     Za pravilno kvadriranje binoma $1$ točka, za pravilno uporabo pravila razlike kvadratov $1$ točka, pravilno množenje $1$ točka, pravilno izpostavljanje $1$ točka, pravilno uporabljena Vietova formula $1$ točka.
+    % \end{solution}
+    
+
+    % \newpage
+    % 3. vprašanje
+    \question
+    Faktorizirajte izraze, kolikor je mogoče.
+    \begin{parts}
+        % \part[2]
+        % $x^2-19x+90$
+
+        % \begin{solution}[4cm]
+        %     $$2x^2-30x+108=2(x-6)(x-9)$$
+        %     Za uporabo Vietovega pravila $1$ točka, pravilen rezultat $1$ točka.
+        % \end{solution}
+
+
+        % \part[2]
+        % $lk^2-64l$
+
+        % \begin{solution}[4cm]
+        %     $$f^4-9g^2=(f^2-3g)(f^2+3g)$$
+        %     Za pravilno izpostavljanje $1$ točka, pravilno uporabljena formula razlike kvadratov $1$ točka.
+        % \end{solution}
+
+
+        \part[3]
+        $j^3-3j^2+25j-75$
+
+        % \begin{solution}[3cm]
+        %     $$c^3-4c^2-c+4=(c-1)(c+1)(c-4)$$
+        %     Za uporabo pravila faktorizacije štiričlenika 2+2 $1$ točka, pravilna faktorizacija štiričlenika $1$ točka, pravilno razstavljena razlika kvadratov $1$ točka.
+        % \end{solution}
+
+
+        \part[2]
+        $64-n^3$
+
+        % \begin{solution}[1cm]
+        %     $$m^5+27g^6m^2=m^2(m+3g^2)(m^2-6g^2+9g^4)$$
+        %     Za pravilno izpostavljanje skupnega faktorja $1$ točka, uporaba formule razlike kubov $1$ točka, pravilen končen rezultat $1$ točka.
+        % \end{solution}
+
+
+        % \part[3]
+        % $x^2-6xy+9y^2-16$
+
+        % \begin{solution}[3cm]
+        %     $$81-9b^2+12bc-4c^2=(9-3b+2c)(9+3b-2c)$$
+        %     Za uporabo pravila faktorizacije štiričlenika 3+1 $1$ točka, pravilna uporaba formule $1$ točka, pravilno razstavljanje razlike kvadratov $1$ točka.
+        % \end{solution}
+
+
+    \end{parts}
+
+
+    % \newpage
+
+    % 4. vprašanje
+    \question[2]
+    Določite neznano števko, da bo število $\overline{676767s676s}$ deljivo s številom $3$.
+    % \begin{parts}
+    %     \part[2]
+    %     s številom $3$.
+
+    %     \begin{solution}[4cm]
+    %         Za navedbo kriterija za deljivost z $2$ $1$ točka, uporaba kriterija in izračun $a\in\{0,2,4,6,8\}$ $1$ točka.
+    %     \end{solution}
+
+
+    %     \part[2]
+    %     s številom $6$.
+
+        % \begin{solution}[6cm]
+        %     Pravilno uporabljen kriterij za deljivost s $3$ $1$ točka, pravilno uporabljen kriterij za deljivost s $4$ $1$ točka, 
+        %     pravilen zaključek in zapis kombinacij $(a,b)\in\left\{(2,0),(2,3),(2,6),(2,9),(6,2),(6,5),(6,8)\right\}$ $1$ točka.
+        % \end{solution}
+
+
+    % \end{parts}
+
+
+
+% 5. vprašanje
+
+    \question[4]
+    Določite največji skupni delitelj $D$ in najmanjši skupni večkratnik $v$ števil $a=777$ in $b=600$.
+    Vrednost slednjega pustite zapisano v obliki produkta potenc prafaktorjev.
+
+    % \begin{solution}[9cm]
+    %     Za zapisa $b=2\cdot 3^3\cdot 5^2\cdot 7$ in $c=2^2\cdot 3^2\cdot 5^4$ po $1$ točka. 
+    %     Izračun $D(a,b,c)=3^2\cdot 5^2=225$ $1$ točka, in $v(a,b,c)=2^3\cdot 3^4\cdot 5^4\cdot 7\cdot 13$ $1$ točka.
+    % \end{solution}
+    
+    
+
+
+    % 6. vprašanje
+    \question[3]
+    Število $x$ da ostnek $5$ pri deljenju z $8$, število $y$ pa ima pri deljenju s $4$ ostanek $3$. 
+    Pokažite, da je število $x+y$ deljivo s številom $4$.
+
+    
+    % \begin{solution}[4cm]
+
+    % \end{solution}
+
+    % 7. vprašanje
+    % \question[4]
+    %     Dokažite: Če kub poljubnega lihega naravnega števila zmanjšamo za $67$, bo dobljeno število deljivo z $2$.
+        
+
+    % \begin{solution}[3cm]
+
+    % \end{solution}
+    
+\end{questions}
+
+
+
+\end{document}

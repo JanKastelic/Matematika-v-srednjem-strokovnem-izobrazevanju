@@ -1,0 +1,273 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{eurosym}
+
+\usepackage{pgfpages}
+% \usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage{pgfkeys}
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage{tkz-euclide}
+\usepackage{xfp}
+
+
+
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+% \printanswers
+
+% \linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Prvo pisno ocenjevanje znanja -- ponovno \\ 2. letnik -- test E \\ 7. november 2025 \\ (Geometrija v ravnini)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \chqword{Naloga}
+    \chpword{Možne točke}
+    \chbpword{Dodatne točke}
+    \chsword{Dosežene točke}
+    \chtword{Skupaj}  
+    % \combinedpointtable[h][questions]
+    \combinedgradetable[h][questions]
+
+\end{center}
+
+\vspace{0.1in}
+
+
+\begin{questions}
+
+    % 1. vprašanje
+
+    \question[3]
+    Zunanji kot v pravilnem $n$-kotniku meri $30^\circ$. Določite, kateri $n$-kotnik je to ter koliko meri notranji kot tega $n$-kotnika.
+
+    \begin{solution}[6cm]
+        $ \dfrac{n(n-3)}{2}=44 \Rightarrow n^2-3n-88=0 \Rightarrow (n-11)(n+8)=0 \Rightarrow n=11 $ \\
+        $ \varphi=\dfrac{n-2}{n}180^\circ=\dfrac{1620}{11}^\circ=147.\overline{27}^\circ $ \\ \\
+        Za zapis in pravilno uporabo formule za število diagonal $1$ točka, za pravilen izračuna $1$ točka. 
+        Za pravilen zapis in uporabo formule za izračun notranjega kota pravilnega $n$-kotnika $1$ točka, za pravilen izračun $1$ točka.
+    \end{solution}
+
+
+    % 2. vprašanje
+
+    \question[5]
+    Razlika velikosti dveh sokotov $\varphi$ in $\psi$ je $67^\circ 7' 6''$.
+    Določite velikosti kotov $\varphi$ in $\psi$.
+
+    \begin{solution}[5cm]
+        $\varphi+\psi=180^\circ$ \\
+        $\varphi-\psi=25^\circ 29' 48''$ \\
+        $\varphi=102^\circ 44' 54''$ in $\psi=77^\circ 15' 6 ''$ \\ \\
+        Za pravilno postavitev enačb sistema po $1$ točka, reševanje sistema $1$ točka, za pravilen izračun rešitev po $1$ točka.
+    \end{solution}
+
+    
+
+    \newpage
+    % 3. vprašanje
+
+    \question[6]
+    Konstruirajte romb s podatki $a=5~cm$, $v=4~cm$ in $\alpha<90^\circ$.
+
+    \begin{solution}[15cm]
+        Za zapis konstrukcije s pravilnim izrisom konstrukcije do $6$ točk. Zgolj za izris konstrukcije $1$ točka.
+    \end{solution}
+
+
+
+
+    \newpage
+    % 4. vprašanje
+
+    \question[4]
+    Izračunajte velikosti neznanih kotov $x$, $y$, $z$ in $w$ na skici. Privzemite, da velja $|ML|=|NL|$.
+
+    \begin{figure}[H]
+        \centering
+        \begin{tikzpicture}
+        % \clip (0,0) rectangle (14.000000,10.000000);
+        {\footnotesize
+
+        % Drawing line P
+        \draw [line width=0.016cm] (1.199570,1.000000) -- (4.504303,6.500000);%
+
+        % Drawing line Q
+        \draw [line width=0.016cm] (2.420993,1.000000) -- (4.715711,4.819052);%
+        \draw [line width=0.016cm] (4.756914,4.887626) -- (5.725727,6.500000);%
+
+        % Drawing segment M N
+        \draw [line width=0.016cm] (4.770048,4.831847) -- (9.966264,1.521492);%
+
+        % Drawing line l
+        \draw [line width=0.016cm] (6.533154,1.000000) -- (6.316905,1.463748);%
+        \draw [line width=0.016cm] (6.283095,1.536252) -- (4.753217,4.817087);%
+        \draw [line width=0.016cm] (4.719408,4.889591) -- (3.968462,6.500000);%
+
+        % Drawing line A N
+        \draw [line width=0.016cm] (1.000000,1.500000) -- (6.260000,1.500000);%
+        \draw [line width=0.016cm] (6.340000,1.500000) -- (9.960000,1.500000);%
+        \draw [line width=0.016cm] (10.040000,1.500000) -- (11.000000,1.500000);%
+
+        % Drawing arc u v -56.00
+        \draw [line width=0.016cm] (3.714784,5.186019) -- (3.714784,5.186019) arc (239:294:0.947150 and 0.947150) -- (4.602885,5.139475);%
+
+        % Drawing arc M cc -56.00
+        \draw [line width=0.016cm] (4.259902,4.060459) -- (4.259902,4.060459) arc (239:294:0.925000 and 0.925000) -- (5.127234,4.015004);%
+
+        % Drawing arc N b -32.50
+        \draw [line width=0.016cm] (8.903591,2.198489) -- (8.897538,2.188895) arc (148:180:1.300000 and 1.300000);%
+
+        % Drawing arc L a -65.00
+        \draw [line width=0.016cm] (5.877382,2.406308) arc (115:180:1.000000 and 1.000000);%
+
+        % Drawing arc L mm 115.00
+        \draw [line width=0.016cm] (7.200000,1.500000) arc (360:360:0.900000 and 0.900000) --(7.200000,1.500000) arc (0:115:0.900000 and 0.900000);%
+
+        % Drawing arc A d 59.00
+        \draw [line width=0.016cm] (2.300000,1.500000) arc (360:360:0.800000 and 0.800000) --(2.300000,1.500000) arc (0:59:0.800000 and 0.800000);%
+
+        % Marking point N by circle
+        \draw [line width=0.016cm] (10.000000,1.500000) circle (0.040000);%
+        \draw (10.000000,1.500000) node [anchor=north] { $N$ };%
+
+        % Marking point L by circle
+        \draw [line width=0.016cm] (6.300000,1.500000) circle (0.040000);%
+        \draw (6.250000,1.500000) node [anchor=north] { $L$ };%
+
+        % Marking point M by circle
+        \draw [line width=0.016cm] (4.736313,4.853339) circle (0.040000);%
+        \draw (4.796313,4.853339) node [anchor=west] { $M$ };%
+
+        % Marking point u
+        \draw (4.202602,5.597885) node [anchor=north] { $58^\circ$ };%
+
+        % Marking point x
+        \draw (4.700000,4.450000) node [anchor=north] { $x$ };%
+
+        % Marking point y
+        \draw (9.000000,1.550000) node [anchor=south] { $y$ };%
+
+        % Marking point z
+        \draw (5.800000,1.600000) node [anchor=south] { $z$ };%
+
+        % Marking point m
+        \draw (6.200000,1.600000) node [anchor=south west] { $115^\circ$ };%
+
+        % Marking point w
+        \draw (1.750000,1.550000) node [anchor=south west] { $w$ };%
+        }
+        \end{tikzpicture}
+    \end{figure}
+
+    \begin{solution}[3cm]
+        $x=65^\circ$ -- obodni kot nad lokom $AD$ \\
+        $z=180^\circ-90^\circ-65^\circ=25^circ$ -- kot v pravokotnem trikotniku $\triangle ACD$ \\
+        $y=180^\circ-65^\circ-25^\circ-35^\circ=55^\circ$ -- kot v trikotniku $\triangle ABD$ \\ \\
+        Za izračun kota $x$ in utemeljitev $1$ točka, za izračun kota $y$ in utemeljitev $1$ točka, upoštevanje Talesovega izreka v polkrogu $1$ točka, izračuna kota $z$ $1$ točka.
+    \end{solution}
+
+
+
+    % 5. vprašanje
+
+    \question
+    V pravokotnem trikotniku sta pravokotni projekciji katet $a$ in $b$ na hipotenuzo $c$ velikosti $a_1=6~cm$ in  $b_1=4~cm$.
+    \begin{parts}
+        \part[3]
+        Izračunajte natančno dolžino stranice $a$ in višine $v$ na hipotenuzo $c$ tega trikotnika.
+
+        \begin{solution}[8cm]
+            $a_1=c-b_1=9~cm$, $a^2=a_1c=108~cm^2 \Rightarrow a=6\sqrt{3}~cm$ \\
+            $v^2=a_1b_1=27~cm^2 \Rightarrow v=3\sqrt{3}~cm$ \\ \\
+            Za pravilno upoštevanje izrekov $1$ točka, pravilen izračun $a$ in $v$ po $1$ točka.
+        \end{solution}
+
+        \part[1]
+        Določite dolžino višine $v_b$.
+
+        \begin{solution}[1cm]
+            Z upoštevanjem lastnosti pravokotnega trikotnika je $t_c=\frac{c}{2}=6~cm$. \\
+            Za pravilen izračun dolžine $1$ točka.
+        \end{solution}
+
+    \end{parts}
+
+
+
+
+
+
+    \newpage
+    % 6. vprašanje
+
+    \question[3]
+        V trapezu $ABCD$ z osnovnico $|AB|=5$ in krakom $|AD|=4$ se nosilki krakov sekata v točki $E$ ter je $|DE|=2$.
+        Izračunajte natančno dolžino stranice $CD$.
+
+
+    \begin{solution}[11cm]
+        Uporabimo lahko Pitagorov izrek za dolžini kraka in njegove pravokotne projekcije na osnovnico: $v^2=b^2-\left(\frac{a-c}{2}\right)^2=17^2-8^2=225 \Rightarrow v=15~cm$ \\ \\
+        Za pravilen razmislek in izračun posameznih dolžin $2$ točki, pravilna uporaba Pitagorovega izreka $1$ točka, pravilen izračun $1$ točka.
+    \end{solution}
+
+
+
+    % \newpage
+    % dodatno vprašanje
+    % \vspace{0.1in}
+    % \makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+    % ~
+
+    \bonusquestion[3]
+    \textit{Dodatna naloga:} Dokažite: Če iz točke, ki leži izven kroga, narišemo dve tangenti na krog, 
+    sta tangentna odseka (zveznici dane točke z dotikališčema) enako dolga.
+
+    \begin{solution}[1cm]
+        Ob upoštevanju preloma droga dobimo pravokotni trikotnik s stranicami $7~m$, $20-x~m$ in $x~m$.
+        Uporabimo pitagorov izrek $(20-x)^2=x^2+7^2 \Rightarrow 40x=351 \Rightarrow x=\frac{351}{40}~m$. \\ \\
+        Pravilen razmislek in uporaba Pitagorovega izreka $1$ točka, reševanje enačbe $1$ točka, pravilen končni izračun $1$ točka.
+    \end{solution}
+
+
+\end{questions}
+
+
+
+\end{document}

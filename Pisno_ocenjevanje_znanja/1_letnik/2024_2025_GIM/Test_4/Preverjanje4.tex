@@ -1,0 +1,273 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{eurosym}
+
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+% \printanswers
+
+% \linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Četrto preverjanje znanja \\ 1. letnik \\ 8. april 2025 \\ (Realna števila)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+% \begin{center}
+%     \chqword{Naloga}
+%     \chpword{Možne točke}
+%     \chbpword{Dodatne točke}
+%     \chsword{Dosežene točke}
+%     \chtword{Skupaj}  
+%     \combinedpointtable[h][questions]
+%     % \combinedgradetable[h][questions]
+
+% \end{center}
+
+\vspace{0.1in}
+
+
+\begin{questions}
+
+    % 1. vprašanje
+
+    \question
+    Natančno izračunajte vrednost izraza.
+    $$\dfrac{\sqrt{3}+1}{\sqrt{3}-1}-\dfrac{\sqrt{3}-1}{\sqrt{3}+1}+\sqrt{0.16}-\sqrt[3]{-27}+\sqrt{0.64}+\sqrt{48}-\sqrt{27}$$
+
+    % \begin{solution}
+    %     Za zapisa $b=2\cdot 3^3\cdot 5^2\cdot 7$ in $c=2^3\cdot 3^2\cdot 5^4$ po $1$ točka. 
+    %     Izračun $D(a,b,c)=3^2\cdot 5^2=225$ $1$ točka, in $v(a,b,c)=2^3\cdot 3^4\cdot 5^4\cdot 7^2$ $1$ točka.
+    % \end{solution}
+    
+    
+    % 2. vprašanje
+    \question
+    Rešite enačbo.
+        $$ \dfrac{x}{x^2-1}=\dfrac{1}{x+2}$$
+    
+    
+    % \begin{solution}
+    %     Za zapis $b=5l+1$ $1$ točka, izračun $2a+b=20k+14+5l+1$ $1$ točka, končen sklep $2a+b=5(4k+l+3)$ $1$ točka.
+    % \end{solution}
+
+
+
+
+    %  \newpage
+
+    % 3. vprašanje
+    \question
+    Rešite sistem neenačb. Rešitev grafično upodobite in zapišite z intervalom.
+    $$(x+1\leq 2x-3)\land(2x-3<0.1x+\frac{2}{5})$$
+    
+    % \begin{solution}[7cm]
+    %     \begin{align*}
+    %         1-(1+x^8)(1+x^4)(1+x^2)(1+x)(1-x)&=1-(1+x^8)(1+x^4)(1+x^2)(1-x^2)= \\
+    %             &=1-(1+x^8)(1+x^4)(1-x^4)= \\
+    %             &=1-(1+x^8)(1-x^8)= \\
+    %             &=1-(1-x^{16})= \\
+    %             &=1-1+x^{16}= \\
+    %             &=x^{16}
+    %     \end{align*}
+    %     Za pravilno uporabo pravila razlike kvadratov $1$ točka, za pravilno upoštevan negativen predznak $1$ točka, končen rezultat $1$ točka.
+    % \end{solution}
+
+
+    % \begin{description}
+    %     \item[a] $(x-a)^2+(y-b)^2-c^2=0$ 
+    %     \item[b] $d^2(x-a)^2+f^2(y-b)^2-(df)^2=0$
+    %     \item[c] $S(a,b)$
+    %     \item[d] $e^2=d^2-f^2;\ d>f$
+    % \end{description}
+    % Krožnica: \fillin[a c][2cm]
+    % \\ Elipsa:  \fillin[b c d][2cm]
+
+
+        % 4. vprašanje
+        \question
+        Rešite sistem enačb.
+
+        $$ \begin{aligned}
+            3x+2y-4z&=2 \\ 5x-7y-5z&=-2 \\ x+5y+3z&=18
+        \end{aligned} $$
+    
+        
+        % \begin{solution}
+        %     \begin{align*}
+        %         1797&=1\cdot 987+610\\
+        %         987&=1\cdot 610+377 \\
+        %         610&=1\cdot 377+233 \\
+        %         377&=1\cdot 233+144 \\
+        %         233&=1\cdot 144+89 \\
+        %         144&=1\cdot 89+55 \\
+        %         89&=1\cdot 55+34 \\
+        %         55&=1\cdot 34+21 \\
+        %         34&=1\cdot 21+13 \\
+        %         21&=1\cdot 13+8 \\
+        %         13&=1\cdot 8+5 \\
+        %         8&=1\cdot 5+3 \\
+        %         5&=1\cdot 3+2 \\
+        %         3&=1\cdot 2+1 \\
+        %         2&=2\cdot 1+0
+        %     \end{align*}
+        %     Za izračun največjega skupnega delitelja $2$ točki (npr. z Evklidovim algoritmom), za pravilen sklep $1$ točka.
+        % \end{solution}
+    
+
+    % \newpage
+    % 5. vprašanje
+    \question
+        Osemnajst kuharjev pripravi obrok za veliko skupino v $40~minutah$. Po $25~minutah$ je $8$ kuharjev začelo pripravljati obrok za drugo skupino. Koliko časa bo preostanek kuharjev pripravljal obrok za prvo skupino?
+    
+        % \begin{solution}
+        %     \begin{align*} 
+        %         \frac{18}{5}\cdot 2\frac{1}{12}-\dfrac{\frac{27}{8}+1\frac{5}{6}}{\frac{19}{8}}&=\frac{18}{5}\cdot \frac{25}{12}-\dfrac{\frac{27}{8}+\frac{11}{6}}{\frac{19}{8}}= \\
+        %                                                                                     &= \frac{3}{1}\cdot \frac{5}{2}-\dfrac{\frac{108}{24}+\frac{44}{24}}{\frac{19}{8}}= \\
+        %                                                                                     &=\frac{15}{2}-\dfrac{\frac{152}{24}}{\frac{19}{8}}= \\
+        %                                                                                     &=\frac{15}{2}-\frac{152\cdot 8}{24\cdot 19}= \\
+        %                                                                                     &=\frac{15}{2}-\frac{8}{3}= \\
+        %                                                                                     &=\frac{45}{6}-\frac{16}{6}= \\
+        %                                                                                     &=\frac{29}{6}
+        %     \end{align*}
+        %     Za pravilno množenje ulomkov $1$ točka, pravilno seštevanje ulomkov $1$ točka, pravilno razreševanje dvojnih ulomkov $1$ točka, pravilno odštevanje ulomkov $1$ točka, pravilen okrajšan rezultat $1$ točka.
+        % \end{solution}
+
+
+
+
+
+    %\newpage
+    % 6. vprašanje
+
+    \question
+        Natančno izračunajte. $$\left|\left|\sqrt{2}-2\right|-\left|1-\sqrt{2}\right|\right|-2$$
+
+
+        % \begin{solution}
+        %     \begin{align*}
+        %         5(81x^2-1)(45x-5)^{-1}&= \dfrac{5(81x^2-1)}{45x-5}= \\
+        %                             &= \dfrac{5(9x-1)(9x+1)}{5(9x-1)}= \\
+        %                             &= 9x+1
+        %     \end{align*}
+        %     Pravilen zapis z ulomkom $1$ točka, razstavljanje razlike kvadratov in izpostavljanje skupnega faktorja $1$ točka, krajšanje ulomka $1$ točka, končen rezultat $1$ točka.
+        % \end{solution}
+
+
+
+
+    % \newpage
+
+        % 7. vprašanje
+
+        \question
+        Rešite enačbo in opišite njen geometrijski pomen ter rešitev grafično prikažite. $$1+\left|x-7\right|=6$$
+
+
+        % \begin{solution}
+        %         \begin{align*}
+        %             \dfrac{x+4}{x+5}-\dfrac{2x-10}{x^2-x-12}:\dfrac{x^2-25}{x-4} &= \dfrac{x+4}{x+5}-\dfrac{2(x-5)}{(x-4)(x+3)}\cdot\dfrac{x-4}{(x-5)(x+5)}= \\
+        %                                                                         &= \dfrac{x+4}{x+5}-\dfrac{2}{(x+3)(x-5)}= \\
+        %                                                                         &= \dfrac{(x+4)(x+3)-2}{(x+5)(x+3)}= \\
+        %                                                                         &= \dfrac{x^2+7x+10}{(x+5)(x+3)}= \\
+        %                                                                         &= \dfrac{(x+5)(x+2)}{(x+5)(x+3)}= \\
+        %                                                                         &=\dfrac{x+2}{x+3}
+        %         \end{align*}
+        %         Za pravilno faktorizacijo izrazov $1$ točka, pravilno deljenje ulomkov $1$ točka, pravilno odštevanje ulomkov $1$ točka, pravilno zapisan okrajšan rezultat $1$ točka.
+        %     \end{solution}
+    
+    
+
+
+    %  \newpage
+
+    \question
+    Izračunajte vrednost izraza glede na vrednost spremenljivke $x$. $$\left|x-3\right|-\left|x+3\right|$$
+
+
+    \question
+    Raztopini $24~\%$ alkohola dodamo $10~kg$ $90~\%$ alkohola. Koliko kilogramov tehta mešanica, če je njena koncentracija $40~\%$?
+
+
+
+
+
+
+    %  \newpage
+
+    %  \noindent Ime in priimek: \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+    %  ~\\
+
+    %dodatno vprašanje
+    % \bonusquestion[2]
+    % \textit{Dodatna naloga:} Zapišite število $532$ v sedmiškem številskem sestavu.
+
+    % \begin{solution}[7cm]
+    %     \begin{align*}
+    %         532 &= 7\cdot 76 + 0 \\
+    %         76 &= 7\cdot 10 + 6 \\
+    %         10 &= 7\cdot 1 + 3 \\
+    %         1 &= 7\cdot 0 + 1
+    %     \end{align*}
+    %     Za pravilno zapisan algoritem $1$ točka, zapis števila v sedmiškem sistemu $532_{(10)}=1360_{(7)}$ $1$ točka.
+    % \end{solution}
+
+
+
+
+    % \newpage
+        
+
+    % dodatno vprašanje
+    % \bonusquestion[3]
+    % \textit{Dodatna naloga:} Okrajšajte ulomek: $\dfrac{b^{2x+y}+b^{x+2y}+b^{x+y+2}}{b^{2x-y}+b^x+b^{x-y+2}}$.
+
+    % \begin{solution}[7cm]
+    %     \begin{align*}
+    %         \dfrac{b^{2x+y}+b^{x+2y}+b^{x+y+2}}{b^{2x-y}+b^x+b^{x-y+2}} &= \dfrac{b^{x+y}(b^x+b^y+b^2)}{b^{x-y}(b^x+b^y+b^2)}= \\
+    %                                                                     &= \dfrac{b^{x+y}}{b^{x-y}}= \\
+    %                                                                     &= b^{2y}
+    %     \end{align*}
+    %     Za pravilno izpostavljanje skupnega faktorja $1$ točka; za pravilno krajšanje $1$ točka; končen rezultat $1$ točka.
+    % \end{solution}
+
+
+
+
+\end{questions}
+
+
+
+\end{document}

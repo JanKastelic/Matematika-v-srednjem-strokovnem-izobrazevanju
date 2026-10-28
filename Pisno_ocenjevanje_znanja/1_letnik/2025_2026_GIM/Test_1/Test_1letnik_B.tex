@@ -1,0 +1,240 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{eurosym}
+
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+% \printanswers
+
+% \linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Prvo pisno ocenjevanje znanja \\ 1. letnik -- test B \\ 16. oktober 2025 \\ (Osnove logike in teorije množic, Naravna in cela števila)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \chqword{Naloga}
+    \chpword{Možne točke}
+    \chbpword{Dodatne točke}
+    \chsword{Dosežene točke}
+    \chtword{Skupaj}  
+    % \combinedpointtable[h][questions]
+    \combinedgradetable[h][questions]
+
+\end{center}
+
+\vspace{0.1in}
+
+
+\begin{questions}
+
+    % 1. vprašanje
+    
+    \question[4]
+    Določite pravilnost izjave $( A \land \lnot B)\Rightarrow (\lnot A \Leftrightarrow B)$ glede na izbor izjav $A$ in $B$.
+
+    \begin{solution}[11cm]
+        \begin{table}[H]
+            \begin{tabular}{ccccccc}
+             $A$ & $B$ & $\lnot A$ & $\lnot B$ & $(\lnot A\Rightarrow B)$ & $(A\Leftrightarrow \lnot B)$ & $(\lnot A\Rightarrow B)\land(A\Leftrightarrow \lnot B)$\\ \hline
+             P & P & N & N & P & N & N \\ 
+             P & N & N & P & P & P & P \\
+             N & P & P & N & P & P & P \\
+             N & N & P & P & N & N & N
+            \end{tabular}
+        \end{table}
+        Za vsako pravilno izpolnjeno vrstico, ki določa pravilnost, po $1$ točka.
+    \end{solution}
+
+
+
+
+    % 2. vprašanje
+    \question[3]
+    Določite resničnostno vrednost izjav:
+    \begin{parts}
+        \part 
+        Če je množica naravnih števil števno neskončna, potem je sodih števil končno mnogo.\\
+        \part 
+        Število $1$ je praštevilo ali število $5$ ni večkratnik števila $1$.\\
+        \part
+        Ni res, da $0$ ni najmanjše celo število, in $0$ je najmanjše naravno število.\\
+    \end{parts}
+
+    \begin{solution}
+        (a): N (obe izjavi sta nepraavilni) \\
+        (b): P (obe izjavi sta pravilni) \\
+        (c): P (negirana prva izjava je pravilna, druga izjava je pravilna) \\ \\
+        Za vsako pravilno določeno logično vrednost po $1$ točka.
+    \end{solution}
+
+
+
+    \newpage
+
+    % 3. vprašanje
+    \question
+    Dani sta množici $\mathcal{A}=\left\{R, A, D, I, O\right\}$ in $\mathcal{B}=\left\{R, I, O\right\}$.
+    \begin{parts}
+        \part[2]
+        Ali velja $\mathcal{A}\nsubseteq\mathcal{B}$? Utemeljite. 
+        \part[1]
+        Poiščite najmanjšo možno množico $\mathcal{C}$, da bosta množici $\mathcal{A}$ in $\mathcal{B}$ njeni podmnožici.
+        \part[3]
+        Zapišite $\mathcal{PB}$. Izračunajte, koliko elementov vsebuje.
+        \part[3]
+        Zapišite in grafično predstavite kartezični produkt $\mathcal{B}\times\mathcal{A}$.
+    \end{parts}
+
+    % \begin{description}
+    %     \item[a] $(x-a)^2+(y-b)^2-c^2=0$ 
+    %     \item[b] $d^2(x-a)^2+f^2(y-b)^2-(df)^2=0$
+    %     \item[c] $S(a,b)$
+    %     \item[d] $e^2=d^2-f^2;\ d>f$
+    % \end{description}
+    % Krožnica: \fillin[a c][2cm]
+    % \\ Elipsa:  \fillin[b c d][2cm]
+
+    \begin{solution}[9cm]
+        (a): Drži, da $\mathcal{A}\nsubseteq\mathcal{B}$, ker $a\in\mathcal{A}\land a\notin\mathcal{B}$.; $\mathcal{C}=\left\{b,c,h\right\}$ \\
+        (b): $\mathcal{PB}=\left\{\emptyset, \{b\}, \{c\}, \{h\}, \{i\}, \{b,c\}, \{b,h\}, \{b,i\}, \{c,h\}, \{c,i\}, \{h,i\}, \{b,c,h\}, \{b,c,i\}, \{b,h,i\}, \{c,h,i\}, \mathcal{B}\right\}$; $m(\mathcal{PB})=2^{m(\mathcal{B})}=2^4=16$. \\
+        (c): $\mathcal{B}\times\mathcal{A}=\left\{(a,b), (a,c), (a,h), (a,i), (b,b), (b,c), (b,h), (b,i), (c,b), (c,c), (c,h), (c,i), (h,b), (h,c), (h,h), (h,i)\right\}$ + grafična upodobitev \\ \\
+        Pri (a) za vsak odgovor po $1$ točka. Pri (b) za zapis celotne $\mathcal{PB}$ $2$ točki, za zapis zgolj podmnožic $1$ točka; za izračun po formuli za moč potenčne množice $1$ točka. Pri (c) za zapis $\mathcal{B}\times\mathcal{A}$ $1$ točka, za grafično upodobitev $1$ točka.
+    \end{solution}
+
+
+    \newpage
+    % 4. vprašanje  
+    \question
+    Množica $\mathcal{A}$ je prava podmnožica množice $\mathcal{B}$, prav tako je $\mathcal{C}$ prava podmnožica množice $\mathcal{B}$. Množici $\mathcal{A}$ in $\mathcal{C}$ sta disjunktni.
+    \begin{parts}
+        \part[2]
+        Grafično predstavite množico $\mathcal{B}\setminus\left(\mathcal{A}\cup\mathcal{C}\right)$.
+        \part[3]
+        Izračunajte $\mathcal{A}\setminus\mathcal{C}$, $\mathcal{B}\cap\mathcal{C}$ in $\mathcal{A}\cup\mathcal{B}$.
+    \end{parts}
+
+    \begin{solution}[6cm]
+        (a): grafična upodobitev \\
+        (b): $\mathcal{B}\setminus\mathcal{C}=\emptyset$; $\mathcal{A}\cap\mathcal{C}=\mathcal{A}$; $\mathcal{A}\cup\mathcal{B}=\mathcal{B}$ \\ \\
+        Pri (a) za narisan Euler-Vennov diagram $1$ točka. Pri (b) za izračun vsake izmed množic po $1$ točka.
+    \end{solution}
+
+
+
+
+
+
+    
+    % 6. vprašanje
+    \question
+    Pri uri geografije so se dijaki in učitelj pogovarjali o atlasih.  Učitelj je dijake vprašal, katere atlase imajo doma.
+    $20$ dijakov ima \textit{Atlas sveta}, $7$ jih ima \textit{Atlas Jugoslavije} in $18$ \textit{Atlas Slovenije}. Kar $12$ jih ima \textit{Atlas sveta} in \textit{Atlas Slovenije}, $4$ imajo \textit{Atlas Jugoslavije} in \textit{Atlas sveta},
+    $3$ pa \textit{Atlas Jugoslavije} in \textit{Atlas Slovenije}. En sam dijaki ima vse tri atlase, dva pa nimata doma nobenega atlasa. 
+    \begin{parts}
+        \part[1]
+        Narišite diagram.
+        \part[2]
+        Koliko dijakov je bilo pri uri geografije?
+        \part[2]
+        Koliko dijakov ima doma vsaj dva različna atlasa?
+    \end{parts}
+
+    \begin{solution}[8cm]
+        (a): Euler-Vennov diagram z vpisanimi številkami \\
+        (b): $5+0+3+3+2+11+1+1=26$ dijakov \\
+        (c): $3+2+11=16$ dijakov \\ \\
+        Pri (a) za pravilno narisan in izpolnjen diagram $1$ točka. Pri (b) in (c) za pravilen izračun $1$ točka, za zapis odgovora $1$ točka.
+    \end{solution}
+
+
+
+
+    \newpage
+
+    % 5. vprašanje
+    \question
+    Naj bo $\mathcal{U}=\mathbb{N}_{22}$. Dane so množice $\mathcal{A}=\left\{x;\ x=2n \land 4\leq n \leq10\right\}$, $\mathcal{B}=\left\{x;\ x=4k-3 \land 3\leq k< 6\right\}$ in $\mathcal{C}=\left\{x;\ x=5m \land 1<m\leq 4\right\}$. 
+    \begin{parts}
+        \part[3]
+        Zapišite dane množice z naštevanjem elementov.
+        \part[4]
+        Določite naslednje množice: $\mathcal{C}\cap\mathcal{A}$, $\mathcal{C}\setminus\mathcal{A}$, $(\mathcal{C}\cup\mathcal{A})\setminus\mathcal{B}$ in $(\mathcal{A}\cup\mathcal{B})^\complement$.
+        \part[1]
+        Koliko elementov ima množica $\mathcal{A}\times\mathcal{C}$?
+    \end{parts}
+
+    \begin{solution}[13cm]
+        $\mathcal{A}=\left\{6,8,10,12,14,16,18\right\}$, $\mathcal{B}=\left\{8,11,14,17,20\right\}$, $\mathcal{C}=\left\{10,15,20\right\}$ \\
+        (a): $\mathcal{A}\cap\mathcal{C}=\left\{10\right\}$; $\mathcal{C}\setminus\mathcal{A}=\left\{15,20\right\}$; $(\mathcal{A}\cup\mathcal{C})\setminus\mathcal{B}=\left\{6,10,12,15,16,18\right\}$; $(\mathcal{A}\cup\mathcal{B})^\complement=\left\{1,2,3,4,5,7,9,13,15,19,21,22,23\right\}$ \\
+        (b): $m(\mathcal{A}\times\mathcal{C})=m(\mathcal{A})\cdot m(\mathcal{C})=7\cdot 3 = 21$ \\ \\
+        Pri (a) za zapis/uporabo pravilnih množic $\mathcal{A}, \mathcal{B}, \mathcal{C}$ $1$ točka; za vsako pravilno določeno množico po $1$ točka. Pri (b) za uporabo formule in izračun moči kartezičnega produkta $1$ točka.
+    \end{solution}
+
+
+    % \newpage
+        
+
+    % 7. vprašanje
+    \question[3]
+    Na smučarskem taboru so oblikovali več različno velikih skupin tečaja smučanja.
+    V pet skupin je bilo razporejenih po $12$ tečajnikov, v osem skupin po $9$ tečajnikov, štiri skupine so štele po $7$ tečajnikov, $22$ skupin pa je bilo individualnih.
+    V tednu, ko naj bi bil tečaj smučanja izveden, je zbolelo $11$ parov, ki so bili vključeni v tečaj, ostali so se tečaja udeležili.
+    Koliko tečajnikov se je udeležilo tečaja?
+
+    \begin{solution}[5cm]
+        $5\cdot 26+7\cdot 27+4\cdot 28-320=111$ \\ \\
+        Za nastavek enega računa $1$ točka, za pravilen izračun $1$ točka, za zapis odgovora $1$ točka.
+    \end{solution}
+
+
+\newpage
+        % dodatno vprašanje
+
+    \makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+    \vspace{0.1in}
+
+    \bonusquestion[3]
+    \textit{Dodatna naloga:} Ovrednotite pravilnost izjav: $A: \emptyset\in\mathbb{N}$; $B:\left\{1\right\}\in\mathbb{N}$; $C: \left\{1\right\}\subseteq\left\{\mathbb{N}\right\}$. Odgovore utemeljite.
+    \begin{solution}
+        $\exists x\in\mathbb{Z}\ni:(3\mid x)\land(2\mid x)$; negacija: $\forall x\in\mathbb{Z}: (3\nmid x)\lor(2\nmid x)$ \\ \\
+        Za pravilen zapis izjave s simboli $1$ točka, za pravilno negacijo kvantifikatorja $1$ točka, za pravilno negacijo logične operacije $1$ točka.
+    \end{solution}
+
+\end{questions}
+
+
+
+\end{document}

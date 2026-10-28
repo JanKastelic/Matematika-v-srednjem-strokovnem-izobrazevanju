@@ -1,0 +1,232 @@
+\documentclass[addpoints]{exam}
+% \documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{eurosym}
+
+\usepackage{pgfpages}
+% \usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage{pgfkeys}
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage{tkz-euclide}
+\usepackage{xfp}
+
+
+
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+% \printanswers
+
+% \linespread{2}
+
+
+\pointsinrightmargin
+\marginbonuspointname{}
+
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.5cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Drugo pisno preverjanje znanja \\ 2. letnik \\ 12. december 2025 \\ (Kotne funkcije; Vektorji)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek, oddelek:\enspace\hrulefill}
+
+
+\begin{center}
+    \chqword{Naloga}
+    \chpword{Možne točke}
+    \chbpword{Dodatne točke}
+    \chsword{Dosežene točke}
+    \chtword{Skupaj}  
+    \combinedpointtable[h][questions]
+    % \combinedgradetable[h][questions]
+
+\end{center}
+
+\vspace{0.1in}
+
+
+\begin{questions}
+
+    % 1. vprašanje
+
+    \question[3]
+    Poenostavite izraz. 
+    $$ \dfrac{\tan x}{\cos x - \frac{1}{\cos x}}+\sin x + \sin x \cot^2 x$$
+
+    % \begin{solution}[6.5cm]
+       
+    % \end{solution}
+
+
+    % 2. vprašanje
+
+    \question[4]
+    Izračunajte natančno vrednost izraza. 
+    $$ \dfrac{\sin{120^\circ} + \cos{60^\circ}}{\sin{45^\circ} - \tan{300^\circ}}+\dfrac{\cos^2{310^\circ}+\sin^2{50^\circ}}{\sin{270^\circ}}$$
+
+    % \begin{solution}[6cm]
+       
+    % \end{solution}
+
+
+% \newpage
+    % 3. vprašanje
+
+    \question
+    V kvadru $ABCDEFGH$ je točka $M$ razpolovišče roba $CD$, točka $O$ razdeli rob $EF$ v razmerju \\ $|EO|:|OF|=1:6$.
+    Z baznimi vektorji $\overrightarrow{a}=\overrightarrow{AB}, \overrightarrow{b}=\overrightarrow{AD}$ in $\overrightarrow{c}=\overrightarrow{AE}$ izrazite vektorje: 
+    \begin{parts}
+        \part[2]
+        $\overrightarrow{MO}$, 
+
+    % \begin{solution}[5cm]
+
+    % \end{solution}
+        
+        \part[3] 
+        $\overrightarrow{BH}-\overrightarrow{GH}+\overrightarrow{GA}+\overrightarrow{CD}$.
+    \end{parts}
+
+    % \begin{solution}[5cm]
+
+    % \end{solution}
+
+    
+
+    
+    % 4. vprašanje
+
+    \question[4]
+    V trikotniku $\triangle ABC$ z oglišči $A(2,5,-3)$, $B(5,7,3)$ in $C(10,0,0)$ izračunajte koordinate težišča $T$ ter razdaljo med težiščem $T$ in ogliščem $A$.
+    % \begin{parts}
+
+    %     \part[2]
+    %     dolžino težiščnice na stranico $AC=b$, 
+
+    % \begin{solution}[6cm]
+
+    % \end{solution}
+
+    %     \part[3] 
+    %     koordinate težišča trikotnika $\triangle ABC$.
+
+    % \begin{solution}[2cm]
+
+    % \end{solution}        
+    
+    % \part[5]
+    %     skalarni produkt $\overrightarrow{AB}\cdot\overrightarrow{AC}$ in kot $\angle BAC=\alpha$, 
+
+    %     \begin{solution}[5cm]
+
+    % \end{solution}
+
+
+
+
+    % \end{parts}
+
+
+
+
+
+
+
+    % \newpage
+    % 5. vprašanje
+
+    \question
+    Daljica $AB$ je določena s krajiščema $A(3,2,-2)$ in $B(1,1,-5)$.
+    
+    \begin{parts}
+        \part[3]
+        Določite koordinate točke $T$, ki leži na daljici $AB$, da bo veljalo $|AT|:|TB|=1:2$.
+       
+    %        \begin{solution}[5cm]
+
+    % \end{solution}
+
+        \part[3]    
+        Določite enotski vektor v smeri krajevnega vektorja točke $B$.
+
+    % \begin{solution}[5cm]
+
+    % \end{solution}
+
+        \part[3]
+        Ali sta krajevna vektorja $\overrightarrow{r_A}$ in $\overrightarrow{r_B}$ pravokotna?
+
+    %         \begin{solution}[5cm]
+
+    % \end{solution}
+
+        \part[3]
+        Določite $u$, da bo vektor $\overrightarrow{v}=(u,u+3,9)$ kolinearen z vektorjem $\overrightarrow{AB}$.
+    \end{parts}
+
+% \begin{solution}[4cm]
+
+% \end{solution}
+
+
+% \newpage
+
+    % 6. vprašanje
+
+
+
+    \question[3]
+    Dolžina vektorja $\overrightarrow{a}$ je $5$, dolžina vektorja $\overrightarrow{b}$ je $8$, 
+    kot med njima pa meri $60^\circ$. 
+    % Izračunajte skalarni produkt vektorjev $\overrightarrow{a}$ in $\frac{1}{2}\overrightarrow{a}+\frac{4}{3}\overrightarrow{b}$.
+    % \begin{parts}
+    %     \part[4]
+        Izračunajte dolžino vektorja $\overrightarrow{c}=\frac{1}{5}\overrightarrow{a}+\frac{3}{2}\overrightarrow{b}$.
+        
+    %         \begin{solution}[5cm]
+
+    % \end{solution}
+
+    %     \part[3]
+    %     Izračunajte skalarni produkt vektorjev $\overrightarrow{a}$ in $\frac{1}{2}\overrightarrow{a}+\frac{4}{3}\overrightarrow{b}$.
+
+    % \end{parts}
+
+
+    % \begin{solution}[10cm]
+
+    % \end{solution}
+
+
+
+
+
+\end{questions}
+
+
+
+\end{document}

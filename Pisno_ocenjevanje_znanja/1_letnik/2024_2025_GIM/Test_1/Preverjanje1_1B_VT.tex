@@ -1,0 +1,204 @@
+% \documentclass[addpoints]{exam}
+\documentclass[addpoints,12pt]{exam}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{eurosym}
+
+\linespread{2}
+
+
+%Komentar naslednje vrstice glede na verzijo testa -- rešitve ali prostor za odgovore:
+% \printanswers
+
+\pointsinrightmargin
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Rešitve in točkovanje:}\par\noindent}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+\setlength{\gridsize}{7mm}
+
+\extrawidth{5mm}
+\setlength{\rightpointsmargin}{1.25cm}
+
+\begin{document}
+
+\runningfooter{}{}{}
+
+\begin{center}
+    \fbox{\fbox{\parbox{15cm}{\centering
+    Preverjanje znanja \\ 1.C \\ 17. oktober 2024 \\ (Osnove logike in teorije množic, Naravna števila)}}}
+\end{center}
+
+\vspace{0.1in}
+\makebox[\textwidth]{Ime in priimek:\enspace\hrulefill}
+
+
+\begin{center}
+    \hqword{Naloga:}
+    \hpword{Možne točke:}
+    \hsword{Dosežene točke:}
+    \htword{Skupaj}  
+    \gradetable[h][questions]
+\end{center}
+
+\vspace{0.1in}
+
+
+\begin{questions}
+    
+    \question[4]
+    Določite pravilnost izjave $(A\Rightarrow \lnot B)\land A$ glede na izbor izjav $A$ in $B$.
+
+    \begin{solution}[8cm]
+        $1$ točka za vsako pravilo izpolnjeno vrstico
+    \end{solution}
+
+
+
+
+\newpage
+    \question[3]
+    Določite resničnostno vrednost izjav:
+    \begin{parts}
+        \part 
+        Število $2$ je praštevilo ali število $17$ je sodo.
+        \part 
+        Število $2$ ni praštevilo in število $17$ je sodo.
+        \part
+        Ni res, da je število $7$ večje od števila $2$ in število $8$ manjše od števila $2$.
+    \end{parts}
+
+    \begin{solution}
+        $1$ točka za vsako pravilno določeno logično vrednost
+    \end{solution}
+
+
+
+
+    \question
+    Dani sta množici $\mathcal{A}=\left\{-1, 0, 1, 2\right\}$ in $\mathcal{B}=\left\{0, 2, 4\right\}$.
+\begin{parts}
+    \part[2]
+    Ali velja $\mathcal{A}\subseteq\mathcal{B}$? Poiščite najmanjšo množico $\mathcal{C}$, da bosta množici $\mathcal{A}$ in $\mathcal{B}$ njeni podmnožici.
+    \part[3]
+    Zapišite $\mathcal{PB}$. Koliko elementov vsebuje?
+    \part[2]
+    Zapišite in grafično predstavite kartezični produkt $\mathcal{B}\times\mathcal{A}$.
+\end{parts}
+
+    % \begin{description}
+    %     \item[a] $(x-a)^2+(y-b)^2-c^2=0$ 
+    %     \item[b] $d^2(x-a)^2+f^2(y-b)^2-(df)^2=0$
+    %     \item[c] $S(a,b)$
+    %     \item[d] $e^2=d^2-f^2;\ d>f$
+    % \end{description}
+    % Krožnica: \fillin[a c][2cm]
+    % \\ Elipsa:  \fillin[b c d][2cm]
+
+    \begin{solution}[10cm]
+        (a) $1$ točka za odgovor NE; $1$ točka za zapis $\mathcal{C}=\left\{-1,0,1,2,4\right\}$ \\
+        (b) $2$ točki za zapis $\mathcal{PB}$; $1$ točka za število elementov ($8$) \\
+        (c) $1$ točka za zapis kartezičnega produkta; $1$ točka za grafično upodobitev
+    \end{solution}
+
+
+\newpage
+    \question[5]
+    Množici $\mathcal{A}$ in $\mathcal{B}$ sta pravi podmnožici množice $\mathcal{C}$, hkrati pa sta med seboj disjunktni. Izračunajte:
+    \begin{parts}
+        \part
+        $\mathcal{A}\cup\mathcal{C}$ \\
+        \part
+        $\mathcal{A}\cap\mathcal{B}\cap\mathcal{C}$ \\
+        \part
+        $(\mathcal{A}\cap\mathcal{B})\cup\mathcal{C}$ \\
+        \part
+        $(\mathcal{A}\setminus\mathcal{C})^\complement$ \\
+        \part
+        $(\mathcal{A}\cap\mathcal{B})^\complement$ \\
+    \end{parts}
+
+
+    \begin{solution}[1cm]
+        $1$ točka za vsako pravilno zapisano množico
+    \end{solution}
+
+
+
+
+    \newpage
+
+    \question
+    Naj bo $\mathcal{U}=\mathbb{N}_{25}$. Dane so množice $\mathcal{A}=\left\{x;\ x=2n \land 2\leq n<10\right\}$, $\mathcal{B}=\left\{x;\ x=2k-1 \land 3\leq k\leq 8\right\}$ in $\mathcal{C}=\left\{x;\ x=3m \land 1<m\leq 7\right\}$. 
+    \begin{parts}
+        \part[5]
+        Določite naslednje množice: $\mathcal{B}\cap\mathcal{C}$, $\mathcal{C}\setminus\mathcal{A}$, $(\mathcal{A}\cup\mathcal{C})\setminus\mathcal{B}$ in $(\mathcal{A}\cup\mathcal{B})^\complement$.
+        \part[1]
+        Koliko elementov ima množica $\mathcal{A}\times\mathcal{B}$?
+    \end{parts}
+
+    \begin{solution}[8cm]
+        (a) $1$ točka za pravilen zapis množic $\mathcal{U}, \mathcal{A}, \mathcal{B}, \mathcal{C}$; $1$ točka za vsako pravilno zapisano množico \\
+        (b) $1$ točka za izračun moči
+            \end{solution}
+
+
+            \newpage
+    \question[5]
+    Dijaki so reševali test, sestavljen iz treh nalog. Vse tri naloge so rešili $3$ dijaki. 
+    Prvo in drugo je rešilo $8$ dijakov, drugo in tretjo je rešilo $11$ dijakov ter prvo in tretjo $9$ dijakov.
+    Dva dijaka nista rešila nobene naloge. Prvo nalogo je rešilo $18$, drugo $21$ in tretjo $19$ dijakov.
+    \begin{parts}
+        \part
+        Koliko dijakov je reševalo test?
+        \part
+        Koliko dijakov je rešilo natanko eno nalogo?
+    \end{parts}
+
+    \begin{solution}[8cm]
+        ???
+            \end{solution}
+
+
+
+
+    \newpage
+    \question[2]
+    Z Euler-Vennovim diagramom predstavite množico $(\mathcal{A}\setminus\mathcal{C})\cup(\mathcal{B}\cap\mathcal{C})$.
+    
+    \begin{solution}[6cm]
+        ???
+            \end{solution}
+        
+    \question[3]
+    Mlinar prodaja različne vrste moke. V preteklem mesecu je prodal $200$~kg pšenične bele moke po $1$~\euro/kg, $150$~kg polnozrnate pšenične moke po $2$~\euro/kg in 
+    $75$~kg koruzne moke ter $50$~kg ajdove moke po $3$~\euro/kg. Za nakup žita je odštel $500$~\euro. Koliko dobička je imel v preteklem mesecu?
+
+    \begin{solution}[5cm]
+        ???
+            \end{solution}
+
+\newpage
+    \question
+    Izračunajte oziroma poenostavite.
+    \begin{parts}
+        \part[4]
+        $(-2)^3-(-1)^{2025}(-3^2+5)-(-2)(-3)$
+        \part[4]
+        $(-x^3y)^4(-x^2y^5x^3)^3$
+    \end{parts}
+
+    
+
+\end{questions}
+
+
+
+\end{document}
